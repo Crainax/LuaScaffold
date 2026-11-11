@@ -1,0 +1,58 @@
+[
+  {
+    "session": "20261112-041704-c1b8c1",
+    "map": "ui-single-02.w3x",
+    "clients": 1,
+    "status": "FAIL",
+    "message": "Cannot find path 'D:\\Program Files (x86)\\Warcraft III Frozen Throne\\LuaScaffold\\logs' because it does not exist.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-041803-5bd88f",
+    "map": "ui-single-02.w3x",
+    "clients": 1,
+    "status": "FAIL",
+    "message": "Failure in D:\\Program Files (x86)\\Warcraft III Frozen Throne\\LuaScaffold\\logs\\ui-single-02-P1.log",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-042001-a5ca64",
+    "map": "ui-single-03.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-042125-a5b8e6",
+    "map": "ui-single-04.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-042323-e83a47",
+    "map": "ui-multi-01.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-042922-878741",
+    "map": "oos-control-01.w3x",
+    "clients": 3,
+    "status": "FAIL",
+    "message": "OOS detected by ydhost",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-043013-b15c83",
+    "map": "ui-six-02.w3x",
+    "clients": 6,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  }
+]

@@ -1,0 +1,11 @@
+-- Adapted from the pinned official UI; see docs/UI适配记录.md.
+local _ENV = require 'scaffold.ui_env'
+require 'ui.base.controls.class'
+require 'ui.base.controls.panel'
+require 'ui.base.controls.button'
+require 'ui.base.controls.text'
+require 'ui.base.controls.texture'
+require 'ui.base.controls.model'
+require 'ui.base.controls.model2'
+require 'ui.base.controls.edit'
+require 'ui.base.controls.progress'

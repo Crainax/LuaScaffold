@@ -1,0 +1,396 @@
+{
+  "source": "D:\\War3\\内置JAPI\\2026年\\war3UI1.49-9\\war3UI\\package",
+  "snapshot_date": "2026-11-12",
+  "files": [
+    {
+      "path": "embedded.j",
+      "bytes": 40955,
+      "sha256": "197ae70b9bb49e2686ab384009f8c8221b2ead0ddcbc4d4e3b8ce547d3b19089"
+    },
+    {
+      "path": "insert.j",
+      "bytes": 3409,
+      "sha256": "d1221d1c3f70a689b071ac6a3d859385e2c3bc5b22ce8f6ef67077531951c868"
+    },
+    {
+      "path": "plugin/(key)",
+      "bytes": 17,
+      "sha256": "a2751180ad76f8257984311b06d9cd41c20cab508fa2584a7aa09f85356eee9c"
+    },
+    {
+      "path": "plugin/callback",
+      "bytes": 19943,
+      "sha256": "7249284a0f0b0f73104fa152e2a63294c631435ac7a1bca3b9676e2d34804a13"
+    },
+    {
+      "path": "plugin/core/background.blp",
+      "bytes": 101221,
+      "sha256": "c298d25875a8885488538c76394268725b175f5afe025aaf47923dd3637e4be3"
+    },
+    {
+      "path": "plugin/core/black_icon.tga",
+      "bytes": 262188,
+      "sha256": "6a75bb8729be183db3084fa7e859b7eaab1fb20d7e028b11c12e47668a910d97"
+    },
+    {
+      "path": "plugin/core/button.blp",
+      "bytes": 9262,
+      "sha256": "3b1d32dcb3c2bf597973a5575b9d4b43ba192ea525533f5375823f43b06059aa"
+    },
+    {
+      "path": "plugin/core/edit.blp",
+      "bytes": 11208,
+      "sha256": "65c4c05368e91c8e1faa2909952774e0755c7909a06c7e9a79166ed02600ce31"
+    },
+    {
+      "path": "plugin/core/model.blp",
+      "bytes": 10539,
+      "sha256": "286aecafff46a25127f9809e27594d40e58d96b80154fe6312357a0ebe48e79f"
+    },
+    {
+      "path": "plugin/core/move_background.blp",
+      "bytes": 8167,
+      "sha256": "22c7085b2aaf49a8129e1e9ad120158c2c9082dcd14acc978756a45abf12b035"
+    },
+    {
+      "path": "plugin/core/panel.blp",
+      "bytes": 8027,
+      "sha256": "792c67d7d1495e021d3c5d03f4ae2bdd259c8a0256f429b46700b15f6e1b27e8"
+    },
+    {
+      "path": "plugin/core/text.blp",
+      "bytes": 9794,
+      "sha256": "4de3a2be26407bb9cdec3b5771010373241f98ff7870d38e5514bcefad25de0c"
+    },
+    {
+      "path": "plugin/core/texture.blp",
+      "bytes": 9497,
+      "sha256": "4a4bd534f4e12be2543390c324f06c64567df33de167883ca99c3911e2996e99"
+    },
+    {
+      "path": "plugin/core/Transparent.tga",
+      "bytes": 10018,
+      "sha256": "4f35a6031ff81327f096b0cc339988a70eaa290530b6ab90bcca437eeca75dfc"
+    },
+    {
+      "path": "plugin/fonts.TTF",
+      "bytes": 3190376,
+      "sha256": "bd99fe368b31c62e29ee8456c8fdeb86277786a17e8e40be00ecbe5e4fc7c275"
+    },
+    {
+      "path": "plugin/path.lua",
+      "bytes": 910,
+      "sha256": "6dadff07f167b1abb95158368cca7d822740e66c7673d644e41107841d7a2ef0"
+    },
+    {
+      "path": "plugin/plugin_main.lua",
+      "bytes": 438,
+      "sha256": "80cdcd7565192797f918877a19bbcf50051f4b729c4bf1f0d0ff5506fac99759"
+    },
+    {
+      "path": "plugin/script/ac/init.lua",
+      "bytes": 165,
+      "sha256": "61f9615e7f6540471181e02025cc3696b1d076234a4051d3397d123f2194996d"
+    },
+    {
+      "path": "plugin/script/ac/lni.lua",
+      "bytes": 2201,
+      "sha256": "b9d1577bb2703ed23cce70309debc52716742892b9f13c384d6c6ea31d41adbd"
+    },
+    {
+      "path": "plugin/script/ac/math.lua",
+      "bytes": 619,
+      "sha256": "96251b81a00c18f2370be1c175a1924eb7fc39a90e9a1424340fe613cf1034c5"
+    },
+    {
+      "path": "plugin/script/ac/point.lua",
+      "bytes": 6239,
+      "sha256": "9c91f8041d4e0b1b812accc62f1a54c7afee708d0bde2f3915c00488639dcf07"
+    },
+    {
+      "path": "plugin/script/ac/timer.lua",
+      "bytes": 5508,
+      "sha256": "78ff41248077f6635639e032326d658ea190328a087b1f9eaa6dd0f83636d328"
+    },
+    {
+      "path": "plugin/script/ac/trigger.lua",
+      "bytes": 2504,
+      "sha256": "23d0497ee756ac3913b36fb81453d0e3b05d4621a59dccc10cc79d41e3c2d06e"
+    },
+    {
+      "path": "plugin/script/ac/utility.lua",
+      "bytes": 381,
+      "sha256": "4e3ef9920555ed3d215402ea308e57b285a1d27b395a0e8ea1d73cc5837c8576"
+    },
+    {
+      "path": "plugin/script/ac/vector.lua",
+      "bytes": 913,
+      "sha256": "3f33e9b7138f277517712e49c89bbd635131c5471151f5cac9a8d6bb2e26aca4"
+    },
+    {
+      "path": "plugin/script/base/common.lua",
+      "bytes": 93048,
+      "sha256": "153dc6acaf3fda9439d6d75e0219edef1cd5bc53b51fcad1e1ddb9cc451fba8e"
+    },
+    {
+      "path": "plugin/script/base/function.lua",
+      "bytes": 3179,
+      "sha256": "7fa5f79aee87a5668d967f40e7533feb243306ce19230de8d01f9bcfd33449f2"
+    },
+    {
+      "path": "plugin/script/base/init.lua",
+      "bytes": 193,
+      "sha256": "980a6962139b99382a03f28bd8616eee07832c78b008c7023fdc0fe64dc2b187"
+    },
+    {
+      "path": "plugin/script/base/library.lua",
+      "bytes": 361849,
+      "sha256": "554ea030e0a5bce3858bac4958a086ecdca3960de3ebe88d3f15bb5f4be613f1"
+    },
+    {
+      "path": "plugin/script/base/log.lua",
+      "bytes": 675,
+      "sha256": "eb5ded1705cbb11134c3bcb34860f39b0bf908523b2ea556ae374b99af286f00"
+    },
+    {
+      "path": "plugin/script/base/native.lua",
+      "bytes": 742,
+      "sha256": "971e4c6c7a0c142335b721c7541a231c00dc397bb87e651a246289eea6913a2a"
+    },
+    {
+      "path": "plugin/script/base/runtime.lua",
+      "bytes": 1663,
+      "sha256": "0be7a4c0b97c712efa2909969be49fd213f10def06ccb82a68bf5278c93f4bc8"
+    },
+    {
+      "path": "plugin/script/base/utility.lua",
+      "bytes": 1855,
+      "sha256": "2971ed0258a13dc692972ce9ce66152ffc1241236cabb490a1a986761f477dd5"
+    },
+    {
+      "path": "plugin/script/base/war3.lua",
+      "bytes": 341,
+      "sha256": "1085ad5a0fb558fa711deac55361a795d4c3297586878d6d945267c94f73e467"
+    },
+    {
+      "path": "plugin/script/init.lua",
+      "bytes": 136,
+      "sha256": "7c7c722701e3124d4ccd6d854dfbd2c479c55c31147c1e29a8a513d4f3a83b37"
+    },
+    {
+      "path": "plugin/script/ui/base/controls/button.lua",
+      "bytes": 11770,
+      "sha256": "ab4628efd470046a9591ab166bb08e0cd058e5ae73413d032abca0e50b93e390"
+    },
+    {
+      "path": "plugin/script/ui/base/controls/class.lua",
+      "bytes": 23272,
+      "sha256": "4ffd46039e29ebf85726295014ce6134bbda4a8c3519508102175e6679a939ce"
+    },
+    {
+      "path": "plugin/script/ui/base/controls/edit.lua",
+      "bytes": 3819,
+      "sha256": "2a7642212e8d6f9f9967886ebf44bb8d24278bdb76bc44fd2d4c003e64b16c6b"
+    },
+    {
+      "path": "plugin/script/ui/base/controls/init.lua",
+      "bytes": 309,
+      "sha256": "0f4a73afb6a021991a31553c3967ce84f0abb8673f7730a1d20611f2702ef158"
+    },
+    {
+      "path": "plugin/script/ui/base/controls/model.lua",
+      "bytes": 9296,
+      "sha256": "72e495f5442c03521ff6cc190badc999ba3d375aa00ace11ad4d1737763fc81a"
+    },
+    {
+      "path": "plugin/script/ui/base/controls/model2.lua",
+      "bytes": 5989,
+      "sha256": "43aa15452d5da78b2a218de83500955d3b4bdd59b6fb91849896a327c0ab33b1"
+    },
+    {
+      "path": "plugin/script/ui/base/controls/panel.lua",
+      "bytes": 12779,
+      "sha256": "b890959c6ccdd900d2d1b46a98e593f4274f923e4c7edeaf7e26120aa41d9b73"
+    },
+    {
+      "path": "plugin/script/ui/base/controls/progress.lua",
+      "bytes": 2502,
+      "sha256": "01b6ea7269d00d1a35d3a42d72b876e3e8590153931a564db02b0e899d27b13a"
+    },
+    {
+      "path": "plugin/script/ui/base/controls/text.lua",
+      "bytes": 9235,
+      "sha256": "893eeb3cd503a6f156567918c4040057afbb05f34c8f9fd1fe52807d8842c522"
+    },
+    {
+      "path": "plugin/script/ui/base/controls/texture.lua",
+      "bytes": 1420,
+      "sha256": "40ebdf963872996bfb3ad4fd2b741e4e1de28a60910631ec1b9904518646168a"
+    },
+    {
+      "path": "plugin/script/ui/base/detail/game.lua",
+      "bytes": 20125,
+      "sha256": "6e524558aae7ab3cddf985c8bbb6f59456d15f7720bde0ad18ef08907fe6888d"
+    },
+    {
+      "path": "plugin/script/ui/base/detail/init.lua",
+      "bytes": 148,
+      "sha256": "0648bb7fc97a294f381d335aabc8b2e755b044c12f7e48f5237835a7a901af82"
+    },
+    {
+      "path": "plugin/script/ui/base/detail/keyboard.lua",
+      "bytes": 1670,
+      "sha256": "cd9a3352b76b89a21f9e0f978d43cb1dc5dd2108ea3fd6c642cc6a2abb797be9"
+    },
+    {
+      "path": "plugin/script/ui/base/detail/template.lua",
+      "bytes": 1735,
+      "sha256": "84eef823c0c5b5bfbb8dea7a4f139eb4a3e3f7d7825ecb59d00998d8fdf670a1"
+    },
+    {
+      "path": "plugin/script/ui/base/detail/timer.lua",
+      "bytes": 3289,
+      "sha256": "f713043ffb04b11174d9a2d8df4777fc7e508fd58219e09d3e6cebf0e63f94f6"
+    },
+    {
+      "path": "plugin/script/ui/base/init.lua",
+      "bytes": 54,
+      "sha256": "442950c43bc02e27a1a082172b525bb9e04420de665a56b13bdb4e31f8efd080"
+    },
+    {
+      "path": "plugin/script/ui/client/init.lua",
+      "bytes": 52,
+      "sha256": "441fb5cd2e28cc78a4078f6d68f243581968d417ece5d60c78c56dadb961795a"
+    },
+    {
+      "path": "plugin/script/ui/client/sync.lua",
+      "bytes": 3187,
+      "sha256": "439331f36c7fd3a4ac20264a88c0d87c5eda6616bb25e64017ee0cc078ab7e52"
+    },
+    {
+      "path": "plugin/script/ui/client/util.lua",
+      "bytes": 6544,
+      "sha256": "b28ea8b7a81a3ac0b68bf726b0b41cdb3e7e6144efa3bc59daaa26aa2eef24d7"
+    },
+    {
+      "path": "plugin/script/ui/init.lua",
+      "bytes": 82,
+      "sha256": "0d788ac0989a18d5c5a65227cfe7b40607da5e2e7cf882b9da754767939ba9fa"
+    },
+    {
+      "path": "plugin/script/ui/server/init.lua",
+      "bytes": 92,
+      "sha256": "8e05dcd2e0b3efce90baa15742d6bd84aff63c8cca6831863abfe6ad6ca711d6"
+    },
+    {
+      "path": "plugin/script/ui/server/sync.lua",
+      "bytes": 1573,
+      "sha256": "6df2066c5bb98463a2caddea134275313d6a76378ef67f700008b7bc3245abf2"
+    },
+    {
+      "path": "plugin/script/ui/server/trigger.lua",
+      "bytes": 1355,
+      "sha256": "ecfb40849511d770a5ae0c5d9bce70b52b046507d49c50e7b97b72d876c74204"
+    },
+    {
+      "path": "plugin/script/ui/server/util.lua",
+      "bytes": 2125,
+      "sha256": "5da6aeb8e58f7544d16d756da70e93898d6219664cf56bc81a37000cd2706e36"
+    },
+    {
+      "path": "plugin/script/ui/tool/box.lua",
+      "bytes": 5296,
+      "sha256": "4060128221e2e04eff8c989d1f36efa8dc88aa4603c00a6ed59c28aa82d44efb"
+    },
+    {
+      "path": "plugin/script/ui/tool/canvas.lua",
+      "bytes": 589,
+      "sha256": "fdeb02a49c164828cb946c99e490e10f8e8fb19214ec48517235159fb673fb4f"
+    },
+    {
+      "path": "plugin/script/ui/tool/config.lua",
+      "bytes": 7232,
+      "sha256": "790587fb27142ba0c00422312881bef9202c5299e77ddfd175cfb711a3772a22"
+    },
+    {
+      "path": "plugin/script/ui/tool/core.lua",
+      "bytes": 35602,
+      "sha256": "49f190244af528e01c462c1cd36f0adf77d430ab42a0ef2c45c79319ff79ac22"
+    },
+    {
+      "path": "plugin/script/ui/tool/init.lua",
+      "bytes": 30,
+      "sha256": "adc11bb300dd82f80c379c67b6ddf389f0dadc5d5ccf23c101bbf89d8f0c911a"
+    },
+    {
+      "path": "plugin/script/ui/tool/jassbind.lua",
+      "bytes": 13681,
+      "sha256": "dc53598a7b3ac1678c3e94eb70e79ddea5995561efd9061c233e2ac3f11ca3c7"
+    },
+    {
+      "path": "plugin/script/ui/tool/replay.lua",
+      "bytes": 7685,
+      "sha256": "7c1cd5ec15b175e62b7bf5651b8ca7c2905f091140d2d1f433359cd17386e5c1"
+    },
+    {
+      "path": "plugin/script/ui/tool/tool.lua",
+      "bytes": 8460,
+      "sha256": "e8e03d27250c723cc5e8e6de9ac54d8d7f004b5b85df31af9e2ff05b7d5c098b"
+    },
+    {
+      "path": "plugin/script/ui/tool/treelist.lua",
+      "bytes": 8439,
+      "sha256": "d93efd6af9c2f1720eaa16feaa21e72ac88d78bfe0520d5c48206c815ac16a26"
+    },
+    {
+      "path": "plugin/script/地图类/init.lua",
+      "bytes": 28,
+      "sha256": "2f75f9eb4afff43ae2fd52b8075a90669259380df6d8deeb2031b6ff5f7f45a7"
+    },
+    {
+      "path": "plugin/script/地图类/玩家.lua",
+      "bytes": 3314,
+      "sha256": "8da685339d37f3fcc4dbbe07bd0261800a19bcf3f926a20b7be5401f4fb5614c"
+    },
+    {
+      "path": "plugin/script/定期清理内存.lua",
+      "bytes": 179,
+      "sha256": "9557ae5287c6c9004a5aa9417f0f7f474d2940fbdbeb269e979ec4be4ed311af"
+    },
+    {
+      "path": "plugin/script/热更新.lua",
+      "bytes": 2090,
+      "sha256": "e0539b3cd6f75398b8b0d036271108138542a5df9165386b0a72c01626740411"
+    },
+    {
+      "path": "plugin/script/界面/demo.lua",
+      "bytes": 134,
+      "sha256": "d340ccbd3425dbbabc191363e493e46545b1505122bc7b79c2f026e2d65b9ed1"
+    },
+    {
+      "path": "plugin/script/界面/init.lua",
+      "bytes": 61,
+      "sha256": "a64e41b4c6e66ab2f3969f81fd6f5be82936612fdb5c37eaaf4e35fc36127519"
+    },
+    {
+      "path": "plugin/script/界面/viewer.lua",
+      "bytes": 3330,
+      "sha256": "d61c79066c8d2a4f1229d61d138517a78fb5e1c436bca261efa70f19124324ef"
+    },
+    {
+      "path": "plugin/script/界面/喊话工具.lua",
+      "bytes": 5844,
+      "sha256": "4a6c906462f7cd18dff762e8a1de7fd2651ac1d6cc98ad6ee657a011fb526d91"
+    },
+    {
+      "path": "plugin/script/界面/提示框.lua",
+      "bytes": 2416,
+      "sha256": "972e1f1e36be1ca1095bb461634d56cba7a7bca9c0c87682a72435fe3d741eda"
+    },
+    {
+      "path": "plugin/wenhao_plugin.tga",
+      "bytes": 9106560,
+      "sha256": "617662229027c27b1482d800d5047b6ff21f1afabca2f7dc203b1f3f8c8fa96e"
+    }
+  ]
+}

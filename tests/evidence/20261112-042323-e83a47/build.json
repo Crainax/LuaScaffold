@@ -1,0 +1,191 @@
+{
+  "map": "ui-multi-01.w3x",
+  "sha256": "5152c64b7e5fe88eddd7c7f28b4bd20af0db87daecf2834a998f706ecaf65e03",
+  "config": {
+    "name": "ui-multi-01",
+    "test": true,
+    "clients": 3,
+    "ticks": 12000,
+    "oos_control": false,
+    "runtime": "D:/WE/YDWE1.32.13正式版",
+    "we": "D:/WE/KKWE_Plugin"
+  },
+  "files": [
+    {
+      "path": "(key)",
+      "sha256": "a2751180ad76f8257984311b06d9cd41c20cab508fa2584a7aa09f85356eee9c"
+    },
+    {
+      "path": "callback",
+      "sha256": "7249284a0f0b0f73104fa152e2a63294c631435ac7a1bca3b9676e2d34804a13"
+    },
+    {
+      "path": "core/background.blp",
+      "sha256": "c298d25875a8885488538c76394268725b175f5afe025aaf47923dd3637e4be3"
+    },
+    {
+      "path": "core/black_icon.tga",
+      "sha256": "6a75bb8729be183db3084fa7e859b7eaab1fb20d7e028b11c12e47668a910d97"
+    },
+    {
+      "path": "core/button.blp",
+      "sha256": "3b1d32dcb3c2bf597973a5575b9d4b43ba192ea525533f5375823f43b06059aa"
+    },
+    {
+      "path": "core/edit.blp",
+      "sha256": "65c4c05368e91c8e1faa2909952774e0755c7909a06c7e9a79166ed02600ce31"
+    },
+    {
+      "path": "core/model.blp",
+      "sha256": "286aecafff46a25127f9809e27594d40e58d96b80154fe6312357a0ebe48e79f"
+    },
+    {
+      "path": "core/move_background.blp",
+      "sha256": "22c7085b2aaf49a8129e1e9ad120158c2c9082dcd14acc978756a45abf12b035"
+    },
+    {
+      "path": "core/panel.blp",
+      "sha256": "792c67d7d1495e021d3c5d03f4ae2bdd259c8a0256f429b46700b15f6e1b27e8"
+    },
+    {
+      "path": "core/text.blp",
+      "sha256": "4de3a2be26407bb9cdec3b5771010373241f98ff7870d38e5514bcefad25de0c"
+    },
+    {
+      "path": "core/texture.blp",
+      "sha256": "4a4bd534f4e12be2543390c324f06c64567df33de167883ca99c3911e2996e99"
+    },
+    {
+      "path": "core/Transparent.tga",
+      "sha256": "4f35a6031ff81327f096b0cc339988a70eaa290530b6ab90bcca437eeca75dfc"
+    },
+    {
+      "path": "fonts.TTF",
+      "sha256": "bd99fe368b31c62e29ee8456c8fdeb86277786a17e8e40be00ecbe5e4fc7c275"
+    },
+    {
+      "path": "plugin_main.lua",
+      "sha256": "056bc0354a45504106f2c0c57efda73e0c5da195c67b2a573be97e6cd58e194b"
+    },
+    {
+      "path": "script/app/config.lua",
+      "sha256": "e1842506181b3677b1b783486a720ae655bf9424bf0a74c7aefad55ebeeec096"
+    },
+    {
+      "path": "script/app/main.lua",
+      "sha256": "c33470ffd86cdaa1dd924dfb6c8451ee615563a87d713602129bad792860381d"
+    },
+    {
+      "path": "script/app/runtime_test.lua",
+      "sha256": "db85c166b4736265ca33e1544e232d00c0cc315a010d58953b5124d7a9b2877e"
+    },
+    {
+      "path": "script/app/view.lua",
+      "sha256": "c0e65a37a5ce9b9ce18958999960daa3c5dae85a831604c48d36361c1f3c0d7f"
+    },
+    {
+      "path": "script/scaffold/command.lua",
+      "sha256": "8c57dea098808af972edaf854c0d465ac4831c1708464edf243fcb85c55db976"
+    },
+    {
+      "path": "script/scaffold/context.lua",
+      "sha256": "29c2e64099252bf78d9d288182151d64b452cc0bc5c61ac217e99eab3f1685c5"
+    },
+    {
+      "path": "script/scaffold/entity_registry.lua",
+      "sha256": "e204b8eca76077f1925dad3b75647461b7a78173e1918f84831c559346071acf"
+    },
+    {
+      "path": "script/scaffold/innerjapi.lua",
+      "sha256": "3cddb47ef397d7c069e5ca64ec66337ba8362910e4d67f1b5c8ddd9e3dee214a"
+    },
+    {
+      "path": "script/scaffold/scheduler.lua",
+      "sha256": "dac18eebff47957766384779ba197786fc02dd8afb5bc6a4883132c3163a5dcd"
+    },
+    {
+      "path": "script/scaffold/scope.lua",
+      "sha256": "6c592f83d00b52fde66b6e8e2db5c79d9cf8572a3efa659dc515f9f87c488798"
+    },
+    {
+      "path": "script/scaffold/ui.lua",
+      "sha256": "55067484b1e462c1874d71512007c0e1188fb97e2e3c6a9bcc1c5307a4bd94d1"
+    },
+    {
+      "path": "script/scaffold/ui_env.lua",
+      "sha256": "b23a94d4b3fd3970c8b4e8823bb1876a53317c9e2cd295e7947d541fc6da4455"
+    },
+    {
+      "path": "script/ui/base/controls/button.lua",
+      "sha256": "b0a854aef72ef7d20b10798eda6b29491084ffa486025da44889c2393650fee9"
+    },
+    {
+      "path": "script/ui/base/controls/class.lua",
+      "sha256": "1da8b472ea0813a1791b6f2c2bac8946f949b1f3fe1b2b84078a90f133a0d02f"
+    },
+    {
+      "path": "script/ui/base/controls/edit.lua",
+      "sha256": "f2706c990454ac72d15847de3097af8907ee15a90df1c69759351bb284023299"
+    },
+    {
+      "path": "script/ui/base/controls/init.lua",
+      "sha256": "7e22bf031182e648752298285c7609cdf5116420335c8e59f8198d34337f85d5"
+    },
+    {
+      "path": "script/ui/base/controls/model.lua",
+      "sha256": "546a333fcb5fd073b5ea974e3cf90f3cf57c7dd67cf9fc07cb9ca46e1731dad1"
+    },
+    {
+      "path": "script/ui/base/controls/model2.lua",
+      "sha256": "9ddb62dc9638070b5c397675d942eb739069be58e5b19a4e7b5f492ea43d3556"
+    },
+    {
+      "path": "script/ui/base/controls/panel.lua",
+      "sha256": "f4403a0729790bdcc888a40743b81b459a1d3e68f38871ab6b52bc9ab6cd9ebb"
+    },
+    {
+      "path": "script/ui/base/controls/progress.lua",
+      "sha256": "fc12d8d1a3ae9d96f0da51c05f8bd1febbbb88321c452d15b85543a47bd79f8b"
+    },
+    {
+      "path": "script/ui/base/controls/text.lua",
+      "sha256": "455d087000f74c32ad60f9e697c2c92c650d514c3936316bcb3278ed9c22d112"
+    },
+    {
+      "path": "script/ui/base/controls/texture.lua",
+      "sha256": "cecef34d8440cfc6d5474b9907c6996ea5bbe3a488f57d3297d3179e42663041"
+    },
+    {
+      "path": "script/ui/base/detail/game.lua",
+      "sha256": "82241f82fc6842d64f45867fff224ff5937935344502cbb3b2c4f0853b219e53"
+    },
+    {
+      "path": "script/ui/base/detail/init.lua",
+      "sha256": "815a5d5b1b0cadc62d33cd086c0e4092d79e46863785c52c965fed53c2a90114"
+    },
+    {
+      "path": "script/ui/base/detail/keyboard.lua",
+      "sha256": "7dd7cabfc61732c71572108bcec6d7bf69311fd0de51c5d23e75f3614472b7bd"
+    },
+    {
+      "path": "script/ui/base/detail/template.lua",
+      "sha256": "51a70dc589a937e3259eae5978314912f2eb914458fdb93bb8e1aae707e71dc7"
+    },
+    {
+      "path": "script/ui/base/detail/timer.lua",
+      "sha256": "50c21ab6546deb5cad33055a74697c12ce34da4aededaa3551a6f61847c20ef8"
+    },
+    {
+      "path": "script/ui/base/init.lua",
+      "sha256": "e15528f9000f94d3a04d0ae4826db8b52309530c8119390f9c2e3a68c8eca3ad"
+    },
+    {
+      "path": "script/ui/init.lua",
+      "sha256": "484d052f50eccb38122ce44bbf7e5232df11e2c5dd5b4b60d4771a5ed15352bf"
+    },
+    {
+      "path": "wenhao_plugin.tga",
+      "sha256": "617662229027c27b1482d800d5047b6ff21f1afabca2f7dc203b1f3f8c8fa96e"
+    }
+  ]
+}

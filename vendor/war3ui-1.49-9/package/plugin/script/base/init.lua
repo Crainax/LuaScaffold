@@ -1,0 +1,9 @@
+require 'base.runtime'
+require 'base.utility'
+require 'base.native'
+require 'base.common'
+require 'base.library'
+require 'base.function'
+require 'base.war3'
+require 'base.log'
+return {}

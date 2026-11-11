@@ -1,0 +1,29 @@
+2026-11-12 04:18:28.366 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 04:18:29.815 [info]: PASS: expected active humans=1
+2026-11-12 04:18:29.815 [info]: PASS: official UI controls initialized
+2026-11-12 04:18:29.815 [info]: PASS: UI globals and standard math isolated
+2026-11-12 04:18:29.816 [info]: PASS: legacy sync and gameplay entry absent
+2026-11-12 04:18:29.816 [info]: PASS: native button has positive width
+2026-11-12 04:18:29.816 [info]: PASS: native text round trip
+2026-11-12 04:18:29.816 [info]: PASS: local UI cannot register gameplay entities
+2026-11-12 04:18:29.816 [info]: PASS: unsafe and oversized input rejected
+2026-11-12 04:18:29.953 [info]: [LuaScaffold] COMMAND ping	0	1
+2026-11-12 04:18:30.453 [info]: PASS: destroyed UI releases cancelled closure captures
+2026-11-12 04:18:30.453 [info]: [NATIVE_CALLBACK_GC] retained=0/8
+2026-11-12 04:18:30.453 [info]: PASS: nested UI destroy is idempotent
+2026-11-12 04:18:39.027 [info]: [STATE_MATCH] phase=1 hash=413871634 rng=14
+2026-11-12 04:18:45.428 [info]: [STATE_MATCH] phase=2 hash=2003201962 rng=24
+2026-11-12 04:18:51.715 [info]: [STATE_MATCH] phase=3 hash=153558834 rng=34
+2026-11-12 04:18:54.029 [info]: [LuaScaffold] COMMAND ping	0	2
+2026-11-12 04:18:57.598 [info]: [STATE_MATCH] phase=4 hash=987093902 rng=44
+2026-11-12 04:19:03.674 [info]: [STATE_MATCH] phase=5 hash=969147070 rng=54
+2026-11-12 04:19:09.845 [info]: [STATE_MATCH] phase=6 hash=957435074 rng=64
+2026-11-12 04:19:16.289 [info]: [STATE_MATCH] phase=7 hash=770858274 rng=74
+2026-11-12 04:19:18.214 [info]: PASS: UI lifecycle stress cycles=173
+2026-11-12 04:19:18.214 [info]: PASS: gameplay RNG and peer snapshots exercised
+2026-11-12 04:19:18.215 [error]: FAIL: [LuaScaffold] FAULT	script\app\runtime_test.lua:9: runtime assertion: UI command exactly once player=0	stack traceback:
+	script\scaffold\innerjapi.lua:28: in upvalue 'fail'
+	script\scaffold\innerjapi.lua:33: in upvalue 'protect'
+	script\scaffold\innerjapi.lua:77: in function <script\scaffold\innerjapi.lua:76>
+	[C]: in function 'xpcall'
+	[string "fix_closure"]:67: in function <[string "fix_closure"]:64>

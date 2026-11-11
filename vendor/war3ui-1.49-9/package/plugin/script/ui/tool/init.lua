@@ -1,0 +1,2 @@
+require 'ui.tool.jassbind'
+

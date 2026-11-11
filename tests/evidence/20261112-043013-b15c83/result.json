@@ -1,0 +1,13 @@
+{
+  "logs": [
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\LuaScaffold\\logs\\ui-six-02-P1.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\LuaScaffold\\logs\\ui-six-02-P2.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\LuaScaffold\\logs\\ui-six-02-P3.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\LuaScaffold\\logs\\ui-six-02-P4.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\LuaScaffold\\logs\\ui-six-02-P5.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\LuaScaffold\\logs\\ui-six-02-P6.log"
+  ],
+  "status": "PASS",
+  "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+  "clients": 6
+}

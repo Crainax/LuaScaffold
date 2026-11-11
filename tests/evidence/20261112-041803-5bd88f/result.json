@@ -1,0 +1,8 @@
+{
+  "status": "FAIL",
+  "logs": [
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\LuaScaffold\\logs\\ui-single-02-P1.log"
+  ],
+  "message": "Failure in D:\\Program Files (x86)\\Warcraft III Frozen Throne\\LuaScaffold\\logs\\ui-single-02-P1.log",
+  "clients": 1
+}

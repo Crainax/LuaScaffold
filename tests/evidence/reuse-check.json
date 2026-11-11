@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "id": "FreshLuaGame",
+  "production_payload_files": 43,
+  "map_sha256": "ec8f26010f518b1ceb2801222f11d4bf0ad8390d0227a025d61c016a13412732",
+  "checks": [
+    "copy without .git/build",
+    "project ID and Chinese title",
+    "production excludes runtime harness",
+    "JASS compilation",
+    "MPQ byte-for-byte readback",
+    "final payload manifest matches files"
+  ]
+}

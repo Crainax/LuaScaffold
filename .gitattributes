@@ -1,0 +1,18 @@
+* text=auto
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.lua text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.j text eol=lf
+# Preserve the exact Lua bytes recorded in native-test payload manifests.
+src/** -text
+tests/evidence/** -text
+vendor/** -text
+assets/** -text
+*.blp binary
+*.tga binary
+*.TTF binary
+*.w3x binary

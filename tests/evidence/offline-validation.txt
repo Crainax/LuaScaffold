@@ -1,0 +1,140 @@
+$ C:\Python312\python.exe tools/stage.py
+VENDOR OK 78 files
+exit=0
+
+$ luac -p src\app\config.lua
+exit=0
+
+$ luac -p src\app\main.lua
+exit=0
+
+$ luac -p src\app\runtime_test.lua
+exit=0
+
+$ luac -p src\app\view.lua
+exit=0
+
+$ luac -p src\plugin_main.lua
+exit=0
+
+$ luac -p src\scaffold\command.lua
+exit=0
+
+$ luac -p src\scaffold\context.lua
+exit=0
+
+$ luac -p src\scaffold\entity_registry.lua
+exit=0
+
+$ luac -p src\scaffold\innerjapi.lua
+exit=0
+
+$ luac -p src\scaffold\scheduler.lua
+exit=0
+
+$ luac -p src\scaffold\scope.lua
+exit=0
+
+$ luac -p src\scaffold\ui.lua
+exit=0
+
+$ luac -p src\scaffold\ui_env.lua
+exit=0
+
+$ luac -p src\ui\base\controls\button.lua
+exit=0
+
+$ luac -p src\ui\base\controls\class.lua
+exit=0
+
+$ luac -p src\ui\base\controls\edit.lua
+exit=0
+
+$ luac -p src\ui\base\controls\init.lua
+exit=0
+
+$ luac -p src\ui\base\controls\model.lua
+exit=0
+
+$ luac -p src\ui\base\controls\model2.lua
+exit=0
+
+$ luac -p src\ui\base\controls\panel.lua
+exit=0
+
+$ luac -p src\ui\base\controls\progress.lua
+exit=0
+
+$ luac -p src\ui\base\controls\text.lua
+exit=0
+
+$ luac -p src\ui\base\controls\texture.lua
+exit=0
+
+$ luac -p src\ui\base\detail\game.lua
+exit=0
+
+$ luac -p src\ui\base\detail\init.lua
+exit=0
+
+$ luac -p src\ui\base\detail\keyboard.lua
+exit=0
+
+$ luac -p src\ui\base\detail\template.lua
+exit=0
+
+$ luac -p src\ui\base\detail\timer.lua
+exit=0
+
+$ luac -p src\ui\base\init.lua
+exit=0
+
+$ luac -p src\ui\init.lua
+exit=0
+
+$ luac -p tests\bridge_mock.lua
+exit=0
+
+$ luac -p tests\run.lua
+exit=0
+
+$ luac -p tests\ui_mock.lua
+exit=0
+
+$ luac -p tests\upstream_audit.lua
+exit=0
+
+$ luac -p examples\ui_button.lua
+exit=0
+
+$ lua tests/run.lua
+PASS cleanup is reverse ordered, idempotent and continues after error
+PASS different local handles have the same logical IDs
+PASS timer cancellation releases captured data while token stays alive
+PASS timer dispatch has fixed order and handles cancellation and nesting
+PASS callback failure stops subsequent gameplay callbacks
+PASS wire decoder rejects execution, invalid values, holes and oversize
+PASS sender validation, authorization, duplicate rejection and player isolation
+PASS Lua cycles collect; an external registry keeps a closure alive
+PASS paused tasks resume deterministically and stop releases their captures
+PASS local callbacks cannot enqueue synchronized gameplay
+OFFLINE PASS 10 cases; native engine and multiplayer not exercised
+exit=0
+
+$ lua tests/upstream_audit.lua
+REPRODUCED decoder executes a function without parentheses
+REPRODUCED oversized first event becomes an empty message
+REPRODUCED mixed array/map loses named fields
+REPRODUCED keyword table key emits invalid Lua
+REPRODUCED cancelled long timer retains captured object in its queue
+REPRODUCED ac.math changes standard trigonometry to degrees
+UPSTREAM AUDIT PASS 6 reproduced behaviors; no native engine calls
+exit=0
+
+$ lua tests/bridge_mock.lua
+BRIDGE MOCK PASS transport boundary, fault state, balanced refs and idempotent teardown
+exit=0
+
+$ lua tests/ui_mock.lua
+UI MOCK PASS 100 nested lifecycles, child-first destruction, closure release, unregister and isolation
+exit=0

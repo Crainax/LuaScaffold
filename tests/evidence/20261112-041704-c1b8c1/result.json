@@ -1,0 +1,6 @@
+{
+  "clients": 1,
+  "message": "Cannot find path 'D:\\Program Files (x86)\\Warcraft III Frozen Throne\\LuaScaffold\\logs' because it does not exist.",
+  "status": "FAIL",
+  "logs": []
+}

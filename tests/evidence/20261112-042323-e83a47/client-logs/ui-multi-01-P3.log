@@ -1,0 +1,52 @@
+2026-11-12 04:23:46.968 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 04:23:48.402 [info]: PASS: expected active humans=3
+2026-11-12 04:23:48.402 [info]: PASS: official UI controls initialized
+2026-11-12 04:23:48.403 [info]: PASS: UI globals and standard math isolated
+2026-11-12 04:23:48.403 [info]: PASS: legacy sync and gameplay entry absent
+2026-11-12 04:23:48.404 [info]: PASS: native button has positive width
+2026-11-12 04:23:48.404 [info]: PASS: native text round trip
+2026-11-12 04:23:48.404 [info]: PASS: local UI cannot register gameplay entities
+2026-11-12 04:23:48.404 [info]: PASS: unsafe and oversized input rejected
+2026-11-12 04:23:48.414 [info]: PASS: native model created
+2026-11-12 04:23:48.427 [info]: PASS: native model2 created
+2026-11-12 04:23:48.428 [info]: PASS: native scroll panel created
+2026-11-12 04:23:48.433 [info]: PASS: progress handles zero denominator
+2026-11-12 04:23:48.434 [info]: PASS: models and scroll disposal return to baseline
+2026-11-12 04:23:48.661 [info]: [LuaScaffold] COMMAND ping	1	1
+2026-11-12 04:23:48.663 [info]: [LuaScaffold] COMMAND ping	0	1
+2026-11-12 04:23:48.664 [info]: [LuaScaffold] COMMAND ping	2	1
+2026-11-12 04:23:49.074 [info]: PASS: destroyed UI releases cancelled closure captures
+2026-11-12 04:23:49.074 [info]: [NATIVE_CALLBACK_GC] retained=0/8
+2026-11-12 04:23:49.074 [info]: PASS: nested UI destroy is idempotent
+2026-11-12 04:23:57.835 [info]: [STATE_MATCH] phase=1 hash=1030084087 rng=14
+2026-11-12 04:24:04.304 [info]: [STATE_MATCH] phase=2 hash=1684374931 rng=24
+2026-11-12 04:24:10.608 [info]: [STATE_MATCH] phase=3 hash=1123005216 rng=34
+2026-11-12 04:24:16.687 [info]: [STATE_MATCH] phase=4 hash=1517320984 rng=44
+2026-11-12 04:24:23.103 [info]: [STATE_MATCH] phase=5 hash=126170162 rng=54
+2026-11-12 04:24:29.320 [info]: [STATE_MATCH] phase=6 hash=1714080765 rng=64
+2026-11-12 04:24:35.716 [info]: [STATE_MATCH] phase=7 hash=607455995 rng=74
+2026-11-12 04:24:42.108 [info]: [STATE_MATCH] phase=8 hash=1064101241 rng=84
+2026-11-12 04:24:48.219 [info]: [STATE_MATCH] phase=9 hash=754093039 rng=94
+2026-11-12 04:24:54.022 [info]: [STATE_MATCH] phase=10 hash=1946829171 rng=104
+2026-11-12 04:25:00.514 [info]: [STATE_MATCH] phase=11 hash=749988280 rng=114
+2026-11-12 04:25:06.936 [info]: [STATE_MATCH] phase=12 hash=759396315 rng=124
+2026-11-12 04:25:13.328 [info]: [STATE_MATCH] phase=13 hash=1445138717 rng=134
+2026-11-12 04:25:19.571 [info]: [STATE_MATCH] phase=14 hash=1745970892 rng=144
+2026-11-12 04:25:25.607 [info]: [STATE_MATCH] phase=15 hash=1204762842 rng=154
+2026-11-12 04:25:32.086 [info]: [STATE_MATCH] phase=16 hash=1440074339 rng=164
+2026-11-12 04:25:38.389 [info]: [STATE_MATCH] phase=17 hash=419373511 rng=174
+2026-11-12 04:25:44.844 [info]: [STATE_MATCH] phase=18 hash=519461858 rng=184
+2026-11-12 04:25:51.254 [info]: [STATE_MATCH] phase=19 hash=1251766571 rng=194
+2026-11-12 04:25:57.738 [info]: [STATE_MATCH] phase=20 hash=748584674 rng=204
+2026-11-12 04:26:04.221 [info]: [STATE_MATCH] phase=21 hash=1533577380 rng=214
+2026-11-12 04:26:10.642 [info]: [STATE_MATCH] phase=22 hash=1325381129 rng=224
+2026-11-12 04:26:16.731 [info]: [STATE_MATCH] phase=23 hash=578518549 rng=234
+2026-11-12 04:26:18.679 [info]: PASS: UI lifecycle stress cycles=1459
+2026-11-12 04:26:18.679 [info]: PASS: gameplay RNG and peer snapshots exercised
+2026-11-12 04:26:18.679 [info]: PASS: UI command exactly once player=0
+2026-11-12 04:26:18.680 [info]: PASS: UI command exactly once player=1
+2026-11-12 04:26:18.680 [info]: PASS: UI command exactly once player=2
+2026-11-12 04:26:18.680 [info]: PASS: bridge has no fault
+2026-11-12 04:26:18.681 [info]: PASS: UI shutdown clears all controls
+2026-11-12 04:26:22.545 [info]: [METRICS] ui_cycles=1459 rng_calls=237 phases=23 assertions=22
+2026-11-12 04:26:22.545 [info]: [UT_DONE] LuaScaffold ui-multi-01 P3
