@@ -1,11 +1,14 @@
 -- Local tasks driven by one shared clock. Milliseconds, rounded up to 10 ms.
 local _ENV = require 'scaffold.ui_env'
 local Scheduler = require 'scaffold.scheduler'
-local queue = Scheduler.new()
+local queue = Scheduler.new('local')
 game.step = function() queue:step() end
 local count = 0
 local active = {}
+local stopped = false
 game.stop = function()
+    if stopped then return end
+    stopped = true
     local tokens = {}
     for token in pairs(active) do tokens[#tokens + 1] = token end
     for _, token in ipairs(tokens) do token:remove() end
@@ -13,6 +16,8 @@ game.stop = function()
 end
 game.timer_size = function() return count end
 local function schedule(ms, fn, repeat_count)
+    assert(not stopped,'UI timer service stopped')
+    assert(type(ms)=='number' and ms>=0 and ms<math.huge,'finite nonnegative milliseconds required')
     assert(type(fn) == 'function', 'UI callback required')
     local ticks = math.max(1, math.ceil(ms / 10))
     local token, done, task = {}, false

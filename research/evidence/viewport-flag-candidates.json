@@ -1,0 +1,324 @@
+[
+  {
+    "address": "0x1001e828",
+    "context": [
+      "1001e805: call eax",
+      "1001e807: xor al, 1",
+      "1001e809: mov dword ptr [esp + 0xc], eax",
+      "1001e80d: mov ecx, 0x20d76989",
+      "1001e812: jmp 0x1001e3c0",
+      "1001e817: cmp ecx, 0x20d76989",
+      "1001e81d: jne 0x1001e3c0",
+      "1001e823: mov ecx, 0xe7b2d92e",
+      "1001e828: test byte ptr [esp + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x10083272",
+    "context": [
+      "10083255: jmp eax",
+      "10083257: lea eax, [esi + 0x6c4]",
+      "1008325d: add esi, 0xfc",
+      "10083263: cmp edi, 0x1b0894d7",
+      "10083269: cmovne esi, eax",
+      "1008326c: mov eax, dword ptr [esi]",
+      "1008326e: add eax, ebp",
+      "10083270: jmp eax",
+      "10083272: test byte ptr [esp + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x10084e46",
+    "context": [
+      "10084e29: jmp eax",
+      "10084e2b: lea eax, [esi + 0x254]",
+      "10084e31: add esi, 0x1080",
+      "10084e37: cmp edi, 0x6edf138",
+      "10084e3d: cmovne esi, eax",
+      "10084e40: mov eax, dword ptr [esi]",
+      "10084e42: add eax, ebp",
+      "10084e44: jmp eax",
+      "10084e46: test byte ptr [esp + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x10085b1c",
+    "context": [
+      "10085aff: jmp eax",
+      "10085b01: lea eax, [esi + 0x1704]",
+      "10085b07: add esi, 0x514",
+      "10085b0d: cmp edi, 0x7a587b5d",
+      "10085b13: cmovne esi, eax",
+      "10085b16: mov eax, dword ptr [esi]",
+      "10085b18: add eax, ebp",
+      "10085b1a: jmp eax",
+      "10085b1c: test byte ptr [esp + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x1008672d",
+    "context": [
+      "10086710: jmp eax",
+      "10086712: lea eax, [esi + 0x424]",
+      "10086718: add esi, 0x580",
+      "1008671e: cmp edi, 0x2ddd079e",
+      "10086724: cmovne esi, eax",
+      "10086727: mov eax, dword ptr [esi]",
+      "10086729: add eax, ebp",
+      "1008672b: jmp eax",
+      "1008672d: test byte ptr [esp + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x10088a9a",
+    "context": [
+      "10088a7d: jmp eax",
+      "10088a7f: lea eax, [esi + 0x84c]",
+      "10088a85: add esi, 0x1148",
+      "10088a8b: cmp edi, 0x653713",
+      "10088a91: cmovne esi, eax",
+      "10088a94: mov eax, dword ptr [esi]",
+      "10088a96: add eax, ebp",
+      "10088a98: jmp eax",
+      "10088a9a: test byte ptr [esp + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x1008a93d",
+    "context": [
+      "1008a923: lea esi, [ebx + 2]",
+      "1008a926: mov eax, esi",
+      "1008a928: mov ecx, 0xaaaaaaab",
+      "1008a92d: mul ecx",
+      "1008a92f: shr edx, 1",
+      "1008a931: lea eax, [edx + edx*2]",
+      "1008a934: sub esi, eax",
+      "1008a936: mov dword ptr [esp + 0xd8], esi",
+      "1008a93d: test byte ptr [esp + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x10360ef4",
+    "context": [
+      "10360ed0: mov dword ptr [ecx + 0x1c], eax",
+      "10360ed3: mov dword ptr [ecx + 4], 0x3f35",
+      "10360eda: jmp 0x103622d0",
+      "10360edf: mov eax, dword ptr [ecx + 0x24]",
+      "10360ee2: mov dword ptr [ecx + 0x14], 0",
+      "10360ee9: test eax, eax",
+      "10360eeb: je 0x10360ef4",
+      "10360eed: mov dword ptr [eax + 0x30], 0xffffffff",
+      "10360ef4: test byte ptr [ecx + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x1039f086",
+    "context": [
+      "1039f06a: push dword ptr [esi + 8]",
+      "1039f06d: push edi",
+      "1039f06e: call 0x103bfb40",
+      "1039f073: add esp, 0x10",
+      "1039f076: test eax, eax",
+      "1039f078: je 0x1039f168",
+      "1039f07e: test ebx, 0x1f00",
+      "1039f084: je 0x1039f090",
+      "1039f086: test byte ptr [esi + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x103dde70",
+    "context": [
+      "103dde5f: int3 ",
+      "103dde60: push esi",
+      "103dde61: mov esi, dword ptr [esp + 8]",
+      "103dde65: test esi, esi",
+      "103dde67: je 0x103ddeaa",
+      "103dde69: mov eax, dword ptr [esi + 4]",
+      "103dde6c: test eax, eax",
+      "103dde6e: je 0x103dde9a",
+      "103dde70: test byte ptr [esi + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x103ddf2c",
+    "context": [
+      "103ddf19: ret ",
+      "103ddf1a: lea ecx, [esi + 3]",
+      "103ddf1d: mov eax, 0xaaaaaaab",
+      "103ddf22: mul ecx",
+      "103ddf24: push ebx",
+      "103ddf25: mov ebx, edx",
+      "103ddf27: shr ebx, 1",
+      "103ddf29: shl ebx, 2",
+      "103ddf2c: test byte ptr [edi + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x103de049",
+    "context": [
+      "103de036: ret ",
+      "103de037: lea ecx, [esi + 3]",
+      "103de03a: mov eax, 0xaaaaaaab",
+      "103de03f: mul ecx",
+      "103de041: push ebx",
+      "103de042: mov ebx, edx",
+      "103de044: shr ebx, 1",
+      "103de046: shl ebx, 2",
+      "103de049: test byte ptr [edi + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x10443554",
+    "context": [
+      "1044353d: mov eax, dword ptr [esi + 4]",
+      "10443540: push edi",
+      "10443541: push dword ptr [esp + 0x28]",
+      "10443545: push ebp",
+      "10443546: call eax",
+      "10443548: add esp, 0x14",
+      "1044354b: mov dword ptr [esp + 0x2c], eax",
+      "1044354f: jmp 0x10443665",
+      "10443554: test byte ptr [esi + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x1044366d",
+    "context": [
+      "1044364c: call 0x10443190",
+      "10443651: push dword ptr [esp + 0x2c]",
+      "10443655: mov dword ptr [esp + 0x4c], eax",
+      "10443659: call 0x1047b490",
+      "1044365e: mov eax, dword ptr [esp + 0x4c]",
+      "10443662: add esp, 0x20",
+      "10443665: test eax, eax",
+      "10443667: je 0x10443735",
+      "1044366d: test byte ptr [esi + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x1045014f",
+    "context": [
+      "1045013e: push esi",
+      "1045013f: push 0x6f",
+      "10450141: push 0x25",
+      "10450143: call 0x103dfbe0",
+      "10450148: add esp, 0x18",
+      "1045014b: xor eax, eax",
+      "1045014d: pop esi",
+      "1045014e: ret ",
+      "1045014f: test byte ptr [ecx + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x104504f3",
+    "context": [
+      "104504e0: mov ecx, dword ptr [esp + 4]",
+      "104504e4: xor edx, edx",
+      "104504e6: push esi",
+      "104504e7: test ecx, ecx",
+      "104504e9: je 0x1045051a",
+      "104504eb: mov esi, dword ptr [esp + 0xc]",
+      "104504ef: test esi, esi",
+      "104504f1: je 0x1045051a",
+      "104504f3: test byte ptr [ecx + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x10450f6c",
+    "context": [
+      "10450f57: jne 0x10450f8b",
+      "10450f59: mov esi, dword ptr [esp + 0x1c]",
+      "10450f5d: mov ecx, dword ptr [edx + 4]",
+      "10450f60: cmp ecx, dword ptr [esi + 4]",
+      "10450f63: mov esi, dword ptr [eax + 8]",
+      "10450f66: jne 0x10450f8b",
+      "10450f68: test esi, esi",
+      "10450f6a: je 0x10450f90",
+      "10450f6c: test byte ptr [eax + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x10450fa0",
+    "context": [
+      "10450f8e: jne 0x10450f6c",
+      "10450f90: inc ebx",
+      "10450f91: jmp 0x10450f72",
+      "10450f93: mov ecx, dword ptr [eax + 4]",
+      "10450f96: cmp ecx, 2",
+      "10450f99: jne 0x10450fc3",
+      "10450f9b: cmp esi, 1",
+      "10450f9e: je 0x10450fdd",
+      "10450fa0: test byte ptr [eax + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x104ecdd8",
+    "context": [
+      "104ecdc2: call 0x1038835c",
+      "104ecdc7: add esp, 0x140",
+      "104ecdcd: ret ",
+      "104ecdce: int3 ",
+      "104ecdcf: int3 ",
+      "104ecdd0: mov eax, dword ptr [esp + 4]",
+      "104ecdd4: test eax, eax",
+      "104ecdd6: je 0x104ecdea",
+      "104ecdd8: test byte ptr [eax + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x104ecf89",
+    "context": [
+      "104ecf72: inc esi",
+      "104ecf73: test cl, cl",
+      "104ecf75: jne 0x104ecf70",
+      "104ecf77: sub esi, edx",
+      "104ecf79: test ebx, ebx",
+      "104ecf7b: je 0x104ed0b8",
+      "104ecf81: test eax, eax",
+      "104ecf83: js 0x104ed0ea",
+      "104ecf89: test byte ptr [edi + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x104f0ff1",
+    "context": [
+      "104f0fd7: test edi, edi",
+      "104f0fd9: je 0x104f1101",
+      "104f0fdf: push 0x105c9f1c",
+      "104f0fe4: push edi",
+      "104f0fe5: call 0x104057b0",
+      "104f0fea: add esp, 8",
+      "104f0fed: test eax, eax",
+      "104f0fef: je 0x104f1052",
+      "104f0ff1: test byte ptr [esi + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x104f1846",
+    "context": [
+      "104f182c: test edi, edi",
+      "104f182e: je 0x104f1952",
+      "104f1834: push 0x105c9f1c",
+      "104f1839: push edi",
+      "104f183a: call 0x104057b0",
+      "104f183f: add esp, 8",
+      "104f1842: test eax, eax",
+      "104f1844: je 0x104f18af",
+      "104f1846: test byte ptr [esi + 0xc], 1"
+    ]
+  },
+  {
+    "address": "0x104fe027",
+    "context": [
+      "104fe013: push esi",
+      "104fe014: push dword ptr [esp + 0x20]",
+      "104fe018: lea eax, [esp + 0x1c]",
+      "104fe01c: push eax",
+      "104fe01d: push ebp",
+      "104fe01e: call ecx",
+      "104fe020: add esp, 0x10",
+      "104fe023: mov dword ptr [esp + 0x10], eax",
+      "104fe027: test byte ptr [esi + 0xc], 1"
+    ]
+  }
+]

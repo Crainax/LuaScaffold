@@ -1,5 +1,6 @@
 {
   "id": "LuaScaffold",
   "title": "LuaScaffold",
-  "version": "0.1.0"
+  "version": "0.2.0",
+  "log_folder": "Lua框架研究"
 }

@@ -1,0 +1,13 @@
+2026-11-12 05:29:23.661 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 05:29:24.110 [info]: [DEV_VIEW] replaced
+2026-11-12 05:29:24.239 [info]: PASS: file watcher loads initial view
+2026-11-12 05:29:24.240 [info]: [DEV_VIEW_REJECTED] dev/view.lua:1: syntax error near '!'
+2026-11-12 05:29:24.363 [info]: PASS: file watcher rejects syntax and preserves view
+2026-11-12 05:29:24.366 [info]: [DEV_VIEW] replaced
+2026-11-12 05:29:24.468 [info]: PASS: file watcher recovers on valid edit
+2026-11-12 05:29:24.469 [error]: FAIL: [LuaScaffold] FAULT	script\probes\hotreload.lua:24: attempt to call a nil value (field 'remove')	stack traceback:
+	script\scaffold\innerjapi.lua:29: in upvalue 'fail'
+	script\scaffold\innerjapi.lua:34: in upvalue 'protect'
+	script\scaffold\innerjapi.lua:81: in function <script\scaffold\innerjapi.lua:80>
+	[C]: in function 'xpcall'
+	[string "fix_closure"]:67: in function <[string "fix_closure"]:64>

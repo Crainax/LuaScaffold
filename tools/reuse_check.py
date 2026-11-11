@@ -15,6 +15,8 @@ with tempfile.TemporaryDirectory(prefix='LuaScaffold-reuse-') as temp:
     config = (payload/'script/app/config.lua').read_text(encoding='utf-8')
     assert "project_id='FreshLuaGame'" in config and 'runtime_test=false' in config
     assert not (payload/'script/app/runtime_test.lua').exists()
+    assert not (payload/'script/dev').exists() and not (payload/'script/probes').exists()
+    assert (dest/'.vscode/tasks.json').exists() and (dest/'.agents/skills/innerjapi-lua/SKILL.md').exists()
     assert not (payload/'script/ui/client/util.lua').exists()
     assert '复用测试地图' in (dest/'build/reuse-production-map/war3map.j').read_text(encoding='utf-8')
     entries = json.loads((dest/'build/reuse-production-manifest.json').read_text(encoding='utf-8'))

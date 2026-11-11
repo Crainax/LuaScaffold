@@ -1,0 +1,1351 @@
+{
+  "session": "20261112-053050-4e2fdf",
+  "peers": [
+    {
+      "log": "research-six-03-P1.log",
+      "wall_seconds_boot_to_done": 75.824,
+      "benchmarks": {
+        "empty_loop": {
+          "iterations": 250000,
+          "seconds": [
+            0.003,
+            0.002,
+            0.002,
+            0.002,
+            0.003
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 2.0,
+          "min_ms": 2.0,
+          "max_ms": 3.0
+        },
+        "closure_capture": {
+          "iterations": 250000,
+          "seconds": [
+            0.066,
+            0.075,
+            0.075,
+            0.072,
+            0.073
+          ],
+          "heap_delta_kib": [
+            722.469,
+            722.469,
+            722.469,
+            722.469,
+            722.469
+          ],
+          "median_ms": 73.0,
+          "min_ms": 66.0,
+          "max_ms": 75.0
+        },
+        "empty_table": {
+          "iterations": 250000,
+          "seconds": [
+            0.043,
+            0.039,
+            0.044,
+            0.05,
+            0.043
+          ],
+          "heap_delta_kib": [
+            512.125,
+            512.125,
+            512.125,
+            512.125,
+            512.125
+          ],
+          "median_ms": 43.0,
+          "min_ms": 39.0,
+          "max_ms": 50.0
+        },
+        "table_4_fields": {
+          "iterations": 250000,
+          "seconds": [
+            0.084,
+            0.082,
+            0.072,
+            0.094,
+            0.088
+          ],
+          "heap_delta_kib": [
+            510.734,
+            510.734,
+            510.734,
+            510.734,
+            510.734
+          ],
+          "median_ms": 84.0,
+          "min_ms": 72.0,
+          "max_ms": 94.0
+        },
+        "concat_unique_short": {
+          "iterations": 250000,
+          "seconds": [
+            0.186,
+            0.206,
+            0.198,
+            0.189,
+            0.196
+          ],
+          "heap_delta_kib": [
+            805.759,
+            916.0,
+            916.0,
+            916.0,
+            916.0
+          ],
+          "median_ms": 196.0,
+          "min_ms": 186.0,
+          "max_ms": 206.0
+        },
+        "string_equal_existing": {
+          "iterations": 250000,
+          "seconds": [
+            0.02,
+            0.019,
+            0.019,
+            0.017,
+            0.021
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 19.0,
+          "min_ms": 17.0,
+          "max_ms": 21.0
+        },
+        "events_100_listeners": {
+          "iterations": 5000,
+          "seconds": [
+            0.078,
+            0.102,
+            0.108,
+            0.097,
+            0.104
+          ],
+          "heap_delta_kib": [
+            875.215,
+            875.215,
+            875.215,
+            875.215,
+            875.215
+          ],
+          "median_ms": 102.0,
+          "min_ms": 78.0,
+          "max_ms": 108.0
+        },
+        "scheduler_1000_idle": {
+          "iterations": 1000,
+          "seconds": [
+            0.137,
+            0.148,
+            0.13,
+            0.107,
+            0.106
+          ],
+          "heap_delta_kib": [
+            627.617,
+            627.617,
+            627.652,
+            627.652,
+            627.652
+          ],
+          "median_ms": 130.0,
+          "min_ms": 106.0,
+          "max_ms": 148.0
+        },
+        "native_text_update": {
+          "iterations": 20000,
+          "seconds": [
+            0.027,
+            0.032,
+            0.033,
+            0.027,
+            0.03
+          ],
+          "heap_delta_kib": [
+            678.051,
+            678.051,
+            678.051,
+            678.051,
+            678.051
+          ],
+          "median_ms": 30.0,
+          "min_ms": 27.0,
+          "max_ms": 33.0
+        }
+      },
+      "resources": [
+        {
+          "tick": 6000,
+          "lua_kib": 397.081,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        }
+      ],
+      "allocations": [
+        {
+          "name": "closure_capture",
+          "iterations": 10000,
+          "kib": 546.875
+        },
+        {
+          "name": "empty_table",
+          "iterations": 10000,
+          "kib": 468.75
+        }
+      ],
+      "clocks": [
+        "logical_seconds=5 os_clock=5.800000 os_time=6"
+      ]
+    },
+    {
+      "log": "research-six-03-P2.log",
+      "wall_seconds_boot_to_done": 75.716,
+      "benchmarks": {
+        "empty_loop": {
+          "iterations": 250000,
+          "seconds": [
+            0.002,
+            0.002,
+            0.003,
+            0.002,
+            0.003
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 2.0,
+          "min_ms": 2.0,
+          "max_ms": 3.0
+        },
+        "closure_capture": {
+          "iterations": 250000,
+          "seconds": [
+            0.079,
+            0.064,
+            0.071,
+            0.069,
+            0.077
+          ],
+          "heap_delta_kib": [
+            711.75,
+            711.75,
+            711.75,
+            711.75,
+            711.75
+          ],
+          "median_ms": 71.0,
+          "min_ms": 64.0,
+          "max_ms": 79.0
+        },
+        "empty_table": {
+          "iterations": 250000,
+          "seconds": [
+            0.04,
+            0.046,
+            0.047,
+            0.041,
+            0.041
+          ],
+          "heap_delta_kib": [
+            500.172,
+            500.172,
+            500.172,
+            500.172,
+            500.172
+          ],
+          "median_ms": 41.0,
+          "min_ms": 40.0,
+          "max_ms": 47.0
+        },
+        "table_4_fields": {
+          "iterations": 250000,
+          "seconds": [
+            0.088,
+            0.102,
+            0.082,
+            0.082,
+            0.096
+          ],
+          "heap_delta_kib": [
+            483.609,
+            483.609,
+            483.609,
+            483.609,
+            483.609
+          ],
+          "median_ms": 88.0,
+          "min_ms": 82.0,
+          "max_ms": 102.0
+        },
+        "concat_unique_short": {
+          "iterations": 250000,
+          "seconds": [
+            0.185,
+            0.201,
+            0.196,
+            0.199,
+            0.201
+          ],
+          "heap_delta_kib": [
+            863.415,
+            973.412,
+            973.412,
+            973.412,
+            973.412
+          ],
+          "median_ms": 199.0,
+          "min_ms": 185.0,
+          "max_ms": 201.0
+        },
+        "string_equal_existing": {
+          "iterations": 250000,
+          "seconds": [
+            0.015,
+            0.017,
+            0.023,
+            0.016,
+            0.018
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 17.0,
+          "min_ms": 15.0,
+          "max_ms": 23.0
+        },
+        "events_100_listeners": {
+          "iterations": 5000,
+          "seconds": [
+            0.066,
+            0.108,
+            0.078,
+            0.124,
+            0.087
+          ],
+          "heap_delta_kib": [
+            875.215,
+            875.215,
+            875.215,
+            875.215,
+            875.215
+          ],
+          "median_ms": 87.0,
+          "min_ms": 66.0,
+          "max_ms": 124.0
+        },
+        "scheduler_1000_idle": {
+          "iterations": 1000,
+          "seconds": [
+            0.135,
+            0.135,
+            0.136,
+            0.103,
+            0.111
+          ],
+          "heap_delta_kib": [
+            627.617,
+            627.617,
+            627.652,
+            627.652,
+            627.652
+          ],
+          "median_ms": 135.0,
+          "min_ms": 103.0,
+          "max_ms": 136.0
+        },
+        "native_text_update": {
+          "iterations": 20000,
+          "seconds": [
+            0.029,
+            0.032,
+            0.024,
+            0.027,
+            0.034
+          ],
+          "heap_delta_kib": [
+            678.051,
+            678.051,
+            678.051,
+            678.051,
+            678.051
+          ],
+          "median_ms": 29.0,
+          "min_ms": 24.0,
+          "max_ms": 34.0
+        }
+      },
+      "resources": [
+        {
+          "tick": 6000,
+          "lua_kib": 650.267,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        }
+      ],
+      "allocations": [
+        {
+          "name": "closure_capture",
+          "iterations": 10000,
+          "kib": 546.875
+        },
+        {
+          "name": "empty_table",
+          "iterations": 10000,
+          "kib": 468.75
+        }
+      ],
+      "clocks": [
+        "logical_seconds=5 os_clock=5.700000 os_time=6"
+      ]
+    },
+    {
+      "log": "research-six-03-P3.log",
+      "wall_seconds_boot_to_done": 75.735,
+      "benchmarks": {
+        "empty_loop": {
+          "iterations": 250000,
+          "seconds": [
+            0.004,
+            0.003,
+            0.003,
+            0.004,
+            0.002
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 3.0,
+          "min_ms": 2.0,
+          "max_ms": 4.0
+        },
+        "closure_capture": {
+          "iterations": 250000,
+          "seconds": [
+            0.075,
+            0.069,
+            0.078,
+            0.073,
+            0.063
+          ],
+          "heap_delta_kib": [
+            718.312,
+            718.312,
+            718.312,
+            718.312,
+            718.312
+          ],
+          "median_ms": 73.0,
+          "min_ms": 63.0,
+          "max_ms": 78.0
+        },
+        "empty_table": {
+          "iterations": 250000,
+          "seconds": [
+            0.041,
+            0.039,
+            0.043,
+            0.052,
+            0.046
+          ],
+          "heap_delta_kib": [
+            505.047,
+            505.047,
+            505.047,
+            505.047,
+            505.047
+          ],
+          "median_ms": 43.0,
+          "min_ms": 39.0,
+          "max_ms": 52.0
+        },
+        "table_4_fields": {
+          "iterations": 250000,
+          "seconds": [
+            0.102,
+            0.084,
+            0.102,
+            0.104,
+            0.093
+          ],
+          "heap_delta_kib": [
+            493.781,
+            493.781,
+            493.781,
+            493.781,
+            493.781
+          ],
+          "median_ms": 102.0,
+          "min_ms": 84.0,
+          "max_ms": 104.0
+        },
+        "concat_unique_short": {
+          "iterations": 250000,
+          "seconds": [
+            0.194,
+            0.215,
+            0.193,
+            0.198,
+            0.189
+          ],
+          "heap_delta_kib": [
+            819.853,
+            930.014,
+            930.014,
+            930.014,
+            930.014
+          ],
+          "median_ms": 194.0,
+          "min_ms": 189.0,
+          "max_ms": 215.0
+        },
+        "string_equal_existing": {
+          "iterations": 250000,
+          "seconds": [
+            0.016,
+            0.02,
+            0.019,
+            0.02,
+            0.02
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 20.0,
+          "min_ms": 16.0,
+          "max_ms": 20.0
+        },
+        "events_100_listeners": {
+          "iterations": 5000,
+          "seconds": [
+            0.085,
+            0.096,
+            0.09,
+            0.1,
+            0.087
+          ],
+          "heap_delta_kib": [
+            875.215,
+            875.215,
+            875.215,
+            875.215,
+            875.215
+          ],
+          "median_ms": 90.0,
+          "min_ms": 85.0,
+          "max_ms": 100.0
+        },
+        "scheduler_1000_idle": {
+          "iterations": 1000,
+          "seconds": [
+            0.142,
+            0.136,
+            0.114,
+            0.106,
+            0.111
+          ],
+          "heap_delta_kib": [
+            627.617,
+            627.617,
+            627.652,
+            627.652,
+            627.652
+          ],
+          "median_ms": 114.0,
+          "min_ms": 106.0,
+          "max_ms": 142.0
+        },
+        "native_text_update": {
+          "iterations": 20000,
+          "seconds": [
+            0.027,
+            0.027,
+            0.027,
+            0.026,
+            0.034
+          ],
+          "heap_delta_kib": [
+            678.051,
+            678.051,
+            678.051,
+            678.051,
+            678.051
+          ],
+          "median_ms": 27.0,
+          "min_ms": 26.0,
+          "max_ms": 34.0
+        }
+      },
+      "resources": [
+        {
+          "tick": 6000,
+          "lua_kib": 745.286,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        }
+      ],
+      "allocations": [
+        {
+          "name": "closure_capture",
+          "iterations": 10000,
+          "kib": 546.875
+        },
+        {
+          "name": "empty_table",
+          "iterations": 10000,
+          "kib": 468.75
+        }
+      ],
+      "clocks": [
+        "logical_seconds=5 os_clock=6.008000 os_time=6"
+      ]
+    },
+    {
+      "log": "research-six-03-P4.log",
+      "wall_seconds_boot_to_done": 75.731,
+      "benchmarks": {
+        "empty_loop": {
+          "iterations": 250000,
+          "seconds": [
+            0.002,
+            0.002,
+            0.003,
+            0.003,
+            0.003
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 3.0,
+          "min_ms": 2.0,
+          "max_ms": 3.0
+        },
+        "closure_capture": {
+          "iterations": 250000,
+          "seconds": [
+            0.076,
+            0.075,
+            0.075,
+            0.073,
+            0.07
+          ],
+          "heap_delta_kib": [
+            718.312,
+            718.312,
+            718.312,
+            718.312,
+            718.312
+          ],
+          "median_ms": 75.0,
+          "min_ms": 70.0,
+          "max_ms": 76.0
+        },
+        "empty_table": {
+          "iterations": 250000,
+          "seconds": [
+            0.037,
+            0.038,
+            0.055,
+            0.043,
+            0.039
+          ],
+          "heap_delta_kib": [
+            505.047,
+            505.047,
+            505.047,
+            505.047,
+            505.047
+          ],
+          "median_ms": 39.0,
+          "min_ms": 37.0,
+          "max_ms": 55.0
+        },
+        "table_4_fields": {
+          "iterations": 250000,
+          "seconds": [
+            0.083,
+            0.079,
+            0.072,
+            0.087,
+            0.077
+          ],
+          "heap_delta_kib": [
+            493.781,
+            493.781,
+            493.781,
+            493.781,
+            493.781
+          ],
+          "median_ms": 79.0,
+          "min_ms": 72.0,
+          "max_ms": 87.0
+        },
+        "concat_unique_short": {
+          "iterations": 250000,
+          "seconds": [
+            0.187,
+            0.21,
+            0.206,
+            0.198,
+            0.187
+          ],
+          "heap_delta_kib": [
+            819.853,
+            930.014,
+            930.014,
+            930.014,
+            930.014
+          ],
+          "median_ms": 198.0,
+          "min_ms": 187.0,
+          "max_ms": 210.0
+        },
+        "string_equal_existing": {
+          "iterations": 250000,
+          "seconds": [
+            0.018,
+            0.015,
+            0.019,
+            0.018,
+            0.02
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 18.0,
+          "min_ms": 15.0,
+          "max_ms": 20.0
+        },
+        "events_100_listeners": {
+          "iterations": 5000,
+          "seconds": [
+            0.099,
+            0.097,
+            0.092,
+            0.079,
+            0.078
+          ],
+          "heap_delta_kib": [
+            875.215,
+            875.215,
+            875.215,
+            875.215,
+            875.215
+          ],
+          "median_ms": 92.0,
+          "min_ms": 78.0,
+          "max_ms": 99.0
+        },
+        "scheduler_1000_idle": {
+          "iterations": 1000,
+          "seconds": [
+            0.137,
+            0.146,
+            0.14,
+            0.116,
+            0.113
+          ],
+          "heap_delta_kib": [
+            627.617,
+            627.617,
+            627.652,
+            627.652,
+            627.652
+          ],
+          "median_ms": 137.0,
+          "min_ms": 113.0,
+          "max_ms": 146.0
+        },
+        "native_text_update": {
+          "iterations": 20000,
+          "seconds": [
+            0.03,
+            0.032,
+            0.035,
+            0.028,
+            0.038
+          ],
+          "heap_delta_kib": [
+            678.051,
+            678.051,
+            678.051,
+            678.051,
+            678.051
+          ],
+          "median_ms": 32.0,
+          "min_ms": 28.0,
+          "max_ms": 38.0
+        }
+      },
+      "resources": [
+        {
+          "tick": 6000,
+          "lua_kib": 830.54,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        }
+      ],
+      "allocations": [
+        {
+          "name": "closure_capture",
+          "iterations": 10000,
+          "kib": 546.875
+        },
+        {
+          "name": "empty_table",
+          "iterations": 10000,
+          "kib": 468.75
+        }
+      ],
+      "clocks": [
+        "logical_seconds=5 os_clock=5.750000 os_time=6"
+      ]
+    },
+    {
+      "log": "research-six-03-P5.log",
+      "wall_seconds_boot_to_done": 75.811,
+      "benchmarks": {
+        "empty_loop": {
+          "iterations": 250000,
+          "seconds": [
+            0.003,
+            0.002,
+            0.002,
+            0.003,
+            0.002
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 2.0,
+          "min_ms": 2.0,
+          "max_ms": 3.0
+        },
+        "closure_capture": {
+          "iterations": 250000,
+          "seconds": [
+            0.068,
+            0.071,
+            0.068,
+            0.066,
+            0.064
+          ],
+          "heap_delta_kib": [
+            711.75,
+            711.75,
+            711.75,
+            711.75,
+            711.75
+          ],
+          "median_ms": 68.0,
+          "min_ms": 64.0,
+          "max_ms": 71.0
+        },
+        "empty_table": {
+          "iterations": 250000,
+          "seconds": [
+            0.038,
+            0.04,
+            0.042,
+            0.045,
+            0.043
+          ],
+          "heap_delta_kib": [
+            500.172,
+            500.172,
+            500.172,
+            500.172,
+            500.172
+          ],
+          "median_ms": 42.0,
+          "min_ms": 38.0,
+          "max_ms": 45.0
+        },
+        "table_4_fields": {
+          "iterations": 250000,
+          "seconds": [
+            0.095,
+            0.085,
+            0.084,
+            0.096,
+            0.088
+          ],
+          "heap_delta_kib": [
+            483.609,
+            483.609,
+            483.609,
+            483.609,
+            483.609
+          ],
+          "median_ms": 88.0,
+          "min_ms": 84.0,
+          "max_ms": 96.0
+        },
+        "concat_unique_short": {
+          "iterations": 250000,
+          "seconds": [
+            0.176,
+            0.208,
+            0.202,
+            0.186,
+            0.192
+          ],
+          "heap_delta_kib": [
+            863.415,
+            973.412,
+            973.412,
+            973.412,
+            973.412
+          ],
+          "median_ms": 192.0,
+          "min_ms": 176.0,
+          "max_ms": 208.0
+        },
+        "string_equal_existing": {
+          "iterations": 250000,
+          "seconds": [
+            0.02,
+            0.019,
+            0.016,
+            0.02,
+            0.022
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 20.0,
+          "min_ms": 16.0,
+          "max_ms": 22.0
+        },
+        "events_100_listeners": {
+          "iterations": 5000,
+          "seconds": [
+            0.084,
+            0.097,
+            0.089,
+            0.102,
+            0.088
+          ],
+          "heap_delta_kib": [
+            875.215,
+            875.215,
+            875.215,
+            875.215,
+            875.215
+          ],
+          "median_ms": 89.0,
+          "min_ms": 84.0,
+          "max_ms": 102.0
+        },
+        "scheduler_1000_idle": {
+          "iterations": 1000,
+          "seconds": [
+            0.14,
+            0.15,
+            0.132,
+            0.12,
+            0.109
+          ],
+          "heap_delta_kib": [
+            627.617,
+            627.617,
+            627.652,
+            627.652,
+            627.652
+          ],
+          "median_ms": 132.0,
+          "min_ms": 109.0,
+          "max_ms": 150.0
+        },
+        "native_text_update": {
+          "iterations": 20000,
+          "seconds": [
+            0.028,
+            0.026,
+            0.027,
+            0.041,
+            0.025
+          ],
+          "heap_delta_kib": [
+            678.051,
+            678.051,
+            678.051,
+            678.051,
+            678.051
+          ],
+          "median_ms": 27.0,
+          "min_ms": 25.0,
+          "max_ms": 41.0
+        }
+      },
+      "resources": [
+        {
+          "tick": 6000,
+          "lua_kib": 921.837,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        }
+      ],
+      "allocations": [
+        {
+          "name": "closure_capture",
+          "iterations": 10000,
+          "kib": 546.875
+        },
+        {
+          "name": "empty_table",
+          "iterations": 10000,
+          "kib": 468.75
+        }
+      ],
+      "clocks": [
+        "logical_seconds=5 os_clock=5.844000 os_time=6"
+      ]
+    },
+    {
+      "log": "research-six-03-P6.log",
+      "wall_seconds_boot_to_done": 75.717,
+      "benchmarks": {
+        "empty_loop": {
+          "iterations": 250000,
+          "seconds": [
+            0.002,
+            0.002,
+            0.002,
+            0.002,
+            0.002
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 2.0,
+          "min_ms": 2.0,
+          "max_ms": 2.0
+        },
+        "closure_capture": {
+          "iterations": 250000,
+          "seconds": [
+            0.074,
+            0.078,
+            0.075,
+            0.075,
+            0.077
+          ],
+          "heap_delta_kib": [
+            718.312,
+            718.312,
+            718.312,
+            718.312,
+            718.312
+          ],
+          "median_ms": 75.0,
+          "min_ms": 74.0,
+          "max_ms": 78.0
+        },
+        "empty_table": {
+          "iterations": 250000,
+          "seconds": [
+            0.047,
+            0.047,
+            0.051,
+            0.041,
+            0.04
+          ],
+          "heap_delta_kib": [
+            505.047,
+            505.047,
+            505.047,
+            505.047,
+            505.047
+          ],
+          "median_ms": 47.0,
+          "min_ms": 40.0,
+          "max_ms": 51.0
+        },
+        "table_4_fields": {
+          "iterations": 250000,
+          "seconds": [
+            0.088,
+            0.09,
+            0.087,
+            0.082,
+            0.074
+          ],
+          "heap_delta_kib": [
+            493.781,
+            493.781,
+            493.781,
+            493.781,
+            493.781
+          ],
+          "median_ms": 87.0,
+          "min_ms": 74.0,
+          "max_ms": 90.0
+        },
+        "concat_unique_short": {
+          "iterations": 250000,
+          "seconds": [
+            0.2,
+            0.212,
+            0.201,
+            0.19,
+            0.19
+          ],
+          "heap_delta_kib": [
+            819.853,
+            930.014,
+            930.014,
+            930.014,
+            930.014
+          ],
+          "median_ms": 200.0,
+          "min_ms": 190.0,
+          "max_ms": 212.0
+        },
+        "string_equal_existing": {
+          "iterations": 250000,
+          "seconds": [
+            0.015,
+            0.017,
+            0.015,
+            0.016,
+            0.019
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 16.0,
+          "min_ms": 15.0,
+          "max_ms": 19.0
+        },
+        "events_100_listeners": {
+          "iterations": 5000,
+          "seconds": [
+            0.086,
+            0.089,
+            0.076,
+            0.106,
+            0.104
+          ],
+          "heap_delta_kib": [
+            875.215,
+            875.215,
+            875.215,
+            875.215,
+            875.215
+          ],
+          "median_ms": 89.0,
+          "min_ms": 76.0,
+          "max_ms": 106.0
+        },
+        "scheduler_1000_idle": {
+          "iterations": 1000,
+          "seconds": [
+            0.136,
+            0.144,
+            0.137,
+            0.112,
+            0.116
+          ],
+          "heap_delta_kib": [
+            627.617,
+            627.617,
+            627.652,
+            627.652,
+            627.652
+          ],
+          "median_ms": 136.0,
+          "min_ms": 112.0,
+          "max_ms": 144.0
+        },
+        "native_text_update": {
+          "iterations": 20000,
+          "seconds": [
+            0.027,
+            0.023,
+            0.028,
+            0.026,
+            0.029
+          ],
+          "heap_delta_kib": [
+            678.051,
+            678.051,
+            678.051,
+            678.051,
+            678.051
+          ],
+          "median_ms": 27.0,
+          "min_ms": 23.0,
+          "max_ms": 29.0
+        }
+      },
+      "resources": [
+        {
+          "tick": 6000,
+          "lua_kib": 952.224,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        }
+      ],
+      "allocations": [
+        {
+          "name": "closure_capture",
+          "iterations": 10000,
+          "kib": 546.875
+        },
+        {
+          "name": "empty_table",
+          "iterations": 10000,
+          "kib": 468.75
+        }
+      ],
+      "clocks": [
+        "logical_seconds=5 os_clock=5.990000 os_time=6"
+      ]
+    }
+  ],
+  "processes": [
+    {
+      "pid": 34892,
+      "player": "LanP1",
+      "samples": 7,
+      "sample_span_seconds": 66.816618,
+      "private_mib_first": 187.16015625,
+      "private_mib_last": 188.41015625,
+      "private_mib_max": 188.62109375,
+      "late_private_mib_median_first_window": 188.484375,
+      "late_private_mib_median_last_window": 188.484375,
+      "working_set_mib_max": 164.84765625,
+      "os_handles_first": 4692,
+      "os_handles_last": 4708
+    },
+    {
+      "pid": 35520,
+      "player": "LanP2",
+      "samples": 8,
+      "sample_span_seconds": 77.770381,
+      "private_mib_first": 188.1953125,
+      "private_mib_last": 186.18359375,
+      "private_mib_max": 189.57421875,
+      "late_private_mib_median_first_window": 189.4375,
+      "late_private_mib_median_last_window": 189.36328125,
+      "working_set_mib_max": 175.1015625,
+      "os_handles_first": 4788,
+      "os_handles_last": 4806
+    },
+    {
+      "pid": 13060,
+      "player": "LanP3",
+      "samples": 8,
+      "sample_span_seconds": 77.695273,
+      "private_mib_first": 186.859375,
+      "private_mib_last": 185.0546875,
+      "private_mib_max": 188.4453125,
+      "late_private_mib_median_first_window": 188.30859375,
+      "late_private_mib_median_last_window": 188.234375,
+      "working_set_mib_max": 164.7890625,
+      "os_handles_first": 4692,
+      "os_handles_last": 4712
+    },
+    {
+      "pid": 10840,
+      "player": "LanP4",
+      "samples": 8,
+      "sample_span_seconds": 77.678001,
+      "private_mib_first": 187.65234375,
+      "private_mib_last": 185.05859375,
+      "private_mib_max": 188.38671875,
+      "late_private_mib_median_first_window": 188.283203125,
+      "late_private_mib_median_last_window": 188.2421875,
+      "working_set_mib_max": 164.62890625,
+      "os_handles_first": 4692,
+      "os_handles_last": 4712
+    },
+    {
+      "pid": 34460,
+      "player": "LanP5",
+      "samples": 8,
+      "sample_span_seconds": 77.644934,
+      "private_mib_first": 188.27734375,
+      "private_mib_last": 185.9296875,
+      "private_mib_max": 189.32421875,
+      "late_private_mib_median_first_window": 189.185546875,
+      "late_private_mib_median_last_window": 189.109375,
+      "working_set_mib_max": 229.47265625,
+      "os_handles_first": 4788,
+      "os_handles_last": 4806
+    },
+    {
+      "pid": 31856,
+      "player": "LanP6",
+      "samples": 8,
+      "sample_span_seconds": 77.666169,
+      "private_mib_first": 189.38671875,
+      "private_mib_last": 185.7265625,
+      "private_mib_max": 189.38671875,
+      "late_private_mib_median_first_window": 189.11328125,
+      "late_private_mib_median_last_window": 188.921875,
+      "working_set_mib_max": 228.9140625,
+      "os_handles_first": 4803,
+      "os_handles_last": 4817
+    }
+  ]
+}

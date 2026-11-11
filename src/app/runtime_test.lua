@@ -25,6 +25,31 @@ function M.start(bridge, ui, counts, config)
     local Registry = require 'scaffold.entity_registry'
     local registry, entities, humans = Registry.new(), {}, {}
     local baseline_ui = ui.count()
+    if config.dev and (config.suite=='hotreload' or config.suite=='soak') then
+        Context.local_call(function() require('probes.hotreload').watch(ui,bridge,config,check) end)
+    end
+    local ac=require('scaffold.ac').new(bridge,ui)
+    local ac_calls=0
+    ac.timer(20,3,function() ac_calls=ac_calls+1 end)
+    local mutation=require('scaffold.scheduler').new('local')
+    local pending,runs=nil,0
+    mutation:after(1,function() pending:pause();pending:resume() end)
+    pending=mutation:after(1,function() runs=runs+1 end)
+    mutation:step();check(runs==0,'same-tick reschedule skips old dispatch batch')
+    mutation:step();check(runs==1,'rescheduled task runs once on next tick');mutation:stop()
+    local clock_start,wall_start=os.clock(),os.time()
+    scheduler:after(500,function()
+        log.info(string.format('[CLOCK_PROBE] logical_seconds=5 os_clock=%.6f os_time=%d',os.clock()-clock_start,os.time()-wall_start))
+    end)
+    if config.suite=='performance' or config.suite=='soak' then
+        scheduler:after(160,function() Context.local_call(function() require('probes.performance').run(ui,check) end) end)
+    end
+    scheduler:after(6000,function()
+        log.info(string.format('[RESOURCE] tick=%d lua_kib=%.3f controls=%d ui_tasks=%d events=%d',scheduler:now(),collectgarbage('count'),ui.count(),ui.game.timer_size(),ui.game.events:count()))
+        if config.suite=='soak' and scheduler:now()<config.duration_ticks then
+            Context.local_call(function() require('probes.hotreload').run(ui,bridge,check) end)
+        end
+    end,6000)
     local weak = setmetatable({}, {__mode = 'v'})
     for i = 0, 11 do
         if j.GetPlayerController(j.Player(i)) == j.MAP_CONTROL_USER and j.GetPlayerSlotState(j.Player(i)) == j.PLAYER_SLOT_STATE_PLAYING then
@@ -67,6 +92,7 @@ function M.start(bridge, ui, counts, config)
         pending_native = nil
     end)
     scheduler:after(100, function()
+        check(ac_calls==3,'convenience timer repeats on shared logical ticks')
         check(#humans == config.clients, 'expected active humans=' .. config.clients)
         check(type(ui.class.button) == 'table' and baseline_ui > 0, 'official UI controls initialized')
         check(_G.class == nil and math.abs(math.sin(math.pi / 2) - 1) < 1e-9, 'UI globals and standard math isolated')
@@ -97,6 +123,12 @@ function M.start(bridge, ui, counts, config)
         check(progress._id ~= nil and progress.rate == 0, 'progress handles zero denominator')
         progress:destroy()
         check(ui.count() == baseline_ui, 'models and scroll disposal return to baseline')
+        if config.suite == 'ui' then
+            Context.local_call(function() require('probes.ui').run(ui, check) end)
+        end
+        if config.suite == 'hotreload' or config.suite == 'soak' then
+            Context.local_call(function() require('probes.hotreload').run(ui,bridge,check) end)
+        end
         -- Exercise the actual Lua UI dispatch path. This is not an OS mouse click.
         view.button:event_notify('on_button_clicked')
     end)
@@ -171,6 +203,7 @@ function M.start(bridge, ui, counts, config)
                 assert(snapshots[current] and snapshots[current][p] == expected[current], 'peer state mismatch or missing peer phase=' .. current .. ' player=' .. p)
             end
             log.info('[STATE_MATCH] phase=' .. current .. ' hash=' .. expected[current] .. ' rng=' .. rng_calls)
+            snapshots[current],expected[current]=nil,nil
         end)
     end, 500)
     if config.oos_control then
@@ -191,6 +224,10 @@ function M.start(bridge, ui, counts, config)
         j.DestroyGroup(group)
         ui.stop()
         check(ui.count() == 0, 'UI shutdown clears all controls')
+        check(not pcall(function() ui.game.wait(10,function() end) end) and ui.game.timer_size()==0,
+            'stopped UI rejects tasks without retaining registrations')
+        check(not pcall(function() ui.game.register_event({on_probe=function() end}) end) and ui.game.events:count()==0,
+            'stopped UI rejects listeners without retaining registrations')
         scheduler:after(300, function()
             log.info('[METRICS] ui_cycles=' .. ui_cycles .. ' rng_calls=' .. rng_calls .. ' phases=' .. phase .. ' assertions=' .. assertions)
             log.info('[UT_DONE] LuaScaffold ' .. config.build_id .. ' P' .. (local_id+1))

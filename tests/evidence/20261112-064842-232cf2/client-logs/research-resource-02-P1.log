@@ -1,0 +1,93 @@
+2026-11-12 06:49:09.322 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 06:49:09.323 [info]: [RESOURCE_PROFILE] tag=begin phase=idle tick=0 cycles=0 lua_kib=122.252 controls=0
+2026-11-12 06:49:22.153 [info]: [RESOURCE_PROFILE] tag=sample phase=idle tick=1000 cycles=0 lua_kib=122.998 controls=0
+2026-11-12 06:49:34.933 [info]: [RESOURCE_PROFILE] tag=sample phase=idle tick=2000 cycles=0 lua_kib=123.263 controls=0
+2026-11-12 06:49:47.072 [info]: [RESOURCE_PROFILE] tag=sample phase=idle tick=3000 cycles=0 lua_kib=123.527 controls=0
+2026-11-12 06:49:59.624 [info]: [RESOURCE_PROFILE] tag=sample phase=idle tick=4000 cycles=0 lua_kib=123.792 controls=0
+2026-11-12 06:50:12.318 [info]: [RESOURCE_PROFILE] tag=sample phase=idle tick=5000 cycles=0 lua_kib=124.057 controls=0
+2026-11-12 06:50:24.567 [info]: [RESOURCE_PROFILE] tag=sample phase=idle tick=6000 cycles=0 lua_kib=124.321 controls=0
+2026-11-12 06:50:36.467 [info]: [RESOURCE_PROFILE] tag=sample phase=idle tick=7000 cycles=0 lua_kib=124.586 controls=0
+2026-11-12 06:50:48.721 [info]: [RESOURCE_PROFILE] tag=sample phase=idle tick=8000 cycles=0 lua_kib=124.851 controls=0
+2026-11-12 06:51:01.549 [info]: [RESOURCE_PROFILE] tag=sample phase=idle tick=9000 cycles=0 lua_kib=125.115 controls=0
+2026-11-12 06:51:14.317 [info]: [RESOURCE_PROFILE] tag=sample phase=idle tick=10000 cycles=0 lua_kib=125.380 controls=0
+2026-11-12 06:51:26.845 [info]: [RESOURCE_PROFILE] tag=sample phase=idle tick=11000 cycles=0 lua_kib=125.646 controls=0
+2026-11-12 06:51:39.146 [info]: [RESOURCE_PROFILE] tag=sample phase=idle tick=12000 cycles=0 lua_kib=125.913 controls=0
+2026-11-12 06:51:51.735 [info]: [RESOURCE_PROFILE] tag=sample phase=idle tick=13000 cycles=0 lua_kib=126.180 controls=0
+2026-11-12 06:52:04.234 [info]: [RESOURCE_PROFILE] tag=sample phase=idle tick=14000 cycles=0 lua_kib=126.446 controls=0
+2026-11-12 06:52:16.440 [info]: [RESOURCE_PROFILE] tag=sample phase=idle tick=15000 cycles=0 lua_kib=126.713 controls=0
+2026-11-12 06:52:16.440 [info]: PASS: resource phase completed with expected counts: idle
+2026-11-12 06:52:16.440 [info]: [RESOURCE_PROFILE] tag=end phase=idle tick=15000 cycles=0 lua_kib=127.188 controls=0
+2026-11-12 06:52:16.440 [info]: [RESOURCE_PROFILE] tag=begin phase=units tick=15000 cycles=0 lua_kib=127.448 controls=0
+2026-11-12 06:52:29.134 [info]: [RESOURCE_PROFILE] tag=sample phase=units tick=16000 cycles=2 lua_kib=128.152 controls=0
+2026-11-12 06:52:41.705 [info]: [RESOURCE_PROFILE] tag=sample phase=units tick=17000 cycles=4 lua_kib=128.890 controls=0
+2026-11-12 06:52:54.329 [info]: [RESOURCE_PROFILE] tag=sample phase=units tick=18000 cycles=6 lua_kib=129.627 controls=0
+2026-11-12 06:53:07.221 [info]: [RESOURCE_PROFILE] tag=sample phase=units tick=19000 cycles=8 lua_kib=130.364 controls=0
+2026-11-12 06:53:19.065 [info]: [RESOURCE_PROFILE] tag=sample phase=units tick=20000 cycles=10 lua_kib=131.102 controls=0
+2026-11-12 06:53:31.263 [info]: [RESOURCE_PROFILE] tag=sample phase=units tick=21000 cycles=12 lua_kib=131.841 controls=0
+2026-11-12 06:53:43.277 [info]: [RESOURCE_PROFILE] tag=sample phase=units tick=22000 cycles=14 lua_kib=132.580 controls=0
+2026-11-12 06:53:55.825 [info]: [RESOURCE_PROFILE] tag=sample phase=units tick=23000 cycles=16 lua_kib=133.319 controls=0
+2026-11-12 06:54:08.250 [info]: [RESOURCE_PROFILE] tag=sample phase=units tick=24000 cycles=18 lua_kib=134.059 controls=0
+2026-11-12 06:54:21.051 [info]: [RESOURCE_PROFILE] tag=sample phase=units tick=25000 cycles=20 lua_kib=134.798 controls=0
+2026-11-12 06:54:33.458 [info]: [RESOURCE_PROFILE] tag=sample phase=units tick=26000 cycles=22 lua_kib=135.537 controls=0
+2026-11-12 06:54:46.365 [info]: [RESOURCE_PROFILE] tag=sample phase=units tick=27000 cycles=24 lua_kib=136.276 controls=0
+2026-11-12 06:54:59.058 [info]: [RESOURCE_PROFILE] tag=sample phase=units tick=28000 cycles=26 lua_kib=137.016 controls=0
+2026-11-12 06:55:11.681 [info]: [RESOURCE_PROFILE] tag=sample phase=units tick=29000 cycles=28 lua_kib=137.755 controls=0
+2026-11-12 06:55:24.590 [info]: [RESOURCE_PROFILE] tag=sample phase=units tick=30000 cycles=30 lua_kib=138.494 controls=0
+2026-11-12 06:55:24.590 [info]: PASS: resource phase completed with expected counts: units
+2026-11-12 06:55:24.590 [info]: [RESOURCE_PROFILE] tag=end phase=units tick=30000 cycles=30 lua_kib=138.975 controls=0
+2026-11-12 06:55:24.601 [info]: [RESOURCE_PROFILE] tag=begin phase=ui_without_edit tick=30000 cycles=0 lua_kib=437.686 controls=0
+2026-11-12 06:55:35.959 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_without_edit tick=31000 cycles=400 lua_kib=281.375 controls=0
+2026-11-12 06:55:47.012 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_without_edit tick=32000 cycles=800 lua_kib=281.375 controls=0
+2026-11-12 06:55:58.019 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_without_edit tick=33000 cycles=1200 lua_kib=281.613 controls=0
+2026-11-12 06:56:09.073 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_without_edit tick=34000 cycles=1600 lua_kib=281.375 controls=0
+2026-11-12 06:56:20.503 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_without_edit tick=35000 cycles=2000 lua_kib=281.375 controls=0
+2026-11-12 06:56:31.689 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_without_edit tick=36000 cycles=2400 lua_kib=281.613 controls=0
+2026-11-12 06:56:43.014 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_without_edit tick=37000 cycles=2800 lua_kib=281.375 controls=0
+2026-11-12 06:56:53.889 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_without_edit tick=38000 cycles=3200 lua_kib=281.375 controls=0
+2026-11-12 06:57:04.937 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_without_edit tick=39000 cycles=3600 lua_kib=281.613 controls=0
+2026-11-12 06:57:16.167 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_without_edit tick=40000 cycles=4000 lua_kib=281.375 controls=0
+2026-11-12 06:57:27.287 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_without_edit tick=41000 cycles=4400 lua_kib=281.375 controls=0
+2026-11-12 06:57:38.466 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_without_edit tick=42000 cycles=4800 lua_kib=281.613 controls=0
+2026-11-12 06:57:49.811 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_without_edit tick=43000 cycles=5200 lua_kib=281.375 controls=0
+2026-11-12 06:58:01.179 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_without_edit tick=44000 cycles=5600 lua_kib=281.375 controls=0
+2026-11-12 06:58:12.202 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_without_edit tick=45000 cycles=6000 lua_kib=281.613 controls=0
+2026-11-12 06:58:12.203 [info]: PASS: resource phase completed with expected counts: ui_without_edit
+2026-11-12 06:58:12.203 [info]: [RESOURCE_PROFILE] tag=end phase=ui_without_edit tick=45000 cycles=6000 lua_kib=282.176 controls=0
+2026-11-12 06:58:12.203 [info]: [RESOURCE_PROFILE] tag=begin phase=ui_with_edit tick=45000 cycles=0 lua_kib=282.464 controls=0
+2026-11-12 06:58:23.279 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_with_edit tick=46000 cycles=400 lua_kib=281.562 controls=0
+2026-11-12 06:58:34.490 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_with_edit tick=47000 cycles=800 lua_kib=281.562 controls=0
+2026-11-12 06:58:45.807 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_with_edit tick=48000 cycles=1200 lua_kib=281.801 controls=0
+2026-11-12 06:58:56.842 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_with_edit tick=49000 cycles=1600 lua_kib=281.562 controls=0
+2026-11-12 06:59:08.196 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_with_edit tick=50000 cycles=2000 lua_kib=281.562 controls=0
+2026-11-12 06:59:19.485 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_with_edit tick=51000 cycles=2400 lua_kib=281.801 controls=0
+2026-11-12 06:59:30.434 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_with_edit tick=52000 cycles=2800 lua_kib=281.562 controls=0
+2026-11-12 06:59:41.585 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_with_edit tick=53000 cycles=3200 lua_kib=281.562 controls=0
+2026-11-12 06:59:52.767 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_with_edit tick=54000 cycles=3600 lua_kib=281.801 controls=0
+2026-11-12 07:00:03.696 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_with_edit tick=55000 cycles=4000 lua_kib=281.562 controls=0
+2026-11-12 07:00:14.893 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_with_edit tick=56000 cycles=4400 lua_kib=281.562 controls=0
+2026-11-12 07:00:25.938 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_with_edit tick=57000 cycles=4800 lua_kib=281.801 controls=0
+2026-11-12 07:00:37.031 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_with_edit tick=58000 cycles=5200 lua_kib=281.562 controls=0
+2026-11-12 07:00:48.167 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_with_edit tick=59000 cycles=5600 lua_kib=281.562 controls=0
+2026-11-12 07:00:59.347 [info]: [RESOURCE_PROFILE] tag=sample phase=ui_with_edit tick=60000 cycles=6000 lua_kib=281.801 controls=0
+2026-11-12 07:00:59.347 [info]: PASS: resource phase completed with expected counts: ui_with_edit
+2026-11-12 07:00:59.347 [info]: [RESOURCE_PROFILE] tag=end phase=ui_with_edit tick=60000 cycles=6000 lua_kib=282.352 controls=0
+2026-11-12 07:00:59.348 [info]: [RESOURCE_PROFILE] tag=begin phase=recovery tick=60000 cycles=0 lua_kib=278.315 controls=0
+2026-11-12 07:01:11.301 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=61000 cycles=0 lua_kib=278.627 controls=0
+2026-11-12 07:01:22.593 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=62000 cycles=0 lua_kib=278.901 controls=0
+2026-11-12 07:01:35.230 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=63000 cycles=0 lua_kib=279.176 controls=0
+2026-11-12 07:01:47.224 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=64000 cycles=0 lua_kib=279.450 controls=0
+2026-11-12 07:01:59.895 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=65000 cycles=0 lua_kib=279.725 controls=0
+2026-11-12 07:02:11.715 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=66000 cycles=0 lua_kib=279.999 controls=0
+2026-11-12 07:02:23.493 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=67000 cycles=0 lua_kib=280.273 controls=0
+2026-11-12 07:02:36.049 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=68000 cycles=0 lua_kib=280.548 controls=0
+2026-11-12 07:02:48.091 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=69000 cycles=0 lua_kib=280.822 controls=0
+2026-11-12 07:03:00.189 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=70000 cycles=0 lua_kib=281.097 controls=0
+2026-11-12 07:03:12.637 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=71000 cycles=0 lua_kib=281.371 controls=0
+2026-11-12 07:03:25.097 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=72000 cycles=0 lua_kib=281.646 controls=0
+2026-11-12 07:03:37.667 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=73000 cycles=0 lua_kib=281.920 controls=0
+2026-11-12 07:03:48.856 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=74000 cycles=0 lua_kib=282.194 controls=0
+2026-11-12 07:04:01.248 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=75000 cycles=0 lua_kib=282.469 controls=0
+2026-11-12 07:04:01.248 [info]: PASS: resource phase completed with expected counts: recovery
+2026-11-12 07:04:01.249 [info]: [RESOURCE_PROFILE] tag=end phase=recovery tick=75000 cycles=0 lua_kib=282.959 controls=0
+2026-11-12 07:04:01.249 [info]: [RESOURCE_PROFILE_DONE] all phases complete
+2026-11-12 07:04:01.249 [info]: [UT_DONE] LuaScaffold research-resource-02 P1

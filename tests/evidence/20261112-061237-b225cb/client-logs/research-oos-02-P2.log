@@ -1,0 +1,24 @@
+2026-11-12 06:13:02.171 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 06:13:03.631 [info]: PASS: convenience timer repeats on shared logical ticks
+2026-11-12 06:13:03.631 [info]: PASS: expected active humans=3
+2026-11-12 06:13:03.631 [info]: PASS: official UI controls initialized
+2026-11-12 06:13:03.631 [info]: PASS: UI globals and standard math isolated
+2026-11-12 06:13:03.632 [info]: PASS: legacy sync and gameplay entry absent
+2026-11-12 06:13:03.632 [info]: PASS: native button has positive width
+2026-11-12 06:13:03.632 [info]: PASS: native text round trip
+2026-11-12 06:13:03.632 [info]: PASS: local UI cannot register gameplay entities
+2026-11-12 06:13:03.632 [info]: PASS: unsafe and oversized input rejected
+2026-11-12 06:13:03.640 [info]: PASS: native model created
+2026-11-12 06:13:03.654 [info]: PASS: native model2 created
+2026-11-12 06:13:03.655 [info]: PASS: native scroll panel created
+2026-11-12 06:13:03.660 [info]: PASS: progress handles zero denominator
+2026-11-12 06:13:03.660 [info]: PASS: models and scroll disposal return to baseline
+2026-11-12 06:13:03.768 [info]: [LuaScaffold] COMMAND ping	2	1
+2026-11-12 06:13:03.893 [info]: [LuaScaffold] COMMAND ping	0	1
+2026-11-12 06:13:03.893 [info]: [LuaScaffold] COMMAND ping	1	1
+2026-11-12 06:13:04.288 [info]: PASS: destroyed UI releases cancelled closure captures
+2026-11-12 06:13:04.289 [info]: [NATIVE_CALLBACK_GC] retained=0/8
+2026-11-12 06:13:04.289 [info]: PASS: nested UI destroy is idempotent
+2026-11-12 06:13:08.340 [info]: [CLOCK_PROBE] logical_seconds=5 os_clock=6.168000 os_time=6
+2026-11-12 06:13:12.652 [info]: [STATE_MATCH] phase=1 hash=1641788004 rng=14
+2026-11-12 06:13:14.563 [info]: [CONTROL] deliberate RNG divergence injected

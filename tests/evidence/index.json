@@ -54,5 +54,181 @@
     "status": "PASS",
     "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
     "cleanup": true
+  },
+  {
+    "session": "20261112-050431-5aca54",
+    "map": "research-boot-01.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-050709-96bd2d",
+    "map": "research-ui-01.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-051211-cf24bf",
+    "map": "research-ui-02.w3x",
+    "clients": 1,
+    "status": "FAIL",
+    "message": "Failure in D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\research-ui-02-P1.log",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-051849-b400d1",
+    "map": "research-ui-03.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-052031-432ce2",
+    "map": "research-three-01.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-052236-fc8496",
+    "map": "research-soak-01.w3x",
+    "clients": 3,
+    "status": "FAIL",
+    "message": "A client disconnected before test completion",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-052722-47f8c1",
+    "map": "research-six-01.w3x",
+    "clients": 6,
+    "status": "FAIL",
+    "message": "Failure in D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\research-six-01-P1.log",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-052852-8a9bdc",
+    "map": "research-six-02.w3x",
+    "clients": 6,
+    "status": "FAIL",
+    "message": "Failure in D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\research-six-02-P1.log",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-053050-4e2fdf",
+    "map": "research-six-03.w3x",
+    "clients": 6,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-053307-1df75f",
+    "map": "research-soak-02.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-060952-14054b",
+    "map": "research-ui-04.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-061114-c83755",
+    "map": "research-performance-01.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-061237-b225cb",
+    "map": "research-oos-02.w3x",
+    "clients": 3,
+    "status": "FAIL",
+    "message": "OOS detected by ydhost",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-061321-425fd3",
+    "map": "research-resource-01.w3x",
+    "clients": 1,
+    "status": "FAIL",
+    "message": "A client disconnected before test completion",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-063200-e59639",
+    "map": "research-clock-01.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-063251-37006e",
+    "map": "research-idle-three-02.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-064842-232cf2",
+    "map": "research-resource-02.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-070407-103cc5",
+    "map": "research-ui-05.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-070529-bd7901",
+    "map": "research-performance-02.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-070651-fe48fb",
+    "map": "research-six-04.w3x",
+    "clients": 6,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-070852-36b350",
+    "map": "research-oos-03.w3x",
+    "clients": 3,
+    "status": "FAIL",
+    "message": "OOS detected by ydhost",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-070935-bda4c5",
+    "map": "research-soak-03.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
   }
 ]

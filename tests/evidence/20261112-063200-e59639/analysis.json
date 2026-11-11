@@ -1,0 +1,89 @@
+{
+  "session": "20261112-063200-e59639",
+  "peers": [
+    {
+      "log": "research-clock-01-P1.log",
+      "wall_seconds_boot_to_done": 18.735,
+      "benchmarks": {},
+      "resources": [],
+      "allocations": [],
+      "clocks": [],
+      "native_clocks": [
+        "native_seconds=5 shared_ticks=500 logical_seconds=5.00 os_clock=6.659000",
+        "native_seconds=10 shared_ticks=1000 logical_seconds=10.00 os_clock=12.841000",
+        "native_seconds=15 shared_ticks=1500 logical_seconds=15.00 os_clock=18.735000"
+      ]
+    },
+    {
+      "log": "research-clock-01-P2.log",
+      "wall_seconds_boot_to_done": 18.677,
+      "benchmarks": {},
+      "resources": [],
+      "allocations": [],
+      "clocks": [],
+      "native_clocks": [
+        "native_seconds=5 shared_ticks=500 logical_seconds=5.00 os_clock=6.601000",
+        "native_seconds=10 shared_ticks=1000 logical_seconds=10.00 os_clock=12.783000",
+        "native_seconds=15 shared_ticks=1500 logical_seconds=15.00 os_clock=18.676000"
+      ]
+    },
+    {
+      "log": "research-clock-01-P3.log",
+      "wall_seconds_boot_to_done": 18.71,
+      "benchmarks": {},
+      "resources": [],
+      "allocations": [],
+      "clocks": [],
+      "native_clocks": [
+        "native_seconds=5 shared_ticks=500 logical_seconds=5.00 os_clock=6.632000",
+        "native_seconds=10 shared_ticks=1000 logical_seconds=10.00 os_clock=12.798000",
+        "native_seconds=15 shared_ticks=1500 logical_seconds=15.00 os_clock=18.709000"
+      ]
+    }
+  ],
+  "processes": [
+    {
+      "pid": 18604,
+      "player": "LanP1",
+      "samples": 2,
+      "sample_span_seconds": 10.406857,
+      "private_mib_first": 181.01953125,
+      "private_mib_last": 180.58203125,
+      "private_mib_max": 181.01953125,
+      "late_private_mib_median_first_window": 180.80078125,
+      "late_private_mib_median_last_window": 180.80078125,
+      "working_set_mib_max": 164.8984375,
+      "os_handles_first": 4769,
+      "os_handles_last": 4775
+    },
+    {
+      "pid": 21828,
+      "player": "LanP2",
+      "samples": 3,
+      "sample_span_seconds": 20.742505,
+      "private_mib_first": 180.94140625,
+      "private_mib_last": 180.671875,
+      "private_mib_max": 180.94140625,
+      "late_private_mib_median_first_window": 180.671875,
+      "late_private_mib_median_last_window": 180.671875,
+      "working_set_mib_max": 165.12109375,
+      "os_handles_first": 4769,
+      "os_handles_last": 4770
+    },
+    {
+      "pid": 33540,
+      "player": "LanP3",
+      "samples": 3,
+      "sample_span_seconds": 20.730027,
+      "private_mib_first": 180.890625,
+      "private_mib_last": 181.0703125,
+      "private_mib_max": 181.0703125,
+      "late_private_mib_median_first_window": 180.890625,
+      "late_private_mib_median_last_window": 180.890625,
+      "working_set_mib_max": 213.3203125,
+      "os_handles_first": 4683,
+      "os_handles_last": 4686
+    }
+  ],
+  "resource_profile": []
+}

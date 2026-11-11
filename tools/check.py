@@ -5,10 +5,10 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 checks = [[sys.executable, 'tools/stage.py']]
-for folder in ('src', 'tests', 'examples'):
+for folder in ('src', 'tests', 'examples', 'research'):
     for path in sorted((ROOT / folder).rglob('*.lua')):
         checks.append(['luac', '-p', str(path.relative_to(ROOT))])
-checks += [['lua', 'tests/run.lua'], ['lua', 'tests/upstream_audit.lua'], ['lua', 'tests/bridge_mock.lua'], ['lua', 'tests/ui_mock.lua']]
+checks += [['lua', 'tests/run.lua'], ['lua', 'tests/extended.lua'], ['lua', 'tests/upstream_audit.lua'], ['lua', 'tests/bridge_mock.lua'], ['lua', 'tests/ui_mock.lua']]
 lines = []
 failed = False
 for command in checks:

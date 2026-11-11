@@ -1,0 +1,46 @@
+2026-11-12 05:12:38.306 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 05:12:39.748 [info]: PASS: expected active humans=1
+2026-11-12 05:12:39.748 [info]: PASS: official UI controls initialized
+2026-11-12 05:12:39.748 [info]: PASS: UI globals and standard math isolated
+2026-11-12 05:12:39.748 [info]: PASS: legacy sync and gameplay entry absent
+2026-11-12 05:12:39.749 [info]: PASS: native button has positive width
+2026-11-12 05:12:39.749 [info]: PASS: native text round trip
+2026-11-12 05:12:39.749 [info]: PASS: local UI cannot register gameplay entities
+2026-11-12 05:12:39.749 [info]: PASS: unsafe and oversized input rejected
+2026-11-12 05:12:39.758 [info]: PASS: native model created
+2026-11-12 05:12:39.771 [info]: PASS: native model2 created
+2026-11-12 05:12:39.772 [info]: PASS: native scroll panel created
+2026-11-12 05:12:39.775 [info]: PASS: progress handles zero denominator
+2026-11-12 05:12:39.776 [info]: PASS: models and scroll disposal return to baseline
+2026-11-12 05:12:39.776 [info]: PASS: viewport hit test excludes clipped region
+2026-11-12 05:12:39.776 [info]: PASS: continuous fractional scroll position
+2026-11-12 05:12:39.777 [info]: PASS: scrolled hit test uses viewport
+2026-11-12 05:12:39.777 [info]: PASS: nested clipping intersection
+2026-11-12 05:12:39.777 [info]: PASS: native model under viewport survives fractional scroll
+2026-11-12 05:12:39.782 [info]: [FONT_PROBE] requested=8.00 width=54.6150 height=14.4966
+2026-11-12 05:12:39.782 [info]: PASS: native font metrics finite size=8
+2026-11-12 05:12:39.782 [info]: PASS: native font metrics nondecreasing size=8
+2026-11-12 05:12:39.855 [info]: [FONT_PROBE] requested=16.00 width=89.4556 height=23.1946
+2026-11-12 05:12:39.856 [info]: PASS: native font metrics finite size=16
+2026-11-12 05:12:39.856 [info]: PASS: native font metrics nondecreasing size=16
+2026-11-12 05:12:39.901 [info]: [FONT_PROBE] requested=16.50 width=89.4556 height=23.1946
+2026-11-12 05:12:39.902 [info]: PASS: native font metrics finite size=16.5
+2026-11-12 05:12:39.902 [info]: PASS: native font metrics nondecreasing size=16.5
+2026-11-12 05:12:39.979 [info]: [FONT_PROBE] requested=32.00 width=89.4556 height=23.1946
+2026-11-12 05:12:39.979 [info]: PASS: native font metrics finite size=32
+2026-11-12 05:12:39.979 [info]: PASS: native font metrics nondecreasing size=32
+2026-11-12 05:12:39.994 [info]: [LuaScaffold] COMMAND ping	0	1
+2026-11-12 05:12:40.026 [info]: [FONT_PROBE] requested=64.00 width=89.4556 height=23.1946
+2026-11-12 05:12:40.027 [info]: PASS: native font metrics finite size=64
+2026-11-12 05:12:40.027 [info]: PASS: native font metrics nondecreasing size=64
+2026-11-12 05:12:40.116 [info]: [FONT_PROBE] requested=128.00 width=89.4556 height=23.1946
+2026-11-12 05:12:40.116 [info]: PASS: native font metrics finite size=128
+2026-11-12 05:12:40.116 [info]: PASS: native font metrics nondecreasing size=128
+2026-11-12 05:12:40.162 [info]: [FONT_PROBE] requested=256.00 width=89.4556 height=23.1946
+2026-11-12 05:12:40.162 [info]: PASS: native font metrics finite size=256
+2026-11-12 05:12:40.162 [error]: FAIL: [LuaScaffold] FAULT	script\app\runtime_test.lua:9: runtime assertion: font change affects metrics after layout refresh	stack traceback:
+	script\scaffold\innerjapi.lua:29: in upvalue 'fail'
+	script\scaffold\innerjapi.lua:34: in upvalue 'protect'
+	script\scaffold\innerjapi.lua:81: in function <script\scaffold\innerjapi.lua:80>
+	[C]: in function 'xpcall'
+	[string "fix_closure"]:67: in function <[string "fix_closure"]:64>

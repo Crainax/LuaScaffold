@@ -1,0 +1,15 @@
+2026-11-12 05:27:53.413 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 05:27:53.415 [error]: FAIL: [LuaScaffold] LUA ERROR	script\scaffold\context.lua:5: gameplay mutation from local UI context
+stack traceback:
+	[C]: in function 'error'
+	script\scaffold\context.lua:12: in function 'scaffold.context.local_call'
+	script\app\runtime_test.lua:29: in function 'app.runtime_test.start'
+	script\app\main.lua:37: in function 'app.main.start'
+	plugin_main.lua:21: in function <plugin_main.lua:19>
+	[C]: in function 'xpcall'
+	plugin_main.lua:19: in main chunk
+	[C]: in function 'require'	stack traceback:
+	plugin_main.lua:17: in field 'error_handle'
+	plugin_main.lua:24: in main chunk
+	[C]: in function 'require'
+2026-11-12 05:27:53.814 [info]: [DEV_VIEW] replaced

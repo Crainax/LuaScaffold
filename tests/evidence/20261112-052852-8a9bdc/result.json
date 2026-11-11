@@ -1,0 +1,13 @@
+{
+  "clients": 6,
+  "status": "FAIL",
+  "message": "Failure in D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\research-six-02-P1.log",
+  "logs": [
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\research-six-02-P1.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\research-six-02-P2.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\research-six-02-P3.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\research-six-02-P4.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\research-six-02-P5.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\research-six-02-P6.log"
+  ]
+}

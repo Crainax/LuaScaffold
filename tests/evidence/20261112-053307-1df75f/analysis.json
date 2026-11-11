@@ -1,0 +1,1289 @@
+{
+  "session": "20261112-053307-1df75f",
+  "peers": [
+    {
+      "log": "research-soak-02-P1.log",
+      "wall_seconds_boot_to_done": 2170.889,
+      "benchmarks": {
+        "empty_loop": {
+          "iterations": 250000,
+          "seconds": [
+            0.003,
+            0.003,
+            0.002,
+            0.002,
+            0.002
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 2.0,
+          "min_ms": 2.0,
+          "max_ms": 3.0
+        },
+        "closure_capture": {
+          "iterations": 250000,
+          "seconds": [
+            0.059,
+            0.053,
+            0.05,
+            0.052,
+            0.083
+          ],
+          "heap_delta_kib": [
+            710.93,
+            710.93,
+            710.93,
+            710.93,
+            710.93
+          ],
+          "median_ms": 53.0,
+          "min_ms": 50.0,
+          "max_ms": 83.0
+        },
+        "empty_table": {
+          "iterations": 250000,
+          "seconds": [
+            0.055,
+            0.04,
+            0.036,
+            0.03,
+            0.033
+          ],
+          "heap_delta_kib": [
+            498.953,
+            498.953,
+            498.953,
+            498.953,
+            498.953
+          ],
+          "median_ms": 36.0,
+          "min_ms": 30.0,
+          "max_ms": 55.0
+        },
+        "table_4_fields": {
+          "iterations": 250000,
+          "seconds": [
+            0.074,
+            0.076,
+            0.074,
+            0.065,
+            0.074
+          ],
+          "heap_delta_kib": [
+            480.219,
+            480.219,
+            480.219,
+            480.219,
+            480.219
+          ],
+          "median_ms": 74.0,
+          "min_ms": 65.0,
+          "max_ms": 76.0
+        },
+        "concat_unique_short": {
+          "iterations": 250000,
+          "seconds": [
+            0.143,
+            0.148,
+            0.137,
+            0.135,
+            0.132
+          ],
+          "heap_delta_kib": [
+            863.335,
+            973.572,
+            973.572,
+            973.572,
+            973.572
+          ],
+          "median_ms": 137.0,
+          "min_ms": 132.0,
+          "max_ms": 148.0
+        },
+        "string_equal_existing": {
+          "iterations": 250000,
+          "seconds": [
+            0.015,
+            0.02,
+            0.017,
+            0.018,
+            0.018
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 18.0,
+          "min_ms": 15.0,
+          "max_ms": 20.0
+        },
+        "events_100_listeners": {
+          "iterations": 5000,
+          "seconds": [
+            0.038,
+            0.082,
+            0.102,
+            0.093,
+            0.095
+          ],
+          "heap_delta_kib": [
+            836.957,
+            836.957,
+            836.957,
+            836.957,
+            836.957
+          ],
+          "median_ms": 93.0,
+          "min_ms": 38.0,
+          "max_ms": 102.0
+        },
+        "scheduler_1000_idle": {
+          "iterations": 1000,
+          "seconds": [
+            0.141,
+            0.129,
+            0.133,
+            0.132,
+            0.131
+          ],
+          "heap_delta_kib": [
+            627.617,
+            627.617,
+            627.652,
+            627.652,
+            627.652
+          ],
+          "median_ms": 132.0,
+          "min_ms": 129.0,
+          "max_ms": 141.0
+        },
+        "native_text_update": {
+          "iterations": 20000,
+          "seconds": [
+            0.033,
+            0.039,
+            0.047,
+            0.045,
+            0.044
+          ],
+          "heap_delta_kib": [
+            678.051,
+            678.051,
+            678.051,
+            678.051,
+            678.051
+          ],
+          "median_ms": 44.0,
+          "min_ms": 33.0,
+          "max_ms": 47.0
+        }
+      },
+      "resources": [
+        {
+          "tick": 6000,
+          "lua_kib": 398.521,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 12000,
+          "lua_kib": 398.521,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 18000,
+          "lua_kib": 399.084,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 24000,
+          "lua_kib": 399.646,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 30000,
+          "lua_kib": 398.521,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 36000,
+          "lua_kib": 399.084,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 42000,
+          "lua_kib": 398.521,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 48000,
+          "lua_kib": 398.521,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 54000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 60000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 66000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 72000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 78000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 84000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 90000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 96000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 102000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 108000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 114000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 120000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 126000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 132000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 138000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 144000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 150000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 156000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 162000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 168000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 174000,
+          "lua_kib": 387.271,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 180000,
+          "lua_kib": 387.334,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        }
+      ],
+      "allocations": [
+        {
+          "name": "closure_capture",
+          "iterations": 10000,
+          "kib": 546.875
+        },
+        {
+          "name": "empty_table",
+          "iterations": 10000,
+          "kib": 468.75
+        }
+      ],
+      "clocks": [
+        "logical_seconds=5 os_clock=5.681000 os_time=6"
+      ]
+    },
+    {
+      "log": "research-soak-02-P2.log",
+      "wall_seconds_boot_to_done": 2170.922,
+      "benchmarks": {
+        "empty_loop": {
+          "iterations": 250000,
+          "seconds": [
+            0.002,
+            0.002,
+            0.002,
+            0.002,
+            0.002
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 2.0,
+          "min_ms": 2.0,
+          "max_ms": 2.0
+        },
+        "closure_capture": {
+          "iterations": 250000,
+          "seconds": [
+            0.053,
+            0.05,
+            0.058,
+            0.051,
+            0.074
+          ],
+          "heap_delta_kib": [
+            713.391,
+            713.391,
+            713.391,
+            713.391,
+            713.391
+          ],
+          "median_ms": 53.0,
+          "min_ms": 50.0,
+          "max_ms": 74.0
+        },
+        "empty_table": {
+          "iterations": 250000,
+          "seconds": [
+            0.054,
+            0.049,
+            0.038,
+            0.034,
+            0.033
+          ],
+          "heap_delta_kib": [
+            500.781,
+            500.781,
+            500.781,
+            500.781,
+            500.781
+          ],
+          "median_ms": 38.0,
+          "min_ms": 33.0,
+          "max_ms": 54.0
+        },
+        "table_4_fields": {
+          "iterations": 250000,
+          "seconds": [
+            0.072,
+            0.085,
+            0.072,
+            0.067,
+            0.075
+          ],
+          "heap_delta_kib": [
+            493.781,
+            493.781,
+            493.781,
+            493.781,
+            493.781
+          ],
+          "median_ms": 72.0,
+          "min_ms": 67.0,
+          "max_ms": 85.0
+        },
+        "concat_unique_short": {
+          "iterations": 250000,
+          "seconds": [
+            0.146,
+            0.161,
+            0.152,
+            0.131,
+            0.125
+          ],
+          "heap_delta_kib": [
+            833.866,
+            944.104,
+            944.104,
+            944.104,
+            944.104
+          ],
+          "median_ms": 146.0,
+          "min_ms": 125.0,
+          "max_ms": 161.0
+        },
+        "string_equal_existing": {
+          "iterations": 250000,
+          "seconds": [
+            0.011,
+            0.021,
+            0.02,
+            0.018,
+            0.013
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 18.0,
+          "min_ms": 11.0,
+          "max_ms": 21.0
+        },
+        "events_100_listeners": {
+          "iterations": 5000,
+          "seconds": [
+            0.062,
+            0.094,
+            0.102,
+            0.07,
+            0.088
+          ],
+          "heap_delta_kib": [
+            836.871,
+            836.871,
+            836.871,
+            836.871,
+            836.871
+          ],
+          "median_ms": 88.0,
+          "min_ms": 62.0,
+          "max_ms": 102.0
+        },
+        "scheduler_1000_idle": {
+          "iterations": 1000,
+          "seconds": [
+            0.13,
+            0.128,
+            0.138,
+            0.136,
+            0.129
+          ],
+          "heap_delta_kib": [
+            627.617,
+            627.617,
+            627.652,
+            627.652,
+            627.652
+          ],
+          "median_ms": 130.0,
+          "min_ms": 128.0,
+          "max_ms": 138.0
+        },
+        "native_text_update": {
+          "iterations": 20000,
+          "seconds": [
+            0.043,
+            0.04,
+            0.053,
+            0.045,
+            0.047
+          ],
+          "heap_delta_kib": [
+            678.051,
+            678.051,
+            678.051,
+            678.051,
+            678.051
+          ],
+          "median_ms": 45.0,
+          "min_ms": 40.0,
+          "max_ms": 53.0
+        }
+      },
+      "resources": [
+        {
+          "tick": 6000,
+          "lua_kib": 799.977,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 12000,
+          "lua_kib": 897.038,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 18000,
+          "lua_kib": 638.848,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 24000,
+          "lua_kib": 1410.312,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 30000,
+          "lua_kib": 1403.586,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 36000,
+          "lua_kib": 1425.562,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 42000,
+          "lua_kib": 1442.082,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 48000,
+          "lua_kib": 722.562,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 54000,
+          "lua_kib": 808.109,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 60000,
+          "lua_kib": 895.842,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 66000,
+          "lua_kib": 884.488,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 72000,
+          "lua_kib": 878.599,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 78000,
+          "lua_kib": 898.083,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 84000,
+          "lua_kib": 890.153,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 90000,
+          "lua_kib": 884.488,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 96000,
+          "lua_kib": 891.825,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 102000,
+          "lua_kib": 868.848,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 108000,
+          "lua_kib": 885.789,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 114000,
+          "lua_kib": 884.488,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 120000,
+          "lua_kib": 866.524,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 126000,
+          "lua_kib": 889.638,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 132000,
+          "lua_kib": 885.786,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 138000,
+          "lua_kib": 892.301,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 144000,
+          "lua_kib": 878.621,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 150000,
+          "lua_kib": 876.216,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 156000,
+          "lua_kib": 869.012,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 162000,
+          "lua_kib": 913.91,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 168000,
+          "lua_kib": 861.473,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 174000,
+          "lua_kib": 889.638,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 180000,
+          "lua_kib": 889.367,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        }
+      ],
+      "allocations": [
+        {
+          "name": "closure_capture",
+          "iterations": 10000,
+          "kib": 546.875
+        },
+        {
+          "name": "empty_table",
+          "iterations": 10000,
+          "kib": 468.75
+        }
+      ],
+      "clocks": [
+        "logical_seconds=5 os_clock=5.867000 os_time=6"
+      ]
+    },
+    {
+      "log": "research-soak-02-P3.log",
+      "wall_seconds_boot_to_done": 2170.891,
+      "benchmarks": {
+        "empty_loop": {
+          "iterations": 250000,
+          "seconds": [
+            0.002,
+            0.002,
+            0.003,
+            0.003,
+            0.003
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 3.0,
+          "min_ms": 2.0,
+          "max_ms": 3.0
+        },
+        "closure_capture": {
+          "iterations": 250000,
+          "seconds": [
+            0.057,
+            0.054,
+            0.057,
+            0.059,
+            0.092
+          ],
+          "heap_delta_kib": [
+            712.57,
+            712.57,
+            712.57,
+            712.57,
+            712.57
+          ],
+          "median_ms": 57.0,
+          "min_ms": 54.0,
+          "max_ms": 92.0
+        },
+        "empty_table": {
+          "iterations": 250000,
+          "seconds": [
+            0.05,
+            0.034,
+            0.032,
+            0.031,
+            0.034
+          ],
+          "heap_delta_kib": [
+            500.172,
+            500.172,
+            500.172,
+            500.172,
+            500.172
+          ],
+          "median_ms": 34.0,
+          "min_ms": 31.0,
+          "max_ms": 50.0
+        },
+        "table_4_fields": {
+          "iterations": 250000,
+          "seconds": [
+            0.075,
+            0.079,
+            0.071,
+            0.073,
+            0.08
+          ],
+          "heap_delta_kib": [
+            483.609,
+            483.609,
+            483.609,
+            483.609,
+            483.609
+          ],
+          "median_ms": 75.0,
+          "min_ms": 71.0,
+          "max_ms": 80.0
+        },
+        "concat_unique_short": {
+          "iterations": 250000,
+          "seconds": [
+            0.156,
+            0.152,
+            0.143,
+            0.138,
+            0.134
+          ],
+          "heap_delta_kib": [
+            864.776,
+            975.094,
+            975.094,
+            975.094,
+            975.094
+          ],
+          "median_ms": 143.0,
+          "min_ms": 134.0,
+          "max_ms": 156.0
+        },
+        "string_equal_existing": {
+          "iterations": 250000,
+          "seconds": [
+            0.019,
+            0.011,
+            0.01,
+            0.015,
+            0.01
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 11.0,
+          "min_ms": 10.0,
+          "max_ms": 19.0
+        },
+        "events_100_listeners": {
+          "iterations": 5000,
+          "seconds": [
+            0.061,
+            0.111,
+            0.09,
+            0.076,
+            0.092
+          ],
+          "heap_delta_kib": [
+            836.871,
+            836.871,
+            836.871,
+            836.871,
+            836.871
+          ],
+          "median_ms": 90.0,
+          "min_ms": 61.0,
+          "max_ms": 111.0
+        },
+        "scheduler_1000_idle": {
+          "iterations": 1000,
+          "seconds": [
+            0.147,
+            0.151,
+            0.127,
+            0.138,
+            0.131
+          ],
+          "heap_delta_kib": [
+            627.617,
+            627.617,
+            627.652,
+            627.652,
+            627.652
+          ],
+          "median_ms": 138.0,
+          "min_ms": 127.0,
+          "max_ms": 151.0
+        },
+        "native_text_update": {
+          "iterations": 20000,
+          "seconds": [
+            0.048,
+            0.045,
+            0.046,
+            0.046,
+            0.025
+          ],
+          "heap_delta_kib": [
+            678.051,
+            678.051,
+            678.051,
+            678.051,
+            678.051
+          ],
+          "median_ms": 46.0,
+          "min_ms": 25.0,
+          "max_ms": 48.0
+        }
+      },
+      "resources": [
+        {
+          "tick": 6000,
+          "lua_kib": 1166.324,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 12000,
+          "lua_kib": 760.75,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 18000,
+          "lua_kib": 831.312,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 24000,
+          "lua_kib": 1240.523,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 30000,
+          "lua_kib": 753.285,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 36000,
+          "lua_kib": 723.262,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 42000,
+          "lua_kib": 722.762,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 48000,
+          "lua_kib": 847.121,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 54000,
+          "lua_kib": 1077.957,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 60000,
+          "lua_kib": 1227.623,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 66000,
+          "lua_kib": 1242.996,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 72000,
+          "lua_kib": 1180.095,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 78000,
+          "lua_kib": 1307.704,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 84000,
+          "lua_kib": 1234.966,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 90000,
+          "lua_kib": 1256.652,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 96000,
+          "lua_kib": 1211.302,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 102000,
+          "lua_kib": 1177.797,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 108000,
+          "lua_kib": 1245.688,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 114000,
+          "lua_kib": 1262.273,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 120000,
+          "lua_kib": 1213.188,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 126000,
+          "lua_kib": 1258.017,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 132000,
+          "lua_kib": 1242.243,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 138000,
+          "lua_kib": 1227.344,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 144000,
+          "lua_kib": 1235.016,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 150000,
+          "lua_kib": 1252.806,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 156000,
+          "lua_kib": 1206.152,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 162000,
+          "lua_kib": 1256.652,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 168000,
+          "lua_kib": 1238.824,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 174000,
+          "lua_kib": 1258.017,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        },
+        {
+          "tick": 180000,
+          "lua_kib": 1214.656,
+          "controls": 6,
+          "ui_tasks": 1,
+          "events": 0
+        }
+      ],
+      "allocations": [
+        {
+          "name": "closure_capture",
+          "iterations": 10000,
+          "kib": 546.875
+        },
+        {
+          "name": "empty_table",
+          "iterations": 10000,
+          "kib": 468.75
+        }
+      ],
+      "clocks": [
+        "logical_seconds=5 os_clock=5.836000 os_time=6"
+      ]
+    }
+  ],
+  "processes": [
+    {
+      "pid": 18408,
+      "player": "LanP1",
+      "samples": 210,
+      "sample_span_seconds": 2170.387482,
+      "private_mib_first": 186.2421875,
+      "private_mib_last": 240.47265625,
+      "private_mib_max": 244.56640625,
+      "late_private_mib_median_first_window": 187.18359375,
+      "late_private_mib_median_last_window": 242.708984375,
+      "working_set_mib_max": 216.59375,
+      "os_handles_first": 4691,
+      "os_handles_last": 5393
+    },
+    {
+      "pid": 12916,
+      "player": "LanP2",
+      "samples": 210,
+      "sample_span_seconds": 2170.318177,
+      "private_mib_first": 186.34375,
+      "private_mib_last": 346.4453125,
+      "private_mib_max": 349.61328125,
+      "late_private_mib_median_first_window": 190.36328125,
+      "late_private_mib_median_last_window": 346.36328125,
+      "working_set_mib_max": 314.74609375,
+      "os_handles_first": 4691,
+      "os_handles_last": 5393
+    },
+    {
+      "pid": 28436,
+      "player": "LanP3",
+      "samples": 210,
+      "sample_span_seconds": 2170.270993,
+      "private_mib_first": 186.49609375,
+      "private_mib_last": 292.8828125,
+      "private_mib_max": 295.9296875,
+      "late_private_mib_median_first_window": 188.109375,
+      "late_private_mib_median_last_window": 295.109375,
+      "working_set_mib_max": 264.7265625,
+      "os_handles_first": 4692,
+      "os_handles_last": 5396
+    }
+  ],
+  "resource_profile": []
+}

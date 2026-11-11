@@ -1,0 +1,59 @@
+2026-11-12 05:07:35.495 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 05:07:36.925 [info]: PASS: expected active humans=1
+2026-11-12 05:07:36.925 [info]: PASS: official UI controls initialized
+2026-11-12 05:07:36.926 [info]: PASS: UI globals and standard math isolated
+2026-11-12 05:07:36.926 [info]: PASS: legacy sync and gameplay entry absent
+2026-11-12 05:07:36.926 [info]: PASS: native button has positive width
+2026-11-12 05:07:36.926 [info]: PASS: native text round trip
+2026-11-12 05:07:36.926 [info]: PASS: local UI cannot register gameplay entities
+2026-11-12 05:07:36.927 [info]: PASS: unsafe and oversized input rejected
+2026-11-12 05:07:36.934 [info]: PASS: native model created
+2026-11-12 05:07:36.947 [info]: PASS: native model2 created
+2026-11-12 05:07:36.948 [info]: PASS: native scroll panel created
+2026-11-12 05:07:36.952 [info]: PASS: progress handles zero denominator
+2026-11-12 05:07:36.952 [info]: PASS: models and scroll disposal return to baseline
+2026-11-12 05:07:36.953 [info]: PASS: viewport hit test excludes clipped region
+2026-11-12 05:07:36.953 [info]: PASS: continuous fractional scroll position
+2026-11-12 05:07:36.953 [info]: PASS: scrolled hit test uses viewport
+2026-11-12 05:07:36.954 [info]: PASS: nested clipping intersection
+2026-11-12 05:07:36.954 [info]: PASS: native model under viewport survives fractional scroll
+2026-11-12 05:07:36.955 [info]: [FONT_PROBE] requested=8.00 width=97.9304 height=14.4966
+2026-11-12 05:07:36.955 [info]: PASS: native font metrics finite size=8
+2026-11-12 05:07:36.956 [info]: PASS: native font metrics nondecreasing size=8
+2026-11-12 05:07:36.956 [info]: [FONT_PROBE] requested=16.00 width=97.9304 height=14.4966
+2026-11-12 05:07:36.957 [info]: PASS: native font metrics finite size=16
+2026-11-12 05:07:36.957 [info]: PASS: native font metrics nondecreasing size=16
+2026-11-12 05:07:36.957 [info]: [FONT_PROBE] requested=16.50 width=97.9304 height=14.4966
+2026-11-12 05:07:36.957 [info]: PASS: native font metrics finite size=16.5
+2026-11-12 05:07:36.957 [info]: PASS: native font metrics nondecreasing size=16.5
+2026-11-12 05:07:36.958 [info]: [FONT_PROBE] requested=32.00 width=97.9304 height=14.4966
+2026-11-12 05:07:36.958 [info]: PASS: native font metrics finite size=32
+2026-11-12 05:07:36.958 [info]: PASS: native font metrics nondecreasing size=32
+2026-11-12 05:07:36.958 [info]: [FONT_PROBE] requested=64.00 width=97.9304 height=14.4966
+2026-11-12 05:07:36.958 [info]: PASS: native font metrics finite size=64
+2026-11-12 05:07:36.959 [info]: PASS: native font metrics nondecreasing size=64
+2026-11-12 05:07:36.959 [info]: [FONT_PROBE] requested=128.00 width=97.9304 height=14.4966
+2026-11-12 05:07:36.959 [info]: PASS: native font metrics finite size=128
+2026-11-12 05:07:36.959 [info]: PASS: native font metrics nondecreasing size=128
+2026-11-12 05:07:36.959 [info]: [FONT_PROBE] requested=256.00 width=97.9304 height=14.4966
+2026-11-12 05:07:36.960 [info]: PASS: native font metrics finite size=256
+2026-11-12 05:07:36.960 [info]: PASS: font changes preserve Unicode text
+2026-11-12 05:07:36.960 [info]: PASS: viewport/font probe releases controls
+2026-11-12 05:07:37.186 [info]: [LuaScaffold] COMMAND ping	0	1
+2026-11-12 05:07:37.559 [info]: PASS: destroyed UI releases cancelled closure captures
+2026-11-12 05:07:37.559 [info]: [NATIVE_CALLBACK_GC] retained=0/8
+2026-11-12 05:07:37.559 [info]: PASS: nested UI destroy is idempotent
+2026-11-12 05:07:46.281 [info]: [STATE_MATCH] phase=1 hash=1212553988 rng=14
+2026-11-12 05:07:52.560 [info]: [STATE_MATCH] phase=2 hash=229364986 rng=24
+2026-11-12 05:07:58.707 [info]: [STATE_MATCH] phase=3 hash=319171517 rng=34
+2026-11-12 05:08:04.451 [info]: [STATE_MATCH] phase=4 hash=1714330074 rng=44
+2026-11-12 05:08:10.453 [info]: [STATE_MATCH] phase=5 hash=785936680 rng=54
+2026-11-12 05:08:16.903 [info]: [STATE_MATCH] phase=6 hash=1349231593 rng=64
+2026-11-12 05:08:23.096 [info]: [STATE_MATCH] phase=7 hash=213337888 rng=74
+2026-11-12 05:08:24.825 [info]: PASS: UI lifecycle stress cycles=173
+2026-11-12 05:08:24.826 [info]: PASS: gameplay RNG and peer snapshots exercised
+2026-11-12 05:08:24.826 [info]: PASS: UI command exactly once player=0
+2026-11-12 05:08:24.826 [info]: PASS: bridge has no fault
+2026-11-12 05:08:24.827 [info]: PASS: UI shutdown clears all controls
+2026-11-12 05:08:28.699 [info]: [METRICS] ui_cycles=173 rng_calls=77 phases=7 assertions=40
+2026-11-12 05:08:28.699 [info]: [UT_DONE] LuaScaffold research-ui-01 P1

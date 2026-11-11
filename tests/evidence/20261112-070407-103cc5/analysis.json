@@ -1,0 +1,33 @@
+{
+  "session": "20261112-070407-103cc5",
+  "peers": [
+    {
+      "log": "research-ui-05-P1.log",
+      "wall_seconds_boot_to_done": 53.366,
+      "benchmarks": {},
+      "resources": [],
+      "allocations": [],
+      "clocks": [
+        "logical_seconds=5 os_clock=6.359000 os_time=6"
+      ],
+      "native_clocks": []
+    }
+  ],
+  "processes": [
+    {
+      "pid": 9668,
+      "player": "LanP1",
+      "samples": 6,
+      "sample_span_seconds": 50.597764,
+      "private_mib_first": 185.828125,
+      "private_mib_last": 184.62890625,
+      "private_mib_max": 188.29296875,
+      "late_private_mib_median_first_window": 188.228515625,
+      "late_private_mib_median_last_window": 188.228515625,
+      "working_set_mib_max": 164.3046875,
+      "os_handles_first": 4701,
+      "os_handles_last": 4710
+    }
+  ],
+  "resource_profile": []
+}

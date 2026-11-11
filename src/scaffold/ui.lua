@@ -6,20 +6,41 @@ local function initialize()
     require 'ui.base'
     local class, game = env.class, env.game
     local japi = env.japi
+    local set_view_port = class.ui_base.set_view_port
+    class.ui_base.set_view_port = function(self, enabled)
+        self._clip_children = not not enabled
+        return set_view_port(self, enabled)
+    end
+    class.ui_base.get_visible_rect = function(self)
+        if self._destroyed or not self:get_is_show() then return end
+        local left,top=self:get_real_position()
+        local right,bottom=left+self.w,top+self.h
+        local parent = self.parent
+        while parent do
+            if parent._clip_children then
+                local x,y=parent:get_real_position()
+                left,top=math.max(left,x),math.max(top,y)
+                right,bottom=math.min(right,x+parent.w),math.min(bottom,y+parent.h)
+            end
+            parent = parent.parent
+        end
+        if right<=left or bottom<=top then return end
+        return left,top,right,bottom
+    end
+    class.ui_base.point_in_rect = function(self, x, y)
+        local left,top,right,bottom=self:get_visible_rect()
+        return left~=nil and x>=left and y>=top and x<=right and y<=bottom
+    end
     game.add_event_sync = function()
         error('sync_key disabled; send an explicit command through the bridge')
     end
-    local old_register = game.register_event
+    game.events = require('scaffold.events').new('local')
     game.register_event = function(handlers)
-        old_register(handlers)
-        local active = true
-        return function()
-            if not active then return end
-            active = false
-            for i = #game.game_event, 1, -1 do
-                if game.game_event[i] == handlers then table.remove(game.game_event, i) end
-            end
-        end
+        assert(not stopped,'UI stopped')
+        return game.events:on(function(name,...)
+            local fn=handlers[name]
+            if fn then return fn(...) end
+        end)
     end
     local function own_task(self, schedule, ms, fn)
         assert(not self._destroyed and self._id, 'control destroyed')
@@ -90,7 +111,9 @@ local function initialize()
         assert(not stopped, 'UI stopped')
         assert(params.sync_key == nil, 'sync_key disabled; use commands')
         assert(not params.parent or not params.parent._destroyed, 'parent destroyed')
-        return builder(cls, params)
+        local control = builder(cls, params)
+        if control and (params.is_scroll or params.clip_children) then control:set_view_port(true) end
+        return control
     end
     local notify, callback = class.ui_base.event_notify, class.ui_base.event_callback
     class.ui_base.event_notify = function(self, name, ...)
@@ -137,6 +160,7 @@ function M.stop()
     for _, control in ipairs(list) do control:destroy() end
     stopped = true
     M.game.stop()
+    M.game.events:clear()
     M.game.game_event = {}
 end
 return M

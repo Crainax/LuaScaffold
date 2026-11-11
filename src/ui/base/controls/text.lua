@@ -14,13 +14,12 @@ local font = [[
 local font_map = {}
 
 local function load_font(font,size)
-    if font_map[size] ~= nil then 
-        return 
-    end
-    size = math.modf(size)
-    font_map[size] = 1
-    local data = string.format(font,size,size/1000)
+    local key=math.floor(size*100+0.5)
+    if font_map[key] ~= nil then return key end
+    font_map[key] = 1
+    local data = string.format(font,key,key/100000)
     load_fdf(data)
+    return key
 end
 
 
@@ -97,8 +96,9 @@ class.text = extends(class.panel){
         if type(self.font_size) == 'boolean' then 
             self._type = 'old_text'
         else
-            load_font(font,self.font_size)
-            self._type = string.format('%s%s',self._type,self.font_size)
+            assert(type(self.font_size) == 'number' and self.font_size > 0 and self.font_size < math.huge, 'positive finite font size required')
+            -- FDF sizes are cached to 0.01; runtime font setter may clamp in the engine.
+            self._type = 'text'..load_font(font,self.font_size)
         end
  
         self._id = japi.CreateFrameByTagName( self._base, self._name, panel._id, self._type, math.max(0,self.align))
@@ -238,7 +238,8 @@ class.text = extends(class.panel){
 
         path = path or 'fonts.TTF'
 
-        if self._real_size == real_size and self.path == path then 
+        assert(real_size > 0 and real_size < math.huge, 'positive finite font size required')
+        if self._real_size == real_size and self.font_path == path then
             return 
         end
 

@@ -18,23 +18,27 @@ def verify():
     return len(manifest['files'])
 
 
-def stage(name, include_tests=False):
+def stage(name, include_tests=False, include_dev=False):
     assert name and all(c.isascii() and (c.isalnum() or c in '-_') for c in name), 'ASCII stage name required'
     dst = ROOT / 'build' / name
     assert not dst.exists(), 'Output already exists: choose another stage name'
     dst.mkdir(parents=True)
     for file in sorted((ROOT / 'src').rglob('*.lua')):
         rel = file.relative_to(ROOT / 'src')
-        if rel.as_posix() == 'app/runtime_test.lua' and not include_tests:
+        if (rel.as_posix() == 'app/runtime_test.lua' or rel.parts[0] == 'probes') and not include_tests:
             continue
-        target = dst / (rel if rel.as_posix() == 'plugin_main.lua' else Path('script') / rel)
+        if rel.parts[0] == 'dev' and not include_dev:
+            continue
+        target = dst / (rel if rel.as_posix() in ('plugin_main.lua','jass2binary.lua') else Path('script') / rel)
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(file, target)
     project = json.loads((ROOT / 'project.json').read_text(encoding='utf-8'))
     project_id = project['id']
+    log_folder = project.get('log_folder',project_id)
+    assert log_folder and log_folder not in ('.','..') and not any(c in log_folder for c in '/\\:\r\n\0"'), 'invalid log folder'
     assert project_id and all(c.isascii() and (c.isalnum() or c in '-_') for c in project_id)
     (dst/'script/app/config.lua').write_text(
-        "return {ui=true,runtime_test=false,build_id='%s',project_id='%s'}\n" % (name,project_id), encoding='utf-8')
+        "return {ui=true,runtime_test=false,dev=false,build_id='%s',project_id='%s',log_folder=%s}\n" % (name,project_id,json.dumps(log_folder,ensure_ascii=False)), encoding='utf-8')
     for name in ('callback', '(key)', 'wenhao_plugin.tga'):
         shutil.copy2(VENDOR / 'package' / 'plugin' / name, dst / name)
     shutil.copytree(VENDOR / 'package' / 'plugin' / 'core', dst / 'core')

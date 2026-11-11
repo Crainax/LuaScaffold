@@ -1,0 +1,7 @@
+Parse successful:     2418 lines: D:/WE/KKWE_Plugin/jass/system/ht/common.j
+Parse successful:    10230 lines: D:/WE/KKWE_Plugin/jass/system/ht/blizzard.j
+D:/Program Files (x86)/Warcraft III Frozen Throne/jass2binary/war3map.j:9: Undeclared function EXLoadFileHashKey
+D:/Program Files (x86)/Warcraft III Frozen Throne/jass2binary/war3map.j:13: Undeclared function EXLoadFileHashKey
+D:/Program Files (x86)/Warcraft III Frozen Throne/jass2binary/war3map.j:17: Undeclared function EXLoadFileHashKey
+D:/Program Files (x86)/Warcraft III Frozen Throne/jass2binary/war3map.j failed with 3 errors
+Parse failed: 3 errors total

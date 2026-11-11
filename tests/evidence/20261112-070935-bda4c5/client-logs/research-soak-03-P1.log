@@ -1,0 +1,659 @@
+2026-11-12 07:09:59.885 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 07:09:59.888 [info]: PASS: same-tick reschedule skips old dispatch batch
+2026-11-12 07:09:59.888 [info]: PASS: rescheduled task runs once on next tick
+2026-11-12 07:10:00.178 [info]: [DEV_VIEW] replaced
+2026-11-12 07:10:00.299 [info]: PASS: file watcher loads initial view
+2026-11-12 07:10:00.301 [info]: [DEV_VIEW_REJECTED] dev/view.lua:1: syntax error near '!'
+2026-11-12 07:10:00.409 [info]: PASS: file watcher rejects syntax and preserves view
+2026-11-12 07:10:00.410 [info]: [DEV_VIEW] replaced
+2026-11-12 07:10:00.515 [info]: PASS: file watcher recovers on valid edit
+2026-11-12 07:10:00.516 [info]: PASS: file watcher stop clears view
+2026-11-12 07:10:01.386 [info]: PASS: convenience timer repeats on shared logical ticks
+2026-11-12 07:10:01.386 [info]: PASS: expected active humans=3
+2026-11-12 07:10:01.387 [info]: PASS: official UI controls initialized
+2026-11-12 07:10:01.387 [info]: PASS: UI globals and standard math isolated
+2026-11-12 07:10:01.387 [info]: PASS: legacy sync and gameplay entry absent
+2026-11-12 07:10:01.387 [info]: PASS: native button has positive width
+2026-11-12 07:10:01.388 [info]: PASS: native text round trip
+2026-11-12 07:10:01.388 [info]: PASS: local UI cannot register gameplay entities
+2026-11-12 07:10:01.388 [info]: PASS: unsafe and oversized input rejected
+2026-11-12 07:10:01.396 [info]: PASS: native model created
+2026-11-12 07:10:01.410 [info]: PASS: native model2 created
+2026-11-12 07:10:01.410 [info]: PASS: native scroll panel created
+2026-11-12 07:10:01.415 [info]: PASS: progress handles zero denominator
+2026-11-12 07:10:01.416 [info]: PASS: models and scroll disposal return to baseline
+2026-11-12 07:10:01.430 [info]: PASS: view reload stops successfully
+2026-11-12 07:10:01.431 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:10:01.431 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:10:01.431 [info]: PASS: production reload disabled
+2026-11-12 07:10:01.432 [info]: PASS: invalid development source rejected
+2026-11-12 07:10:01.432 [info]: PASS: compiled view source mounts
+2026-11-12 07:10:01.650 [info]: [LuaScaffold] COMMAND ping	1	1
+2026-11-12 07:10:01.652 [info]: [LuaScaffold] COMMAND ping	2	1
+2026-11-12 07:10:01.652 [info]: [LuaScaffold] COMMAND ping	0	1
+2026-11-12 07:10:02.043 [info]: PASS: destroyed UI releases cancelled closure captures
+2026-11-12 07:10:02.043 [info]: [NATIVE_CALLBACK_GC] retained=0/8
+2026-11-12 07:10:02.043 [info]: PASS: nested UI destroy is idempotent
+2026-11-12 07:10:02.142 [info]: [BENCH] name=empty_loop n=250000 sample=1 seconds=0.003000 heap_delta_kib=0.000 gc=normal
+2026-11-12 07:10:02.145 [info]: [BENCH] name=empty_loop n=250000 sample=2 seconds=0.003000 heap_delta_kib=0.000 gc=normal
+2026-11-12 07:10:02.148 [info]: [BENCH] name=empty_loop n=250000 sample=3 seconds=0.003000 heap_delta_kib=0.000 gc=normal
+2026-11-12 07:10:02.151 [info]: [BENCH] name=empty_loop n=250000 sample=4 seconds=0.002000 heap_delta_kib=0.000 gc=normal
+2026-11-12 07:10:02.154 [info]: [BENCH] name=empty_loop n=250000 sample=5 seconds=0.002000 heap_delta_kib=0.000 gc=normal
+2026-11-12 07:10:02.203 [info]: [BENCH] name=closure_capture n=250000 sample=1 seconds=0.048000 heap_delta_kib=651.867 gc=normal
+2026-11-12 07:10:02.254 [info]: [BENCH] name=closure_capture n=250000 sample=2 seconds=0.050000 heap_delta_kib=651.867 gc=normal
+2026-11-12 07:10:02.301 [info]: [BENCH] name=closure_capture n=250000 sample=3 seconds=0.045000 heap_delta_kib=651.867 gc=normal
+2026-11-12 07:10:02.351 [info]: [BENCH] name=closure_capture n=250000 sample=4 seconds=0.049000 heap_delta_kib=651.867 gc=normal
+2026-11-12 07:10:02.406 [info]: [BENCH] name=closure_capture n=250000 sample=5 seconds=0.054000 heap_delta_kib=651.867 gc=normal
+2026-11-12 07:10:02.435 [info]: [BENCH] name=empty_table n=250000 sample=1 seconds=0.028000 heap_delta_kib=446.312 gc=normal
+2026-11-12 07:10:02.464 [info]: [BENCH] name=empty_table n=250000 sample=2 seconds=0.028000 heap_delta_kib=446.312 gc=normal
+2026-11-12 07:10:02.498 [info]: [BENCH] name=empty_table n=250000 sample=3 seconds=0.033000 heap_delta_kib=446.312 gc=normal
+2026-11-12 07:10:02.528 [info]: [BENCH] name=empty_table n=250000 sample=4 seconds=0.029000 heap_delta_kib=446.312 gc=normal
+2026-11-12 07:10:02.558 [info]: [BENCH] name=empty_table n=250000 sample=5 seconds=0.030000 heap_delta_kib=446.312 gc=normal
+2026-11-12 07:10:02.628 [info]: [BENCH] name=table_4_fields n=250000 sample=1 seconds=0.067000 heap_delta_kib=364.938 gc=normal
+2026-11-12 07:10:02.703 [info]: [BENCH] name=table_4_fields n=250000 sample=2 seconds=0.076000 heap_delta_kib=364.938 gc=normal
+2026-11-12 07:10:02.778 [info]: [BENCH] name=table_4_fields n=250000 sample=3 seconds=0.073000 heap_delta_kib=364.938 gc=normal
+2026-11-12 07:10:02.844 [info]: [BENCH] name=table_4_fields n=250000 sample=4 seconds=0.066000 heap_delta_kib=364.938 gc=normal
+2026-11-12 07:10:02.914 [info]: [BENCH] name=table_4_fields n=250000 sample=5 seconds=0.069000 heap_delta_kib=364.938 gc=normal
+2026-11-12 07:10:03.048 [info]: [BENCH] name=concat_unique_short n=250000 sample=1 seconds=0.134000 heap_delta_kib=973.236 gc=normal
+2026-11-12 07:10:03.187 [info]: [BENCH] name=concat_unique_short n=250000 sample=2 seconds=0.137000 heap_delta_kib=320.765 gc=normal
+2026-11-12 07:10:03.319 [info]: [BENCH] name=concat_unique_short n=250000 sample=3 seconds=0.131000 heap_delta_kib=320.765 gc=normal
+2026-11-12 07:10:03.439 [info]: [BENCH] name=concat_unique_short n=250000 sample=4 seconds=0.120000 heap_delta_kib=320.765 gc=normal
+2026-11-12 07:10:03.571 [info]: [BENCH] name=concat_unique_short n=250000 sample=5 seconds=0.131000 heap_delta_kib=320.765 gc=normal
+2026-11-12 07:10:03.589 [info]: [BENCH] name=string_equal_existing n=250000 sample=1 seconds=0.017000 heap_delta_kib=0.000 gc=normal
+2026-11-12 07:10:03.604 [info]: [BENCH] name=string_equal_existing n=250000 sample=2 seconds=0.015000 heap_delta_kib=0.000 gc=normal
+2026-11-12 07:10:03.621 [info]: [BENCH] name=string_equal_existing n=250000 sample=3 seconds=0.017000 heap_delta_kib=0.000 gc=normal
+2026-11-12 07:10:03.642 [info]: [BENCH] name=string_equal_existing n=250000 sample=4 seconds=0.021000 heap_delta_kib=0.000 gc=normal
+2026-11-12 07:10:03.663 [info]: [BENCH] name=string_equal_existing n=250000 sample=5 seconds=0.020000 heap_delta_kib=0.000 gc=normal
+2026-11-12 07:10:03.722 [info]: [BENCH] name=events_100_listeners n=5000 sample=1 seconds=0.057000 heap_delta_kib=898.934 gc=normal
+2026-11-12 07:10:03.790 [info]: [BENCH] name=events_100_listeners n=5000 sample=2 seconds=0.066000 heap_delta_kib=898.934 gc=normal
+2026-11-12 07:10:03.875 [info]: [BENCH] name=events_100_listeners n=5000 sample=3 seconds=0.083000 heap_delta_kib=898.934 gc=normal
+2026-11-12 07:10:03.927 [info]: [BENCH] name=events_100_listeners n=5000 sample=4 seconds=0.050000 heap_delta_kib=898.934 gc=normal
+2026-11-12 07:10:03.983 [info]: [BENCH] name=events_100_listeners n=5000 sample=5 seconds=0.054000 heap_delta_kib=898.934 gc=normal
+2026-11-12 07:10:04.093 [info]: [BENCH] name=scheduler_1000_idle n=1000 sample=1 seconds=0.094000 heap_delta_kib=627.617 gc=normal
+2026-11-12 07:10:04.198 [info]: [BENCH] name=scheduler_1000_idle n=1000 sample=2 seconds=0.104000 heap_delta_kib=627.617 gc=normal
+2026-11-12 07:10:04.279 [info]: [BENCH] name=scheduler_1000_idle n=1000 sample=3 seconds=0.080000 heap_delta_kib=627.652 gc=normal
+2026-11-12 07:10:04.359 [info]: [BENCH] name=scheduler_1000_idle n=1000 sample=4 seconds=0.080000 heap_delta_kib=627.652 gc=normal
+2026-11-12 07:10:04.435 [info]: [BENCH] name=scheduler_1000_idle n=1000 sample=5 seconds=0.076000 heap_delta_kib=627.652 gc=normal
+2026-11-12 07:10:04.459 [info]: [BENCH] name=native_text_update n=20000 sample=1 seconds=0.022000 heap_delta_kib=698.676 gc=normal
+2026-11-12 07:10:04.482 [info]: [BENCH] name=native_text_update n=20000 sample=2 seconds=0.022000 heap_delta_kib=698.676 gc=normal
+2026-11-12 07:10:04.505 [info]: [BENCH] name=native_text_update n=20000 sample=3 seconds=0.022000 heap_delta_kib=698.676 gc=normal
+2026-11-12 07:10:04.526 [info]: [BENCH] name=native_text_update n=20000 sample=4 seconds=0.020000 heap_delta_kib=698.676 gc=normal
+2026-11-12 07:10:04.548 [info]: [BENCH] name=native_text_update n=20000 sample=5 seconds=0.022000 heap_delta_kib=698.676 gc=normal
+2026-11-12 07:10:04.551 [info]: [ALLOC] name=closure_capture n=10000 kib=546.875
+2026-11-12 07:10:04.553 [info]: [ALLOC] name=empty_table n=10000 kib=468.750
+2026-11-12 07:10:04.554 [info]: PASS: native runtime benchmark matrix completed
+2026-11-12 07:10:05.848 [info]: [CLOCK_PROBE] logical_seconds=5 os_clock=5.961000 os_time=6
+2026-11-12 07:10:09.987 [info]: [STATE_MATCH] phase=1 hash=2060320357 rng=14
+2026-11-12 07:10:16.419 [info]: [STATE_MATCH] phase=2 hash=916308688 rng=24
+2026-11-12 07:10:22.090 [info]: [STATE_MATCH] phase=3 hash=1958775009 rng=34
+2026-11-12 07:10:28.098 [info]: [STATE_MATCH] phase=4 hash=843728550 rng=44
+2026-11-12 07:10:33.712 [info]: [STATE_MATCH] phase=5 hash=678722800 rng=54
+2026-11-12 07:10:39.887 [info]: [STATE_MATCH] phase=6 hash=987509777 rng=64
+2026-11-12 07:10:46.057 [info]: [STATE_MATCH] phase=7 hash=1408378555 rng=74
+2026-11-12 07:10:52.554 [info]: [STATE_MATCH] phase=8 hash=2107607696 rng=84
+2026-11-12 07:10:58.718 [info]: [STATE_MATCH] phase=9 hash=306015761 rng=94
+2026-11-12 07:11:04.544 [info]: [STATE_MATCH] phase=10 hash=1224683027 rng=104
+2026-11-12 07:11:10.976 [info]: [STATE_MATCH] phase=11 hash=613385299 rng=114
+2026-11-12 07:11:12.906 [info]: [RESOURCE] tick=6000 lua_kib=408.669 controls=6 ui_tasks=1 events=0
+2026-11-12 07:11:12.919 [info]: PASS: view reload stops successfully
+2026-11-12 07:11:12.920 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:11:12.920 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:11:12.921 [info]: PASS: production reload disabled
+2026-11-12 07:11:12.921 [info]: PASS: invalid development source rejected
+2026-11-12 07:11:12.922 [info]: PASS: compiled view source mounts
+2026-11-12 07:11:17.443 [info]: [STATE_MATCH] phase=12 hash=980745527 rng=124
+2026-11-12 07:11:23.855 [info]: [STATE_MATCH] phase=13 hash=1390708420 rng=134
+2026-11-12 07:11:30.286 [info]: [STATE_MATCH] phase=14 hash=1067861713 rng=144
+2026-11-12 07:11:36.305 [info]: [STATE_MATCH] phase=15 hash=317057555 rng=154
+2026-11-12 07:11:42.604 [info]: [STATE_MATCH] phase=16 hash=653979301 rng=164
+2026-11-12 07:11:49.057 [info]: [STATE_MATCH] phase=17 hash=463767897 rng=174
+2026-11-12 07:11:55.532 [info]: [STATE_MATCH] phase=18 hash=1003993900 rng=184
+2026-11-12 07:12:01.377 [info]: [STATE_MATCH] phase=19 hash=419068592 rng=194
+2026-11-12 07:12:07.325 [info]: [STATE_MATCH] phase=20 hash=1951918765 rng=204
+2026-11-12 07:12:13.819 [info]: [STATE_MATCH] phase=21 hash=283370441 rng=214
+2026-11-12 07:12:20.280 [info]: [STATE_MATCH] phase=22 hash=1183985026 rng=224
+2026-11-12 07:12:26.734 [info]: [STATE_MATCH] phase=23 hash=323369749 rng=234
+2026-11-12 07:12:28.677 [info]: [RESOURCE] tick=12000 lua_kib=409.231 controls=6 ui_tasks=1 events=0
+2026-11-12 07:12:28.691 [info]: PASS: view reload stops successfully
+2026-11-12 07:12:28.692 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:12:28.692 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:12:28.692 [info]: PASS: production reload disabled
+2026-11-12 07:12:28.693 [info]: PASS: invalid development source rejected
+2026-11-12 07:12:28.693 [info]: PASS: compiled view source mounts
+2026-11-12 07:12:33.130 [info]: [STATE_MATCH] phase=24 hash=1419047388 rng=244
+2026-11-12 07:12:39.127 [info]: [STATE_MATCH] phase=25 hash=26798566 rng=254
+2026-11-12 07:12:45.371 [info]: [STATE_MATCH] phase=26 hash=1658377382 rng=264
+2026-11-12 07:12:51.218 [info]: [STATE_MATCH] phase=27 hash=1971167631 rng=274
+2026-11-12 07:12:57.241 [info]: [STATE_MATCH] phase=28 hash=1486279495 rng=284
+2026-11-12 07:13:02.955 [info]: [STATE_MATCH] phase=29 hash=844202030 rng=294
+2026-11-12 07:13:08.615 [info]: [STATE_MATCH] phase=30 hash=954954893 rng=304
+2026-11-12 07:13:14.950 [info]: [STATE_MATCH] phase=31 hash=1369056571 rng=314
+2026-11-12 07:13:21.176 [info]: [STATE_MATCH] phase=32 hash=265837351 rng=324
+2026-11-12 07:13:27.358 [info]: [STATE_MATCH] phase=33 hash=1716014244 rng=334
+2026-11-12 07:13:33.677 [info]: [STATE_MATCH] phase=34 hash=1104376888 rng=344
+2026-11-12 07:13:40.129 [info]: [STATE_MATCH] phase=35 hash=1412119100 rng=354
+2026-11-12 07:13:42.074 [info]: [RESOURCE] tick=18000 lua_kib=409.052 controls=6 ui_tasks=1 events=0
+2026-11-12 07:13:42.088 [info]: PASS: view reload stops successfully
+2026-11-12 07:13:42.089 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:13:42.089 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:13:42.089 [info]: PASS: production reload disabled
+2026-11-12 07:13:42.090 [info]: PASS: invalid development source rejected
+2026-11-12 07:13:42.090 [info]: PASS: compiled view source mounts
+2026-11-12 07:13:46.598 [info]: [STATE_MATCH] phase=36 hash=561774745 rng=364
+2026-11-12 07:13:53.094 [info]: [STATE_MATCH] phase=37 hash=737611627 rng=374
+2026-11-12 07:13:59.282 [info]: [STATE_MATCH] phase=38 hash=2118567688 rng=384
+2026-11-12 07:14:05.752 [info]: [STATE_MATCH] phase=39 hash=727053993 rng=394
+2026-11-12 07:14:12.232 [info]: [STATE_MATCH] phase=40 hash=1332539719 rng=404
+2026-11-12 07:14:18.407 [info]: [STATE_MATCH] phase=41 hash=400172667 rng=414
+2026-11-12 07:14:24.241 [info]: [STATE_MATCH] phase=42 hash=655145332 rng=424
+2026-11-12 07:14:30.624 [info]: [STATE_MATCH] phase=43 hash=1910158848 rng=434
+2026-11-12 07:14:36.636 [info]: [STATE_MATCH] phase=44 hash=1422617951 rng=444
+2026-11-12 07:14:42.430 [info]: [STATE_MATCH] phase=45 hash=394099455 rng=454
+2026-11-12 07:14:48.144 [info]: [STATE_MATCH] phase=46 hash=1540175475 rng=464
+2026-11-12 07:14:54.387 [info]: [STATE_MATCH] phase=47 hash=1979445235 rng=474
+2026-11-12 07:14:56.320 [info]: [RESOURCE] tick=24000 lua_kib=408.669 controls=6 ui_tasks=1 events=0
+2026-11-12 07:14:56.333 [info]: PASS: view reload stops successfully
+2026-11-12 07:14:56.334 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:14:56.334 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:14:56.335 [info]: PASS: production reload disabled
+2026-11-12 07:14:56.335 [info]: PASS: invalid development source rejected
+2026-11-12 07:14:56.336 [info]: PASS: compiled view source mounts
+2026-11-12 07:15:00.856 [info]: [STATE_MATCH] phase=48 hash=1731166242 rng=484
+2026-11-12 07:15:06.988 [info]: [STATE_MATCH] phase=49 hash=240344584 rng=494
+2026-11-12 07:15:13.453 [info]: [STATE_MATCH] phase=50 hash=1417523336 rng=504
+2026-11-12 07:15:19.943 [info]: [STATE_MATCH] phase=51 hash=177185699 rng=514
+2026-11-12 07:15:25.937 [info]: [STATE_MATCH] phase=52 hash=1477653117 rng=524
+2026-11-12 07:15:31.812 [info]: [STATE_MATCH] phase=53 hash=1371093944 rng=534
+2026-11-12 07:15:38.292 [info]: [STATE_MATCH] phase=54 hash=1458309665 rng=544
+2026-11-12 07:15:44.830 [info]: [STATE_MATCH] phase=55 hash=1898990456 rng=554
+2026-11-12 07:15:51.323 [info]: [STATE_MATCH] phase=56 hash=2087241690 rng=564
+2026-11-12 07:15:57.411 [info]: [STATE_MATCH] phase=57 hash=1518979456 rng=574
+2026-11-12 07:16:03.453 [info]: [STATE_MATCH] phase=58 hash=277131702 rng=584
+2026-11-12 07:16:09.611 [info]: [STATE_MATCH] phase=59 hash=1988266973 rng=594
+2026-11-12 07:16:11.284 [info]: [RESOURCE] tick=30000 lua_kib=406.396 controls=6 ui_tasks=1 events=0
+2026-11-12 07:16:11.298 [info]: PASS: view reload stops successfully
+2026-11-12 07:16:11.299 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:16:11.299 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:16:11.300 [info]: PASS: production reload disabled
+2026-11-12 07:16:11.300 [info]: PASS: invalid development source rejected
+2026-11-12 07:16:11.300 [info]: PASS: compiled view source mounts
+2026-11-12 07:16:15.482 [info]: [STATE_MATCH] phase=60 hash=1869785569 rng=604
+2026-11-12 07:16:21.914 [info]: [STATE_MATCH] phase=61 hash=275681857 rng=614
+2026-11-12 07:16:28.354 [info]: [STATE_MATCH] phase=62 hash=1143405864 rng=624
+2026-11-12 07:16:34.431 [info]: [STATE_MATCH] phase=63 hash=840926787 rng=634
+2026-11-12 07:16:40.915 [info]: [STATE_MATCH] phase=64 hash=202833167 rng=644
+2026-11-12 07:16:47.397 [info]: [STATE_MATCH] phase=65 hash=563156681 rng=654
+2026-11-12 07:16:53.856 [info]: [STATE_MATCH] phase=66 hash=415991844 rng=664
+2026-11-12 07:17:00.107 [info]: [STATE_MATCH] phase=67 hash=1464462960 rng=674
+2026-11-12 07:17:06.530 [info]: [STATE_MATCH] phase=68 hash=762261147 rng=684
+2026-11-12 07:17:12.865 [info]: [STATE_MATCH] phase=69 hash=1879307363 rng=694
+2026-11-12 07:17:19.381 [info]: [STATE_MATCH] phase=70 hash=1358189624 rng=704
+2026-11-12 07:17:25.380 [info]: [STATE_MATCH] phase=71 hash=548288990 rng=714
+2026-11-12 07:17:27.125 [info]: [RESOURCE] tick=36000 lua_kib=409.614 controls=6 ui_tasks=1 events=0
+2026-11-12 07:17:27.138 [info]: PASS: view reload stops successfully
+2026-11-12 07:17:27.139 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:17:27.139 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:17:27.140 [info]: PASS: production reload disabled
+2026-11-12 07:17:27.140 [info]: PASS: invalid development source rejected
+2026-11-12 07:17:27.141 [info]: PASS: compiled view source mounts
+2026-11-12 07:17:31.524 [info]: [STATE_MATCH] phase=72 hash=1061868130 rng=724
+2026-11-12 07:17:37.470 [info]: [STATE_MATCH] phase=73 hash=2088649822 rng=734
+2026-11-12 07:17:43.107 [info]: [STATE_MATCH] phase=74 hash=850932549 rng=744
+2026-11-12 07:17:48.677 [info]: [STATE_MATCH] phase=75 hash=884087770 rng=754
+2026-11-12 07:17:54.488 [info]: [STATE_MATCH] phase=76 hash=1942802419 rng=764
+2026-11-12 07:18:00.141 [info]: [STATE_MATCH] phase=77 hash=945049772 rng=774
+2026-11-12 07:18:05.798 [info]: [STATE_MATCH] phase=78 hash=1619235590 rng=784
+2026-11-12 07:18:11.963 [info]: [STATE_MATCH] phase=79 hash=1844064045 rng=794
+2026-11-12 07:18:17.592 [info]: [STATE_MATCH] phase=80 hash=1665732544 rng=804
+2026-11-12 07:18:23.435 [info]: [STATE_MATCH] phase=81 hash=2041362371 rng=814
+2026-11-12 07:18:29.088 [info]: [STATE_MATCH] phase=82 hash=2095185883 rng=824
+2026-11-12 07:18:34.895 [info]: [STATE_MATCH] phase=83 hash=460854227 rng=834
+2026-11-12 07:18:36.560 [info]: [RESOURCE] tick=42000 lua_kib=407.341 controls=6 ui_tasks=1 events=0
+2026-11-12 07:18:36.573 [info]: PASS: view reload stops successfully
+2026-11-12 07:18:36.575 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:18:36.575 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:18:36.576 [info]: PASS: production reload disabled
+2026-11-12 07:18:36.576 [info]: PASS: invalid development source rejected
+2026-11-12 07:18:36.577 [info]: PASS: compiled view source mounts
+2026-11-12 07:18:40.998 [info]: [STATE_MATCH] phase=84 hash=1656331262 rng=844
+2026-11-12 07:18:47.489 [info]: [STATE_MATCH] phase=85 hash=1848019391 rng=854
+2026-11-12 07:18:53.684 [info]: [STATE_MATCH] phase=86 hash=243011142 rng=864
+2026-11-12 07:19:00.139 [info]: [STATE_MATCH] phase=87 hash=2102289185 rng=874
+2026-11-12 07:19:06.356 [info]: [STATE_MATCH] phase=88 hash=1741806486 rng=884
+2026-11-12 07:19:12.369 [info]: [STATE_MATCH] phase=89 hash=33710796 rng=894
+2026-11-12 07:19:18.819 [info]: [STATE_MATCH] phase=90 hash=909720703 rng=904
+2026-11-12 07:19:25.309 [info]: [STATE_MATCH] phase=91 hash=1744635793 rng=914
+2026-11-12 07:19:31.764 [info]: [STATE_MATCH] phase=92 hash=1209554416 rng=924
+2026-11-12 07:19:37.707 [info]: [STATE_MATCH] phase=93 hash=1220225555 rng=934
+2026-11-12 07:19:43.365 [info]: [STATE_MATCH] phase=94 hash=1185450818 rng=944
+2026-11-12 07:19:49.616 [info]: [STATE_MATCH] phase=95 hash=552260530 rng=954
+2026-11-12 07:19:51.468 [info]: [RESOURCE] tick=48000 lua_kib=406.778 controls=6 ui_tasks=1 events=0
+2026-11-12 07:19:51.484 [info]: PASS: view reload stops successfully
+2026-11-12 07:19:51.485 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:19:51.485 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:19:51.485 [info]: PASS: production reload disabled
+2026-11-12 07:19:51.485 [info]: PASS: invalid development source rejected
+2026-11-12 07:19:51.486 [info]: PASS: compiled view source mounts
+2026-11-12 07:19:55.431 [info]: [STATE_MATCH] phase=96 hash=1443468669 rng=964
+2026-11-12 07:20:01.852 [info]: [STATE_MATCH] phase=97 hash=1181560703 rng=974
+2026-11-12 07:20:07.705 [info]: [STATE_MATCH] phase=98 hash=349984610 rng=984
+2026-11-12 07:20:13.749 [info]: [STATE_MATCH] phase=99 hash=1270031263 rng=994
+2026-11-12 07:20:19.970 [info]: [STATE_MATCH] phase=100 hash=1105358547 rng=1004
+2026-11-12 07:20:26.494 [info]: [STATE_MATCH] phase=101 hash=2099386481 rng=1014
+2026-11-12 07:20:32.971 [info]: [STATE_MATCH] phase=102 hash=854327664 rng=1024
+2026-11-12 07:20:39.172 [info]: [STATE_MATCH] phase=103 hash=1250600659 rng=1034
+2026-11-12 07:20:45.253 [info]: [STATE_MATCH] phase=104 hash=1881886521 rng=1044
+2026-11-12 07:20:51.289 [info]: [STATE_MATCH] phase=105 hash=1950114994 rng=1054
+2026-11-12 07:20:56.918 [info]: [STATE_MATCH] phase=106 hash=1202403575 rng=1064
+2026-11-12 07:21:03.105 [info]: [STATE_MATCH] phase=107 hash=718263615 rng=1074
+2026-11-12 07:21:05.041 [info]: [RESOURCE] tick=54000 lua_kib=407.341 controls=6 ui_tasks=1 events=0
+2026-11-12 07:21:05.054 [info]: PASS: view reload stops successfully
+2026-11-12 07:21:05.055 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:21:05.055 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:21:05.055 [info]: PASS: production reload disabled
+2026-11-12 07:21:05.056 [info]: PASS: invalid development source rejected
+2026-11-12 07:21:05.056 [info]: PASS: compiled view source mounts
+2026-11-12 07:21:09.520 [info]: [STATE_MATCH] phase=108 hash=1991296376 rng=1084
+2026-11-12 07:21:15.496 [info]: [STATE_MATCH] phase=109 hash=2059274925 rng=1094
+2026-11-12 07:21:21.942 [info]: [STATE_MATCH] phase=110 hash=2060120713 rng=1104
+2026-11-12 07:21:28.453 [info]: [STATE_MATCH] phase=111 hash=1400441381 rng=1114
+2026-11-12 07:21:34.957 [info]: [STATE_MATCH] phase=112 hash=627474460 rng=1124
+2026-11-12 07:21:41.433 [info]: [STATE_MATCH] phase=113 hash=2061684192 rng=1134
+2026-11-12 07:21:47.860 [info]: [STATE_MATCH] phase=114 hash=833534480 rng=1144
+2026-11-12 07:21:54.103 [info]: [STATE_MATCH] phase=115 hash=1621286464 rng=1154
+2026-11-12 07:22:00.480 [info]: [STATE_MATCH] phase=116 hash=10366807 rng=1164
+2026-11-12 07:22:06.161 [info]: [STATE_MATCH] phase=117 hash=725223463 rng=1174
+2026-11-12 07:22:12.084 [info]: [STATE_MATCH] phase=118 hash=523893971 rng=1184
+2026-11-12 07:22:18.271 [info]: [STATE_MATCH] phase=119 hash=1012786063 rng=1194
+2026-11-12 07:22:20.213 [info]: [RESOURCE] tick=60000 lua_kib=409.614 controls=6 ui_tasks=1 events=0
+2026-11-12 07:22:20.227 [info]: PASS: view reload stops successfully
+2026-11-12 07:22:20.228 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:22:20.228 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:22:20.229 [info]: PASS: production reload disabled
+2026-11-12 07:22:20.229 [info]: PASS: invalid development source rejected
+2026-11-12 07:22:20.230 [info]: PASS: compiled view source mounts
+2026-11-12 07:22:24.435 [info]: [STATE_MATCH] phase=120 hash=1227385667 rng=1204
+2026-11-12 07:22:30.058 [info]: [STATE_MATCH] phase=121 hash=702142702 rng=1214
+2026-11-12 07:22:35.707 [info]: [STATE_MATCH] phase=122 hash=1339508289 rng=1224
+2026-11-12 07:22:41.716 [info]: [STATE_MATCH] phase=123 hash=589064246 rng=1234
+2026-11-12 07:22:47.723 [info]: [STATE_MATCH] phase=124 hash=758456802 rng=1244
+2026-11-12 07:22:53.992 [info]: [STATE_MATCH] phase=125 hash=454562584 rng=1254
+2026-11-12 07:22:59.922 [info]: [STATE_MATCH] phase=126 hash=317009600 rng=1264
+2026-11-12 07:23:06.389 [info]: [STATE_MATCH] phase=127 hash=1613497472 rng=1274
+2026-11-12 07:23:12.711 [info]: [STATE_MATCH] phase=128 hash=1623186950 rng=1284
+2026-11-12 07:23:19.118 [info]: [STATE_MATCH] phase=129 hash=117425981 rng=1294
+2026-11-12 07:23:25.589 [info]: [STATE_MATCH] phase=130 hash=2078053348 rng=1304
+2026-11-12 07:23:32.029 [info]: [STATE_MATCH] phase=131 hash=931019343 rng=1314
+2026-11-12 07:23:33.956 [info]: [RESOURCE] tick=66000 lua_kib=406.778 controls=6 ui_tasks=1 events=0
+2026-11-12 07:23:33.972 [info]: PASS: view reload stops successfully
+2026-11-12 07:23:33.973 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:23:33.973 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:23:33.973 [info]: PASS: production reload disabled
+2026-11-12 07:23:33.973 [info]: PASS: invalid development source rejected
+2026-11-12 07:23:33.974 [info]: PASS: compiled view source mounts
+2026-11-12 07:23:37.983 [info]: [STATE_MATCH] phase=132 hash=236303943 rng=1324
+2026-11-12 07:23:44.321 [info]: [STATE_MATCH] phase=133 hash=1537257136 rng=1334
+2026-11-12 07:23:50.764 [info]: [STATE_MATCH] phase=134 hash=1100855260 rng=1344
+2026-11-12 07:23:57.271 [info]: [STATE_MATCH] phase=135 hash=604452886 rng=1354
+2026-11-12 07:24:03.746 [info]: [STATE_MATCH] phase=136 hash=2105033733 rng=1364
+2026-11-12 07:24:10.240 [info]: [STATE_MATCH] phase=137 hash=1323567735 rng=1374
+2026-11-12 07:24:16.141 [info]: [STATE_MATCH] phase=138 hash=545412607 rng=1384
+2026-11-12 07:24:21.767 [info]: [STATE_MATCH] phase=139 hash=283926509 rng=1394
+2026-11-12 07:24:28.067 [info]: [STATE_MATCH] phase=140 hash=252344840 rng=1404
+2026-11-12 07:24:33.833 [info]: [STATE_MATCH] phase=141 hash=524089000 rng=1414
+2026-11-12 07:24:39.837 [info]: [STATE_MATCH] phase=142 hash=387220194 rng=1424
+2026-11-12 07:24:46.281 [info]: [STATE_MATCH] phase=143 hash=849718029 rng=1434
+2026-11-12 07:24:48.197 [info]: [RESOURCE] tick=72000 lua_kib=404.325 controls=6 ui_tasks=1 events=0
+2026-11-12 07:24:48.211 [info]: PASS: view reload stops successfully
+2026-11-12 07:24:48.212 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:24:48.212 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:24:48.212 [info]: PASS: production reload disabled
+2026-11-12 07:24:48.212 [info]: PASS: invalid development source rejected
+2026-11-12 07:24:48.213 [info]: PASS: compiled view source mounts
+2026-11-12 07:24:52.539 [info]: [STATE_MATCH] phase=144 hash=945223867 rng=1444
+2026-11-12 07:24:59.014 [info]: [STATE_MATCH] phase=145 hash=1627575629 rng=1454
+2026-11-12 07:25:04.982 [info]: [STATE_MATCH] phase=146 hash=481265010 rng=1464
+2026-11-12 07:25:11.301 [info]: [STATE_MATCH] phase=147 hash=235347534 rng=1474
+2026-11-12 07:25:17.780 [info]: [STATE_MATCH] phase=148 hash=202144389 rng=1484
+2026-11-12 07:25:24.079 [info]: [STATE_MATCH] phase=149 hash=1553754945 rng=1494
+2026-11-12 07:25:30.515 [info]: [STATE_MATCH] phase=150 hash=1960229196 rng=1504
+2026-11-12 07:25:36.956 [info]: [STATE_MATCH] phase=151 hash=587118450 rng=1514
+2026-11-12 07:25:42.651 [info]: [STATE_MATCH] phase=152 hash=302788108 rng=1524
+2026-11-12 07:25:48.237 [info]: [STATE_MATCH] phase=153 hash=726702457 rng=1534
+2026-11-12 07:25:54.218 [info]: [STATE_MATCH] phase=154 hash=1057666071 rng=1544
+2026-11-12 07:26:00.706 [info]: [STATE_MATCH] phase=155 hash=1154926553 rng=1554
+2026-11-12 07:26:02.628 [info]: [RESOURCE] tick=78000 lua_kib=408.106 controls=6 ui_tasks=1 events=0
+2026-11-12 07:26:02.641 [info]: PASS: view reload stops successfully
+2026-11-12 07:26:02.642 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:26:02.643 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:26:02.643 [info]: PASS: production reload disabled
+2026-11-12 07:26:02.643 [info]: PASS: invalid development source rejected
+2026-11-12 07:26:02.644 [info]: PASS: compiled view source mounts
+2026-11-12 07:26:07.154 [info]: [STATE_MATCH] phase=156 hash=18596827 rng=1564
+2026-11-12 07:26:12.841 [info]: [STATE_MATCH] phase=157 hash=1588554235 rng=1574
+2026-11-12 07:26:19.122 [info]: [STATE_MATCH] phase=158 hash=890964058 rng=1584
+2026-11-12 07:26:25.007 [info]: [STATE_MATCH] phase=159 hash=1677972368 rng=1594
+2026-11-12 07:26:31.461 [info]: [STATE_MATCH] phase=160 hash=2060419912 rng=1604
+2026-11-12 07:26:37.937 [info]: [STATE_MATCH] phase=161 hash=530062136 rng=1614
+2026-11-12 07:26:44.486 [info]: [STATE_MATCH] phase=162 hash=216915449 rng=1624
+2026-11-12 07:26:50.706 [info]: [STATE_MATCH] phase=163 hash=878687235 rng=1634
+2026-11-12 07:26:57.168 [info]: [STATE_MATCH] phase=164 hash=1017324156 rng=1644
+2026-11-12 07:27:03.690 [info]: [STATE_MATCH] phase=165 hash=449813372 rng=1654
+2026-11-12 07:27:10.163 [info]: [STATE_MATCH] phase=166 hash=1033411487 rng=1664
+2026-11-12 07:27:16.246 [info]: [STATE_MATCH] phase=167 hash=1753517252 rng=1674
+2026-11-12 07:27:17.916 [info]: [RESOURCE] tick=84000 lua_kib=404.888 controls=6 ui_tasks=1 events=0
+2026-11-12 07:27:17.930 [info]: PASS: view reload stops successfully
+2026-11-12 07:27:17.931 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:27:17.931 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:27:17.931 [info]: PASS: production reload disabled
+2026-11-12 07:27:17.931 [info]: PASS: invalid development source rejected
+2026-11-12 07:27:17.932 [info]: PASS: compiled view source mounts
+2026-11-12 07:27:22.298 [info]: [STATE_MATCH] phase=168 hash=1727723572 rng=1684
+2026-11-12 07:27:28.257 [info]: [STATE_MATCH] phase=169 hash=1233934599 rng=1694
+2026-11-12 07:27:33.968 [info]: [STATE_MATCH] phase=170 hash=1102926386 rng=1704
+2026-11-12 07:27:39.877 [info]: [STATE_MATCH] phase=171 hash=2034409679 rng=1714
+2026-11-12 07:27:46.172 [info]: [STATE_MATCH] phase=172 hash=1502695706 rng=1724
+2026-11-12 07:27:51.993 [info]: [STATE_MATCH] phase=173 hash=372629196 rng=1734
+2026-11-12 07:27:57.923 [info]: [STATE_MATCH] phase=174 hash=1461646996 rng=1744
+2026-11-12 07:28:03.577 [info]: [STATE_MATCH] phase=175 hash=764986267 rng=1754
+2026-11-12 07:28:09.904 [info]: [STATE_MATCH] phase=176 hash=599729065 rng=1764
+2026-11-12 07:28:15.529 [info]: [STATE_MATCH] phase=177 hash=2116947956 rng=1774
+2026-11-12 07:28:21.161 [info]: [STATE_MATCH] phase=178 hash=2079907333 rng=1784
+2026-11-12 07:28:27.349 [info]: [STATE_MATCH] phase=179 hash=2006508736 rng=1794
+2026-11-12 07:28:29.032 [info]: [RESOURCE] tick=90000 lua_kib=406.778 controls=6 ui_tasks=1 events=0
+2026-11-12 07:28:29.045 [info]: PASS: view reload stops successfully
+2026-11-12 07:28:29.047 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:28:29.047 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:28:29.047 [info]: PASS: production reload disabled
+2026-11-12 07:28:29.047 [info]: PASS: invalid development source rejected
+2026-11-12 07:28:29.048 [info]: PASS: compiled view source mounts
+2026-11-12 07:28:32.961 [info]: [STATE_MATCH] phase=180 hash=1419973839 rng=1804
+2026-11-12 07:28:38.537 [info]: [STATE_MATCH] phase=181 hash=1164778966 rng=1814
+2026-11-12 07:28:44.139 [info]: [STATE_MATCH] phase=182 hash=1407050081 rng=1824
+2026-11-12 07:28:49.822 [info]: [STATE_MATCH] phase=183 hash=1982300094 rng=1834
+2026-11-12 07:28:56.170 [info]: [STATE_MATCH] phase=184 hash=917235075 rng=1844
+2026-11-12 07:29:01.792 [info]: [STATE_MATCH] phase=185 hash=369443708 rng=1854
+2026-11-12 07:29:07.762 [info]: [STATE_MATCH] phase=186 hash=1030439272 rng=1864
+2026-11-12 07:29:13.730 [info]: [STATE_MATCH] phase=187 hash=242346627 rng=1874
+2026-11-12 07:29:20.218 [info]: [STATE_MATCH] phase=188 hash=635678834 rng=1884
+2026-11-12 07:29:25.878 [info]: [STATE_MATCH] phase=189 hash=1110464700 rng=1894
+2026-11-12 07:29:31.530 [info]: [STATE_MATCH] phase=190 hash=1269404982 rng=1904
+2026-11-12 07:29:37.109 [info]: [STATE_MATCH] phase=191 hash=1753797182 rng=1914
+2026-11-12 07:29:38.784 [info]: [RESOURCE] tick=96000 lua_kib=405.833 controls=6 ui_tasks=1 events=0
+2026-11-12 07:29:38.798 [info]: PASS: view reload stops successfully
+2026-11-12 07:29:38.799 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:29:38.799 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:29:38.799 [info]: PASS: production reload disabled
+2026-11-12 07:29:38.800 [info]: PASS: invalid development source rejected
+2026-11-12 07:29:38.800 [info]: PASS: compiled view source mounts
+2026-11-12 07:29:42.737 [info]: [STATE_MATCH] phase=192 hash=340954298 rng=1924
+2026-11-12 07:29:48.651 [info]: [STATE_MATCH] phase=193 hash=246481613 rng=1934
+2026-11-12 07:29:54.913 [info]: [STATE_MATCH] phase=194 hash=1575585227 rng=1944
+2026-11-12 07:30:00.594 [info]: [STATE_MATCH] phase=195 hash=781955061 rng=1954
+2026-11-12 07:30:06.635 [info]: [STATE_MATCH] phase=196 hash=251458500 rng=1964
+2026-11-12 07:30:13.009 [info]: [STATE_MATCH] phase=197 hash=1258624492 rng=1974
+2026-11-12 07:30:19.499 [info]: [STATE_MATCH] phase=198 hash=1650801650 rng=1984
+2026-11-12 07:30:25.961 [info]: [STATE_MATCH] phase=199 hash=2053062967 rng=1994
+2026-11-12 07:30:32.438 [info]: [STATE_MATCH] phase=200 hash=1738153779 rng=2004
+2026-11-12 07:30:38.928 [info]: [STATE_MATCH] phase=201 hash=1644557292 rng=2014
+2026-11-12 07:30:45.266 [info]: [STATE_MATCH] phase=202 hash=401027859 rng=2024
+2026-11-12 07:30:51.653 [info]: [STATE_MATCH] phase=203 hash=917729802 rng=2034
+2026-11-12 07:30:53.598 [info]: [RESOURCE] tick=102000 lua_kib=407.724 controls=6 ui_tasks=1 events=0
+2026-11-12 07:30:53.612 [info]: PASS: view reload stops successfully
+2026-11-12 07:30:53.613 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:30:53.613 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:30:53.613 [info]: PASS: production reload disabled
+2026-11-12 07:30:53.614 [info]: PASS: invalid development source rejected
+2026-11-12 07:30:53.614 [info]: PASS: compiled view source mounts
+2026-11-12 07:30:57.896 [info]: [STATE_MATCH] phase=204 hash=1891201845 rng=2044
+2026-11-12 07:31:04.357 [info]: [STATE_MATCH] phase=205 hash=383274393 rng=2054
+2026-11-12 07:31:10.885 [info]: [STATE_MATCH] phase=206 hash=1164405163 rng=2064
+2026-11-12 07:31:17.265 [info]: [STATE_MATCH] phase=207 hash=1448356319 rng=2074
+2026-11-12 07:31:23.568 [info]: [STATE_MATCH] phase=208 hash=2095813248 rng=2084
+2026-11-12 07:31:30.035 [info]: [STATE_MATCH] phase=209 hash=89645046 rng=2094
+2026-11-12 07:31:36.037 [info]: [STATE_MATCH] phase=210 hash=1539279217 rng=2104
+2026-11-12 07:31:42.482 [info]: [STATE_MATCH] phase=211 hash=285510712 rng=2114
+2026-11-12 07:31:48.386 [info]: [STATE_MATCH] phase=212 hash=359263949 rng=2124
+2026-11-12 07:31:54.561 [info]: [STATE_MATCH] phase=213 hash=1442680510 rng=2134
+2026-11-12 07:32:00.616 [info]: [STATE_MATCH] phase=214 hash=1976146217 rng=2144
+2026-11-12 07:32:06.704 [info]: [STATE_MATCH] phase=215 hash=1070893110 rng=2154
+2026-11-12 07:32:08.560 [info]: [RESOURCE] tick=108000 lua_kib=408.669 controls=6 ui_tasks=1 events=0
+2026-11-12 07:32:08.573 [info]: PASS: view reload stops successfully
+2026-11-12 07:32:08.574 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:32:08.575 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:32:08.575 [info]: PASS: production reload disabled
+2026-11-12 07:32:08.575 [info]: PASS: invalid development source rejected
+2026-11-12 07:32:08.576 [info]: PASS: compiled view source mounts
+2026-11-12 07:32:12.560 [info]: [STATE_MATCH] phase=216 hash=1058601902 rng=2164
+2026-11-12 07:32:18.310 [info]: [STATE_MATCH] phase=217 hash=681380837 rng=2174
+2026-11-12 07:32:24.801 [info]: [STATE_MATCH] phase=218 hash=1470739278 rng=2184
+2026-11-12 07:32:30.990 [info]: [STATE_MATCH] phase=219 hash=1303342339 rng=2194
+2026-11-12 07:32:36.621 [info]: [STATE_MATCH] phase=220 hash=1668323314 rng=2204
+2026-11-12 07:32:42.432 [info]: [STATE_MATCH] phase=221 hash=1965318848 rng=2214
+2026-11-12 07:32:48.886 [info]: [STATE_MATCH] phase=222 hash=1763044440 rng=2224
+2026-11-12 07:32:55.057 [info]: [STATE_MATCH] phase=223 hash=1789027414 rng=2234
+2026-11-12 07:33:01.536 [info]: [STATE_MATCH] phase=224 hash=642500484 rng=2244
+2026-11-12 07:33:08.006 [info]: [STATE_MATCH] phase=225 hash=58611476 rng=2254
+2026-11-12 07:33:14.473 [info]: [STATE_MATCH] phase=226 hash=558270150 rng=2264
+2026-11-12 07:33:20.891 [info]: [STATE_MATCH] phase=227 hash=1120415761 rng=2274
+2026-11-12 07:33:22.588 [info]: [RESOURCE] tick=114000 lua_kib=405.833 controls=6 ui_tasks=1 events=0
+2026-11-12 07:33:22.602 [info]: PASS: view reload stops successfully
+2026-11-12 07:33:22.604 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:33:22.604 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:33:22.604 [info]: PASS: production reload disabled
+2026-11-12 07:33:22.604 [info]: PASS: invalid development source rejected
+2026-11-12 07:33:22.605 [info]: PASS: compiled view source mounts
+2026-11-12 07:33:26.524 [info]: [STATE_MATCH] phase=228 hash=1515620685 rng=2284
+2026-11-12 07:33:32.955 [info]: [STATE_MATCH] phase=229 hash=529562682 rng=2294
+2026-11-12 07:33:39.425 [info]: [STATE_MATCH] phase=230 hash=45541350 rng=2304
+2026-11-12 07:33:45.182 [info]: [STATE_MATCH] phase=231 hash=1936328993 rng=2314
+2026-11-12 07:33:51.248 [info]: [STATE_MATCH] phase=232 hash=2087578058 rng=2324
+2026-11-12 07:33:57.091 [info]: [STATE_MATCH] phase=233 hash=494428398 rng=2334
+2026-11-12 07:34:03.528 [info]: [STATE_MATCH] phase=234 hash=1400637070 rng=2344
+2026-11-12 07:34:09.607 [info]: [STATE_MATCH] phase=235 hash=1131843594 rng=2354
+2026-11-12 07:34:16.019 [info]: [STATE_MATCH] phase=236 hash=1705380466 rng=2364
+2026-11-12 07:34:22.521 [info]: [STATE_MATCH] phase=237 hash=805675350 rng=2374
+2026-11-12 07:34:28.651 [info]: [STATE_MATCH] phase=238 hash=155334652 rng=2384
+2026-11-12 07:34:35.056 [info]: [STATE_MATCH] phase=239 hash=1335456288 rng=2394
+2026-11-12 07:34:36.988 [info]: [RESOURCE] tick=120000 lua_kib=409.614 controls=6 ui_tasks=1 events=0
+2026-11-12 07:34:37.002 [info]: PASS: view reload stops successfully
+2026-11-12 07:34:37.003 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:34:37.003 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:34:37.004 [info]: PASS: production reload disabled
+2026-11-12 07:34:37.004 [info]: PASS: invalid development source rejected
+2026-11-12 07:34:37.005 [info]: PASS: compiled view source mounts
+2026-11-12 07:34:41.539 [info]: [STATE_MATCH] phase=240 hash=1092894324 rng=2404
+2026-11-12 07:34:47.436 [info]: [STATE_MATCH] phase=241 hash=1000352820 rng=2414
+2026-11-12 07:34:53.071 [info]: [STATE_MATCH] phase=242 hash=1251504944 rng=2424
+2026-11-12 07:34:59.489 [info]: [STATE_MATCH] phase=243 hash=1699470586 rng=2434
+2026-11-12 07:35:05.950 [info]: [STATE_MATCH] phase=244 hash=626934224 rng=2444
+2026-11-12 07:35:12.448 [info]: [STATE_MATCH] phase=245 hash=1615110800 rng=2454
+2026-11-12 07:35:18.896 [info]: [STATE_MATCH] phase=246 hash=2132952449 rng=2464
+2026-11-12 07:35:25.379 [info]: [STATE_MATCH] phase=247 hash=327483389 rng=2474
+2026-11-12 07:35:31.834 [info]: [STATE_MATCH] phase=248 hash=183039759 rng=2484
+2026-11-12 07:35:37.438 [info]: [STATE_MATCH] phase=249 hash=2144157984 rng=2494
+2026-11-12 07:35:43.079 [info]: [STATE_MATCH] phase=250 hash=696971905 rng=2504
+2026-11-12 07:35:48.659 [info]: [STATE_MATCH] phase=251 hash=119099741 rng=2514
+2026-11-12 07:35:50.349 [info]: [RESOURCE] tick=126000 lua_kib=406.216 controls=6 ui_tasks=1 events=0
+2026-11-12 07:35:50.366 [info]: PASS: view reload stops successfully
+2026-11-12 07:35:50.367 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:35:50.368 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:35:50.368 [info]: PASS: production reload disabled
+2026-11-12 07:35:50.368 [info]: PASS: invalid development source rejected
+2026-11-12 07:35:50.369 [info]: PASS: compiled view source mounts
+2026-11-12 07:35:54.672 [info]: [STATE_MATCH] phase=252 hash=1855256928 rng=2524
+2026-11-12 07:36:00.463 [info]: [STATE_MATCH] phase=253 hash=891699452 rng=2534
+2026-11-12 07:36:06.916 [info]: [STATE_MATCH] phase=254 hash=1293132571 rng=2544
+2026-11-12 07:36:13.068 [info]: [STATE_MATCH] phase=255 hash=511579461 rng=2554
+2026-11-12 07:36:19.532 [info]: [STATE_MATCH] phase=256 hash=1933029794 rng=2564
+2026-11-12 07:36:25.959 [info]: [STATE_MATCH] phase=257 hash=102232732 rng=2574
+2026-11-12 07:36:32.464 [info]: [STATE_MATCH] phase=258 hash=1635486047 rng=2584
+2026-11-12 07:36:38.916 [info]: [STATE_MATCH] phase=259 hash=1143322028 rng=2594
+2026-11-12 07:36:45.372 [info]: [STATE_MATCH] phase=260 hash=2008550846 rng=2604
+2026-11-12 07:36:51.415 [info]: [STATE_MATCH] phase=261 hash=729980562 rng=2614
+2026-11-12 07:36:57.662 [info]: [STATE_MATCH] phase=262 hash=1302998833 rng=2624
+2026-11-12 07:37:03.633 [info]: [STATE_MATCH] phase=263 hash=136300751 rng=2634
+2026-11-12 07:37:05.295 [info]: [RESOURCE] tick=132000 lua_kib=406.778 controls=6 ui_tasks=1 events=0
+2026-11-12 07:37:05.309 [info]: PASS: view reload stops successfully
+2026-11-12 07:37:05.310 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:37:05.310 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:37:05.310 [info]: PASS: production reload disabled
+2026-11-12 07:37:05.311 [info]: PASS: invalid development source rejected
+2026-11-12 07:37:05.311 [info]: PASS: compiled view source mounts
+2026-11-12 07:37:09.228 [info]: [STATE_MATCH] phase=264 hash=1759095568 rng=2644
+2026-11-12 07:37:15.649 [info]: [STATE_MATCH] phase=265 hash=1536563581 rng=2654
+2026-11-12 07:37:22.090 [info]: [STATE_MATCH] phase=266 hash=1015942911 rng=2664
+2026-11-12 07:37:28.447 [info]: [STATE_MATCH] phase=267 hash=1979784018 rng=2674
+2026-11-12 07:37:34.031 [info]: [STATE_MATCH] phase=268 hash=1861539194 rng=2684
+2026-11-12 07:37:40.093 [info]: [STATE_MATCH] phase=269 hash=844889926 rng=2694
+2026-11-12 07:37:45.736 [info]: [STATE_MATCH] phase=270 hash=1963643644 rng=2704
+2026-11-12 07:37:51.385 [info]: [STATE_MATCH] phase=271 hash=2018800014 rng=2714
+2026-11-12 07:37:57.539 [info]: [STATE_MATCH] phase=272 hash=322510944 rng=2724
+2026-11-12 07:38:03.181 [info]: [STATE_MATCH] phase=273 hash=855330969 rng=2734
+2026-11-12 07:38:09.579 [info]: [STATE_MATCH] phase=274 hash=832782910 rng=2744
+2026-11-12 07:38:15.474 [info]: [STATE_MATCH] phase=275 hash=1007605405 rng=2754
+2026-11-12 07:38:17.152 [info]: [RESOURCE] tick=138000 lua_kib=406.778 controls=6 ui_tasks=1 events=0
+2026-11-12 07:38:17.168 [info]: PASS: view reload stops successfully
+2026-11-12 07:38:17.169 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:38:17.170 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:38:17.170 [info]: PASS: production reload disabled
+2026-11-12 07:38:17.170 [info]: PASS: invalid development source rejected
+2026-11-12 07:38:17.171 [info]: PASS: compiled view source mounts
+2026-11-12 07:38:21.206 [info]: [STATE_MATCH] phase=276 hash=468713675 rng=2764
+2026-11-12 07:38:27.711 [info]: [STATE_MATCH] phase=277 hash=381756023 rng=2774
+2026-11-12 07:38:34.191 [info]: [STATE_MATCH] phase=278 hash=556858091 rng=2784
+2026-11-12 07:38:40.672 [info]: [STATE_MATCH] phase=279 hash=1561825900 rng=2794
+2026-11-12 07:38:47.132 [info]: [STATE_MATCH] phase=280 hash=2035338171 rng=2804
+2026-11-12 07:38:53.454 [info]: [STATE_MATCH] phase=281 hash=737874388 rng=2814
+2026-11-12 07:38:59.918 [info]: [STATE_MATCH] phase=282 hash=621396968 rng=2824
+2026-11-12 07:39:06.409 [info]: [STATE_MATCH] phase=283 hash=626943916 rng=2834
+2026-11-12 07:39:12.813 [info]: [STATE_MATCH] phase=284 hash=1867458592 rng=2844
+2026-11-12 07:39:19.256 [info]: [STATE_MATCH] phase=285 hash=2138450600 rng=2854
+2026-11-12 07:39:25.605 [info]: [STATE_MATCH] phase=286 hash=175816060 rng=2864
+2026-11-12 07:39:31.615 [info]: [STATE_MATCH] phase=287 hash=2069203728 rng=2874
+2026-11-12 07:39:33.447 [info]: [RESOURCE] tick=144000 lua_kib=406.778 controls=6 ui_tasks=1 events=0
+2026-11-12 07:39:33.461 [info]: PASS: view reload stops successfully
+2026-11-12 07:39:33.463 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:39:33.463 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:39:33.463 [info]: PASS: production reload disabled
+2026-11-12 07:39:33.464 [info]: PASS: invalid development source rejected
+2026-11-12 07:39:33.464 [info]: PASS: compiled view source mounts
+2026-11-12 07:39:37.689 [info]: [STATE_MATCH] phase=288 hash=129738233 rng=2884
+2026-11-12 07:39:43.296 [info]: [STATE_MATCH] phase=289 hash=1684619309 rng=2894
+2026-11-12 07:39:49.496 [info]: [STATE_MATCH] phase=290 hash=1098691746 rng=2904
+2026-11-12 07:39:55.803 [info]: [STATE_MATCH] phase=291 hash=1146033774 rng=2914
+2026-11-12 07:40:02.154 [info]: [STATE_MATCH] phase=292 hash=2020370235 rng=2924
+2026-11-12 07:40:08.149 [info]: [STATE_MATCH] phase=293 hash=1603476276 rng=2934
+2026-11-12 07:40:14.394 [info]: [STATE_MATCH] phase=294 hash=36765051 rng=2944
+2026-11-12 07:40:20.248 [info]: [STATE_MATCH] phase=295 hash=1861946718 rng=2954
+2026-11-12 07:40:26.090 [info]: [STATE_MATCH] phase=296 hash=1085622295 rng=2964
+2026-11-12 07:40:32.046 [info]: [STATE_MATCH] phase=297 hash=1930352500 rng=2974
+2026-11-12 07:40:38.218 [info]: [STATE_MATCH] phase=298 hash=898030567 rng=2984
+2026-11-12 07:40:44.308 [info]: [STATE_MATCH] phase=299 hash=991946137 rng=2994
+2026-11-12 07:40:46.252 [info]: [RESOURCE] tick=150000 lua_kib=409.052 controls=6 ui_tasks=1 events=0
+2026-11-12 07:40:46.267 [info]: PASS: view reload stops successfully
+2026-11-12 07:40:46.268 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:40:46.268 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:40:46.269 [info]: PASS: production reload disabled
+2026-11-12 07:40:46.269 [info]: PASS: invalid development source rejected
+2026-11-12 07:40:46.269 [info]: PASS: compiled view source mounts
+2026-11-12 07:40:50.803 [info]: [STATE_MATCH] phase=300 hash=803624966 rng=3004
+2026-11-12 07:40:56.853 [info]: [STATE_MATCH] phase=301 hash=769182683 rng=3014
+2026-11-12 07:41:03.320 [info]: [STATE_MATCH] phase=302 hash=565202343 rng=3024
+2026-11-12 07:41:09.754 [info]: [STATE_MATCH] phase=303 hash=1615384691 rng=3034
+2026-11-12 07:41:16.220 [info]: [STATE_MATCH] phase=304 hash=1201330836 rng=3044
+2026-11-12 07:41:22.506 [info]: [STATE_MATCH] phase=305 hash=1990618081 rng=3054
+2026-11-12 07:41:28.467 [info]: [STATE_MATCH] phase=306 hash=774518768 rng=3064
+2026-11-12 07:41:34.529 [info]: [STATE_MATCH] phase=307 hash=1446514856 rng=3074
+2026-11-12 07:41:41.033 [info]: [STATE_MATCH] phase=308 hash=1641735601 rng=3084
+2026-11-12 07:41:47.067 [info]: [STATE_MATCH] phase=309 hash=1640341633 rng=3094
+2026-11-12 07:41:53.498 [info]: [STATE_MATCH] phase=310 hash=1635056786 rng=3104
+2026-11-12 07:41:59.189 [info]: [STATE_MATCH] phase=311 hash=1660179159 rng=3114
+2026-11-12 07:42:00.887 [info]: [RESOURCE] tick=156000 lua_kib=406.396 controls=6 ui_tasks=1 events=0
+2026-11-12 07:42:00.901 [info]: PASS: view reload stops successfully
+2026-11-12 07:42:00.902 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:42:00.902 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:42:00.903 [info]: PASS: production reload disabled
+2026-11-12 07:42:00.903 [info]: PASS: invalid development source rejected
+2026-11-12 07:42:00.904 [info]: PASS: compiled view source mounts
+2026-11-12 07:42:04.979 [info]: [STATE_MATCH] phase=312 hash=387855385 rng=3124
+2026-11-12 07:42:11.208 [info]: [STATE_MATCH] phase=313 hash=1328490833 rng=3134
+2026-11-12 07:42:17.669 [info]: [STATE_MATCH] phase=314 hash=1783803255 rng=3144
+2026-11-12 07:42:23.577 [info]: [STATE_MATCH] phase=315 hash=295555493 rng=3154
+2026-11-12 07:42:30.056 [info]: [STATE_MATCH] phase=316 hash=400083297 rng=3164
+2026-11-12 07:42:36.513 [info]: [STATE_MATCH] phase=317 hash=472766749 rng=3174
+2026-11-12 07:42:42.942 [info]: [STATE_MATCH] phase=318 hash=906893528 rng=3184
+2026-11-12 07:42:49.043 [info]: [STATE_MATCH] phase=319 hash=1214073744 rng=3194
+2026-11-12 07:42:55.299 [info]: [STATE_MATCH] phase=320 hash=1305587814 rng=3204
+2026-11-12 07:43:01.637 [info]: [STATE_MATCH] phase=321 hash=1677172165 rng=3214
+2026-11-12 07:43:08.131 [info]: [STATE_MATCH] phase=322 hash=1807098314 rng=3224
+2026-11-12 07:43:14.521 [info]: [STATE_MATCH] phase=323 hash=2018702173 rng=3234
+2026-11-12 07:43:16.460 [info]: [RESOURCE] tick=162000 lua_kib=407.161 controls=6 ui_tasks=1 events=0
+2026-11-12 07:43:16.473 [info]: PASS: view reload stops successfully
+2026-11-12 07:43:16.474 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:43:16.474 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:43:16.474 [info]: PASS: production reload disabled
+2026-11-12 07:43:16.475 [info]: PASS: invalid development source rejected
+2026-11-12 07:43:16.476 [info]: PASS: compiled view source mounts
+2026-11-12 07:43:20.971 [info]: [STATE_MATCH] phase=324 hash=1794331411 rng=3244
+2026-11-12 07:43:26.784 [info]: [STATE_MATCH] phase=325 hash=415993814 rng=3254
+2026-11-12 07:43:32.643 [info]: [STATE_MATCH] phase=326 hash=1494028314 rng=3264
+2026-11-12 07:43:38.847 [info]: [STATE_MATCH] phase=327 hash=1479315686 rng=3274
+2026-11-12 07:43:44.732 [info]: [STATE_MATCH] phase=328 hash=1488450275 rng=3284
+2026-11-12 07:43:51.155 [info]: [STATE_MATCH] phase=329 hash=173218921 rng=3294
+2026-11-12 07:43:57.115 [info]: [STATE_MATCH] phase=330 hash=1857013240 rng=3304
+2026-11-12 07:44:03.625 [info]: [STATE_MATCH] phase=331 hash=845035124 rng=3314
+2026-11-12 07:44:10.087 [info]: [STATE_MATCH] phase=332 hash=476897318 rng=3324
+2026-11-12 07:44:15.735 [info]: [STATE_MATCH] phase=333 hash=727476641 rng=3334
+2026-11-12 07:44:21.389 [info]: [STATE_MATCH] phase=334 hash=1670188852 rng=3344
+2026-11-12 07:44:27.669 [info]: [STATE_MATCH] phase=335 hash=1481478542 rng=3354
+2026-11-12 07:44:29.523 [info]: [RESOURCE] tick=168000 lua_kib=405.271 controls=6 ui_tasks=1 events=0
+2026-11-12 07:44:29.537 [info]: PASS: view reload stops successfully
+2026-11-12 07:44:29.538 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:44:29.538 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:44:29.538 [info]: PASS: production reload disabled
+2026-11-12 07:44:29.538 [info]: PASS: invalid development source rejected
+2026-11-12 07:44:29.539 [info]: PASS: compiled view source mounts
+2026-11-12 07:44:33.748 [info]: [STATE_MATCH] phase=336 hash=73648757 rng=3364
+2026-11-12 07:44:40.090 [info]: [STATE_MATCH] phase=337 hash=1969414777 rng=3374
+2026-11-12 07:44:46.108 [info]: [STATE_MATCH] phase=338 hash=87319791 rng=3384
+2026-11-12 07:44:52.106 [info]: [STATE_MATCH] phase=339 hash=30550481 rng=3394
+2026-11-12 07:44:58.576 [info]: [STATE_MATCH] phase=340 hash=467555411 rng=3404
+2026-11-12 07:45:04.379 [info]: [STATE_MATCH] phase=341 hash=1118626384 rng=3414
+2026-11-12 07:45:10.446 [info]: [STATE_MATCH] phase=342 hash=629991664 rng=3424
+2026-11-12 07:45:16.912 [info]: [STATE_MATCH] phase=343 hash=1262079848 rng=3434
+2026-11-12 07:45:23.405 [info]: [STATE_MATCH] phase=344 hash=137503537 rng=3444
+2026-11-12 07:45:29.825 [info]: [STATE_MATCH] phase=345 hash=86794520 rng=3454
+2026-11-12 07:45:36.265 [info]: [STATE_MATCH] phase=346 hash=1349392211 rng=3464
+2026-11-12 07:45:42.246 [info]: [STATE_MATCH] phase=347 hash=358196730 rng=3474
+2026-11-12 07:45:44.200 [info]: [RESOURCE] tick=174000 lua_kib=409.614 controls=6 ui_tasks=1 events=0
+2026-11-12 07:45:44.214 [info]: PASS: view reload stops successfully
+2026-11-12 07:45:44.215 [info]: PASS: reloaded views release closure payloads
+2026-11-12 07:45:44.215 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 07:45:44.216 [info]: PASS: production reload disabled
+2026-11-12 07:45:44.216 [info]: PASS: invalid development source rejected
+2026-11-12 07:45:44.216 [info]: PASS: compiled view source mounts
+2026-11-12 07:45:48.704 [info]: [STATE_MATCH] phase=348 hash=1992692933 rng=3484
+2026-11-12 07:45:55.170 [info]: [STATE_MATCH] phase=349 hash=223961959 rng=3494
+2026-11-12 07:46:01.427 [info]: [STATE_MATCH] phase=350 hash=1338304349 rng=3504
+2026-11-12 07:46:07.408 [info]: [STATE_MATCH] phase=351 hash=1029584614 rng=3514
+2026-11-12 07:46:13.061 [info]: [STATE_MATCH] phase=352 hash=1227593071 rng=3524
+2026-11-12 07:46:19.255 [info]: [STATE_MATCH] phase=353 hash=1093524127 rng=3534
+2026-11-12 07:46:24.966 [info]: [STATE_MATCH] phase=354 hash=151659755 rng=3544
+2026-11-12 07:46:30.592 [info]: [STATE_MATCH] phase=355 hash=126716020 rng=3554
+2026-11-12 07:46:36.878 [info]: [STATE_MATCH] phase=356 hash=1278041238 rng=3564
+2026-11-12 07:46:43.390 [info]: [STATE_MATCH] phase=357 hash=1774507414 rng=3574
+2026-11-12 07:46:49.671 [info]: [STATE_MATCH] phase=358 hash=1071491059 rng=3584
+2026-11-12 07:46:55.562 [info]: [STATE_MATCH] phase=359 hash=1820810732 rng=3594
+2026-11-12 07:46:57.442 [info]: [RESOURCE] tick=180000 lua_kib=406.841 controls=6 ui_tasks=1 events=0
+2026-11-12 07:46:57.444 [info]: PASS: UI lifecycle stress cycles=7213
+2026-11-12 07:46:57.444 [info]: PASS: gameplay RNG and peer snapshots exercised
+2026-11-12 07:46:57.444 [info]: PASS: UI command exactly once player=0
+2026-11-12 07:46:57.444 [info]: PASS: UI command exactly once player=1
+2026-11-12 07:46:57.445 [info]: PASS: UI command exactly once player=2
+2026-11-12 07:46:57.445 [info]: PASS: bridge has no fault
+2026-11-12 07:46:57.446 [info]: PASS: UI shutdown clears all controls
+2026-11-12 07:46:57.447 [info]: PASS: stopped UI rejects tasks without retaining registrations
+2026-11-12 07:46:57.447 [info]: PASS: stopped UI rejects listeners without retaining registrations
+2026-11-12 07:47:00.807 [info]: [METRICS] ui_cycles=7213 rng_calls=3597 phases=359 assertions=212
+2026-11-12 07:47:00.808 [info]: [UT_DONE] LuaScaffold research-soak-03 P1

@@ -13,7 +13,7 @@ dest=Path(args.destination).resolve()
 assert not dest.exists(), 'Destination must not exist'
 assert not dest.is_relative_to(root), 'Create new projects outside this template'
 dest.mkdir(parents=True)
-for name in ('src','assets','vendor','tools','integration','examples','tests','docs'):
+for name in ('src','assets','vendor','tools','integration','examples','tests','docs','.agents','.vscode','research'):
     shutil.copytree(root/name, dest/name, ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
 for name in ('README.md','AGENTS.md','.gitignore','.gitattributes','project.json'):
     if (root/name).exists(): shutil.copy2(root/name,dest/name)

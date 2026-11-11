@@ -73,9 +73,14 @@ class.panel = extends(class.ui_base){
             if param.h == nil then  control.h = parent.h  end 
         end 
         
-        local object = control:build()
+        local ok,object = pcall(control.build,control)
+        if not ok then
+            class.ui_base.destroy(control)
+            error(object,0)
+        end
 
         if object == nil then 
+            class.ui_base.destroy(control)
             return 
         end 
         if parent then 
@@ -392,7 +397,7 @@ class.panel = extends(class.ui_base){
 
             local travel = math.max(0, self.parent.h - self.h)
             local value = travel > 0 and math.min(1, y / travel) or 0
-            local sy = value * (self.parent:get_child_max_y() - self.h)
+            local sy = value * math.max(0, self.parent:get_child_max_y() - self.parent.h)
             
             self.parent:set_scroll_y(sy)
             return false 

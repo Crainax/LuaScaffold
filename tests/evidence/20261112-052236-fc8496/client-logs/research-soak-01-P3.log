@@ -1,0 +1,136 @@
+2026-11-12 05:23:07.659 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 05:23:09.110 [info]: PASS: convenience timer repeats on shared logical ticks
+2026-11-12 05:23:09.110 [info]: PASS: expected active humans=3
+2026-11-12 05:23:09.111 [info]: PASS: official UI controls initialized
+2026-11-12 05:23:09.111 [info]: PASS: UI globals and standard math isolated
+2026-11-12 05:23:09.111 [info]: PASS: legacy sync and gameplay entry absent
+2026-11-12 05:23:09.112 [info]: PASS: native button has positive width
+2026-11-12 05:23:09.112 [info]: PASS: native text round trip
+2026-11-12 05:23:09.112 [info]: PASS: local UI cannot register gameplay entities
+2026-11-12 05:23:09.113 [info]: PASS: unsafe and oversized input rejected
+2026-11-12 05:23:09.122 [info]: PASS: native model created
+2026-11-12 05:23:09.136 [info]: PASS: native model2 created
+2026-11-12 05:23:09.137 [info]: PASS: native scroll panel created
+2026-11-12 05:23:09.144 [info]: PASS: progress handles zero denominator
+2026-11-12 05:23:09.145 [info]: PASS: models and scroll disposal return to baseline
+2026-11-12 05:23:09.167 [info]: PASS: view reload stops successfully
+2026-11-12 05:23:09.168 [info]: PASS: reloaded views release closure payloads
+2026-11-12 05:23:09.168 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 05:23:09.168 [info]: PASS: production reload disabled
+2026-11-12 05:23:09.169 [info]: PASS: invalid development source rejected
+2026-11-12 05:23:09.169 [info]: PASS: compiled view source mounts
+2026-11-12 05:23:09.354 [info]: [LuaScaffold] COMMAND ping	0	1
+2026-11-12 05:23:09.358 [info]: [LuaScaffold] COMMAND ping	1	1
+2026-11-12 05:23:09.358 [info]: [LuaScaffold] COMMAND ping	2	1
+2026-11-12 05:23:09.754 [info]: PASS: destroyed UI releases cancelled closure captures
+2026-11-12 05:23:09.755 [info]: [NATIVE_CALLBACK_GC] retained=0/8
+2026-11-12 05:23:09.755 [info]: PASS: nested UI destroy is idempotent
+2026-11-12 05:23:09.845 [info]: [BENCH] name=empty_loop n=50000 sample=1 seconds=0.001000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:23:09.846 [info]: [BENCH] name=empty_loop n=50000 sample=2 seconds=0.001000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:23:09.847 [info]: [BENCH] name=empty_loop n=50000 sample=3 seconds=0.000000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:23:09.847 [info]: [BENCH] name=empty_loop n=50000 sample=4 seconds=0.000000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:23:09.848 [info]: [BENCH] name=empty_loop n=50000 sample=5 seconds=0.001000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:23:09.859 [info]: [BENCH] name=closure_capture n=50000 sample=1 seconds=0.010000 heap_delta_kib=186.969 gc=normal
+2026-11-12 05:23:09.870 [info]: [BENCH] name=closure_capture n=50000 sample=2 seconds=0.011000 heap_delta_kib=186.969 gc=normal
+2026-11-12 05:23:09.882 [info]: [BENCH] name=closure_capture n=50000 sample=3 seconds=0.012000 heap_delta_kib=186.969 gc=normal
+2026-11-12 05:23:09.891 [info]: [BENCH] name=closure_capture n=50000 sample=4 seconds=0.010000 heap_delta_kib=186.969 gc=normal
+2026-11-12 05:23:09.902 [info]: [BENCH] name=closure_capture n=50000 sample=5 seconds=0.010000 heap_delta_kib=186.969 gc=normal
+2026-11-12 05:23:09.909 [info]: [BENCH] name=empty_table n=50000 sample=1 seconds=0.006000 heap_delta_kib=647.781 gc=normal
+2026-11-12 05:23:09.916 [info]: [BENCH] name=empty_table n=50000 sample=2 seconds=0.006000 heap_delta_kib=647.781 gc=normal
+2026-11-12 05:23:09.925 [info]: [BENCH] name=empty_table n=50000 sample=3 seconds=0.008000 heap_delta_kib=647.781 gc=normal
+2026-11-12 05:23:09.931 [info]: [BENCH] name=empty_table n=50000 sample=4 seconds=0.005000 heap_delta_kib=647.781 gc=normal
+2026-11-12 05:23:09.938 [info]: [BENCH] name=empty_table n=50000 sample=5 seconds=0.006000 heap_delta_kib=647.781 gc=normal
+2026-11-12 05:23:09.951 [info]: [BENCH] name=table_4_fields n=50000 sample=1 seconds=0.011000 heap_delta_kib=362.203 gc=normal
+2026-11-12 05:23:09.962 [info]: [BENCH] name=table_4_fields n=50000 sample=2 seconds=0.010000 heap_delta_kib=362.203 gc=normal
+2026-11-12 05:23:09.978 [info]: [BENCH] name=table_4_fields n=50000 sample=3 seconds=0.016000 heap_delta_kib=362.203 gc=normal
+2026-11-12 05:23:09.991 [info]: [BENCH] name=table_4_fields n=50000 sample=4 seconds=0.012000 heap_delta_kib=362.203 gc=normal
+2026-11-12 05:23:10.003 [info]: [BENCH] name=table_4_fields n=50000 sample=5 seconds=0.012000 heap_delta_kib=362.203 gc=normal
+2026-11-12 05:23:10.030 [info]: [BENCH] name=concat_unique_short n=50000 sample=1 seconds=0.026000 heap_delta_kib=442.836 gc=normal
+2026-11-12 05:23:10.060 [info]: [BENCH] name=concat_unique_short n=50000 sample=2 seconds=0.029000 heap_delta_kib=394.373 gc=normal
+2026-11-12 05:23:10.087 [info]: [BENCH] name=concat_unique_short n=50000 sample=3 seconds=0.027000 heap_delta_kib=394.373 gc=normal
+2026-11-12 05:23:10.113 [info]: [BENCH] name=concat_unique_short n=50000 sample=4 seconds=0.025000 heap_delta_kib=394.373 gc=normal
+2026-11-12 05:23:10.142 [info]: [BENCH] name=concat_unique_short n=50000 sample=5 seconds=0.029000 heap_delta_kib=394.373 gc=normal
+2026-11-12 05:23:10.145 [info]: [BENCH] name=string_equal_existing n=50000 sample=1 seconds=0.002000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:23:10.148 [info]: [BENCH] name=string_equal_existing n=50000 sample=2 seconds=0.002000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:23:10.151 [info]: [BENCH] name=string_equal_existing n=50000 sample=3 seconds=0.002000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:23:10.153 [info]: [BENCH] name=string_equal_existing n=50000 sample=4 seconds=0.002000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:23:10.156 [info]: [BENCH] name=string_equal_existing n=50000 sample=5 seconds=0.002000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:23:10.164 [info]: [BENCH] name=events_100_listeners n=1000 sample=1 seconds=0.007000 heap_delta_kib=181.402 gc=normal
+2026-11-12 05:23:10.181 [info]: [BENCH] name=events_100_listeners n=1000 sample=2 seconds=0.016000 heap_delta_kib=181.402 gc=normal
+2026-11-12 05:23:10.197 [info]: [BENCH] name=events_100_listeners n=1000 sample=3 seconds=0.016000 heap_delta_kib=181.402 gc=normal
+2026-11-12 05:23:10.208 [info]: [BENCH] name=events_100_listeners n=1000 sample=4 seconds=0.010000 heap_delta_kib=181.402 gc=normal
+2026-11-12 05:23:10.222 [info]: [BENCH] name=events_100_listeners n=1000 sample=5 seconds=0.014000 heap_delta_kib=181.402 gc=normal
+2026-11-12 05:23:10.247 [info]: [BENCH] name=scheduler_1000_idle n=100 sample=1 seconds=0.013000 heap_delta_kib=585.391 gc=normal
+2026-11-12 05:23:10.265 [info]: [BENCH] name=scheduler_1000_idle n=100 sample=2 seconds=0.016000 heap_delta_kib=585.391 gc=normal
+2026-11-12 05:23:10.277 [info]: [BENCH] name=scheduler_1000_idle n=100 sample=3 seconds=0.009000 heap_delta_kib=585.426 gc=normal
+2026-11-12 05:23:10.287 [info]: [BENCH] name=scheduler_1000_idle n=100 sample=4 seconds=0.010000 heap_delta_kib=585.426 gc=normal
+2026-11-12 05:23:10.301 [info]: [BENCH] name=scheduler_1000_idle n=100 sample=5 seconds=0.012000 heap_delta_kib=585.426 gc=normal
+2026-11-12 05:23:10.304 [info]: [BENCH] name=native_text_update n=2000 sample=1 seconds=0.002000 heap_delta_kib=95.395 gc=normal
+2026-11-12 05:23:10.306 [info]: [BENCH] name=native_text_update n=2000 sample=2 seconds=0.002000 heap_delta_kib=95.395 gc=normal
+2026-11-12 05:23:10.308 [info]: [BENCH] name=native_text_update n=2000 sample=3 seconds=0.002000 heap_delta_kib=95.395 gc=normal
+2026-11-12 05:23:10.310 [info]: [BENCH] name=native_text_update n=2000 sample=4 seconds=0.002000 heap_delta_kib=95.395 gc=normal
+2026-11-12 05:23:10.313 [info]: [BENCH] name=native_text_update n=2000 sample=5 seconds=0.002000 heap_delta_kib=95.395 gc=normal
+2026-11-12 05:23:10.315 [info]: [ALLOC] name=closure_capture n=10000 kib=546.875
+2026-11-12 05:23:10.317 [info]: [ALLOC] name=empty_table n=10000 kib=468.750
+2026-11-12 05:23:10.318 [info]: PASS: native runtime benchmark matrix completed
+2026-11-12 05:23:13.747 [info]: [CLOCK_PROBE] logical_seconds=5 os_clock=6.087000 os_time=6
+2026-11-12 05:23:17.992 [info]: [STATE_MATCH] phase=1 hash=254297214 rng=14
+2026-11-12 05:23:23.546 [info]: [STATE_MATCH] phase=2 hash=1255848347 rng=24
+2026-11-12 05:23:29.235 [info]: [STATE_MATCH] phase=3 hash=2053022606 rng=34
+2026-11-12 05:23:35.036 [info]: [STATE_MATCH] phase=4 hash=681901471 rng=44
+2026-11-12 05:23:41.412 [info]: [STATE_MATCH] phase=5 hash=647523496 rng=54
+2026-11-12 05:23:47.883 [info]: [STATE_MATCH] phase=6 hash=1320003871 rng=64
+2026-11-12 05:23:54.312 [info]: [STATE_MATCH] phase=7 hash=976226093 rng=74
+2026-11-12 05:24:00.353 [info]: [STATE_MATCH] phase=8 hash=671539069 rng=84
+2026-11-12 05:24:06.808 [info]: [STATE_MATCH] phase=9 hash=1883055329 rng=94
+2026-11-12 05:24:12.618 [info]: [STATE_MATCH] phase=10 hash=395942573 rng=104
+2026-11-12 05:24:18.627 [info]: [STATE_MATCH] phase=11 hash=601531508 rng=114
+2026-11-12 05:24:20.518 [info]: [RESOURCE] tick=6000 lua_kib=1038.915 controls=6 ui_tasks=1 events=0
+2026-11-12 05:24:20.535 [info]: PASS: view reload stops successfully
+2026-11-12 05:24:20.536 [info]: PASS: reloaded views release closure payloads
+2026-11-12 05:24:20.536 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 05:24:20.536 [info]: PASS: production reload disabled
+2026-11-12 05:24:20.536 [info]: PASS: invalid development source rejected
+2026-11-12 05:24:20.537 [info]: PASS: compiled view source mounts
+2026-11-12 05:24:25.034 [info]: [STATE_MATCH] phase=12 hash=1977173506 rng=124
+2026-11-12 05:24:31.280 [info]: [STATE_MATCH] phase=13 hash=2145786195 rng=134
+2026-11-12 05:24:37.661 [info]: [STATE_MATCH] phase=14 hash=756405131 rng=144
+2026-11-12 05:24:43.422 [info]: [STATE_MATCH] phase=15 hash=1693054742 rng=154
+2026-11-12 05:24:49.856 [info]: [STATE_MATCH] phase=16 hash=108497624 rng=164
+2026-11-12 05:24:56.262 [info]: [STATE_MATCH] phase=17 hash=1107939876 rng=174
+2026-11-12 05:25:02.166 [info]: [STATE_MATCH] phase=18 hash=2006553542 rng=184
+2026-11-12 05:25:07.819 [info]: [STATE_MATCH] phase=19 hash=303260124 rng=194
+2026-11-12 05:25:14.020 [info]: [STATE_MATCH] phase=20 hash=1361348103 rng=204
+2026-11-12 05:25:20.458 [info]: [STATE_MATCH] phase=21 hash=558431439 rng=214
+2026-11-12 05:25:26.486 [info]: [STATE_MATCH] phase=22 hash=1553519911 rng=224
+2026-11-12 05:25:32.187 [info]: [STATE_MATCH] phase=23 hash=37369913 rng=234
+2026-11-12 05:25:34.144 [info]: [RESOURCE] tick=12000 lua_kib=833.693 controls=6 ui_tasks=1 events=0
+2026-11-12 05:25:34.157 [info]: PASS: view reload stops successfully
+2026-11-12 05:25:34.159 [info]: PASS: reloaded views release closure payloads
+2026-11-12 05:25:34.160 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 05:25:34.160 [info]: PASS: production reload disabled
+2026-11-12 05:25:34.160 [info]: PASS: invalid development source rejected
+2026-11-12 05:25:34.161 [info]: PASS: compiled view source mounts
+2026-11-12 05:25:38.647 [info]: [STATE_MATCH] phase=24 hash=1845286956 rng=244
+2026-11-12 05:25:44.383 [info]: [STATE_MATCH] phase=25 hash=1473103496 rng=254
+2026-11-12 05:25:50.543 [info]: [STATE_MATCH] phase=26 hash=1714880950 rng=264
+2026-11-12 05:25:56.426 [info]: [STATE_MATCH] phase=27 hash=1387652420 rng=274
+2026-11-12 05:26:02.723 [info]: [STATE_MATCH] phase=28 hash=1126428830 rng=284
+2026-11-12 05:26:08.795 [info]: [STATE_MATCH] phase=29 hash=1714653090 rng=294
+2026-11-12 05:26:15.174 [info]: [STATE_MATCH] phase=30 hash=716765528 rng=304
+2026-11-12 05:26:21.325 [info]: [STATE_MATCH] phase=31 hash=1240413529 rng=314
+2026-11-12 05:26:27.382 [info]: [STATE_MATCH] phase=32 hash=983691246 rng=324
+2026-11-12 05:26:33.340 [info]: [STATE_MATCH] phase=33 hash=551614733 rng=334
+2026-11-12 05:26:39.624 [info]: [STATE_MATCH] phase=34 hash=1641274072 rng=344
+2026-11-12 05:26:45.371 [info]: [STATE_MATCH] phase=35 hash=1046946692 rng=354
+2026-11-12 05:26:47.278 [info]: [RESOURCE] tick=18000 lua_kib=761.707 controls=6 ui_tasks=1 events=0
+2026-11-12 05:26:47.293 [info]: PASS: view reload stops successfully
+2026-11-12 05:26:47.295 [info]: PASS: reloaded views release closure payloads
+2026-11-12 05:26:47.295 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 05:26:47.295 [info]: PASS: production reload disabled
+2026-11-12 05:26:47.295 [info]: PASS: invalid development source rejected
+2026-11-12 05:26:47.296 [info]: PASS: compiled view source mounts
+2026-11-12 05:26:51.795 [info]: [STATE_MATCH] phase=36 hash=1539155643 rng=364
+2026-11-12 05:26:58.264 [info]: [STATE_MATCH] phase=37 hash=2013999544 rng=374
+2026-11-12 05:27:04.310 [info]: [STATE_MATCH] phase=38 hash=12499828 rng=384
+2026-11-12 05:27:10.701 [info]: [STATE_MATCH] phase=39 hash=1689880663 rng=394

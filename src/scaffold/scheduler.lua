@@ -3,6 +3,8 @@
 local M = {}
 local Context = require 'scaffold.context'
 function M.new(domain)
+    domain=domain or 'sync'
+    assert(domain=='sync' or domain=='local','invalid scheduler domain')
     local function guard() if domain == 'sync' then Context.assert_sync() end end
     local tick, sequence, tasks, stopped, stepping = 0, 0, {}, false, false
     local self = {}
@@ -59,11 +61,14 @@ function M.new(domain)
         table.sort(due) -- insertion order; never table/handle identity
         for _, id in ipairs(due) do
             local task = tasks[id]
-            if task then
+            -- Earlier callbacks may pause or move another task after due was collected.
+            if task and not task.remaining and task.due <= tick then
                 local fn = task.fn
                 if task.period then task.due = tick + task.period
                 else tasks[id], task.fn = nil, nil end
-                local ok, err = pcall(fn)
+                local ok, err
+                if domain=='local' then ok,err=pcall(Context.local_call,fn)
+                else ok,err=pcall(fn) end
                 if not ok then
                     self:stop()
                     stepping = false

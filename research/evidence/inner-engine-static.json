@@ -1,0 +1,1156 @@
+{
+  "image": "build/engine-pe/pe-60ae0.dll",
+  "sha256": "5c44196eb2b82a11ccf8754a259193db86dc4c823140887b0442741d48132a8c",
+  "size": 7499264,
+  "machine": "0x14c",
+  "image_base": "0x10000000",
+  "entry_rva": "0x388ea6",
+  "sections": [
+    {
+      "name": ".text",
+      "rva": "0x1000",
+      "raw_offset": 1024,
+      "raw_size": 5691904
+    },
+    {
+      "name": ".rdata",
+      "rva": "0x56f000",
+      "raw_offset": 5692928,
+      "raw_size": 1119232
+    },
+    {
+      "name": ".data",
+      "rva": "0x681000",
+      "raw_offset": 6812160,
+      "raw_size": 369152
+    },
+    {
+      "name": ".detourc",
+      "rva": "0x6ec000",
+      "raw_offset": 7181312,
+      "raw_size": 9216
+    },
+    {
+      "name": ".detourd",
+      "rva": "0x6ef000",
+      "raw_offset": 7190528,
+      "raw_size": 512
+    },
+    {
+      "name": ".rsrc",
+      "rva": "0x6f0000",
+      "raw_offset": 7191040,
+      "raw_size": 512
+    },
+    {
+      "name": ".reloc",
+      "rva": "0x6f1000",
+      "raw_offset": 7191552,
+      "raw_size": 307712
+    }
+  ],
+  "imports": [
+    {
+      "dll": "WS2_32.dll",
+      "symbols": [
+        "inet_addr",
+        "shutdown",
+        "inet_ntop",
+        "WSAPoll",
+        "htons",
+        "WSASocketW",
+        "inet_ntoa",
+        "gethostname",
+        "ioctlsocket",
+        "sendto",
+        "recvfrom",
+        "freeaddrinfo",
+        "getaddrinfo",
+        "listen",
+        "accept",
+        "select",
+        "__WSAFDIsSet",
+        "WSACleanup",
+        "WSAStartup",
+        "WSAIoctl",
+        "WSASetLastError",
+        "socket",
+        "setsockopt",
+        "getsockopt",
+        "getsockname",
+        "getpeername",
+        "connect",
+        "bind",
+        "recv",
+        "WSAGetLastError",
+        "closesocket",
+        "WSAWaitForMultipleEvents",
+        "WSASetEvent",
+        "WSAResetEvent",
+        "WSAEventSelect",
+        "WSAEnumNetworkEvents",
+        "WSACreateEvent",
+        "gethostbyaddr",
+        "gethostbyname",
+        "getservbyport",
+        "WSACloseEvent",
+        "send",
+        "ntohl",
+        "inet_pton",
+        "ntohs",
+        "htonl",
+        "getservbyname"
+      ]
+    },
+    {
+      "dll": "WLDAP32.dll",
+      "symbols": [
+        "46",
+        "211",
+        "60",
+        "50",
+        "143",
+        "41",
+        "22",
+        "26",
+        "301",
+        "200",
+        "30",
+        "79",
+        "35",
+        "33",
+        "32",
+        "27"
+      ]
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "symbols": [
+        "DuplicateHandle",
+        "GetConsoleOutputCP",
+        "SetConsoleCtrlHandler",
+        "SetFilePointerEx",
+        "LCMapStringW",
+        "FileTimeToSystemTime",
+        "SystemTimeToTzSpecificLocalTime",
+        "GetDriveTypeW",
+        "SetStdHandle",
+        "FreeLibraryAndExitThread",
+        "ExitThread",
+        "ExitProcess",
+        "InitializeCriticalSectionAndSpinCount",
+        "InterlockedFlushSList",
+        "RtlUnwind",
+        "ReadConsoleA",
+        "SetConsoleMode",
+        "ConvertThreadToFiberEx",
+        "ConvertFiberToThread",
+        "GetACP",
+        "GetEnvironmentVariableW",
+        "GetCurrentProcess",
+        "VirtualQuery",
+        "GetModuleFileNameA",
+        "GetEnvironmentVariableA",
+        "LocalAlloc",
+        "K32EmptyWorkingSet",
+        "GetModuleHandleA",
+        "GetLastError",
+        "K32GetProcessMemoryInfo",
+        "QueryPerformanceFrequency",
+        "CloseHandle",
+        "LocalFree",
+        "SetEnvironmentVariableA",
+        "GetModuleHandleW",
+        "CreateProcessA",
+        "QueryPerformanceCounter",
+        "FindFirstFileA",
+        "GetConsoleScreenBufferInfo",
+        "SetConsoleTextAttribute",
+        "GetStdHandle",
+        "WriteConsoleA",
+        "WriteFile",
+        "FindNextFileA",
+        "GetDynamicTimeZoneInformation",
+        "GetCurrentThreadId",
+        "Sleep",
+        "GetConsoleMode",
+        "GetFileAttributesA",
+        "DeleteFileA",
+        "CreateThread",
+        "GetProcAddress",
+        "GetCurrentProcessId",
+        "FreeLibrary",
+        "CreateFileA",
+        "VirtualProtect",
+        "SetLastError",
+        "VirtualFree",
+        "VirtualAlloc",
+        "FlushInstructionCache",
+        "GetModuleHandleExA",
+        "LoadLibraryA",
+        "GetSystemInfo",
+        "DeleteFileW",
+        "WriteConsoleW",
+        "OpenProcess",
+        "LoadLibraryW",
+        "QueryFullProcessImageNameW",
+        "VirtualProtectEx",
+        "GetSystemTimeAsFileTime",
+        "FormatMessageA",
+        "CopyFileA",
+        "WriteProcessMemory",
+        "GetCommandLineA",
+        "GlobalAlloc",
+        "GlobalLock",
+        "IsBadReadPtr",
+        "GlobalUnlock",
+        "UnmapViewOfFile",
+        "CreateFileMappingA",
+        "OpenFileMappingA",
+        "MapViewOfFile",
+        "TlsGetValue",
+        "SuspendThread",
+        "ResumeThread",
+        "GetCurrentThread",
+        "GetThreadContext",
+        "SetThreadContext",
+        "SetFilePointer",
+        "GetFileSize",
+        "LoadLibraryExA",
+        "LoadLibraryExW",
+        "ReadProcessMemory",
+        "SetEvent",
+        "CreateDirectoryA",
+        "IsBadStringPtrA",
+        "QueueUserWorkItem",
+        "ReadConsoleW",
+        "GetLocaleInfoW",
+        "AllocConsole",
+        "MultiByteToWideChar",
+        "WideCharToMultiByte",
+        "GetCommandLineW",
+        "GetModuleFileNameW",
+        "CreateProcessW",
+        "LeaveCriticalSection",
+        "InitializeCriticalSectionEx",
+        "DeleteCriticalSection",
+        "SleepEx",
+        "GetSystemDirectoryA",
+        "GetTickCount",
+        "FormatMessageW",
+        "MoveFileExA",
+        "WaitForSingleObjectEx",
+        "GetFileType",
+        "ReadFile",
+        "PeekNamedPipe",
+        "WaitForMultipleObjects",
+        "VerSetConditionMask",
+        "VerifyVersionInfoW",
+        "GetFileTime",
+        "SetEndOfFile",
+        "InitializeCriticalSection",
+        "ResetEvent",
+        "ReleaseSemaphore",
+        "WaitForSingleObject",
+        "CreateEventA",
+        "CreateSemaphoreA",
+        "GetSystemTime",
+        "SystemTimeToFileTime",
+        "GetFileAttributesW",
+        "MoveFileExW",
+        "CreateFileW",
+        "GetFileInformationByHandle",
+        "GetCurrentDirectoryW",
+        "CreateDirectoryW",
+        "GetTempPathW",
+        "FindClose",
+        "FindFirstFileW",
+        "FindNextFileW",
+        "ReleaseSRWLockExclusive",
+        "GetModuleHandleExW",
+        "CreateFiberEx",
+        "DeleteFiber",
+        "SwitchToFiber",
+        "TlsFree",
+        "InitializeSRWLock",
+        "RaiseException",
+        "OutputDebugStringA",
+        "TlsSetValue",
+        "TlsAlloc",
+        "InitializeSListHead",
+        "GetStartupInfoW",
+        "IsDebuggerPresent",
+        "TryAcquireSRWLockExclusive",
+        "IsProcessorFeaturePresent",
+        "TerminateProcess",
+        "SetUnhandledExceptionFilter",
+        "UnhandledExceptionFilter",
+        "GetStringTypeW",
+        "GetCPInfo",
+        "CompareStringEx",
+        "LCMapStringEx",
+        "DecodePointer",
+        "EncodePointer",
+        "IsValidLocale",
+        "GetUserDefaultLCID",
+        "EnumSystemLocalesW",
+        "GetTimeZoneInformation",
+        "HeapSize",
+        "GetExitCodeProcess",
+        "IsValidCodePage",
+        "GetOEMCP",
+        "GetFileSizeEx",
+        "GetCPInfoExW",
+        "InitOnceBeginInitialize",
+        "WakeConditionVariable",
+        "WakeAllConditionVariable",
+        "InitOnceComplete",
+        "SleepConditionVariableSRW",
+        "GetLocaleInfoEx",
+        "FindFirstFileExW",
+        "GetTickCount64",
+        "GetEnvironmentStringsW",
+        "FreeEnvironmentStringsW",
+        "SetEnvironmentVariableW",
+        "GetProcessHeap",
+        "CreatePipe",
+        "FlushFileBuffers",
+        "HeapFree",
+        "HeapReAlloc",
+        "HeapAlloc",
+        "GetDateFormatW",
+        "GetTimeFormatW",
+        "EnterCriticalSection",
+        "CompareStringW",
+        "AcquireSRWLockShared",
+        "ReleaseSRWLockShared",
+        "GetExitCodeThread",
+        "GetFileInformationByHandleEx",
+        "GetConsoleWindow",
+        "AreFileApisANSI",
+        "GetFullPathNameW",
+        "GetFileAttributesExW",
+        "AcquireSRWLockExclusive"
+      ]
+    },
+    {
+      "dll": "USER32.dll",
+      "symbols": [
+        "GetCursorPos",
+        "GetClientRect",
+        "GetMonitorInfoA",
+        "DefWindowProcA",
+        "MonitorFromWindow",
+        "SetWindowPos",
+        "MessageBoxA",
+        "GetParent",
+        "GetWindowTextA",
+        "GetClassNameA",
+        "GetUserObjectInformationW",
+        "SetClipboardData",
+        "SendMessageA",
+        "GetClipboardData",
+        "EmptyClipboard",
+        "CallWindowProcA",
+        "CloseClipboard",
+        "SetWindowLongA",
+        "OpenClipboard",
+        "GetAsyncKeyState",
+        "MessageBoxW",
+        "PostMessageA",
+        "GetProcessWindowStation",
+        "SetCursorPos",
+        "ScreenToClient",
+        "keybd_event",
+        "wsprintfA",
+        "GetWindowLongW",
+        "GetSystemMetrics",
+        "GetSystemMenu",
+        "ShowWindow",
+        "RemoveMenu",
+        "GetKeyState",
+        "GetWindowRect"
+      ]
+    },
+    {
+      "dll": "ADVAPI32.dll",
+      "symbols": [
+        "ReportEventW",
+        "RegisterEventSourceW",
+        "DeregisterEventSource",
+        "SetServiceObjectSecurity",
+        "LookupPrivilegeValueW",
+        "OpenProcessToken",
+        "AdjustTokenPrivileges",
+        "CryptSetHashParam",
+        "CryptGetProvParam",
+        "CryptGetUserKey",
+        "CryptExportKey",
+        "CryptDecrypt",
+        "CryptSignHashW",
+        "CryptEncrypt",
+        "CryptImportKey",
+        "CryptDestroyKey",
+        "CryptDestroyHash",
+        "CryptHashData",
+        "CryptCreateHash",
+        "CryptGetHashParam",
+        "CryptReleaseContext",
+        "CryptAcquireContextA",
+        "CryptAcquireContextW",
+        "CryptEnumProvidersW"
+      ]
+    },
+    {
+      "dll": "SHELL32.dll",
+      "symbols": [
+        "ShellExecuteA"
+      ]
+    },
+    {
+      "dll": "OLEAUT32.dll",
+      "symbols": [
+        "SysAllocStringLen",
+        "SysAllocString",
+        "SysFreeString",
+        "SysStringLen"
+      ]
+    },
+    {
+      "dll": "ntdll.dll",
+      "symbols": [
+        "NtQueryInformationProcess",
+        "RtlCharToInteger",
+        "NtReleaseSemaphore",
+        "RtlSubAuthoritySid",
+        "RtlInitializeSid",
+        "RtlConvertSidToUnicodeString",
+        "NtClose",
+        "NtOpenProcess",
+        "RtlGetVersion",
+        "NtQuerySystemInformation",
+        "RtlCreateHeap",
+        "RtlSetHeapInformation",
+        "NtQueryVirtualMemory",
+        "NtOpenSymbolicLinkObject",
+        "NtQuerySymbolicLinkObject",
+        "NtReadVirtualMemory",
+        "RtlUpcaseUnicodeChar",
+        "RtlDosPathNameToNtPathName_U_WithStatus",
+        "RtlInitializeSListHead",
+        "RtlInterlockedPushEntrySList",
+        "NtCreateThreadEx",
+        "RtlInterlockedPopEntrySList",
+        "RtlAllocateHeap",
+        "RtlFreeHeap",
+        "RtlReAllocateHeap",
+        "NtAllocateVirtualMemory",
+        "NtFreeVirtualMemory",
+        "RtlMultiByteToUnicodeSize",
+        "RtlMultiByteToUnicodeN",
+        "RtlUTF8ToUnicodeN",
+        "RtlRaiseStatus",
+        "RtlUnicodeToMultiByteN",
+        "RtlUnicodeToMultiByteSize",
+        "RtlUnicodeToUTF8N",
+        "RtlInterlockedFlushSList",
+        "RtlDowncaseUnicodeChar",
+        "RtlFirstEntrySList",
+        "NtQueryObject",
+        "NtDuplicateObject",
+        "NtWaitForSingleObject",
+        "NtClearEvent",
+        "NtTerminateThread",
+        "NtSetEvent",
+        "NtCreateEvent",
+        "NtQueryInformationFile",
+        "NtQuerySecurityObject",
+        "NtSetSecurityObject",
+        "NtCreateKeyedEvent",
+        "NtReleaseKeyedEvent",
+        "NtWaitForKeyedEvent",
+        "RtlEnterCriticalSection",
+        "RtlLeaveCriticalSection",
+        "NtSetInformationFile",
+        "RtlAddAccessAllowedAce",
+        "RtlSetDaclSecurityDescriptor",
+        "RtlCreateSecurityDescriptor",
+        "RtlCreateAcl",
+        "RtlLengthSid",
+        "NtOpenKey",
+        "NtCreateKey",
+        "NtQueryValueKey",
+        "NtSetValueKey",
+        "NtQueryInformationToken",
+        "NtQuerySystemInformationEx",
+        "NtSetInformationThread",
+        "NtCreateSemaphore"
+      ]
+    },
+    {
+      "dll": "CRYPT32.dll",
+      "symbols": [
+        "CertDuplicateCertificateContext",
+        "CertFindCertificateInStore",
+        "CertEnumCertificatesInStore",
+        "CertCloseStore",
+        "CertOpenStore",
+        "CertFreeCertificateContext",
+        "CertGetCertificateContextProperty"
+      ]
+    },
+    {
+      "dll": "WININET.dll",
+      "symbols": [
+        "InternetGetConnectedState",
+        "InternetOpenA",
+        "InternetCloseHandle",
+        "InternetConnectA",
+        "InternetReadFile",
+        "HttpOpenRequestA",
+        "HttpAddRequestHeadersA",
+        "HttpSendRequestA",
+        "HttpQueryInfoA"
+      ]
+    },
+    {
+      "dll": "bcrypt.dll",
+      "symbols": [
+        "BCryptGenRandom"
+      ]
+    },
+    {
+      "dll": "WINMM.dll",
+      "symbols": [
+        "timeGetDevCaps",
+        "timeBeginPeriod",
+        "timeEndPeriod"
+      ]
+    },
+    {
+      "dll": "ole32.dll",
+      "symbols": [
+        "CoInitializeEx",
+        "CoUninitialize"
+      ]
+    }
+  ],
+  "exports": [
+    {
+      "name": "FrameSetText",
+      "rva": "0x249fa0"
+    },
+    {
+      "name": "FrameSetTexture",
+      "rva": "0x248920"
+    },
+    {
+      "name": "Pow",
+      "rva": "0x14f680"
+    },
+    {
+      "name": "call",
+      "rva": "0x1fd480"
+    },
+    {
+      "name": "curl_easy_cleanup",
+      "rva": "0x3026b0"
+    },
+    {
+      "name": "curl_easy_duphandle",
+      "rva": "0x3026d0"
+    },
+    {
+      "name": "curl_easy_escape",
+      "rva": "0x33f000"
+    },
+    {
+      "name": "curl_easy_getinfo",
+      "rva": "0x302a20"
+    },
+    {
+      "name": "curl_easy_init",
+      "rva": "0x302a40"
+    },
+    {
+      "name": "curl_easy_pause",
+      "rva": "0x302a80"
+    },
+    {
+      "name": "curl_easy_perform",
+      "rva": "0x302c70"
+    },
+    {
+      "name": "curl_easy_recv",
+      "rva": "0x302dc0"
+    },
+    {
+      "name": "curl_easy_reset",
+      "rva": "0x302e80"
+    },
+    {
+      "name": "curl_easy_send",
+      "rva": "0x302f10"
+    },
+    {
+      "name": "curl_easy_setopt",
+      "rva": "0x306320"
+    },
+    {
+      "name": "curl_easy_strerror",
+      "rva": "0x328d60"
+    },
+    {
+      "name": "curl_easy_unescape",
+      "rva": "0x33f130"
+    },
+    {
+      "name": "curl_easy_upkeep",
+      "rva": "0x303000"
+    },
+    {
+      "name": "curl_escape",
+      "rva": "0x33f240"
+    },
+    {
+      "name": "curl_formadd",
+      "rva": "0x343400"
+    },
+    {
+      "name": "curl_formfree",
+      "rva": "0x343420"
+    },
+    {
+      "name": "curl_formget",
+      "rva": "0x343490"
+    },
+    {
+      "name": "curl_free",
+      "rva": "0x309de0"
+    },
+    {
+      "name": "curl_getdate",
+      "rva": "0x329a50"
+    },
+    {
+      "name": "curl_getenv",
+      "rva": "0x33c090"
+    },
+    {
+      "name": "curl_global_cleanup",
+      "rva": "0x303040"
+    },
+    {
+      "name": "curl_global_init",
+      "rva": "0x303080"
+    },
+    {
+      "name": "curl_global_init_mem",
+      "rva": "0x303100"
+    },
+    {
+      "name": "curl_global_sslset",
+      "rva": "0x270420"
+    },
+    {
+      "name": "curl_maprintf",
+      "rva": "0x3275a0"
+    },
+    {
+      "name": "curl_mfprintf",
+      "rva": "0x3275c0"
+    },
+    {
+      "name": "curl_mime_addpart",
+      "rva": "0x30e190"
+    },
+    {
+      "name": "curl_mime_data",
+      "rva": "0x30e210"
+    },
+    {
+      "name": "curl_mime_data_cb",
+      "rva": "0x30e2b0"
+    },
+    {
+      "name": "curl_mime_encoder",
+      "rva": "0x30e300"
+    },
+    {
+      "name": "curl_mime_filedata",
+      "rva": "0x30e360"
+    },
+    {
+      "name": "curl_mime_filename",
+      "rva": "0x30e500"
+    },
+    {
+      "name": "curl_mime_free",
+      "rva": "0x30e550"
+    },
+    {
+      "name": "curl_mime_headers",
+      "rva": "0x30e5b0"
+    },
+    {
+      "name": "curl_mime_init",
+      "rva": "0x30e600"
+    },
+    {
+      "name": "curl_mime_name",
+      "rva": "0x30e690"
+    },
+    {
+      "name": "curl_mime_subparts",
+      "rva": "0x30e6e0"
+    },
+    {
+      "name": "curl_mime_type",
+      "rva": "0x30e7a0"
+    },
+    {
+      "name": "curl_mprintf",
+      "rva": "0x3275e0"
+    },
+    {
+      "name": "curl_msnprintf",
+      "rva": "0x327610"
+    },
+    {
+      "name": "curl_msprintf",
+      "rva": "0x327670"
+    },
+    {
+      "name": "curl_multi_add_handle",
+      "rva": "0x306d40"
+    },
+    {
+      "name": "curl_multi_assign",
+      "rva": "0x306ed0"
+    },
+    {
+      "name": "curl_multi_cleanup",
+      "rva": "0x306f20"
+    },
+    {
+      "name": "curl_multi_fdset",
+      "rva": "0x307020"
+    },
+    {
+      "name": "curl_multi_info_read",
+      "rva": "0x307190"
+    },
+    {
+      "name": "curl_multi_init",
+      "rva": "0x307200"
+    },
+    {
+      "name": "curl_multi_perform",
+      "rva": "0x307300"
+    },
+    {
+      "name": "curl_multi_poll",
+      "rva": "0x307410"
+    },
+    {
+      "name": "curl_multi_remove_handle",
+      "rva": "0x307430"
+    },
+    {
+      "name": "curl_multi_setopt",
+      "rva": "0x307640"
+    },
+    {
+      "name": "curl_multi_socket",
+      "rva": "0x3077b0"
+    },
+    {
+      "name": "curl_multi_socket_action",
+      "rva": "0x307800"
+    },
+    {
+      "name": "curl_multi_socket_all",
+      "rva": "0x307850"
+    },
+    {
+      "name": "curl_multi_strerror",
+      "rva": "0x329180"
+    },
+    {
+      "name": "curl_multi_timeout",
+      "rva": "0x307890"
+    },
+    {
+      "name": "curl_multi_wait",
+      "rva": "0x3078d0"
+    },
+    {
+      "name": "curl_multi_wakeup",
+      "rva": "0x3078f0"
+    },
+    {
+      "name": "curl_mvaprintf",
+      "rva": "0x3276a0"
+    },
+    {
+      "name": "curl_mvfprintf",
+      "rva": "0x327720"
+    },
+    {
+      "name": "curl_mvprintf",
+      "rva": "0x327740"
+    },
+    {
+      "name": "curl_mvsnprintf",
+      "rva": "0x327770"
+    },
+    {
+      "name": "curl_mvsprintf",
+      "rva": "0x3277d0"
+    },
+    {
+      "name": "curl_share_cleanup",
+      "rva": "0x31a980"
+    },
+    {
+      "name": "curl_share_init",
+      "rva": "0x31aa30"
+    },
+    {
+      "name": "curl_share_setopt",
+      "rva": "0x31aa70"
+    },
+    {
+      "name": "curl_share_strerror",
+      "rva": "0x329220"
+    },
+    {
+      "name": "curl_slist_append",
+      "rva": "0x306450"
+    },
+    {
+      "name": "curl_slist_free_all",
+      "rva": "0x3064d0"
+    },
+    {
+      "name": "curl_strequal",
+      "rva": "0x31a380"
+    },
+    {
+      "name": "curl_strnequal",
+      "rva": "0x31a390"
+    },
+    {
+      "name": "curl_unescape",
+      "rva": "0x33f260"
+    },
+    {
+      "name": "curl_url",
+      "rva": "0x33c420"
+    },
+    {
+      "name": "curl_url_cleanup",
+      "rva": "0x33c430"
+    },
+    {
+      "name": "curl_url_dup",
+      "rva": "0x33c450"
+    },
+    {
+      "name": "curl_url_get",
+      "rva": "0x33c580"
+    },
+    {
+      "name": "curl_url_set",
+      "rva": "0x33cb90"
+    },
+    {
+      "name": "curl_url_strerror",
+      "rva": "0x329280"
+    },
+    {
+      "name": "init",
+      "rva": "0x1fcf10"
+    },
+    {
+      "name": "init_lua_engine",
+      "rva": "0x2997c0"
+    },
+    {
+      "name": "luaopen_lni",
+      "rva": "0x235740"
+    }
+  ],
+  "strings": [
+    {
+      "text": "jass2binary",
+      "file_offset": 6627064,
+      "va": "0x106530f8",
+      "xrefs": [
+        {
+          "operand_va": "0x1029940f",
+          "disassembly": [
+            "102993df: add byte ptr [eax], al",
+            "102993e1: add bh, al",
+            "102993e3: inc ebp",
+            "102993e4: fmul qword ptr [edi]",
+            "102993e6: add byte ptr [eax], al",
+            "102993e8: add dh, al",
+            "102993ea: inc ebp",
+            "102993eb: enter -0x1800, -0x32",
+            "102993ef: push es",
+            "102993f0: add byte ptr [eax], al",
+            "102993f2: mov edi, eax",
+            "102993f4: mov esi, dword ptr [edi]",
+            "102993f6: test esi, esi",
+            "102993f8: jne 0x10299403",
+            "102993fa: call 0x10298bb0",
+            "102993ff: mov esi, eax",
+            "10299401: mov dword ptr [edi], esi",
+            "10299403: push 0x106530f0",
+            "10299408: push esi",
+            "10299409: call 0x100b8040",
+            "1029940e: push 0x106530f8",
+            "10299413: push esi",
+            "10299414: call 0x100b7e10",
+            "10299419: push 0",
+            "1029941b: push 0",
+            "1029941d: push 0",
+            "1029941f: push 0",
+            "10299421: push 1",
+            "10299423: push esi",
+            "10299424: call 0x100b9000",
+            "10299429: add esp, 0x28",
+            "1029942c: mov ecx, dword ptr [ebp - 0xc]",
+            "1029942f: mov dword ptr fs:[0], ecx",
+            "10299436: pop ecx",
+            "10299437: pop edi",
+            "10299438: pop esi",
+            "10299439: mov esp, ebp",
+            "1029943b: pop ebp",
+            "1029943c: mov esp, ebx",
+            "1029943e: pop ebx",
+            "1029943f: ret ",
+            "10299440: push ebp",
+            "10299441: mov ebp, esp",
+            "10299443: and esp, 0xfffffff0",
+            "10299446: sub esp, 0x2c",
+            "10299449: push esi",
+            "1029944a: mov esi, dword ptr [0x106e62f8]",
+            "10299450: mov ecx, 0x106e62f8",
+            "10299455: .byte 0xff",
+            "10299456: .byte 0x76"
+          ]
+        }
+      ]
+    },
+    {
+      "text": "FrameSetViewPort",
+      "file_offset": 6604328,
+      "va": "0x1064d828",
+      "xrefs": [
+        {
+          "operand_va": "0x10252dbe",
+          "disassembly": [
+            "10252d8e: add al, 0xba",
+            "10252d90: or al, bl",
+            "10252d92: adc byte ptr fs:[ecx + 0x1024c1d0], bh",
+            "10252d99: push 0x1064d440",
+            "10252d9e: call 0x102ca4e0",
+            "10252da3: add esp, 4",
+            "10252da6: mov edx, 0x1064d83c",
+            "10252dab: mov ecx, 0x1024bda0",
+            "10252db0: push 0x1064d460",
+            "10252db5: call 0x102ca4e0",
+            "10252dba: add esp, 4",
+            "10252dbd: mov edx, 0x1064d828",
+            "10252dc2: mov ecx, 0x1024bdd0",
+            "10252dc7: push 0x1064d460",
+            "10252dcc: call 0x102ca4e0",
+            "10252dd1: add esp, 4",
+            "10252dd4: mov edx, 0x1064d874",
+            "10252dd9: mov ecx, 0x1024c260",
+            "10252dde: push 0x1064d764",
+            "10252de3: call 0x102ca4e0",
+            "10252de8: add esp, 4",
+            "10252deb: mov edx, 0x1064d858",
+            "10252df0: mov ecx, 0x1024c2c0",
+            "10252df5: push 0x1064d764",
+            "10252dfa: call 0x102ca4e0",
+            "10252dff: add esp, 4",
+            "10252e02: .byte 0xba",
+            "10252e03: test al, 0xd8",
+            "10252e05: .byte 0x64"
+          ]
+        }
+      ]
+    },
+    {
+      "text": "FrameSetTextFont",
+      "file_offset": 6603660,
+      "va": "0x1064d58c",
+      "xrefs": [
+        {
+          "operand_va": "0x10252af5",
+          "disassembly": [
+            "10252ac5: add al, 0xba",
+            "10252ac7: js 0x10252a9e",
+            "10252ac9: adc byte ptr fs:[ecx + 0x1024ada0], bh",
+            "10252ad0: push 0x1064d4dc",
+            "10252ad5: call 0x102ca4e0",
+            "10252ada: add esp, 4",
+            "10252add: mov edx, 0x1064d564",
+            "10252ae2: mov ecx, 0x1024add0",
+            "10252ae7: push 0x1064d098",
+            "10252aec: call 0x102ca4e0",
+            "10252af1: add esp, 4",
+            "10252af4: mov edx, 0x1064d58c",
+            "10252af9: mov ecx, 0x1024adf0",
+            "10252afe: push 0x1064d5a0",
+            "10252b03: call 0x102ca4e0",
+            "10252b08: add esp, 4",
+            "10252b0b: mov edx, 0x1064d5c4",
+            "10252b10: mov ecx, 0x1024aef0",
+            "10252b15: push 0x1064d1cc",
+            "10252b1a: call 0x102ca4e0",
+            "10252b1f: add esp, 4",
+            "10252b22: mov edx, 0x1064d5a8",
+            "10252b27: mov ecx, 0x1024cad0",
+            "10252b2c: push 0x1064d4dc",
+            "10252b31: call 0x102ca4e0",
+            "10252b36: add esp, 4",
+            "10252b39: .byte 0xba",
+            "10252b3a: .byte 0xdc",
+            "10252b3b: aad 0x64"
+          ]
+        }
+      ]
+    },
+    {
+      "text": "FrameSetTextFontSpacing",
+      "file_offset": 6603716,
+      "va": "0x1064d5c4",
+      "xrefs": [
+        {
+          "operand_va": "0x10252b0c",
+          "disassembly": [
+            "10252adc: add al, 0xba",
+            "10252ade: aad 0x64",
+            "10252ae1: adc byte ptr [ecx + 0x1024add0], bh",
+            "10252ae7: push 0x1064d098",
+            "10252aec: call 0x102ca4e0",
+            "10252af1: add esp, 4",
+            "10252af4: mov edx, 0x1064d58c",
+            "10252af9: mov ecx, 0x1024adf0",
+            "10252afe: push 0x1064d5a0",
+            "10252b03: call 0x102ca4e0",
+            "10252b08: add esp, 4",
+            "10252b0b: mov edx, 0x1064d5c4",
+            "10252b10: mov ecx, 0x1024aef0",
+            "10252b15: push 0x1064d1cc",
+            "10252b1a: call 0x102ca4e0",
+            "10252b1f: add esp, 4",
+            "10252b22: mov edx, 0x1064d5a8",
+            "10252b27: mov ecx, 0x1024cad0",
+            "10252b2c: push 0x1064d4dc",
+            "10252b31: call 0x102ca4e0",
+            "10252b36: add esp, 4",
+            "10252b39: mov edx, 0x1064d5dc",
+            "10252b3e: mov ecx, 0x1024cb40",
+            "10252b43: push 0x1064d5f0",
+            "10252b48: call 0x102ca4e0",
+            "10252b4d: add esp, 4",
+            "10252b50: .byte 0xba",
+            "10252b51: add dh, dl",
+            "10252b53: .byte 0x64"
+          ]
+        }
+      ]
+    },
+    {
+      "text": "DestroyFrame",
+      "file_offset": 6603176,
+      "va": "0x1064d3a8",
+      "xrefs": [
+        {
+          "operand_va": "0x102527ca",
+          "disassembly": [
+            "1025279a: add al, 0xba",
+            "1025279c: xchg esp, eax",
+            "1025279d: shl dword ptr [eax + edx - 0x47], cl",
+            "102527a1: rol byte ptr [esp - 0x2c7f97f0], 0x64",
+            "102527a9: adc al, ch",
+            "102527ab: xor dword ptr [ebp + 7], edi",
+            "102527ae: add byte ptr [ebx - 0x4745fb3c], al",
+            "102527b4: shl dword ptr [eax + edx - 0x47], cl",
+            "102527b8: inc eax",
+            "102527b9: xchg edi, eax",
+            "102527ba: and al, 0x10",
+            "102527bc: push 0x1064d388",
+            "102527c1: call 0x102ca4e0",
+            "102527c6: add esp, 4",
+            "102527c9: mov edx, 0x1064d3a8",
+            "102527ce: mov ecx, 0x102491a0",
+            "102527d3: push 0x1064cfcc",
+            "102527d8: call 0x102ca4e0",
+            "102527dd: add esp, 4",
+            "102527e0: mov edx, 0x1064d3d8",
+            "102527e5: mov ecx, 0x102491e0",
+            "102527ea: push 0x1064cfcc",
+            "102527ef: call 0x102ca4e0",
+            "102527f4: add esp, 4",
+            "102527f7: mov edx, 0x1064d3fc",
+            "102527fc: mov ecx, 0x10247ed0",
+            "10252801: push 0x1064d3d0",
+            "10252806: call 0x102ca4e0",
+            "1025280b: add esp, 4",
+            "1025280e: .byte 0xba",
+            "1025280f: in al, dx",
+            "10252810: .byte 0xd3",
+            "10252811: .byte 0x64"
+          ]
+        }
+      ]
+    },
+    {
+      "text": "RegisterFrameEvent",
+      "file_offset": 6604976,
+      "va": "0x1064dab0",
+      "xrefs": [
+        {
+          "operand_va": "0x10253743",
+          "disassembly": [
+            "10253713: adc byte ptr fs:[ebx + 0x6214e8c8], cl",
+            "1025371a: lock dec dword ptr [ebx + 0xc60ba36]",
+            "10253721: and eax, 0x5c4e8d10",
+            "10253726: call 0x102b1a30",
+            "1025372b: lea ecx, [esi + 0x60]",
+            "1025372e: mov dword ptr [0x106e4de4], eax",
+            "10253733: mov edx, 0x10250cd0",
+            "10253738: call 0x102b1a30",
+            "1025373d: push 0x1064cfcc",
+            "10253742: mov edx, 0x1064dab0",
+            "10253747: mov dword ptr [0x106e4cbc], eax",
+            "1025374c: mov ecx, 0x1024e4e0",
+            "10253751: call 0x102ca4e0",
+            "10253756: add esp, 4",
+            "10253759: mov edx, 0x1064daa4",
+            "1025375e: mov ecx, 0x10251030",
+            "10253763: push 0x1064d460",
+            "10253768: call 0x102ca4e0",
+            "1025376d: add esp, 4",
+            "10253770: mov edx, 0x1064dac4",
+            "10253775: mov ecx, 0x10251080",
+            "1025377a: push 0x1064dad0",
+            "1025377f: call 0x102ca4e0",
+            "10253784: add esp, 4",
+            "10253787: .byte 0xba",
+            "10253788: .byte 0xe8",
+            "10253789: .byte 0xda",
+            "1025378a: .byte 0x64"
+          ]
+        }
+      ]
+    }
+  ]
+}

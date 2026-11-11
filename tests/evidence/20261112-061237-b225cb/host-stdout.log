@@ -1,0 +1,50 @@
+[CONFIG] loading file [ydhost.cfg]
+[AURA] starting up
+[AURA] using Windows timer with resolution 1 milliseconds
+[AURA] starting winsock
+[AURA] setting process priority to "high"
+[AURA] Aura++ version 1.24
+[UDPSOCKET] using default broadcast target
+[CONFIG] loading file [map.cfg]
+[MAP] map_size = 6597973
+[MAP] map_info = 4106078712
+[MAP] map_crc = 2133308388
+[MAP] map_sha1 = 35 204 194 120 209 190 150 78 56 126 253 247 252 138 144 251 19 234 165 191
+[MAP] map_options = 96
+[MAP] map_width = 212
+[MAP] map_height = 212
+[MAP] map_slot1 = 0 255 0 0 0 0 1 1 100
+[MAP] map_slot2 = 0 255 0 0 0 1 1 1 100
+[MAP] map_slot3 = 0 255 0 0 0 2 1 1 100
+[MAP] map_slot4 = 0 255 1 0 0 3 1 1 100
+[MAP] map_slot5 = 0 255 1 0 0 4 1 1 100
+[MAP] map_slot6 = 0 255 1 0 0 5 1 1 100
+[MAP] map_slot7 = 
+[AURA] creating game [LanTest-20261112-061237-b225cb]
+[GAME: LanTest-20261112-061237-b225cb] listening on port 4226
+[GAME: LanTest-20261112-061237-b225cb] player [LanP3|198.18.0.1] joined the game
+[GAME: LanTest-20261112-061237-b225cb] player [LanP1|198.18.0.1] joined the game
+[GAME: LanTest-20261112-061237-b225cb] player [LanP2|198.18.0.1] joined the game
+[GAME: LanTest-20261112-061237-b225cb] [Local] 5. . .
+[GAME: LanTest-20261112-061237-b225cb] [Local] 4. . .
+[GAME: LanTest-20261112-061237-b225cb] [Local] 3. . .
+[GAME: LanTest-20261112-061237-b225cb] [Local] 2. . .
+[GAME: LanTest-20261112-061237-b225cb] [Local] 1. . .
+[GAME: LanTest-20261112-061237-b225cb] started loading with 3 players
+[GAME: LanTest-20261112-061237-b225cb] desync detected
+[GAME: LanTest-20261112-061237-b225cb] [Local] Warning! Desync detected!
+[GAME: LanTest-20261112-061237-b225cb] [Local] Warning! Desync detected!
+[GAME: LanTest-20261112-061237-b225cb] [Local] Warning! Desync detected!
+[TCPSOCKET] error (recv) - Connection reset by peer
+[GAME: LanTest-20261112-061237-b225cb] deleting player [LanP1]: has lost the connection (connection error - Connection reset by peer)
+[GAME: LanTest-20261112-061237-b225cb] [Local] LanP1 has lost the connection (connection error - Connection reset by peer).
+[TCPSOCKET] error (recv) - Connection reset by peer
+[GAME: LanTest-20261112-061237-b225cb] deleting player [LanP2]: has lost the connection (connection error - Connection reset by peer)
+[GAME: LanTest-20261112-061237-b225cb] [Local] LanP2 has lost the connection (connection error - Connection reset by peer).
+[TCPSOCKET] error (recv) - Connection reset by peer
+[GAME: LanTest-20261112-061237-b225cb] deleting player [LanP3]: has lost the connection (connection error - Connection reset by peer)
+[GAME: LanTest-20261112-061237-b225cb] [Local] LanP3 has lost the connection (connection error - Connection reset by peer).
+[GAME: LanTest-20261112-061237-b225cb] is over (no players left)
+[AURA] deleting game [LanTest-20261112-061237-b225cb]
+[AURA] shutting down
+[AURA] shutting down winsock

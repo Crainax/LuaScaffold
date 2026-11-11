@@ -1,0 +1,464 @@
+{
+  "sha256": "617662229027c27b1482d800d5047b6ff21f1afabca2f7dc203b1f3f8c8fa96e",
+  "size": 9106560,
+  "machine": "0x14c",
+  "image_base": "0x10000000",
+  "entry_rva": "0x30b55",
+  "sections": [
+    {
+      "name": ".text",
+      "rva": "0x1000",
+      "raw_offset": 1024,
+      "raw_size": 312832
+    },
+    {
+      "name": ".rdata",
+      "rva": "0x4e000",
+      "raw_offset": 313856,
+      "raw_size": 56832
+    },
+    {
+      "name": ".data",
+      "rva": "0x5c000",
+      "raw_offset": 370688,
+      "raw_size": 25088
+    },
+    {
+      "name": ".rsrc",
+      "rva": "0x66000",
+      "raw_offset": 395776,
+      "raw_size": 8664576
+    },
+    {
+      "name": ".reloc",
+      "rva": "0x8aa000",
+      "raw_offset": 9060352,
+      "raw_size": 23040
+    }
+  ],
+  "imports": [
+    {
+      "dll": "KERNEL32.dll",
+      "symbols": [
+        "AreFileApisANSI",
+        "CloseHandle",
+        "CompareStringW",
+        "CreateDirectoryW",
+        "CreateFileW",
+        "DecodePointer",
+        "DeleteCriticalSection",
+        "DeleteFileA",
+        "EncodePointer",
+        "EnterCriticalSection",
+        "EnumSystemLocalesW",
+        "ExitProcess",
+        "FindClose",
+        "FindFirstFileExW",
+        "FindFirstFileW",
+        "FindNextFileW",
+        "FindResourceA",
+        "FindResourceW",
+        "FlushFileBuffers",
+        "FormatMessageA",
+        "FreeEnvironmentStringsW",
+        "FreeLibrary",
+        "FreeResource",
+        "GetACP",
+        "GetCPInfo",
+        "GetCommandLineA",
+        "GetCommandLineW",
+        "GetConsoleMode",
+        "GetConsoleOutputCP",
+        "GetCurrentProcess",
+        "GetCurrentProcessId",
+        "GetCurrentThreadId",
+        "GetEnvironmentStringsW",
+        "GetFileAttributesExW",
+        "GetFileAttributesW",
+        "GetFileInformationByHandleEx",
+        "GetFileSizeEx",
+        "GetFileType",
+        "GetLastError",
+        "GetLocalTime",
+        "GetLocaleInfoEx",
+        "GetLocaleInfoW",
+        "GetModuleFileNameW",
+        "GetModuleHandleA",
+        "GetModuleHandleExW",
+        "GetModuleHandleW",
+        "GetOEMCP",
+        "GetProcAddress",
+        "GetProcessHeap",
+        "GetStartupInfoW",
+        "GetStdHandle",
+        "GetStringTypeW",
+        "GetSystemTimeAsFileTime",
+        "GetUserDefaultLCID",
+        "HeapAlloc",
+        "HeapFree",
+        "HeapReAlloc",
+        "HeapSize",
+        "InitializeCriticalSectionAndSpinCount",
+        "InitializeCriticalSectionEx",
+        "InitializeSListHead",
+        "InterlockedFlushSList",
+        "IsDebuggerPresent",
+        "IsProcessorFeaturePresent",
+        "IsValidCodePage",
+        "IsValidLocale",
+        "LCMapStringEx",
+        "LCMapStringW",
+        "LeaveCriticalSection",
+        "LoadLibraryA",
+        "LoadLibraryExW",
+        "LoadLibraryW",
+        "LoadResource",
+        "LocalFree",
+        "LockResource",
+        "MultiByteToWideChar",
+        "QueryPerformanceCounter",
+        "RaiseException",
+        "ReadConsoleW",
+        "ReadFile",
+        "RtlUnwind",
+        "SetEndOfFile",
+        "SetEnvironmentVariableW",
+        "SetFileInformationByHandle",
+        "SetFilePointerEx",
+        "SetLastError",
+        "SetStdHandle",
+        "SetUnhandledExceptionFilter",
+        "SizeofResource",
+        "Sleep",
+        "TerminateProcess",
+        "TlsAlloc",
+        "TlsFree",
+        "TlsGetValue",
+        "TlsSetValue",
+        "UnhandledExceptionFilter",
+        "VirtualQuery",
+        "WideCharToMultiByte",
+        "WriteConsoleW",
+        "WriteFile"
+      ]
+    },
+    {
+      "dll": "SHLWAPI.dll",
+      "symbols": [
+        "PathRemoveFileSpecW"
+      ]
+    }
+  ],
+  "exports": [
+    {
+      "name": "call",
+      "rva": "0x2d70"
+    },
+    {
+      "name": "get",
+      "rva": "0x6870"
+    }
+  ],
+  "strings": [
+    {
+      "text": "jass2binary",
+      "file_offset": 7023064,
+      "va": "0x106b7fd8",
+      "xrefs": []
+    },
+    {
+      "text": "FrameSetViewPort",
+      "file_offset": 7000328,
+      "va": "0x106b2708",
+      "xrefs": []
+    },
+    {
+      "text": "FrameSetTextFont",
+      "file_offset": 6999660,
+      "va": "0x106b246c",
+      "xrefs": []
+    },
+    {
+      "text": "FrameSetTextFontSpacing",
+      "file_offset": 6999716,
+      "va": "0x106b24a4",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_6> >>(void)",
+      "file_offset": 6903514,
+      "va": "0x1069acda",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio::<lambda_13>>(void)",
+      "file_offset": 6903710,
+      "va": "0x1069ad9e",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio::<lambda_8>>(void)",
+      "file_offset": 6903878,
+      "va": "0x1069ae46",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio::<lambda_7>>(void)",
+      "file_offset": 6904046,
+      "va": "0x1069aeee",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio::<lambda_2>>(void)",
+      "file_offset": 6904214,
+      "va": "0x1069af96",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio::<lambda_1>>(void)",
+      "file_offset": 6904382,
+      "va": "0x1069b03e",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_3>,class `int __cdecl luaopen_yasio(struct lua_State *)'::`2'::<lambda_",
+      "file_offset": 6904595,
+      "va": "0x1069b113",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_4>,class `int __cdecl luaopen_yasio(struct lua_State *)'::`2'::<lambda_",
+      "file_offset": 6904666,
+      "va": "0x1069b15a",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_5> >>(void)",
+      "file_offset": 6904737,
+      "va": "0x1069b1a1",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_9>,class `int __cdecl luaopen_yasio(struct lua_State *)'::`2'::<lambda_",
+      "file_offset": 6905654,
+      "va": "0x1069b536",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_10> >>(void)",
+      "file_offset": 6905725,
+      "va": "0x1069b57d",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_11>,class `int __cdecl luaopen_yasio(struct lua_State *)'::`2'::<lambda",
+      "file_offset": 6905990,
+      "va": "0x1069b686",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_12> >>(void)",
+      "file_offset": 6906062,
+      "va": "0x1069b6ce",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_13> >>(void)",
+      "file_offset": 6932830,
+      "va": "0x106a1f5e",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_8> >>(void)",
+      "file_offset": 6933070,
+      "va": "0x106a204e",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_7> >>(void)",
+      "file_offset": 6933310,
+      "va": "0x106a213e",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_2> >>(void)",
+      "file_offset": 6933550,
+      "va": "0x106a222e",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_1> >>(void)",
+      "file_offset": 6933790,
+      "va": "0x106a231e",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_13> >>(void)",
+      "file_offset": 6940436,
+      "va": "0x106a3d14",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio::<lambda_13>*>(void)",
+      "file_offset": 6940638,
+      "va": "0x106a3dde",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_8> >>(void)",
+      "file_offset": 6940844,
+      "va": "0x106a3eac",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio::<lambda_8>*>(void)",
+      "file_offset": 6941046,
+      "va": "0x106a3f76",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_7> >>(void)",
+      "file_offset": 6941244,
+      "va": "0x106a403c",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio::<lambda_7>*>(void)",
+      "file_offset": 6941446,
+      "va": "0x106a4106",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_2> >>(void)",
+      "file_offset": 6941644,
+      "va": "0x106a41cc",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio::<lambda_2>*>(void)",
+      "file_offset": 6941846,
+      "va": "0x106a4296",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio(struct lua_State *)'::`2'::<lambda_1> >>(void)",
+      "file_offset": 6942044,
+      "va": "0x106a435c",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio::<lambda_1>*>(void)",
+      "file_offset": 6942246,
+      "va": "0x106a4426",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_debugger",
+      "file_offset": 6988524,
+      "va": "0x106af8ec",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_%s",
+      "file_offset": 6990312,
+      "va": "0x106affe8",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_lni",
+      "file_offset": 7198607,
+      "va": "0x106e2d8f",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio@@YAHPAUlua_State@@@Z@SA@PAVio_service@inet@yasio@@V?$basic_function@V?$basic_reference@$0A@@sol@@$0A@@sol@",
+      "file_offset": 7523089,
+      "va": "0x10732111",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio@@YAHPAUlua_State@@@Z@QBE@PAVio_service@inet@yasio@@HUvariadic_args@sol@@@Z@",
+      "file_offset": 7523292,
+      "va": "0x107321dc",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio@@YAHPAUlua_State@@@Z@QBE@PAVio_service@inet@yasio@@V?$basic_function@V?$basic_reference@$0A@@sol@@$0A@@sol",
+      "file_offset": 7523684,
+      "va": "0x10732364",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio@@YAHPAUlua_State@@@Z@V<lambda_10>@?1??2@YAH0@Z@@sol@@Vio_service@inet@yasio@@@u_detail@sol@@",
+      "file_offset": 7536165,
+      "va": "0x10735425",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio@@YAHPAUlua_State@@@Z@Vio_service@inet@yasio@@@u_detail@sol@@",
+      "file_offset": 7537021,
+      "va": "0x1073577d",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio@@YAHPAUlua_State@@@Z@Vio_service@inet@yasio@@@u_detail@sol@@",
+      "file_offset": 7537991,
+      "va": "0x10735b47",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio@@YAHPAUlua_State@@@Z@@2@Vio_service@inet@yasio@@@u_detail@sol@@",
+      "file_offset": 7543921,
+      "va": "0x10737271",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio@@YAHPAUlua_State@@@Z@Vio_service@inet@yasio@@@u_detail@sol@@",
+      "file_offset": 7544286,
+      "va": "0x107373de",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio@@YAHPAUlua_State@@@Z@Vio_event@inet@yasio@@@u_detail@sol@@",
+      "file_offset": 7546309,
+      "va": "0x10737bc5",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio@@YAHPAUlua_State@@@Z@QBE@PAVio_service@inet@yasio@@V?$basic_function@V?$basic_reference@$0A@@sol@@$0A@@sol",
+      "file_offset": 7549459,
+      "va": "0x10738813",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio@@YAHPAUlua_State@@@Z@SA@PAVio_service@inet@yasio@@V?$basic_function@V?$basic_reference@$0A@@sol@@$0A@@sol@",
+      "file_offset": 7550104,
+      "va": "0x10738a98",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio@@YAHPAUlua_State@@@Z@V<lambda_12>@?1??2@YAH0@Z@@sol@@Vio_service@inet@yasio@@@u_detail@sol@@",
+      "file_offset": 7555134,
+      "va": "0x10739e3e",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio@@YAHPAUlua_State@@@Z@QBE@PAVio_service@inet@yasio@@HUvariadic_args@sol@@@Z@X$$QAV?$unique_ptr@Vio_event@in",
+      "file_offset": 7555851,
+      "va": "0x1073a10b",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio@@YAHPAUlua_State@@@Z@Vio_event@inet@yasio@@@u_detail@sol@@",
+      "file_offset": 7559581,
+      "va": "0x1073af9d",
+      "xrefs": []
+    },
+    {
+      "text": "luaopen_yasio@@YAHPAUlua_State@@@Z@V<lambda_4>@?1??2@YAH0@Z@V<lambda_5>@?1??2@YAH0@Z@@sol@@Vio_service@inet@yasio@@@u_de",
+      "file_offset": 7561308,
+      "va": "0x1073b65c",
+      "xrefs": []
+    }
+  ]
+}

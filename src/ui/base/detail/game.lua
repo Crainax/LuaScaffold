@@ -58,6 +58,7 @@ end
 
 --全局事件回调
 local function game_event_callback(name,...)
+    if game.events then return game.events:emit(name,...) end
     local hash_table = {}
     local ret = false 
     for index,event_table in ipairs(game.game_event) do
@@ -195,6 +196,8 @@ base = {
                 end
             end 
         end 
+        local mx, my = game.get_mouse_pos()
+        if button and not button:point_in_rect(mx, my) then button = nil end
         if button ~= nil then
             button.is_down = true
             if button.active_image and button.active_image ~= '' then
@@ -337,7 +340,9 @@ base = {
             end 
         end 
 
-        if button ~= nil then 
+        local mx, my = game.get_mouse_pos()
+        if button and not button:point_in_rect(mx, my) then button = nil end
+        if button ~= nil then
             button:event_notify('on_button_right_mousedown')
             table.insert(right_button_list,button)
         end 
@@ -365,7 +370,8 @@ base = {
                 object:event_notify('on_button_right_mouseup')
             else
                 object:event_notify('on_button_right_mouseup')
-                button:event_notify('on_button_right_clicked')
+                local mx, my = game.get_mouse_pos()
+                if button:point_in_rect(mx, my) then button:event_notify('on_button_right_clicked') end
             end
         end
         right_button_list = {}
@@ -396,7 +402,7 @@ base = {
         for id,button in pairs(class.button.button_map) do
             local ox,oy = button:get_real_position()
         
-            if x >= ox and  y >= oy and x <= ox + button.w and y <= oy + button.h then
+            if button:point_in_rect(x, y) then
                 local is_show = button:get_is_show() ~= false
                 if button.is_enter == nil and is_show then 
                     button.is_enter = true
@@ -451,13 +457,19 @@ base = {
         x = x * 1920
         y = y * 1080
 
-        for id,panel in pairs(class.panel.panel_map) do
-            local ox,oy = panel:get_real_position()
-        
-            if panel.is_scroll 
-            and x >= ox and  y >= oy 
-            and x <= ox + panel.w and y <= oy + panel.h 
-            then
+        local target,depth,level,index=nil,-1,-math.huge,-1
+        for _,panel in pairs(class.panel.panel_map) do
+            if panel.is_scroll and panel:point_in_rect(x,y) then
+                local d,parent=0,panel.parent
+                while parent do d=d+1;parent=parent.parent end
+                local l,i=panel.level or 0,panel._index
+                if d>depth or (d==depth and (l>level or (l==level and i>index))) then
+                    target,depth,level,index=panel,d,l,i
+                end
+            end
+        end
+        if target then
+                local panel=target
                 local bool = japi.GetWheelDelta() > 0
                 local y = panel.scroll_y or 0
                 if bool then 
@@ -473,7 +485,6 @@ base = {
                 panel:event_notify('on_panel_scroll',bool)
                 panel:event_notify('on_panel_scroll_fix',bool)
                 
-            end 
         end 
 
         return game_event_callback('on_mouse_wheeldelta',japi.GetWheelDelta() > 0)
@@ -486,7 +497,7 @@ base = {
 
         if str then 
             for id,button in pairs(class.button.button_map) do
-                if button.is_enable and button.keys and (button:get_is_show() or button.hide_has_event) then
+                if button.is_enable and button.keys and (button:get_visible_rect() or button.hide_has_event) then
                     for index, key in ipairs(button.keys) do 
                         if key == str --[[and not japi.GetChatState()]] then
                             button:event_notify('on_button_key_down', str)
@@ -506,7 +517,7 @@ base = {
         
         if str then 
             for id,button in pairs(class.button.button_map) do
-                if button.is_enable and button.keys and (button:get_is_show() or button.hide_has_event) then
+                if button.is_enable and button.keys and (button:get_visible_rect() or button.hide_has_event) then
                     for index, key in ipairs(button.keys) do 
                         if key == str --[[and not japi.GetChatState()]] then 
                             button:event_notify('on_button_key_up', str)

@@ -50,12 +50,16 @@ function blp_sector(path,x,y,r,angle,section)
 
 end 
 
-storm.save('ui\\loaded.fdf','')
+-- All local clients share a game directory: isolate temporary FDF paths by slot.
+local ui_config=require 'app.config'
+local ui_jass=require 'jass.common'
+local fdf_prefix=(ui_config.project_id or 'LuaScaffold')..'-ui/P'..(ui_jass.GetPlayerId(ui_jass.GetLocalPlayer())+1)
+storm.save(fdf_prefix..'-loaded.fdf','')
 function load_fdf(data)
-    storm.save('ui\\loaded.fdf',storm.load('ui\\loaded.fdf') .. data)
-    storm.save('ui\\Load.fdf',data)
-    storm.save('ui\\Load.toc','ui\\Load.fdf\r\n')
-    japi.LoadToc('ui\\Load.toc')
+    storm.save(fdf_prefix..'-loaded.fdf',storm.load(fdf_prefix..'-loaded.fdf') .. data)
+    storm.save(fdf_prefix..'-Load.fdf',data)
+    storm.save(fdf_prefix..'-Load.toc',fdf_prefix..'-Load.fdf\r\n')
+    japi.LoadToc(fdf_prefix..'-Load.toc')
 end
 
 function converScreenPosition(x,y)
@@ -643,7 +647,7 @@ class.ui_base = {
         end 
         local max_y = self.parent_max_y or parent:get_child_max_y() 
         local y = self.y - (parent.scroll_y or 0)
-        if (self.x < 0 or y + self.h < 0 or y > parent.h) and self ~= scroll then 
+        if (self.x + self.w < 0 or self.x > parent.w or y + self.h < 0 or y > parent.h) and self ~= scroll then
             self.scroll_hide = true 
             --隐藏超过面板的控件
             japi.FrameShow(self._id,false)
@@ -651,7 +655,7 @@ class.ui_base = {
             scroll:show()
             local size = math.min(1, parent.h / max_y)
             local max_height = size * parent.h
-            scroll:set_control_size(scroll.w,  math.max(64, max_height))
+            scroll:set_control_size(scroll.w, math.min(parent.h, math.max(16, max_height)))
             return false
         end 
 

@@ -1,0 +1,23 @@
+{
+  "carrier_sha256": "617662229027c27b1482d800d5047b6ff21f1afabca2f7dc203b1f3f8c8fa96e",
+  "images": [
+    {
+      "offset": "0x0",
+      "size": 9083392,
+      "sha256": "540c52b2f0acd2574f017e41687eb096bb9fbf4f65ed6c12fcf2792f82865ab2",
+      "file": "pe-0.dll"
+    },
+    {
+      "offset": "0x60ae0",
+      "size": 7499264,
+      "sha256": "5c44196eb2b82a11ccf8754a259193db86dc4c823140887b0442741d48132a8c",
+      "file": "pe-60ae0.dll"
+    },
+    {
+      "offset": "0x78d360",
+      "size": 1141248,
+      "sha256": "db2897eeea65401ee1bd8feeebd0dbae8867a27ff4575f12b0b8a613444a5ef7",
+      "file": "pe-78d360.dll"
+    }
+  ]
+}

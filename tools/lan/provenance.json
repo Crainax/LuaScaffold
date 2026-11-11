@@ -1,0 +1,10 @@
+{
+  "source": "D:\\War3\\tools\\LanTest\\Start-LanTest.ps1",
+  "sha256": "645a4361a0f369abc017cb8b50cfdbc792dba8d9cec0eb669f3ed66da64f11bc",
+  "changes": [
+    "project j2b guard under profile lock",
+    "timeout maximum 7200 seconds",
+    "PID/creation-time-scoped resource sampler",
+    "shared runtime/helpers retained"
+  ]
+}

@@ -2,6 +2,7 @@
 local M = {}
 local bridge
 local ui
+local dev_view
 local config = require 'app.config'
 function M.start()
     assert(not bridge, 'app already started')
@@ -30,6 +31,7 @@ function M.start()
         ui = require('scaffold.ui').start()
         bridge.scheduler:after(1, function() ui.step() end, 1)
         require('app.view').start(ui, bridge)
+        if config.dev and not config.runtime_test then dev_view=require('dev.view_loader').start(ui,bridge,config) end
     end
     log.info('[LuaScaffold] BOOT', _VERSION, require('jass.runtime').version)
     if test then test.start(bridge, ui, counts, config) end
@@ -39,6 +41,7 @@ function M.stop()
     if not bridge then return true end
     local old = bridge
     bridge = nil
+    if dev_view then dev_view.stop();dev_view=nil end
     if ui then ui.stop() end
     return old:stop()
 end

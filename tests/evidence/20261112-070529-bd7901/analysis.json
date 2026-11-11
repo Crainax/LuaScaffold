@@ -1,0 +1,225 @@
+{
+  "session": "20261112-070529-bd7901",
+  "peers": [
+    {
+      "log": "research-performance-02-P1.log",
+      "wall_seconds_boot_to_done": 53.567,
+      "benchmarks": {
+        "empty_loop": {
+          "iterations": 250000,
+          "seconds": [
+            0.002,
+            0.002,
+            0.002,
+            0.002,
+            0.002
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 2.0,
+          "min_ms": 2.0,
+          "max_ms": 2.0
+        },
+        "closure_capture": {
+          "iterations": 250000,
+          "seconds": [
+            0.046,
+            0.045,
+            0.044,
+            0.049,
+            0.051
+          ],
+          "heap_delta_kib": [
+            454.117,
+            454.117,
+            454.117,
+            454.117,
+            454.117
+          ],
+          "median_ms": 46.0,
+          "min_ms": 44.0,
+          "max_ms": 51.0
+        },
+        "empty_table": {
+          "iterations": 250000,
+          "seconds": [
+            0.029,
+            0.029,
+            0.029,
+            0.028,
+            0.029
+          ],
+          "heap_delta_kib": [
+            165.484,
+            165.484,
+            165.484,
+            165.484,
+            165.484
+          ],
+          "median_ms": 29.0,
+          "min_ms": 28.0,
+          "max_ms": 29.0
+        },
+        "table_4_fields": {
+          "iterations": 250000,
+          "seconds": [
+            0.05,
+            0.052,
+            0.049,
+            0.048,
+            0.046
+          ],
+          "heap_delta_kib": [
+            678.844,
+            678.844,
+            678.844,
+            678.844,
+            678.844
+          ],
+          "median_ms": 49.0,
+          "min_ms": 46.0,
+          "max_ms": 52.0
+        },
+        "concat_unique_short": {
+          "iterations": 250000,
+          "seconds": [
+            0.111,
+            0.112,
+            0.119,
+            0.117,
+            0.124
+          ],
+          "heap_delta_kib": [
+            970.033,
+            826.378,
+            826.378,
+            826.378,
+            826.378
+          ],
+          "median_ms": 117.0,
+          "min_ms": 111.0,
+          "max_ms": 124.0
+        },
+        "string_equal_existing": {
+          "iterations": 250000,
+          "seconds": [
+            0.014,
+            0.011,
+            0.012,
+            0.012,
+            0.015
+          ],
+          "heap_delta_kib": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_ms": 12.0,
+          "min_ms": 11.0,
+          "max_ms": 15.0
+        },
+        "events_100_listeners": {
+          "iterations": 5000,
+          "seconds": [
+            0.057,
+            0.046,
+            0.051,
+            0.044,
+            0.066
+          ],
+          "heap_delta_kib": [
+            441.73,
+            441.73,
+            441.73,
+            441.73,
+            441.73
+          ],
+          "median_ms": 51.0,
+          "min_ms": 44.0,
+          "max_ms": 66.0
+        },
+        "scheduler_1000_idle": {
+          "iterations": 1000,
+          "seconds": [
+            0.07,
+            0.087,
+            0.079,
+            0.085,
+            0.081
+          ],
+          "heap_delta_kib": [
+            627.617,
+            627.617,
+            627.652,
+            627.652,
+            627.652
+          ],
+          "median_ms": 81.0,
+          "min_ms": 70.0,
+          "max_ms": 87.0
+        },
+        "native_text_update": {
+          "iterations": 20000,
+          "seconds": [
+            0.026,
+            0.037,
+            0.019,
+            0.017,
+            0.021
+          ],
+          "heap_delta_kib": [
+            471.801,
+            471.801,
+            471.801,
+            471.801,
+            471.801
+          ],
+          "median_ms": 21.0,
+          "min_ms": 17.0,
+          "max_ms": 37.0
+        }
+      },
+      "resources": [],
+      "allocations": [
+        {
+          "name": "closure_capture",
+          "iterations": 10000,
+          "kib": 546.875
+        },
+        {
+          "name": "empty_table",
+          "iterations": 10000,
+          "kib": 468.75
+        }
+      ],
+      "clocks": [
+        "logical_seconds=5 os_clock=6.003000 os_time=6"
+      ],
+      "native_clocks": []
+    }
+  ],
+  "processes": [
+    {
+      "pid": 27632,
+      "player": "LanP1",
+      "samples": 6,
+      "sample_span_seconds": 50.629798,
+      "private_mib_first": 185.56640625,
+      "private_mib_last": 183.828125,
+      "private_mib_max": 187.484375,
+      "late_private_mib_median_first_window": 187.388671875,
+      "late_private_mib_median_last_window": 187.388671875,
+      "working_set_mib_max": 164.51171875,
+      "os_handles_first": 4702,
+      "os_handles_last": 4710
+    }
+  ],
+  "resource_profile": []
+}

@@ -1,0 +1,87 @@
+{
+  "original_j2b_sha256": "61642441cfeaba50c7d73323162f5dfc3d8112c05fe05305fa6090fb6f204126",
+  "required": [
+    {
+      "map": "research-six-04.w3x",
+      "clients": 6,
+      "benchmark": true,
+      "markers": [
+        "PASS: file watcher loads initial view",
+        "PASS: file watcher rejects syntax and preserves view",
+        "PASS: file watcher recovers on valid edit",
+        "PASS: file watcher stop clears view",
+        "PASS: reload success and failure return resources to baseline",
+        "PASS: reloaded views release closure payloads",
+        "PASS: same-tick reschedule skips old dispatch batch",
+        "PASS: rescheduled task runs once on next tick",
+        "PASS: stopped UI rejects tasks without retaining registrations",
+        "PASS: stopped UI rejects listeners without retaining registrations"
+      ]
+    },
+    {
+      "map": "research-soak-03.w3x",
+      "clients": 3,
+      "minimum_wall_seconds": 1800,
+      "benchmark": true,
+      "markers": [
+        "PASS: file watcher loads initial view",
+        "PASS: file watcher rejects syntax and preserves view",
+        "PASS: file watcher recovers on valid edit",
+        "PASS: file watcher stop clears view",
+        "PASS: reload success and failure return resources to baseline",
+        "PASS: reloaded views release closure payloads",
+        "PASS: same-tick reschedule skips old dispatch batch",
+        "PASS: rescheduled task runs once on next tick",
+        "PASS: stopped UI rejects tasks without retaining registrations",
+        "PASS: stopped UI rejects listeners without retaining registrations"
+      ]
+    },
+    {
+      "map": "research-ui-05.w3x",
+      "clients": 1,
+      "markers": [
+        "PASS: continuous fractional scroll position",
+        "PASS: nested clipping intersection",
+        "PASS: viewport hit test excludes clipped region",
+        "PASS: native model under viewport survives fractional scroll",
+        "PASS: viewport/font probe releases controls",
+        "[FONT_PROBE] requested=256.00",
+        "[FONT_BOUNDARY]",
+        "PASS: same-tick reschedule skips old dispatch batch",
+        "PASS: rescheduled task runs once on next tick",
+        "PASS: stopped UI rejects tasks without retaining registrations",
+        "PASS: stopped UI rejects listeners without retaining registrations"
+      ]
+    },
+    {
+      "map": "research-performance-02.w3x",
+      "clients": 1,
+      "benchmark": true,
+      "markers": [
+        "PASS: same-tick reschedule skips old dispatch batch",
+        "PASS: rescheduled task runs once on next tick",
+        "PASS: stopped UI rejects tasks without retaining registrations",
+        "PASS: stopped UI rejects listeners without retaining registrations"
+      ]
+    },
+    {
+      "map": "research-oos-03.w3x",
+      "clients": 3,
+      "oos_control": true
+    }
+  ],
+  "explained_failures": {
+    "20261112-041704-c1b8c1": "Historical initial harness: log directory missing; fixed before original baseline.",
+    "20261112-041803-5bd88f": "Historical initial UI harness failure; see original runtime report.",
+    "20261112-051211-cf24bf": "Exploratory font growth assertion disproved by native metrics; sampled plateau documented.",
+    "20261112-052236-fc8496": "Intentionally interrupted outdated soak to validate revised UI and file watcher. Not a completed soak. Concurrent cleanup lock was retried after exit; final PID-scoped cleanup verified.",
+    "20261112-052722-47f8c1": "New file-watch probe attempted sync scheduling from local domain; guard correctly rejected; probe changed to local UI tasks.",
+    "20261112-052852-8a9bdc": "File watcher completed update/recovery, then probe used unavailable embedded os.remove; changed to empty test-file cleanup.",
+    "20261112-061321-425fd3": "Diagnostic phases reached completion but fixture omitted the required PASS assertion marker. Original logs preserved; PID-scoped stop caused the runner to record disconnection. Fixed probe assertions/marker and reran with a new build ID."
+  },
+  "resource_diagnostics_required": [
+    "research-resource-02.w3x",
+    "research-idle-three-02.w3x",
+    "research-clock-01.w3x"
+  ]
+}

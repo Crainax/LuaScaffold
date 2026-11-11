@@ -1,0 +1,38 @@
+{
+  "source": "D:\\War3\\Library\\War3Lib\\UnitTestMap.w3x",
+  "sha256": "596d6230545206517046fd5c5bbc1e86e3f74662f7f6cc2bd2c23504358441b4",
+  "files": [
+    {
+      "file": "war3map.w3e",
+      "sha256": "0d3f5729d6d529ea2f8b6ca3dc3424c052939083147fea50d914095fcc00fd5d",
+      "size": 354444
+    },
+    {
+      "file": "war3map.shd",
+      "sha256": "125c62526cce3e4b947fa527adf081ae0394d1ef0fbeb74db5ce742574533cf3",
+      "size": 802816
+    },
+    {
+      "file": "war3map.wpm",
+      "sha256": "f7853a91b77ce35facaaff5fa2b829fb632aeddac49d09ff50f3746edb5afc39",
+      "size": 802832
+    },
+    {
+      "file": "war3map.w3i",
+      "sha256": "0ed2a5b6c6f28f2f0b89bb9059c4313316afdf4baeb231eced127872180905d6",
+      "size": 586
+    },
+    {
+      "file": "war3map.doo",
+      "sha256": "1c4b553adc0b39df3de28d6ea7aab2733e7f2d4b0a22ffe6d0b904416051fe82",
+      "size": 24
+    }
+  ],
+  "omitted": [
+    "war3map.j",
+    "war3mapUnits.doo",
+    "objects",
+    "triggers",
+    "custom resources"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "message": "A client disconnected before test completion",
+  "status": "FAIL",
+  "logs": [
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\research-resource-01-P1.log"
+  ],
+  "clients": 1
+}

@@ -1,0 +1,107 @@
+{
+  "session": "20261112-061321-425fd3",
+  "peers": [
+    {
+      "log": "research-resource-01-P1.log",
+      "wall_seconds_boot_to_done": 893.4,
+      "benchmarks": {},
+      "resources": [],
+      "allocations": [],
+      "clocks": [],
+      "native_clocks": []
+    }
+  ],
+  "processes": [
+    {
+      "pid": 24100,
+      "player": "LanP1",
+      "samples": 101,
+      "sample_span_seconds": 1011.924693,
+      "private_mib_first": 180.9921875,
+      "private_mib_last": 181.71875,
+      "private_mib_max": 187.08984375,
+      "late_private_mib_median_first_window": 181.525390625,
+      "late_private_mib_median_last_window": 181.71875,
+      "working_set_mib_max": 162.890625,
+      "os_handles_first": 4683,
+      "os_handles_last": 5025
+    }
+  ],
+  "resource_profile": [
+    {
+      "phase": "idle",
+      "pid": 24100,
+      "samples": 19,
+      "sample_span_seconds": 182.268376,
+      "cycles": 0,
+      "private_mib_first": 180.9921875,
+      "private_mib_last": 180.93359375,
+      "private_mib_delta": -0.05859375,
+      "os_handles_first": 4683,
+      "os_handles_last": 4734,
+      "os_handles_per_minute": 16.788430703963698,
+      "lua_kib_end": 125.734,
+      "controls_end": 0
+    },
+    {
+      "phase": "units",
+      "pid": 24100,
+      "samples": 18,
+      "sample_span_seconds": 172.01590099999999,
+      "cycles": 30,
+      "private_mib_first": 181.40625,
+      "private_mib_last": 181.578125,
+      "private_mib_delta": 0.171875,
+      "os_handles_first": 4755,
+      "os_handles_last": 4808,
+      "os_handles_per_minute": 18.486663044017078,
+      "lua_kib_end": 137.312,
+      "controls_end": 0
+    },
+    {
+      "phase": "ui_without_edit",
+      "pid": 24100,
+      "samples": 17,
+      "sample_span_seconds": 161.817496,
+      "cycles": 6000,
+      "private_mib_first": 187.08984375,
+      "private_mib_last": 186.515625,
+      "private_mib_delta": -0.57421875,
+      "os_handles_first": 4811,
+      "os_handles_last": 4865,
+      "os_handles_per_minute": 20.022556769757454,
+      "lua_kib_end": 280.833,
+      "controls_end": 0
+    },
+    {
+      "phase": "ui_with_edit",
+      "pid": 24100,
+      "samples": 17,
+      "sample_span_seconds": 161.840007,
+      "cycles": 6000,
+      "private_mib_first": 186.6796875,
+      "private_mib_last": 184.7734375,
+      "private_mib_delta": -1.90625,
+      "os_handles_first": 4868,
+      "os_handles_last": 4924,
+      "os_handles_per_minute": 20.761244776762766,
+      "lua_kib_end": 281.015,
+      "controls_end": 0
+    },
+    {
+      "phase": "recovery",
+      "pid": 24100,
+      "samples": 18,
+      "sample_span_seconds": 172.01632599999994,
+      "cycles": 0,
+      "private_mib_first": 181.71875,
+      "private_mib_last": 181.71875,
+      "private_mib_delta": 0.0,
+      "os_handles_first": 4927,
+      "os_handles_last": 4984,
+      "os_handles_per_minute": 19.881833774312803,
+      "lua_kib_end": 281.63,
+      "controls_end": 0
+    }
+  ]
+}

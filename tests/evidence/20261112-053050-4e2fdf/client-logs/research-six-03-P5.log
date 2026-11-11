@@ -1,0 +1,110 @@
+2026-11-12 05:31:21.851 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 05:31:22.223 [info]: [DEV_VIEW] replaced
+2026-11-12 05:31:22.338 [info]: PASS: file watcher loads initial view
+2026-11-12 05:31:22.340 [info]: [DEV_VIEW_REJECTED] dev/view.lua:1: syntax error near '!'
+2026-11-12 05:31:22.460 [info]: PASS: file watcher rejects syntax and preserves view
+2026-11-12 05:31:22.463 [info]: [DEV_VIEW] replaced
+2026-11-12 05:31:22.582 [info]: PASS: file watcher recovers on valid edit
+2026-11-12 05:31:22.584 [info]: PASS: file watcher stop clears view
+2026-11-12 05:31:23.448 [info]: PASS: convenience timer repeats on shared logical ticks
+2026-11-12 05:31:23.449 [info]: PASS: expected active humans=6
+2026-11-12 05:31:23.449 [info]: PASS: official UI controls initialized
+2026-11-12 05:31:23.450 [info]: PASS: UI globals and standard math isolated
+2026-11-12 05:31:23.450 [info]: PASS: legacy sync and gameplay entry absent
+2026-11-12 05:31:23.451 [info]: PASS: native button has positive width
+2026-11-12 05:31:23.451 [info]: PASS: native text round trip
+2026-11-12 05:31:23.452 [info]: PASS: local UI cannot register gameplay entities
+2026-11-12 05:31:23.452 [info]: PASS: unsafe and oversized input rejected
+2026-11-12 05:31:23.462 [info]: PASS: native model created
+2026-11-12 05:31:23.483 [info]: PASS: native model2 created
+2026-11-12 05:31:23.484 [info]: PASS: native scroll panel created
+2026-11-12 05:31:23.490 [info]: PASS: progress handles zero denominator
+2026-11-12 05:31:23.490 [info]: PASS: models and scroll disposal return to baseline
+2026-11-12 05:31:23.511 [info]: PASS: view reload stops successfully
+2026-11-12 05:31:23.513 [info]: PASS: reloaded views release closure payloads
+2026-11-12 05:31:23.513 [info]: PASS: reload success and failure return resources to baseline
+2026-11-12 05:31:23.513 [info]: PASS: production reload disabled
+2026-11-12 05:31:23.513 [info]: PASS: invalid development source rejected
+2026-11-12 05:31:23.514 [info]: PASS: compiled view source mounts
+2026-11-12 05:31:23.698 [info]: [LuaScaffold] COMMAND ping	0	1
+2026-11-12 05:31:23.701 [info]: [LuaScaffold] COMMAND ping	2	1
+2026-11-12 05:31:23.701 [info]: [LuaScaffold] COMMAND ping	4	1
+2026-11-12 05:31:23.701 [info]: [LuaScaffold] COMMAND ping	3	1
+2026-11-12 05:31:23.701 [info]: [LuaScaffold] COMMAND ping	5	1
+2026-11-12 05:31:23.702 [info]: [LuaScaffold] COMMAND ping	1	1
+2026-11-12 05:31:24.141 [info]: PASS: destroyed UI releases cancelled closure captures
+2026-11-12 05:31:24.141 [info]: [NATIVE_CALLBACK_GC] retained=0/8
+2026-11-12 05:31:24.141 [info]: PASS: nested UI destroy is idempotent
+2026-11-12 05:31:24.187 [info]: [BENCH] name=empty_loop n=250000 sample=1 seconds=0.003000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:31:24.190 [info]: [BENCH] name=empty_loop n=250000 sample=2 seconds=0.002000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:31:24.192 [info]: [BENCH] name=empty_loop n=250000 sample=3 seconds=0.002000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:31:24.196 [info]: [BENCH] name=empty_loop n=250000 sample=4 seconds=0.003000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:31:24.199 [info]: [BENCH] name=empty_loop n=250000 sample=5 seconds=0.002000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:31:24.267 [info]: [BENCH] name=closure_capture n=250000 sample=1 seconds=0.068000 heap_delta_kib=711.750 gc=normal
+2026-11-12 05:31:24.340 [info]: [BENCH] name=closure_capture n=250000 sample=2 seconds=0.071000 heap_delta_kib=711.750 gc=normal
+2026-11-12 05:31:24.410 [info]: [BENCH] name=closure_capture n=250000 sample=3 seconds=0.068000 heap_delta_kib=711.750 gc=normal
+2026-11-12 05:31:24.477 [info]: [BENCH] name=closure_capture n=250000 sample=4 seconds=0.066000 heap_delta_kib=711.750 gc=normal
+2026-11-12 05:31:24.544 [info]: [BENCH] name=closure_capture n=250000 sample=5 seconds=0.064000 heap_delta_kib=711.750 gc=normal
+2026-11-12 05:31:24.585 [info]: [BENCH] name=empty_table n=250000 sample=1 seconds=0.038000 heap_delta_kib=500.172 gc=normal
+2026-11-12 05:31:24.627 [info]: [BENCH] name=empty_table n=250000 sample=2 seconds=0.040000 heap_delta_kib=500.172 gc=normal
+2026-11-12 05:31:24.669 [info]: [BENCH] name=empty_table n=250000 sample=3 seconds=0.042000 heap_delta_kib=500.172 gc=normal
+2026-11-12 05:31:24.716 [info]: [BENCH] name=empty_table n=250000 sample=4 seconds=0.045000 heap_delta_kib=500.172 gc=normal
+2026-11-12 05:31:24.760 [info]: [BENCH] name=empty_table n=250000 sample=5 seconds=0.043000 heap_delta_kib=500.172 gc=normal
+2026-11-12 05:31:24.857 [info]: [BENCH] name=table_4_fields n=250000 sample=1 seconds=0.095000 heap_delta_kib=483.609 gc=normal
+2026-11-12 05:31:24.943 [info]: [BENCH] name=table_4_fields n=250000 sample=2 seconds=0.085000 heap_delta_kib=483.609 gc=normal
+2026-11-12 05:31:25.028 [info]: [BENCH] name=table_4_fields n=250000 sample=3 seconds=0.084000 heap_delta_kib=483.609 gc=normal
+2026-11-12 05:31:25.124 [info]: [BENCH] name=table_4_fields n=250000 sample=4 seconds=0.096000 heap_delta_kib=483.609 gc=normal
+2026-11-12 05:31:25.212 [info]: [BENCH] name=table_4_fields n=250000 sample=5 seconds=0.088000 heap_delta_kib=483.609 gc=normal
+2026-11-12 05:31:25.389 [info]: [BENCH] name=concat_unique_short n=250000 sample=1 seconds=0.176000 heap_delta_kib=863.415 gc=normal
+2026-11-12 05:31:25.598 [info]: [BENCH] name=concat_unique_short n=250000 sample=2 seconds=0.208000 heap_delta_kib=973.412 gc=normal
+2026-11-12 05:31:25.801 [info]: [BENCH] name=concat_unique_short n=250000 sample=3 seconds=0.202000 heap_delta_kib=973.412 gc=normal
+2026-11-12 05:31:25.991 [info]: [BENCH] name=concat_unique_short n=250000 sample=4 seconds=0.186000 heap_delta_kib=973.412 gc=normal
+2026-11-12 05:31:26.185 [info]: [BENCH] name=concat_unique_short n=250000 sample=5 seconds=0.192000 heap_delta_kib=973.412 gc=normal
+2026-11-12 05:31:26.207 [info]: [BENCH] name=string_equal_existing n=250000 sample=1 seconds=0.020000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:31:26.227 [info]: [BENCH] name=string_equal_existing n=250000 sample=2 seconds=0.019000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:31:26.244 [info]: [BENCH] name=string_equal_existing n=250000 sample=3 seconds=0.016000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:31:26.265 [info]: [BENCH] name=string_equal_existing n=250000 sample=4 seconds=0.020000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:31:26.287 [info]: [BENCH] name=string_equal_existing n=250000 sample=5 seconds=0.022000 heap_delta_kib=0.000 gc=normal
+2026-11-12 05:31:26.373 [info]: [BENCH] name=events_100_listeners n=5000 sample=1 seconds=0.084000 heap_delta_kib=875.215 gc=normal
+2026-11-12 05:31:26.473 [info]: [BENCH] name=events_100_listeners n=5000 sample=2 seconds=0.097000 heap_delta_kib=875.215 gc=normal
+2026-11-12 05:31:26.565 [info]: [BENCH] name=events_100_listeners n=5000 sample=3 seconds=0.089000 heap_delta_kib=875.215 gc=normal
+2026-11-12 05:31:26.669 [info]: [BENCH] name=events_100_listeners n=5000 sample=4 seconds=0.102000 heap_delta_kib=875.215 gc=normal
+2026-11-12 05:31:26.761 [info]: [BENCH] name=events_100_listeners n=5000 sample=5 seconds=0.088000 heap_delta_kib=875.215 gc=normal
+2026-11-12 05:31:26.924 [info]: [BENCH] name=scheduler_1000_idle n=1000 sample=1 seconds=0.140000 heap_delta_kib=627.617 gc=normal
+2026-11-12 05:31:27.074 [info]: [BENCH] name=scheduler_1000_idle n=1000 sample=2 seconds=0.150000 heap_delta_kib=627.617 gc=normal
+2026-11-12 05:31:27.209 [info]: [BENCH] name=scheduler_1000_idle n=1000 sample=3 seconds=0.132000 heap_delta_kib=627.652 gc=normal
+2026-11-12 05:31:27.330 [info]: [BENCH] name=scheduler_1000_idle n=1000 sample=4 seconds=0.120000 heap_delta_kib=627.652 gc=normal
+2026-11-12 05:31:27.439 [info]: [BENCH] name=scheduler_1000_idle n=1000 sample=5 seconds=0.109000 heap_delta_kib=627.652 gc=normal
+2026-11-12 05:31:27.470 [info]: [BENCH] name=native_text_update n=20000 sample=1 seconds=0.028000 heap_delta_kib=678.051 gc=normal
+2026-11-12 05:31:27.498 [info]: [BENCH] name=native_text_update n=20000 sample=2 seconds=0.026000 heap_delta_kib=678.051 gc=normal
+2026-11-12 05:31:27.525 [info]: [BENCH] name=native_text_update n=20000 sample=3 seconds=0.027000 heap_delta_kib=678.051 gc=normal
+2026-11-12 05:31:27.567 [info]: [BENCH] name=native_text_update n=20000 sample=4 seconds=0.041000 heap_delta_kib=678.051 gc=normal
+2026-11-12 05:31:27.594 [info]: [BENCH] name=native_text_update n=20000 sample=5 seconds=0.025000 heap_delta_kib=678.051 gc=normal
+2026-11-12 05:31:27.596 [info]: [ALLOC] name=closure_capture n=10000 kib=546.875
+2026-11-12 05:31:27.599 [info]: [ALLOC] name=empty_table n=10000 kib=468.750
+2026-11-12 05:31:27.599 [info]: PASS: native runtime benchmark matrix completed
+2026-11-12 05:31:27.699 [info]: [CLOCK_PROBE] logical_seconds=5 os_clock=5.844000 os_time=6
+2026-11-12 05:31:31.724 [info]: [STATE_MATCH] phase=1 hash=1495221221 rng=14
+2026-11-12 05:31:38.200 [info]: [STATE_MATCH] phase=2 hash=820437960 rng=24
+2026-11-12 05:31:44.650 [info]: [STATE_MATCH] phase=3 hash=1606280792 rng=34
+2026-11-12 05:31:51.034 [info]: [STATE_MATCH] phase=4 hash=1812423728 rng=44
+2026-11-12 05:31:56.798 [info]: [STATE_MATCH] phase=5 hash=826336003 rng=54
+2026-11-12 05:32:02.578 [info]: [STATE_MATCH] phase=6 hash=278148458 rng=64
+2026-11-12 05:32:09.022 [info]: [STATE_MATCH] phase=7 hash=1557866589 rng=74
+2026-11-12 05:32:14.728 [info]: [STATE_MATCH] phase=8 hash=1688006403 rng=84
+2026-11-12 05:32:20.976 [info]: [STATE_MATCH] phase=9 hash=1173107124 rng=94
+2026-11-12 05:32:26.842 [info]: [STATE_MATCH] phase=10 hash=1821090716 rng=104
+2026-11-12 05:32:32.682 [info]: [STATE_MATCH] phase=11 hash=600207592 rng=114
+2026-11-12 05:32:34.347 [info]: [RESOURCE] tick=6000 lua_kib=921.837 controls=6 ui_tasks=1 events=0
+2026-11-12 05:32:34.354 [info]: PASS: UI lifecycle stress cycles=1225
+2026-11-12 05:32:34.355 [info]: PASS: gameplay RNG and peer snapshots exercised
+2026-11-12 05:32:34.355 [info]: PASS: UI command exactly once player=0
+2026-11-12 05:32:34.355 [info]: PASS: UI command exactly once player=1
+2026-11-12 05:32:34.356 [info]: PASS: UI command exactly once player=2
+2026-11-12 05:32:34.356 [info]: PASS: UI command exactly once player=3
+2026-11-12 05:32:34.356 [info]: PASS: UI command exactly once player=4
+2026-11-12 05:32:34.357 [info]: PASS: UI command exactly once player=5
+2026-11-12 05:32:34.357 [info]: PASS: bridge has no fault
+2026-11-12 05:32:34.357 [info]: PASS: UI shutdown clears all controls
+2026-11-12 05:32:37.661 [info]: [METRICS] ui_cycles=1225 rng_calls=117 phases=11 assertions=37
+2026-11-12 05:32:37.662 [info]: [UT_DONE] LuaScaffold research-six-03 P5

@@ -1,0 +1,8 @@
+{"player":"LanP1","handles":4769,"cpuSeconds":4.5,"utc":"2026-11-11T22:32:26.5564414Z","privateBytes":189812736,"workingSet":172908544,"pid":18604}
+{"player":"LanP2","handles":4769,"cpuSeconds":4.984375,"utc":"2026-11-11T22:32:26.7019790Z","privateBytes":189730816,"workingSet":172888064,"pid":21828}
+{"player":"LanP3","handles":4683,"cpuSeconds":5.765625,"utc":"2026-11-11T22:32:26.8331070Z","privateBytes":189677568,"workingSet":223117312,"pid":33540}
+{"player":"LanP1","handles":4775,"cpuSeconds":5.875,"utc":"2026-11-11T22:32:36.9632989Z","privateBytes":189353984,"workingSet":172892160,"pid":18604}
+{"player":"LanP2","handles":4775,"cpuSeconds":6.359375,"utc":"2026-11-11T22:32:37.0859605Z","privateBytes":189272064,"workingSet":172736512,"pid":21828}
+{"player":"LanP3","handles":4689,"cpuSeconds":6.765625,"utc":"2026-11-11T22:32:37.2116861Z","privateBytes":189493248,"workingSet":223141888,"pid":33540}
+{"player":"LanP2","handles":4770,"cpuSeconds":7.234375,"utc":"2026-11-11T22:32:47.4444841Z","privateBytes":189448192,"workingSet":173142016,"pid":21828}
+{"player":"LanP3","handles":4686,"cpuSeconds":7.640625,"utc":"2026-11-11T22:32:47.5631348Z","privateBytes":189865984,"workingSet":223682560,"pid":33540}

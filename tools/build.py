@@ -2,6 +2,7 @@
 from pathlib import Path
 import argparse, hashlib, json, shutil, subprocess, struct
 from stage import ROOT, stage, verify, write_manifest
+from map_info import build_info
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--name', required=True)
@@ -9,28 +10,27 @@ parser.add_argument('--test', action='store_true')
 parser.add_argument('--clients', type=int, choices=range(1,7), default=1)
 parser.add_argument('--ticks', type=int, default=12000)
 parser.add_argument('--oos-control', action='store_true')
+parser.add_argument('--suite', choices=['integration','ui','performance','hotreload','soak'], default='integration')
+parser.add_argument('--dev', action='store_true')
 parser.add_argument('--runtime', default='D:/WE/YDWE1.32.13正式版')
 parser.add_argument('--we', default='D:/WE/KKWE_Plugin')
 args = parser.parse_args()
 assert args.ticks >= 3000
 verify()
-stage(args.name, include_tests=args.test)
+stage(args.name, include_tests=args.test, include_dev=args.dev)
 dst = ROOT/'build'/args.name
 project = json.loads((ROOT/'project.json').read_text(encoding='utf-8'))
 assert not args.oos_control or (args.test and args.clients >= 2), 'OOS control requires a multiplayer test build'
 config = "return {ui=true,runtime_test=%s,build_id='%s',project_id='%s',clients=%d,duration_ticks=%d,oos_control=%s}\n" % (
     str(args.test).lower(), args.name, project['id'], args.clients, args.ticks, str(args.oos_control).lower())
+config=config.rstrip().removesuffix('}')+",suite='%s',dev=%s,log_folder=%s}\n" % (args.suite,str(args.dev).lower(),json.dumps(project.get('log_folder',project['id']),ensure_ascii=False))
 (dst/'script/app/config.lua').write_text(config, encoding='utf-8')
 write_manifest(dst)
 base = ROOT/'build'/(args.name+'-map')
 shutil.copytree(ROOT/'assets/map', base)
 # W3I v25: version, saves, editor, then map name/author/description/player string.
-w3i = (base/'war3map.w3i').read_bytes()
-assert struct.unpack_from('<I',w3i)[0] == 25, 'unsupported template W3I version'
-offset = 12
-for _ in range(4): offset = w3i.index(b'\0', offset) + 1
-meta = b'\0'.join([project['title'].encode('utf-8'), project['id'].encode('ascii'), b'InnerJAPI Lua starter', b'1-6', b''])
-(base/'war3map.w3i').write_bytes(w3i[:12]+meta+w3i[offset:])
+w3i,bounds=build_info((base/'war3map.w3i').read_bytes(),project['title'],project['id'])
+(base/'war3map.w3i').write_bytes(w3i)
 loader=(ROOT/'integration/loader.j').read_text(encoding='utf-8')
 slots='\n'.join(f'''call SetPlayerStartLocation(Player({i}),{i})
 call ForcePlayerStartLocation(Player({i}),{i})
@@ -40,7 +40,9 @@ call SetPlayerRaceSelectable(Player({i}),false)
 call SetPlayerController(Player({i}),MAP_CONTROL_USER)''' for i in range(6))
 teams='\n'.join(f'call SetPlayerTeam(Player({i}),0)' for i in range(6))
 starts='\n'.join(f'call DefineStartLocation({i},{i*128}.0,0.0)' for i in range(6))
-script=f'''{loader}
+script=f'''globals
+endglobals
+{loader}
 function InitCustomPlayerSlots takes nothing returns nothing
 {slots}
 endfunction
@@ -58,7 +60,7 @@ call InitCustomPlayerSlots()
 call InitCustomTeams()
 endfunction
 function main takes nothing returns nothing
-call SetCameraBounds(-2048.0,-2048.0,-2048.0,2048.0,2048.0,2048.0,2048.0,-2048.0)
+call SetCameraBounds({','.join(f'{x:.1f}' for x in bounds)})
 call InitBlizzard()
 call FogEnable(false)
 call FogMaskEnable(false)
