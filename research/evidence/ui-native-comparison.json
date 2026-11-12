@@ -1,0 +1,91 @@
+{
+  "scope": "disk static analysis only; no runtime execution or UI validation",
+  "samples": [
+    {
+      "label": "inner",
+      "path": "D:\\War3\\LuaScaffold\u200c\\build\\engine-pe\\pe-60ae0.dll",
+      "sha256": "5c44196eb2b82a11ccf8754a259193db86dc4c823140887b0442741d48132a8c",
+      "image_base": "0x10000000",
+      "ranges": [
+        {
+          "name": "create-registration",
+          "start_va": "0x102527b2",
+          "end_va_exclusive": "0x102527c9"
+        },
+        {
+          "name": "viewport-registration",
+          "start_va": "0x10252dbd",
+          "end_va_exclusive": "0x10252dd4"
+        },
+        {
+          "name": "create-wrapper",
+          "start_va": "0x10249740",
+          "end_va_exclusive": "0x102497a5"
+        },
+        {
+          "name": "create-body",
+          "start_va": "0x102492e0",
+          "end_va_exclusive": "0x10249736"
+        },
+        {
+          "name": "viewport",
+          "start_va": "0x1024bdd0",
+          "end_va_exclusive": "0x1024bdf3"
+        },
+        {
+          "name": "game-fdf-locator",
+          "start_va": "0x102485b0",
+          "end_va_exclusive": "0x1024868e"
+        }
+      ],
+      "string_presence": {
+        "FrameSetViewPort": true,
+        "DzFrameSetViewPort": false,
+        "JAPI::GUI::DzCreateFrameByTagName": false
+      }
+    },
+    {
+      "label": "dz-local",
+      "path": "D:\\War3\\tools\\LanTest\\runtime\\WE\\plugin\\warcraft3\\kkapi_local_plugin.dll",
+      "sha256": "346aa2fa320b7919d95e7cd56792858331f6c224c5459652e166f36c832c8ee3",
+      "image_base": "0x10000000",
+      "ranges": [
+        {
+          "name": "create-by-tag-body",
+          "start_va": "0x10084690",
+          "end_va_exclusive": "0x1008484e"
+        },
+        {
+          "name": "type-factory",
+          "start_va": "0x10073c40",
+          "end_va_exclusive": "0x10073d60"
+        },
+        {
+          "name": "clip-registration-func-name-signature",
+          "start_va": "0x10089f99",
+          "end_va_exclusive": "0x10089fba"
+        },
+        {
+          "name": "clip-setter",
+          "start_va": "0x10086900",
+          "end_va_exclusive": "0x10086920"
+        },
+        {
+          "name": "cliprect-registration-func-name-signature",
+          "start_va": "0x1008a104",
+          "end_va_exclusive": "0x1008a125"
+        },
+        {
+          "name": "cliprect-global-setter",
+          "start_va": "0x10084a50",
+          "end_va_exclusive": "0x10084a90"
+        }
+      ],
+      "string_presence": {
+        "FrameSetViewPort": false,
+        "DzFrameSetViewPort": false,
+        "JAPI::GUI::DzCreateFrameByTagName": true
+      }
+    }
+  ]
+}
