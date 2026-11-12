@@ -1,0 +1,338 @@
+$ C:\Python312\python.exe tools/stage.py
+VENDOR OK 78 files
+exit=0
+
+$ C:\Python312\python.exe tools/map_fixtures.py
+MAP FIXTURE PASS explicit order, initialization hook, classic placements/regions
+exit=0
+
+$ luac -p src\app\config.lua
+exit=0
+
+$ luac -p src\app\main.lua
+exit=0
+
+$ luac -p src\app\runtime_test.lua
+exit=0
+
+$ luac -p src\app\view.lua
+exit=0
+
+$ luac -p src\content\challenges\training\boss.lua
+exit=0
+
+$ luac -p src\content\challenges\training\definition.lua
+exit=0
+
+$ luac -p src\content\effects\cast_aura.lua
+exit=0
+
+$ luac -p src\content\heroes\catalog.lua
+exit=0
+
+$ luac -p src\content\heroes\marisa\definition.lua
+exit=0
+
+$ luac -p src\content\heroes\marisa\skills\stellar_beam.lua
+exit=0
+
+$ luac -p src\content\heroes\marisa\talents.lua
+exit=0
+
+$ luac -p src\content\heroes\reimu\definition.lua
+exit=0
+
+$ luac -p src\content\heroes\reimu\skills\spirit_bolt.lua
+exit=0
+
+$ luac -p src\content\heroes\reimu\talents.lua
+exit=0
+
+$ luac -p src\content\heroes\sakuya\definition.lua
+exit=0
+
+$ luac -p src\content\heroes\sakuya\skills\returning_blades.lua
+exit=0
+
+$ luac -p src\content\heroes\sakuya\talents.lua
+exit=0
+
+$ luac -p src\dev\view_loader.lua
+exit=0
+
+$ luac -p src\game\combat\native.lua
+exit=0
+
+$ luac -p src\game\skill\service.lua
+exit=0
+
+$ luac -p src\game\unit\manager.lua
+exit=0
+
+$ luac -p src\game\unit\native.lua
+exit=0
+
+$ luac -p src\game\unit\service.lua
+exit=0
+
+$ luac -p src\jass2binary.lua
+exit=0
+
+$ luac -p src\plugin_main.lua
+exit=0
+
+$ luac -p src\presentation\challenge_view.lua
+exit=0
+
+$ luac -p src\probes\business_resource.lua
+exit=0
+
+$ luac -p src\probes\gameplay.lua
+exit=0
+
+$ luac -p src\probes\hotreload.lua
+exit=0
+
+$ luac -p src\probes\performance.lua
+exit=0
+
+$ luac -p src\probes\ui.lua
+exit=0
+
+$ luac -p src\probes\unit_lifecycle.lua
+exit=0
+
+$ luac -p src\rules\combat.lua
+exit=0
+
+$ luac -p src\scaffold\ac.lua
+exit=0
+
+$ luac -p src\scaffold\command.lua
+exit=0
+
+$ luac -p src\scaffold\context.lua
+exit=0
+
+$ luac -p src\scaffold\entity_registry.lua
+exit=0
+
+$ luac -p src\scaffold\events.lua
+exit=0
+
+$ luac -p src\scaffold\handle_refs.lua
+exit=0
+
+$ luac -p src\scaffold\innerjapi.lua
+exit=0
+
+$ luac -p src\scaffold\scheduler.lua
+exit=0
+
+$ luac -p src\scaffold\scope.lua
+exit=0
+
+$ luac -p src\scaffold\ui.lua
+exit=0
+
+$ luac -p src\scaffold\ui_env.lua
+exit=0
+
+$ luac -p src\scaffold\ui_reload.lua
+exit=0
+
+$ luac -p src\systems\challenges\service.lua
+exit=0
+
+$ luac -p src\systems\heroes\service.lua
+exit=0
+
+$ luac -p src\systems\talents\service.lua
+exit=0
+
+$ luac -p src\ui\base\controls\button.lua
+exit=0
+
+$ luac -p src\ui\base\controls\class.lua
+exit=0
+
+$ luac -p src\ui\base\controls\edit.lua
+exit=0
+
+$ luac -p src\ui\base\controls\init.lua
+exit=0
+
+$ luac -p src\ui\base\controls\model.lua
+exit=0
+
+$ luac -p src\ui\base\controls\model2.lua
+exit=0
+
+$ luac -p src\ui\base\controls\panel.lua
+exit=0
+
+$ luac -p src\ui\base\controls\progress.lua
+exit=0
+
+$ luac -p src\ui\base\controls\text.lua
+exit=0
+
+$ luac -p src\ui\base\controls\texture.lua
+exit=0
+
+$ luac -p src\ui\base\detail\game.lua
+exit=0
+
+$ luac -p src\ui\base\detail\init.lua
+exit=0
+
+$ luac -p src\ui\base\detail\keyboard.lua
+exit=0
+
+$ luac -p src\ui\base\detail\template.lua
+exit=0
+
+$ luac -p src\ui\base\detail\timer.lua
+exit=0
+
+$ luac -p src\ui\base\init.lua
+exit=0
+
+$ luac -p src\ui\init.lua
+exit=0
+
+$ luac -p src\world\arenas.lua
+exit=0
+
+$ luac -p src\world\session.lua
+exit=0
+
+$ luac -p tests\app_lifecycle.lua
+exit=0
+
+$ luac -p tests\bridge_mock.lua
+exit=0
+
+$ luac -p tests\evidence\20261112-061321-425fd3\fixture.lua
+exit=0
+
+$ luac -p tests\evidence\20261112-063200-e59639\fixture.lua
+exit=0
+
+$ luac -p tests\evidence\20261112-063251-37006e\fixture.lua
+exit=0
+
+$ luac -p tests\evidence\20261112-064842-232cf2\fixture.lua
+exit=0
+
+$ luac -p tests\extended.lua
+exit=0
+
+$ luac -p tests\handle_refs.lua
+exit=0
+
+$ luac -p tests\native_unit_bridge.lua
+exit=0
+
+$ luac -p tests\request_ui.lua
+exit=0
+
+$ luac -p tests\run.lua
+exit=0
+
+$ luac -p tests\skill_lifecycle.lua
+exit=0
+
+$ luac -p tests\ui_mock.lua
+exit=0
+
+$ luac -p tests\unit_lifecycle.lua
+exit=0
+
+$ luac -p tests\upstream_audit.lua
+exit=0
+
+$ luac -p tests\world_lifecycle.lua
+exit=0
+
+$ luac -p examples\dev_view.lua
+exit=0
+
+$ luac -p examples\scroll_view.lua
+exit=0
+
+$ luac -p examples\ui_button.lua
+exit=0
+
+$ luac -p research\clock_probe.lua
+exit=0
+
+$ luac -p research\resource_idle.lua
+exit=0
+
+$ luac -p research\resource_probe.lua
+exit=0
+
+$ lua tests/run.lua
+PASS cleanup is reverse ordered, idempotent and continues after error
+PASS different local handles have the same logical IDs
+PASS timer cancellation releases captured data while token stays alive
+PASS timer dispatch has fixed order and handles cancellation and nesting
+PASS callback failure stops subsequent gameplay callbacks
+PASS wire decoder rejects execution, invalid values, holes and oversize
+PASS sender validation, authorization, duplicate rejection and player isolation
+PASS Lua cycles collect; an external registry keeps a closure alive
+PASS paused tasks resume deterministically and stop releases their captures
+PASS local callbacks cannot enqueue synchronized gameplay
+OFFLINE PASS 10 cases; native engine and multiplayer not exercised
+exit=0
+
+$ lua tests/extended.lua
+EXTENDED PASS events mutation/error/domain, ac repeat/pause/stop capture release
+exit=0
+
+$ lua tests/upstream_audit.lua
+REPRODUCED decoder executes a function without parentheses
+REPRODUCED oversized first event becomes an empty message
+REPRODUCED mixed array/map loses named fields
+REPRODUCED keyword table key emits invalid Lua
+REPRODUCED cancelled long timer retains captured object in its queue
+REPRODUCED ac.math changes standard trigonometry to degrees
+UPSTREAM AUDIT PASS 6 reproduced behaviors; no native engine calls
+exit=0
+
+$ lua tests/bridge_mock.lua
+BRIDGE MOCK PASS transport boundary, fault state, balanced refs and idempotent teardown
+exit=0
+
+$ lua tests/ui_mock.lua
+UI MOCK PASS 100 nested lifecycles, child-first destruction, closure release, unregister and isolation
+exit=0
+
+$ lua tests/handle_refs.lua
+HANDLE REFS PASS repeated reuse, multiple owners, detached snapshots, missing/double release, native failures and local-domain rejection
+exit=0
+
+$ lua tests/unit_lifecycle.lua
+UNIT MOCK PASS death/revive/form/owner invalidation, forced handle reuse, callback release, external removal, borrowed ownership and sync guard
+exit=0
+
+$ lua tests/skill_lifecycle.lua
+SKILL MOCK PASS commit/cooldown/ownership/range, death/form/owner/removal cancellation, reused handle, reentrant kill and preparation cleanup
+exit=0
+
+$ lua tests/world_lifecycle.lua
+WORLD MOCK PASS talents, ownership, atomicity, victory, cooldown, defeat/timeout, preparation failure, simulated player departure and shutdown
+exit=0
+
+$ lua tests/app_lifecycle.lua
+APP MOCK PASS failed initialization attempts all cleanup, preserves errors and refuses unsupported whole-app restart
+exit=0
+
+$ lua tests/native_unit_bridge.lua
+NATIVE UNIT BRIDGE MOCK PASS fault mutes dispatch and still releases action/trigger exactly once
+exit=0
+
+$ lua tests/request_ui.lua
+REQUEST UI MOCK PASS sequence correlation, old result isolation, bounded waiting, late rejection, no automatic retry and queue refusal
+exit=0

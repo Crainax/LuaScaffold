@@ -1,8 +1,8 @@
 {
   "status": "PASS",
   "id": "FreshLuaGame",
-  "production_payload_files": 72,
-  "map_sha256": "3bdc51a30ab710c0e435db3fd5a9c396cf711319433c15e612f24e8819e3f2d8",
+  "production_payload_files": 73,
+  "map_sha256": "b74a670f8acd49fa9063a3a20cb3a346a418d2e13b65e27bd5c27519fa514819",
   "checks": [
     "copy without .git/build",
     "project ID and Chinese title",

@@ -470,5 +470,29 @@
     "status": "PASS",
     "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
     "cleanup": true
+  },
+  {
+    "session": "20261112-204459-5133a4",
+    "map": "refs-one-01.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-204658-8396e3",
+    "map": "refs-three-01.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-205014-3700ff",
+    "map": "refs-six-01.w3x",
+    "clients": 6,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
   }
 ]

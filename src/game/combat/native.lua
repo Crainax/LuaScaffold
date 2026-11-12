@@ -1,3 +1,4 @@
+local Refs=require 'scaffold.handle_refs'
 -- Synchronized engine adapter. Map coefficients live in rules/, not here.
 local Context=require 'scaffold.context'
 local M={}
@@ -22,11 +23,11 @@ function M.new(units)
         if not spec then return function()end end
         local handle=j.AddSpecialEffectTarget(spec.model,target.handle,spec.attachment)
         assert(handle and handle~=0,'skill native effect creation failed')
-        dbg.handle_ref(handle);self.effects=self.effects+1;self.effects_created=self.effects_created+1
+        Refs.ref('effect',handle);self.effects=self.effects+1;self.effects_created=self.effects_created+1
         local active=true
         return function()
             Context.assert_sync();if not active then return end;active=false
-            j.DestroyEffect(handle);dbg.handle_unref(handle)
+            j.DestroyEffect(handle);Refs.unref('effect',handle)
             self.effects=self.effects-1;handle=nil
         end
     end

@@ -197,6 +197,9 @@ function M.start(bridge,world,view,config,check)
             for _,player in ipairs(players)do check(world.challenges.completed[player]==expected[player],'repeat cycle produces one victory')end
             check(world.challenges:count()==0 and world.combat.effects==0 and world.skills:active_count()==0 and world.units:task_count()==0,'repeat cycle releases encounter and cast resources')
             check(world.units:count()==#players*3+1 and world.skills:count()==#players*3,'repeat cycle registration counts remain bounded')
+            local refs=require('scaffold.handle_refs').snapshot()
+            check(refs.kinds.unit.active==#players*3+1 and refs.kinds.effect.active==0 and refs.kinds.trigger.active==2 and refs.kinds.timer.active==1 and refs.errors==0,'repeat cycle handle references return to baseline')
+            log.info(string.format('[HANDLE_REFS] phase=cycle active=%d refs=%d unrefs=%d unit=%d effect=%d trigger=%d timer=%d errors=%d',refs.active,refs.refs,refs.unrefs,refs.kinds.unit.active,refs.kinds.effect.active,refs.kinds.trigger.active,refs.kinds.timer.active,refs.errors))
             completed_cycles=completed_cycles+1
             log.info(string.format('[BUSINESS_RESOURCE] tick=%d cycles=%d units=%d actors=%d effects=%d tasks=%d lua_kib=%.3f',scheduler:now(),completed_cycles,world.units:count(),world.skills:count(),world.combat.effects,world.units:task_count(),collectgarbage('count')))
         end)

@@ -102,6 +102,7 @@ function M.start(bridge,check)
     local batch=0
     local reuse_job
     reuse_job=scheduler:after(600,function()
+        local before=require('scaffold.handle_refs').snapshot()
         batch=batch+1
             for i=1,20 do
                 local r=units:create(0,raw('n001'),0,-512,0)
@@ -115,6 +116,8 @@ function M.start(bridge,check)
                 units:remove(id)
                 assert(units:get(id)==nil,'removed unit ID cannot resolve')
             end
+        local after=require('scaffold.handle_refs').snapshot()
+        check(after.active==before.active and after.refs-before.refs==20 and after.unrefs-before.unrefs==20 and after.errors==0,'unit batch references return to baseline')
         if batch<100 then return end
         reuse_job:cancel()
         check(true,'2000 removed stable unit IDs remain invalid across 100 bounded batches')

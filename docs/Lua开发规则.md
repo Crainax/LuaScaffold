@@ -28,6 +28,10 @@ os.clock、os.time、墙钟、帧率、内存量、GC/弱表回收结果和对�
 
 不要通过 __gc、弱表消失或本地 UI 分支销毁同步原生对象。ref/unref 要与实际持有责任配对，不能因“数字 handle 不 GC”忽略引擎引用规则。
 
+框架生产适配层的显式句柄引用统一经过 `scaffold.handle_refs`，按 unit/effect/trigger/timer 记录。业务不重复ref框架已管理的对象；需要结束时调用所有者的remove/detach/cancel/stop。统计中的refs/unrefs是累计成功调用次数，active是当前持有份数，同一handle被两个所有者借用可以有两份引用。释放最后一份后删除诊断条目，禁止用原生handle键的遍历顺序驱动玩法。
+
+回归检查固定工作量结束后的active分类基线及整个应用停止后的零值，不能把累计refs一直增长当泄漏，也不能只看两个累计值相等而忽略重复/无匹配释放。原生ref/unref调用报错时保留错误计数，不能重置统计或自动重试来制造平衡；报错后的原生实际状态可能不确定，不能据统计宣布清理成功。该统计不涵盖引擎/JASS内部引用、外部直接调用或UI frame资源，不能称为引擎全局引用总数。诊断结果不参与正式玩法决策。
+
 保留已取消token时，不仅检查callback payload能否回收，也检查已失效owner记录是否仍被token的cancel闭包捕获。本轮离线负例确认旧单位任务token会保留移除后的record；修复为cancel解除owner引用，执行时只短暂保存当前record用于身份校验。原生回归须保留token后再检查记录释放。
 
 ## 调度、事件和错误
@@ -63,6 +67,8 @@ os.clock、os.time、墙钟、帧率、内存量、GC/弱表回收结果和对�
 未覆盖的视觉、输入、平台网络和长期资源行为明确记录；不把脚本 API 读回等同像素效果。实验发现按“事实/推测/待测”区分，规则随证据修订。
 
 ## 构建与依赖（第二轮）
+
+2026-11-12 UI 静态比较补充：Lua/JASS 是调用语言，Frame/FDF 与 viewport 能力由实际原生插件决定。固定 InnerJAPI 的 FrameSetViewPort 写 frame+0xC bit 0，不等于已追通最终显卡裁剪路径；普通 Frame 与 SimpleFrame、跨插件地址兼容及输入命中必须分别验证。证据与未覆盖范围见《Lua与DZ界面底层对比》，不将 DLL 静态结果算作新实机通过。
 
 项目业务不能覆盖固定依赖的 scaffold/ui/game 命名空间。构建前校验完整依赖文件清单、额外文件与哈希；内容版本是不可变快照，origin_commit 只说明来源，origin_public_dirty=true 时不能宣称等于该 Git 提交。
 

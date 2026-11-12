@@ -46,6 +46,8 @@ Logger 路径：`D:/Program Files (x86)/Warcraft III Frozen Throne/Lua框架研�
 
 ## 证据与边界
 
+新增 [handle引用统计与回归](docs/handle引用统计与回归.md)：`require('scaffold.handle_refs').snapshot()` 查看框架显式持有的单位/特效/触发器/计时器引用。关注分类active是否回到基线，累计refs/unrefs正常增长。最新增量验收使用 `python tools/verify_handle_refs.py`；下面第二轮37分钟记录对应此前提交 `1bf9031`，不冒充新统计版本的长测。
+
 [单位生命周期与 handle 复用](docs/单位生命周期与handle复用.md)、[第二轮实测报告](docs/第二轮实机验证报告.md)、[第一轮扩展实测](docs/扩展实机验证报告.md) 保留通过及失败。原始日志在 `tests/evidence`，第二轮完整检查使用 `python tools/verify_round2.py`，须先收集该轮全部会话。所有结论受固定运行时、平台和场景限制；新项目必须建立自己的验收集合，不能继承历史通过记录。
 
 第二轮最终源码已完成单人、3/6客户端、故意OOS对照、UI/热更回归、11阶段资源矩阵、重复工作对照，以及约37分15秒的三端长测（每端354轮挑战、359轮一致摘要、6200断言）。`verified-round2.json` 核对当前源码与证据；独立项目示例在 `D:/War3/LuaScaffoldExample`，已完成离线及两图构建，未单独运行该副本游戏。

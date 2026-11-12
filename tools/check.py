@@ -15,6 +15,7 @@ for folder in folders:
     for path in sorted(folder.rglob('*.lua')):
         checks.append(['luac', '-p', str(path.relative_to(ROOT))])
 checks += [['lua', 'tests/run.lua'], ['lua', 'tests/extended.lua'], ['lua', 'tests/upstream_audit.lua'], ['lua', 'tests/bridge_mock.lua'], ['lua', 'tests/ui_mock.lua']]
+checks.append(['lua','tests/handle_refs.lua'])
 checks.append(['lua','tests/unit_lifecycle.lua'])
 checks.append(['lua','tests/skill_lifecycle.lua'])
 checks.append(['lua','tests/world_lifecycle.lua'])

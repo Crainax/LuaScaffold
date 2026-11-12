@@ -1,3 +1,4 @@
+local Refs=require 'scaffold.handle_refs'
 -- All operations belong to the synchronized domain; this adapter has no implicit hooks.
 local j=require 'jass.common'
 local dbg=require 'jass.debug'
@@ -13,13 +14,13 @@ function M.info(handle)
 end
 function M.create(owner,type_id,x,y,facing) return j.CreateUnit(j.Player(owner),type_id,x,y,facing) end
 function M.remove(handle) j.RemoveUnit(handle) end
-function M.ref(handle) dbg.handle_ref(handle) end
-function M.unref(handle) dbg.handle_unref(handle) end
+function M.ref(handle) Refs.ref('unit',handle) end
+function M.unref(handle) Refs.unref('unit',handle) end
 function M.bind(manager,on_fault)
     Context.assert_sync()
     local scope,active=Scope.new(),true
-    local trigger=j.CreateTrigger();assert(trigger and trigger~=0,'unit event trigger creation failed');dbg.handle_ref(trigger)
-    scope:defer(function() j.DestroyTrigger(trigger);dbg.handle_unref(trigger) end)
+    local trigger=j.CreateTrigger();assert(trigger and trigger~=0,'unit event trigger creation failed');Refs.ref('trigger',trigger)
+    scope:defer(function() j.DestroyTrigger(trigger);Refs.unref('trigger',trigger) end)
     local ok,err=pcall(function()
     for i=0,15 do
         j.TriggerRegisterPlayerEvent(trigger,j.Player(i),j.EVENT_PLAYER_LEAVE)
