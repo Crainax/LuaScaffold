@@ -25,6 +25,7 @@ for folder in sorted(sessions.iterdir()):
         metadata=json.loads(build.read_text(encoding='utf-8'))
         if metadata.get('config',{}).get('resource_probe'):
             fixture=root/'build'/source.stem/'script/app/main.lua'
+            if not fixture.exists():fixture=root/'build'/(source.stem+'-fixture.lua')
             if fixture.exists():shutil.copy2(fixture,out/'fixture.lua')
     guard=root/'build'/(source.stem+'-runtime-guard.json')
     if guard.exists(): shutil.copy2(guard,out/'runtime-guard.json')

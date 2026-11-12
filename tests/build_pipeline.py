@@ -10,6 +10,7 @@ parser.add_argument('--build-name',required=True,help='an already validated OBJ 
 args=parser.parse_args()
 assert args.build_name and all(c.isascii() and (c.isalnum() or c in '-_') for c in args.build_name)
 baseline=root/'build'/(args.build_name+'.w3x')
+assert (root/'build'/(args.build_name+'-lni')).is_dir(),'build baseline with --keep-work for this negative control'
 assert (root/'build'/(args.build_name+'-build.json')).exists(),'complete validation of baseline first'
 with tempfile.TemporaryDirectory(prefix='LuaScaffold-object-negative-') as temp:
     source=Path(temp)/'source'

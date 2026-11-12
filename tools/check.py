@@ -7,6 +7,7 @@ from framework_package import resolve
 
 ROOT = Path(__file__).resolve().parents[1]
 checks = [[sys.executable, 'tools/stage.py']]
+checks.append([sys.executable, 'tests/build_cleanup.py'])
 checks.append([sys.executable,'tools/map_fixtures.py'])
 folders=[ROOT/p for p in ('src','tests','examples','research')]
 framework=resolve(ROOT)

@@ -22,7 +22,7 @@ with tempfile.TemporaryDirectory(prefix='LuaDependency-') as temp:
         dep=resolve(project)
         env=os.environ.copy();env['LUA_PATH']=str(dep/'src/?.lua')+';;'
         subprocess.run(['lua','-e',"assert(require('scaffold.revision_probe')=='"+label+"')"],cwd=project,env=env,check=True)
-        result=subprocess.run([sys.executable,'tools/build.py','--name','dependency-'+str(number)],cwd=project,capture_output=True,text=True,errors='replace')
+        result=subprocess.run([sys.executable,'tools/build.py','--name','dependency-'+str(number),'--keep-work'],cwd=project,capture_output=True,text=True,errors='replace')
         assert result.returncode==0,result.stdout+result.stderr
         staged=project/'build'/('dependency-'+str(number))/'script/scaffold/revision_probe.lua'
         assert staged.read_text()=="return '"+label+"'\n"

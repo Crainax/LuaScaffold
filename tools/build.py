@@ -4,6 +4,7 @@ import argparse, hashlib, json, shutil, subprocess, struct
 from stage import ROOT, stage, verify, write_manifest
 from lni_map import prepare, pack
 from map_fixtures import process, lua_module
+from build_cleanup import cleanup
 from w2l_runtime import verify_objects
 
 parser = argparse.ArgumentParser()
@@ -15,11 +16,14 @@ parser.add_argument('--oos-control', action='store_true')
 parser.add_argument('--suite', choices=['integration','ui','performance','hotreload','soak','lifecycle','gameplay','campaign_soak','business_resource','resource_matrix'], default='integration')
 parser.add_argument('--diagnostic',choices=['stages','idle','clock'])
 parser.add_argument('--dev', action='store_true')
+parser.add_argument('--keep-work', action='store_true', help='pin this map and working trees for debugging')
+parser.add_argument('--keep-maps', type=int, default=3, help='retain latest N completed maps (default 3)')
 parser.add_argument('--map', choices=['MainMap','UnitTestMap'])
 parser.add_argument('--format', choices=['obj','slk'], default='obj')
 parser.add_argument('--runtime', default='D:/WE/YDWE1.32.13正式版')
 parser.add_argument('--we', default='D:/WE/KKWE_Plugin')
 args = parser.parse_args()
+assert args.keep_maps >= 1, '--keep-maps must be positive'
 assert args.ticks >= 3000
 assert args.suite not in ('gameplay','campaign_soak') or args.ticks>=4000,'gameplay suite needs at least 4000 ticks'
 assert args.suite!='business_resource' or (args.ticks>=5000 and args.ticks%2500==0),'resource profile needs five equal phases'
@@ -65,7 +69,9 @@ manifest={'map':output.name,'sha256':hashlib.sha256(output.read_bytes()).hexdige
 for p in sorted(dst.rglob('*')):
     if p.is_file(): manifest['files'].append({'path':p.relative_to(dst).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
 if fixture:
+    shutil.copy2(fixture, ROOT/'build'/(args.name+'-fixture.lua'))
     manifest['config']['resource_probe']=args.diagnostic
     manifest['fixture']={'path':fixture.relative_to(ROOT).as_posix(),'sha256':hashlib.sha256(fixture.read_bytes()).hexdigest()}
 (ROOT/'build'/(args.name+'-build.json')).write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
 print('BUILD PASS '+output.name)
+cleanup(ROOT/'build', args.name, args.keep_maps)
