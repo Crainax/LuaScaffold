@@ -32,7 +32,7 @@ package.loaded['jass.debug'] = {
     handle_ref = function(h) refs[h] = (refs[h] or 0) + 1 end,
     handle_unref = function(h) refs[h] = refs[h] - 1 end,
 }
-package.loaded['jass.log'] = {error = function() end}
+package.loaded['jass.log'] = {error = function() end,info=function()end}
 local applied = 0
 local bridge = require('scaffold.innerjapi').start({ping = function(p)
     assert(p == 2); applied = applied + 1
@@ -43,6 +43,7 @@ assert(applied == 0) -- local send MUST NOT apply gameplay immediately
 for _=1,10 do tick() end
 raw, sender = sent, 2
 on_message(); on_message(); assert(applied == 1)
+assert(bridge.transport.accepted==1 and bridge.transport.rejected==1 and bridge.transport.reasons['duplicate or stale']==1)
 local ticks = 0
 bridge.scheduler:after(1, function() ticks = ticks + 1 end)
 tick(); assert(ticks == 1)

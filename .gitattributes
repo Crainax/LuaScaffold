@@ -9,9 +9,13 @@
 *.j text eol=lf
 # Preserve the exact Lua bytes recorded in native-test payload manifests.
 src/** -text
-tests/evidence/** -text
+# Raw evidence retains original CRLF/trailing bytes; it is not source formatting input.
+tests/evidence/** -text -whitespace
 vendor/** -text
 assets/** -text
+maps/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Build evidence hashes these files byte-for-byte; preserve CRLF where supplied.
+config/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 *.blp binary
 *.tga binary
 *.TTF binary

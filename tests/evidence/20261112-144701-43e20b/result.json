@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "clients": 3,
+  "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+  "logs": [
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\lni-ut-01-P1.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\lni-ut-01-P2.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\lni-ut-01-P3.log"
+  ]
+}

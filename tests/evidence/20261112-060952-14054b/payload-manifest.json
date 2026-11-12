@@ -1,0 +1,206 @@
+[
+  {
+    "archive": "(key)",
+    "sha256": "a2751180ad76f8257984311b06d9cd41c20cab508fa2584a7aa09f85356eee9c"
+  },
+  {
+    "archive": "callback",
+    "sha256": "7249284a0f0b0f73104fa152e2a63294c631435ac7a1bca3b9676e2d34804a13"
+  },
+  {
+    "archive": "core/background.blp",
+    "sha256": "c298d25875a8885488538c76394268725b175f5afe025aaf47923dd3637e4be3"
+  },
+  {
+    "archive": "core/black_icon.tga",
+    "sha256": "6a75bb8729be183db3084fa7e859b7eaab1fb20d7e028b11c12e47668a910d97"
+  },
+  {
+    "archive": "core/button.blp",
+    "sha256": "3b1d32dcb3c2bf597973a5575b9d4b43ba192ea525533f5375823f43b06059aa"
+  },
+  {
+    "archive": "core/edit.blp",
+    "sha256": "65c4c05368e91c8e1faa2909952774e0755c7909a06c7e9a79166ed02600ce31"
+  },
+  {
+    "archive": "core/model.blp",
+    "sha256": "286aecafff46a25127f9809e27594d40e58d96b80154fe6312357a0ebe48e79f"
+  },
+  {
+    "archive": "core/move_background.blp",
+    "sha256": "22c7085b2aaf49a8129e1e9ad120158c2c9082dcd14acc978756a45abf12b035"
+  },
+  {
+    "archive": "core/panel.blp",
+    "sha256": "792c67d7d1495e021d3c5d03f4ae2bdd259c8a0256f429b46700b15f6e1b27e8"
+  },
+  {
+    "archive": "core/text.blp",
+    "sha256": "4de3a2be26407bb9cdec3b5771010373241f98ff7870d38e5514bcefad25de0c"
+  },
+  {
+    "archive": "core/texture.blp",
+    "sha256": "4a4bd534f4e12be2543390c324f06c64567df33de167883ca99c3911e2996e99"
+  },
+  {
+    "archive": "core/Transparent.tga",
+    "sha256": "4f35a6031ff81327f096b0cc339988a70eaa290530b6ab90bcca437eeca75dfc"
+  },
+  {
+    "archive": "fonts.TTF",
+    "sha256": "bd99fe368b31c62e29ee8456c8fdeb86277786a17e8e40be00ecbe5e4fc7c275"
+  },
+  {
+    "archive": "jass2binary.lua",
+    "sha256": "488f1a6e5bb419159b7668b14a6c44e3395ee193b752d07b5d29689a849d958e"
+  },
+  {
+    "archive": "plugin_main.lua",
+    "sha256": "c2d4212088e5309daff8486cd938de51ba3f4b5f5b4169099bc1ae3a7cabee1d"
+  },
+  {
+    "archive": "script/app/config.lua",
+    "sha256": "13b1d79397965f8fb2ccdb3a60262238576a59d29a54942a48af967c41a11549"
+  },
+  {
+    "archive": "script/app/main.lua",
+    "sha256": "fc59b7cafbb4304a4a6d45b021582da1cf0e8560a272abc6683d3531d49cd05b"
+  },
+  {
+    "archive": "script/app/runtime_test.lua",
+    "sha256": "ffd56545f9fbb68b90668223d159114c322e3cce0bd7f91c4f0efcedb017ccbc"
+  },
+  {
+    "archive": "script/app/view.lua",
+    "sha256": "c0e65a37a5ce9b9ce18958999960daa3c5dae85a831604c48d36361c1f3c0d7f"
+  },
+  {
+    "archive": "script/probes/hotreload.lua",
+    "sha256": "0b551d269ee92b8bb00aa921285da9c46a59c89fb7dce31a6a8854677476cea3"
+  },
+  {
+    "archive": "script/probes/performance.lua",
+    "sha256": "28dab7260174809f13837b5aed35da856579c425fbda5de44f758fdfdffccf35"
+  },
+  {
+    "archive": "script/probes/ui.lua",
+    "sha256": "0f553b1156512d0150e332bc78584fe5b39b9dbfa987818cac499c125a668928"
+  },
+  {
+    "archive": "script/scaffold/ac.lua",
+    "sha256": "a52d0250dac882490b3e5396ccb0aca03ea64bb78a9be1a4fe241bcd94a88ac6"
+  },
+  {
+    "archive": "script/scaffold/command.lua",
+    "sha256": "8c57dea098808af972edaf854c0d465ac4831c1708464edf243fcb85c55db976"
+  },
+  {
+    "archive": "script/scaffold/context.lua",
+    "sha256": "29c2e64099252bf78d9d288182151d64b452cc0bc5c61ac217e99eab3f1685c5"
+  },
+  {
+    "archive": "script/scaffold/entity_registry.lua",
+    "sha256": "e204b8eca76077f1925dad3b75647461b7a78173e1918f84831c559346071acf"
+  },
+  {
+    "archive": "script/scaffold/events.lua",
+    "sha256": "7d46d446a14940f1c7644fef35071b34fd2e8ed31513f51d775062eb8691006f"
+  },
+  {
+    "archive": "script/scaffold/innerjapi.lua",
+    "sha256": "3cddb47ef397d7c069e5ca64ec66337ba8362910e4d67f1b5c8ddd9e3dee214a"
+  },
+  {
+    "archive": "script/scaffold/scheduler.lua",
+    "sha256": "d73fac289f79e545bf83c99f572367aedb99253b44893c93e2e7ed0037815125"
+  },
+  {
+    "archive": "script/scaffold/scope.lua",
+    "sha256": "6c592f83d00b52fde66b6e8e2db5c79d9cf8572a3efa659dc515f9f87c488798"
+  },
+  {
+    "archive": "script/scaffold/ui.lua",
+    "sha256": "f6682328fe4bc44d247b07675b0e70f9df96a293e43585311c9e1e822b47f1f2"
+  },
+  {
+    "archive": "script/scaffold/ui_env.lua",
+    "sha256": "b23a94d4b3fd3970c8b4e8823bb1876a53317c9e2cd295e7947d541fc6da4455"
+  },
+  {
+    "archive": "script/scaffold/ui_reload.lua",
+    "sha256": "a93591a7a803e8f2d0fe3478177296246f44ab7a80f85c37c21a0869426dd8d3"
+  },
+  {
+    "archive": "script/ui/base/controls/button.lua",
+    "sha256": "b0a854aef72ef7d20b10798eda6b29491084ffa486025da44889c2393650fee9"
+  },
+  {
+    "archive": "script/ui/base/controls/class.lua",
+    "sha256": "0db34eeb329d1bc9524cf88c343b1dc887aa988a8056bb2d27bfa9ea0ab96a50"
+  },
+  {
+    "archive": "script/ui/base/controls/edit.lua",
+    "sha256": "f2706c990454ac72d15847de3097af8907ee15a90df1c69759351bb284023299"
+  },
+  {
+    "archive": "script/ui/base/controls/init.lua",
+    "sha256": "7e22bf031182e648752298285c7609cdf5116420335c8e59f8198d34337f85d5"
+  },
+  {
+    "archive": "script/ui/base/controls/model.lua",
+    "sha256": "546a333fcb5fd073b5ea974e3cf90f3cf57c7dd67cf9fc07cb9ca46e1731dad1"
+  },
+  {
+    "archive": "script/ui/base/controls/model2.lua",
+    "sha256": "9ddb62dc9638070b5c397675d942eb739069be58e5b19a4e7b5f492ea43d3556"
+  },
+  {
+    "archive": "script/ui/base/controls/panel.lua",
+    "sha256": "eb1406a65c44a53daba1e9aef134c0e089f023ccc5548bc0962c38a80b75e281"
+  },
+  {
+    "archive": "script/ui/base/controls/progress.lua",
+    "sha256": "fc12d8d1a3ae9d96f0da51c05f8bd1febbbb88321c452d15b85543a47bd79f8b"
+  },
+  {
+    "archive": "script/ui/base/controls/text.lua",
+    "sha256": "83dafdfbecbb45d7964e3c88cb78c1f81d7a53019c4708f3bfdb051a2aa5cb76"
+  },
+  {
+    "archive": "script/ui/base/controls/texture.lua",
+    "sha256": "cecef34d8440cfc6d5474b9907c6996ea5bbe3a488f57d3297d3179e42663041"
+  },
+  {
+    "archive": "script/ui/base/detail/game.lua",
+    "sha256": "065cf4ae7191258d632ddd86b61a1592cce51eb5ac38db93e8d4d44cc6c3ed4c"
+  },
+  {
+    "archive": "script/ui/base/detail/init.lua",
+    "sha256": "815a5d5b1b0cadc62d33cd086c0e4092d79e46863785c52c965fed53c2a90114"
+  },
+  {
+    "archive": "script/ui/base/detail/keyboard.lua",
+    "sha256": "7dd7cabfc61732c71572108bcec6d7bf69311fd0de51c5d23e75f3614472b7bd"
+  },
+  {
+    "archive": "script/ui/base/detail/template.lua",
+    "sha256": "51a70dc589a937e3259eae5978314912f2eb914458fdb93bb8e1aae707e71dc7"
+  },
+  {
+    "archive": "script/ui/base/detail/timer.lua",
+    "sha256": "921fdf486841ab24ba8236813ef8eb498f737ebad08823c1c48d6c7e65883710"
+  },
+  {
+    "archive": "script/ui/base/init.lua",
+    "sha256": "e15528f9000f94d3a04d0ae4826db8b52309530c8119390f9c2e3a68c8eca3ad"
+  },
+  {
+    "archive": "script/ui/init.lua",
+    "sha256": "484d052f50eccb38122ce44bbf7e5232df11e2c5dd5b4b60d4771a5ed15352bf"
+  },
+  {
+    "archive": "wenhao_plugin.tga",
+    "sha256": "617662229027c27b1482d800d5047b6ff21f1afabca2f7dc203b1f3f8c8fa96e"
+  }
+]

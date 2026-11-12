@@ -1,0 +1,6 @@
+D:\War3\LuaScaffold‌\build\tool-cache\w2l-e053f76ff47cbb7c\bin\w3x2lni-lua.exe: D:\War3\LuaScaffold‌\tools\verify_objects.lua:39: ability.A003.requiresamount mismatch expected= actual=nil
+stack traceback:
+	[C]: in function 'assert'
+	D:\War3\LuaScaffold‌\tools\verify_objects.lua:39: in local 'equal'
+	D:\War3\LuaScaffold‌\tools\verify_objects.lua:51: in main chunk
+	[C]: in ?

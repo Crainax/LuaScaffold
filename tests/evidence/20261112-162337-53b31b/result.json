@@ -1,0 +1,8 @@
+{
+  "clients": 1,
+  "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+  "status": "PASS",
+  "logs": [
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\round2-final-one-P1.log"
+  ]
+}

@@ -1,0 +1,12 @@
+...ol-cache\w2l-4ced31789366bd24/script/backend\convert.lua:8: attempt to call a boolean value (local 'core')
+stack traceback:
+	...ol-cache\w2l-4ced31789366bd24/script/backend\convert.lua:8: in main chunk
+	[C]: in function 'require'
+	...ol-cache\w2l-4ced31789366bd24/script/backend\cli\lni.lua:1: in main chunk
+	[C]: in function 'require'
+	...\tool-cache\w2l-4ced31789366bd24/script/backend/init.lua:10: in main chunk
+	[C]: in function 'require'
+	D:\War3\LuaScaffold‌\tools\w2l_cli.lua:25: in function <D:\War3\LuaScaffold‌\tools\w2l_cli.lua:25>
+	[C]: in function 'xpcall'
+	D:\War3\LuaScaffold‌\tools\w2l_cli.lua:25: in main chunk
+	[C]: in ?

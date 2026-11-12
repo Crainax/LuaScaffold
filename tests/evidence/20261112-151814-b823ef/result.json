@@ -1,0 +1,13 @@
+{
+  "logs": [
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\lifecycle-six-slk-09-P1.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\lifecycle-six-slk-09-P2.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\lifecycle-six-slk-09-P3.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\lifecycle-six-slk-09-P4.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\lifecycle-six-slk-09-P5.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\lifecycle-six-slk-09-P6.log"
+  ],
+  "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+  "status": "PASS",
+  "clients": 6
+}

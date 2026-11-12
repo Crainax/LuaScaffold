@@ -230,5 +230,245 @@
     "status": "PASS",
     "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
     "cleanup": true
+  },
+  {
+    "session": "20261112-144701-43e20b",
+    "map": "lni-ut-01.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-145813-9ed158",
+    "map": "lifecycle-native-01.w3x",
+    "clients": 1,
+    "status": "FAIL",
+    "message": "Failure in D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\lifecycle-native-01-P1.log",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-150316-1c3d1c",
+    "map": "lifecycle-native-02.w3x",
+    "clients": 1,
+    "status": "FAIL",
+    "message": "Failure in D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\lifecycle-native-02-P1.log",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-150522-4a6d89",
+    "map": "lifecycle-native-03.w3x",
+    "clients": 1,
+    "status": "FAIL",
+    "message": "Failure in D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\lifecycle-native-03-P1.log",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-150657-de167e",
+    "map": "lifecycle-native-04.w3x",
+    "clients": 1,
+    "status": "FAIL",
+    "message": "Failure in D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\lifecycle-native-04-P1.log",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-150819-8d05d6",
+    "map": "lifecycle-native-05.w3x",
+    "clients": 1,
+    "status": "FAIL",
+    "message": "Failure in D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\lifecycle-native-05-P1.log",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-151023-96bfcd",
+    "map": "lifecycle-native-06.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-151221-5c302c",
+    "map": "lifecycle-native-07.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-151403-91c884",
+    "map": "lifecycle-three-08.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-151814-b823ef",
+    "map": "lifecycle-six-slk-09.w3x",
+    "clients": 6,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-152030-377a01",
+    "map": "lifecycle-service-10.w3x",
+    "clients": 3,
+    "status": "FAIL",
+    "message": "A client disconnected before test completion",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-152207-21c1c9",
+    "map": "lifecycle-service-11.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-155354-1ac543",
+    "map": "gameplay-native-02.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-160012-ccfda5",
+    "map": "gameplay-three-03.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-160749-f4fb90",
+    "map": "gameplay-six-04.w3x",
+    "clients": 6,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-161116-2b5747",
+    "map": "business-resource-01.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-162337-53b31b",
+    "map": "round2-final-one.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-162753-486140",
+    "map": "round2-final-three.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-162949-87b757",
+    "map": "round2-final-six-slk.w3x",
+    "clients": 6,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-163158-182275",
+    "map": "round2-final-oos.w3x",
+    "clients": 3,
+    "status": "FAIL",
+    "message": "OOS detected by ydhost",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-163254-311d95",
+    "map": "round2-final-ui-research.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-163457-4a1ba9",
+    "map": "round2-final-long.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-171256-8daedc",
+    "map": "round2-expanded-one-03.w3x",
+    "clients": 1,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-171458-dd71e2",
+    "map": "round2-expanded-three-01.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-171719-428e35",
+    "map": "round2-expanded-six-slk-01.w3x",
+    "clients": 6,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-172005-ccc775",
+    "map": "round2-expanded-oos-01.w3x",
+    "clients": 3,
+    "status": "FAIL",
+    "message": "OOS detected by ydhost",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-172049-0f4a45",
+    "map": "round2-expanded-ui-research-01.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-172236-5a2d41",
+    "map": "round2-expanded-matrix-02.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-172959-576e57",
+    "map": "round2-expanded-resource-01.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
+  },
+  {
+    "session": "20261112-173743-15509b",
+    "map": "round2-expanded-long-01.w3x",
+    "clients": 3,
+    "status": "PASS",
+    "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+    "cleanup": true
   }
 ]

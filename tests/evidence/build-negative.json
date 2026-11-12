@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": [
+    "changed object field rejected",
+    "missing",
+    "hash",
+    "clients"
+  ],
+  "game_launched": false
+}

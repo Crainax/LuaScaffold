@@ -19,12 +19,17 @@ end
 function M.authorize(_, cmd)
     return cmd.verb == 'snapshot' and cmd.entity >= 1 and cmd.entity <= 10000
 end
-function M.start(bridge, ui, counts, config)
+function M.start(bridge, ui, counts, config, world, game_view)
+    if config.suite=='business_resource' or config.suite=='resource_matrix' then return require('probes.business_resource').start(bridge,ui,world,config,check,snapshots)end
     local scheduler, class = bridge.scheduler, ui.class
     local local_id = j.GetPlayerId(j.GetLocalPlayer())
     local Registry = require 'scaffold.entity_registry'
     local registry, entities, humans = Registry.new(), {}, {}
     local baseline_ui = ui.count()
+    local lifecycle
+    if config.suite=='lifecycle' or world then lifecycle=require('probes.unit_lifecycle').start(bridge,check) end
+    local business
+    if world then business=require('probes.gameplay').start(bridge,world,game_view,config,check)end
     if config.dev and (config.suite=='hotreload' or config.suite=='soak') then
         Context.local_call(function() require('probes.hotreload').watch(ui,bridge,config,check) end)
     end
@@ -74,6 +79,14 @@ function M.start(bridge, ui, counts, config)
             h = (h * 31 + math.floor(j.GetUnitY(e.handle) * 16)) % 2147483647
         end
         for _, p in ipairs(humans) do h = (h * 31 + (counts[p] or 0)) % 2147483647 end
+        if lifecycle then
+            local value=lifecycle.snapshot()
+            for i=1,#value do h=(h*31+value:byte(i))%2147483647 end
+        end
+        if world then
+            local value=world:snapshot()
+            for i=1,#value do h=(h*31+value:byte(i))%2147483647 end
+        end
         return h
     end
     local native_weak = setmetatable({}, {__mode = 'v'})
@@ -218,10 +231,17 @@ function M.start(bridge, ui, counts, config)
         check(rng_calls > 20 and phase >= 3, 'gameplay RNG and peer snapshots exercised')
         for _, p in ipairs(humans) do check(counts[p] == 1, 'UI command exactly once player=' .. p) end
         check(not bridge:is_faulted(), 'bridge has no fault')
+        if lifecycle then check(lifecycle.complete(),'unit lifecycle suite reached verified cleanup') end
+        if business then business.finish()end
         for _, e in ipairs(entities) do
             local h=e.handle; registry:remove(e.id); j.RemoveUnit(h)
         end
         j.DestroyGroup(group)
+        if game_view then game_view:stop()end
+        if world then
+            check(world:stop(),'business services shut down')
+            check(world.units:count()==0 and world.units:task_count()==0 and world.skills:count()==0 and world.combat.effects==0 and world.challenges:count()==0,'business registrations, tasks, effects and sessions return to zero')
+        end
         ui.stop()
         check(ui.count() == 0, 'UI shutdown clears all controls')
         check(not pcall(function() ui.game.wait(10,function() end) end) and ui.game.timer_size()==0,
@@ -229,6 +249,7 @@ function M.start(bridge, ui, counts, config)
         check(not pcall(function() ui.game.register_event({on_probe=function() end}) end) and ui.game.events:count()==0,
             'stopped UI rejects listeners without retaining registrations')
         scheduler:after(300, function()
+            check(require('app.main').stop(),'application root closes shared native bridge')
             log.info('[METRICS] ui_cycles=' .. ui_cycles .. ' rng_calls=' .. rng_calls .. ' phases=' .. phase .. ' assertions=' .. assertions)
             log.info('[UT_DONE] LuaScaffold ' .. config.build_id .. ' P' .. (local_id+1))
         end)

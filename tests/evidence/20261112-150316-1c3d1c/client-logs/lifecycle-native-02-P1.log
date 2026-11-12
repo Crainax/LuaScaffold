@@ -1,0 +1,40 @@
+2026-11-12 15:03:43.987 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 15:03:44.010 [info]: PASS: same-tick reschedule skips old dispatch batch
+2026-11-12 15:03:44.010 [info]: PASS: rescheduled task runs once on next tick
+2026-11-12 15:03:44.597 [info]: PASS: native death event invalidates life tasks but retains unit ID
+2026-11-12 15:03:45.449 [info]: PASS: native hero revive succeeds
+2026-11-12 15:03:45.450 [info]: PASS: revival retains stable ID and observed native handle
+2026-11-12 15:03:45.450 [info]: PASS: convenience timer repeats on shared logical ticks
+2026-11-12 15:03:45.450 [info]: PASS: expected active humans=1
+2026-11-12 15:03:45.451 [info]: PASS: official UI controls initialized
+2026-11-12 15:03:45.451 [info]: PASS: UI globals and standard math isolated
+2026-11-12 15:03:45.451 [info]: PASS: legacy sync and gameplay entry absent
+2026-11-12 15:03:45.451 [info]: PASS: native button has positive width
+2026-11-12 15:03:45.451 [info]: PASS: native text round trip
+2026-11-12 15:03:45.451 [info]: PASS: local UI cannot register gameplay entities
+2026-11-12 15:03:45.452 [info]: PASS: unsafe and oversized input rejected
+2026-11-12 15:03:45.459 [info]: PASS: native model created
+2026-11-12 15:03:45.472 [info]: PASS: native model2 created
+2026-11-12 15:03:45.473 [info]: PASS: native scroll panel created
+2026-11-12 15:03:45.479 [info]: PASS: progress handles zero denominator
+2026-11-12 15:03:45.479 [info]: PASS: models and scroll disposal return to baseline
+2026-11-12 15:03:45.699 [info]: [LuaScaffold] COMMAND ping	0	1
+2026-11-12 15:03:46.070 [info]: PASS: native owner change refreshes ownership
+2026-11-12 15:03:46.070 [info]: [REMOVE_OBSERVE] phase=immediate type=1211117617 life=650.000 hidden=true dead=false
+2026-11-12 15:03:46.094 [info]: PASS: destroyed UI releases cancelled closure captures
+2026-11-12 15:03:46.094 [info]: [NATIVE_CALLBACK_GC] retained=0/8
+2026-11-12 15:03:46.095 [info]: PASS: nested UI destroy is idempotent
+2026-11-12 15:03:46.098 [info]: [REMOVE_OBSERVE] phase=next_tick type=0 life=0.000 hidden=false dead=false
+2026-11-12 15:03:46.698 [info]: [REMOVE_OBSERVE] phase=half_second type=0 life=0.000 hidden=false dead=false
+2026-11-12 15:03:46.698 [info]: PASS: explicit external-remove notification invalidates stable ID
+2026-11-12 15:03:47.348 [info]: PASS: old life callbacks do not execute after death or owner change
+2026-11-12 15:03:47.391 [info]: PASS: native metamorphosis order accepted
+2026-11-12 15:03:47.448 [info]: PASS: native summon order accepted
+2026-11-12 15:03:50.545 [info]: [UNIT_FORM] before=1164207469 after=1164207469 id=2 epoch=1
+2026-11-12 15:03:50.545 [info]: PASS: native morph preserves tracked object when native handle remains
+2026-11-12 15:03:50.545 [error]: FAIL: [LuaScaffold] FAULT	script\app\runtime_test.lua:9: runtime assertion: metamorphosis reaches alternate unit type	stack traceback:
+	script\scaffold\innerjapi.lua:29: in upvalue 'fail'
+	script\scaffold\innerjapi.lua:34: in upvalue 'protect'
+	script\scaffold\innerjapi.lua:81: in function <script\scaffold\innerjapi.lua:80>
+	[C]: in function 'xpcall'
+	[string "fix_closure"]:67: in function <[string "fix_closure"]:64>

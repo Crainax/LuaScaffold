@@ -4,9 +4,11 @@ import argparse
 import hashlib
 import json
 import shutil
+from framework_package import resolve
 
 ROOT = Path(__file__).resolve().parents[1]
-VENDOR = ROOT / 'vendor' / 'war3ui-1.49-9'
+FRAMEWORK = resolve(ROOT)
+VENDOR = FRAMEWORK / 'vendor' / 'war3ui-1.49-9'
 
 
 def verify():
@@ -23,9 +25,12 @@ def stage(name, include_tests=False, include_dev=False):
     dst = ROOT / 'build' / name
     assert not dst.exists(), 'Output already exists: choose another stage name'
     dst.mkdir(parents=True)
-    for file in sorted((ROOT / 'src').rglob('*.lua')):
-        rel = file.relative_to(ROOT / 'src')
-        if (rel.as_posix() == 'app/runtime_test.lua' or rel.parts[0] == 'probes') and not include_tests:
+    sources={p.relative_to(ROOT/'src'):p for p in (ROOT/'src').rglob('*.lua')}
+    if FRAMEWORK != ROOT:
+        assert not any(p.parts[0] in ('scaffold','ui','game') for p in sources), 'project cannot shadow public framework namespaces'
+        sources.update({p.relative_to(FRAMEWORK/'src'):p for p in (FRAMEWORK/'src').rglob('*.lua')})
+    for rel,file in sorted(sources.items()):
+        if (rel.as_posix() in ('app/runtime_test.lua','app/view.lua') or rel.parts[0] == 'probes') and not include_tests:
             continue
         if rel.parts[0] == 'dev' and not include_dev:
             continue

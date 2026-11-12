@@ -1,0 +1,6 @@
+D:\War3\LuaScaffold‌\build\tool-cache\w2l-270c687251c684d1\bin\w3x2lni-lua.exe: D:\War3\LuaScaffold‌\tools\verify_objects.lua:39: ability.A001.researchubertip mismatch expected=让恶魔猎手变身为一个威力巨大的恶魔。该恶魔具有远程攻击能力并会增加<AEme,DataE1>点的生命值。|n持续<AEme,HeroDur1>秒。 actual=让恶魔猎手变身为一个威力巨大的恶魔。该恶魔具有远程攻击能力并会增加500点的生命值。|n持续60秒。
+stack traceback:
+	[C]: in function 'assert'
+	D:\War3\LuaScaffold‌\tools\verify_objects.lua:39: in local 'equal'
+	D:\War3\LuaScaffold‌\tools\verify_objects.lua:51: in main chunk
+	[C]: in ?

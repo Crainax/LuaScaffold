@@ -10,15 +10,18 @@ with tempfile.TemporaryDirectory(prefix='LuaScaffold-reuse-') as temp:
     subprocess.run([sys.executable, 'tools/new_project.py', str(dest), '--id', 'FreshLuaGame',
                     '--title', '复用测试地图'], cwd=root, check=True)
     assert not (dest/'.git').exists() and not (dest/'build').exists()
+    assert (dest/'framework.lock.json').exists() and not (dest/'src/scaffold').exists()
+    subprocess.run([sys.executable, 'tools/check.py'], cwd=dest, check=True)
     subprocess.run([sys.executable, 'tools/build.py', '--name', 'reuse-production'], cwd=dest, check=True)
     payload = dest/'build/reuse-production'
     config = (payload/'script/app/config.lua').read_text(encoding='utf-8')
     assert "project_id='FreshLuaGame'" in config and 'runtime_test=false' in config
     assert not (payload/'script/app/runtime_test.lua').exists()
+    assert not (payload/'script/app/view.lua').exists()
     assert not (payload/'script/dev').exists() and not (payload/'script/probes').exists()
     assert (dest/'.vscode/tasks.json').exists() and (dest/'.agents/skills/innerjapi-lua/SKILL.md').exists()
     assert not (payload/'script/ui/client/util.lua').exists()
-    assert '复用测试地图' in (dest/'build/reuse-production-map/war3map.j').read_text(encoding='utf-8')
+    assert '复用测试地图' in (dest/'build/reuse-production-packed.j').read_text(encoding='utf-8')
     entries = json.loads((dest/'build/reuse-production-manifest.json').read_text(encoding='utf-8'))
     for entry in entries:
         assert hashlib.sha256((payload/entry['archive']).read_bytes()).hexdigest() == entry['sha256']

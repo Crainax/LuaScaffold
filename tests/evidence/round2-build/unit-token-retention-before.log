@@ -1,0 +1,5 @@
+lua: tests/unit_lifecycle.lua:34: retained cancelled token must release removed unit record
+stack traceback:
+	[C]: in function 'assert'
+	tests/unit_lifecycle.lua:34: in main chunk
+	[C]: in ?

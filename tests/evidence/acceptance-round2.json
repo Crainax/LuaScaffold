@@ -1,0 +1,53 @@
+{
+  "required": [
+    {
+      "map": "round2-expanded-one-03.w3x",
+      "clients": 1,
+      "business": true
+    },
+    {
+      "map": "round2-expanded-three-01.w3x",
+      "clients": 3,
+      "business": true
+    },
+    {
+      "map": "round2-expanded-six-slk-01.w3x",
+      "clients": 6,
+      "business": true
+    },
+    {
+      "map": "round2-expanded-oos-01.w3x",
+      "clients": 3,
+      "oos_control": true
+    },
+    {
+      "map": "round2-expanded-ui-research-01.w3x",
+      "clients": 3,
+      "research": true
+    },
+    {
+      "map": "round2-expanded-resource-01.w3x",
+      "clients": 3,
+      "resource": true
+    },
+    {
+      "map": "round2-expanded-long-01.w3x",
+      "clients": 3,
+      "business": true,
+      "minimum_wall_seconds": 1800
+    },
+    {
+      "map": "round2-expanded-matrix-02.w3x",
+      "clients": 3,
+      "matrix": true
+    }
+  ],
+  "explained_failures": {
+    "20261112-145813-9ed158": "RemoveUnit same callback can still report old type; manager now invalidates before native removal",
+    "20261112-150316-1c3d1c": "Dynamic custom morph did not retain ability or reach expected type",
+    "20261112-150522-4a6d89": "Custom morph buff/order did not prove final type; permanent ability required",
+    "20261112-150657-de167e": "Custom bear form also required explicit permanent ability",
+    "20261112-150819-8d05d6": "Same-callback 2000 native creations exceeded snapshot timing; fixed cross-tick batches now used",
+    "20261112-152030-377a01": "Old launcher accepted residual map from failed semantic validation; stopped and gate now rejects incomplete builds; cleanup lock race retained and retried after runner exited"
+  }
+}

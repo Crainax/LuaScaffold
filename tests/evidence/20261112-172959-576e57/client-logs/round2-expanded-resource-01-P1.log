@@ -1,0 +1,491 @@
+2026-11-12 17:30:24.556 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 17:30:24.558 [info]: PASS: resource profile uses expected connected peers
+2026-11-12 17:30:24.559 [info]: [RESOURCE_PROFILE] tag=begin phase=idle1 tick=0 cycles=0 lua_kib=715.710 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=3 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:30:34.799 [info]: [STATE_MATCH] phase=1 hash=2142919621 resource_profile=idle1
+2026-11-12 17:30:37.314 [info]: [RESOURCE_PROFILE] tag=sample phase=idle1 tick=1000 cycles=0 lua_kib=733.536 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:30:46.718 [info]: [STATE_MATCH] phase=2 hash=2142919621 resource_profile=idle1
+2026-11-12 17:30:49.245 [info]: [RESOURCE_PROFILE] tag=sample phase=idle1 tick=2000 cycles=0 lua_kib=1476.997 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:30:59.442 [info]: [STATE_MATCH] phase=3 hash=2142919621 resource_profile=idle1
+2026-11-12 17:31:01.659 [info]: [RESOURCE_PROFILE] tag=sample phase=idle1 tick=3000 cycles=0 lua_kib=1200.546 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:31:11.545 [info]: [STATE_MATCH] phase=4 hash=2142919621 resource_profile=idle1
+2026-11-12 17:31:14.137 [info]: [RESOURCE_PROFILE] tag=sample phase=idle1 tick=4000 cycles=0 lua_kib=922.528 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:31:24.464 [info]: [STATE_MATCH] phase=5 hash=2142919621 resource_profile=idle1
+2026-11-12 17:31:26.907 [info]: [RESOURCE_PROFILE] tag=sample phase=idle1 tick=5000 cycles=0 lua_kib=659.272 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:31:37.252 [info]: [STATE_MATCH] phase=6 hash=2142919621 resource_profile=idle1
+2026-11-12 17:31:39.644 [info]: [RESOURCE_PROFILE] tag=sample phase=idle1 tick=6000 cycles=0 lua_kib=1430.408 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:31:39.645 [info]: PASS: phase boundary has no retained business resources
+2026-11-12 17:31:39.645 [info]: [RESOURCE_PROFILE] tag=end phase=idle1 tick=6001 cycles=0 lua_kib=1431.474 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:31:39.647 [info]: [RESOURCE_PROFILE] tag=begin phase=work1 tick=6001 cycles=0 lua_kib=545.644 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:31:39.648 [info]: PASS: resource workload starts encounter
+2026-11-12 17:31:39.648 [info]: PASS: resource workload starts encounter
+2026-11-12 17:31:39.649 [info]: PASS: resource workload starts encounter
+2026-11-12 17:31:40.756 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:40.756 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:40.757 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:40.757 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:40.758 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:40.758 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:40.758 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:40.759 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:40.759 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:43.030 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:31:43.031 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:31:43.031 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:31:43.031 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:31:43.032 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:31:45.496 [info]: PASS: resource workload starts encounter
+2026-11-12 17:31:45.496 [info]: PASS: resource workload starts encounter
+2026-11-12 17:31:45.497 [info]: PASS: resource workload starts encounter
+2026-11-12 17:31:46.748 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:46.748 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:46.748 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:46.749 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:46.749 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:46.749 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:46.750 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:46.750 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:46.750 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:49.333 [info]: [STATE_MATCH] phase=7 hash=730635680 resource_profile=work1
+2026-11-12 17:31:49.334 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:31:49.334 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:31:49.334 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:31:49.335 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:31:49.335 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:31:51.935 [info]: [RESOURCE_PROFILE] tag=sample phase=work1 tick=7000 cycles=2 lua_kib=1224.218 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:31:51.935 [info]: PASS: resource workload starts encounter
+2026-11-12 17:31:51.936 [info]: PASS: resource workload starts encounter
+2026-11-12 17:31:51.937 [info]: PASS: resource workload starts encounter
+2026-11-12 17:31:53.166 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:53.166 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:53.166 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:53.167 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:53.167 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:53.167 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:53.168 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:53.168 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:53.168 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:55.423 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:31:55.423 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:31:55.424 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:31:55.424 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:31:55.424 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:31:57.970 [info]: PASS: resource workload starts encounter
+2026-11-12 17:31:57.970 [info]: PASS: resource workload starts encounter
+2026-11-12 17:31:57.971 [info]: PASS: resource workload starts encounter
+2026-11-12 17:31:59.167 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:59.168 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:59.168 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:59.168 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:59.168 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:59.169 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:59.169 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:59.169 [info]: PASS: resource workload commits skill
+2026-11-12 17:31:59.170 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:01.760 [info]: [STATE_MATCH] phase=8 hash=679540065 resource_profile=work1
+2026-11-12 17:32:01.760 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:01.761 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:01.761 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:01.761 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:32:01.762 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:32:04.351 [info]: [RESOURCE_PROFILE] tag=sample phase=work1 tick=8000 cycles=4 lua_kib=1326.370 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:32:04.351 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:04.352 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:04.352 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:05.636 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:05.637 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:05.637 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:05.637 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:05.638 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:05.638 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:05.639 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:05.639 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:05.639 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:08.215 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:08.215 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:08.215 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:08.215 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:32:08.216 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:32:10.815 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:10.816 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:10.817 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:12.113 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:12.113 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:12.113 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:12.114 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:12.114 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:12.114 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:12.115 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:12.115 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:12.115 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:14.657 [info]: [STATE_MATCH] phase=9 hash=1854185768 resource_profile=work1
+2026-11-12 17:32:14.658 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:14.658 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:14.658 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:14.659 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:32:14.659 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:32:17.013 [info]: [RESOURCE_PROFILE] tag=sample phase=work1 tick=9000 cycles=6 lua_kib=1279.956 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:32:17.014 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:17.014 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:17.015 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:18.291 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:18.292 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:18.293 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:18.293 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:18.293 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:18.293 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:18.294 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:18.294 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:18.295 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:20.873 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:20.874 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:20.874 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:20.874 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:32:20.874 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:32:23.468 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:23.468 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:23.468 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:24.777 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:24.778 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:24.778 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:24.779 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:24.779 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:24.779 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:24.780 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:24.780 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:24.780 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:27.179 [info]: [STATE_MATCH] phase=10 hash=1803090153 resource_profile=work1
+2026-11-12 17:32:27.179 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:27.179 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:27.180 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:27.180 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:32:27.180 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:32:29.631 [info]: [RESOURCE_PROFILE] tag=sample phase=work1 tick=10000 cycles=8 lua_kib=1219.394 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:32:29.632 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:29.633 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:29.633 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:30.759 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:30.759 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:30.759 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:30.760 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:30.760 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:30.760 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:30.760 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:30.761 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:30.761 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:33.324 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:33.324 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:33.324 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:33.325 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:32:33.325 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:32:35.859 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:35.859 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:35.860 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:37.003 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:37.003 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:37.004 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:37.004 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:37.004 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:37.004 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:37.005 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:37.005 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:37.005 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:39.447 [info]: [STATE_MATCH] phase=11 hash=489937407 resource_profile=work1
+2026-11-12 17:32:39.447 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:39.447 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:39.448 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:39.448 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:32:39.448 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:32:42.033 [info]: [RESOURCE_PROFILE] tag=sample phase=work1 tick=11000 cycles=10 lua_kib=1219.185 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:32:42.034 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:42.034 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:42.035 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:43.323 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:43.325 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:43.325 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:43.325 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:43.326 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:43.326 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:43.326 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:43.326 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:43.327 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:45.768 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:45.769 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:45.770 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:45.770 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:32:45.771 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:32:48.185 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:48.186 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:48.186 [info]: PASS: resource workload starts encounter
+2026-11-12 17:32:49.483 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:49.483 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:49.483 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:49.484 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:49.484 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:49.484 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:49.485 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:49.485 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:49.485 [info]: PASS: resource workload commits skill
+2026-11-12 17:32:52.096 [info]: [STATE_MATCH] phase=12 hash=1945995343 resource_profile=work1
+2026-11-12 17:32:52.097 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:52.097 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:52.097 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:32:52.098 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:32:52.098 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:32:54.636 [info]: [RESOURCE_PROFILE] tag=sample phase=work1 tick=12000 cycles=12 lua_kib=1191.468 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:32:54.637 [info]: PASS: phase boundary has no retained business resources
+2026-11-12 17:32:54.637 [info]: [RESOURCE_PROFILE] tag=end phase=work1 tick=12001 cycles=12 lua_kib=1159.247 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:32:54.638 [info]: [RESOURCE_PROFILE] tag=begin phase=idle2 tick=12001 cycles=12 lua_kib=547.218 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:33:04.840 [info]: [STATE_MATCH] phase=13 hash=206307754 resource_profile=idle2
+2026-11-12 17:33:07.192 [info]: [RESOURCE_PROFILE] tag=sample phase=idle2 tick=13000 cycles=12 lua_kib=1311.088 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:33:17.295 [info]: [STATE_MATCH] phase=14 hash=206307754 resource_profile=idle2
+2026-11-12 17:33:19.860 [info]: [RESOURCE_PROFILE] tag=sample phase=idle2 tick=14000 cycles=12 lua_kib=1045.489 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:33:29.781 [info]: [STATE_MATCH] phase=15 hash=206307754 resource_profile=idle2
+2026-11-12 17:33:32.184 [info]: [RESOURCE_PROFILE] tag=sample phase=idle2 tick=15000 cycles=12 lua_kib=766.319 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:33:42.222 [info]: [STATE_MATCH] phase=16 hash=206307754 resource_profile=idle2
+2026-11-12 17:33:44.791 [info]: [RESOURCE_PROFILE] tag=sample phase=idle2 tick=16000 cycles=12 lua_kib=1532.744 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:33:55.028 [info]: [STATE_MATCH] phase=17 hash=206307754 resource_profile=idle2
+2026-11-12 17:33:57.635 [info]: [RESOURCE_PROFILE] tag=sample phase=idle2 tick=17000 cycles=12 lua_kib=1268.773 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:34:07.903 [info]: [STATE_MATCH] phase=18 hash=206307754 resource_profile=idle2
+2026-11-12 17:34:10.489 [info]: [RESOURCE_PROFILE] tag=sample phase=idle2 tick=18000 cycles=12 lua_kib=1007.203 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:34:10.504 [info]: PASS: phase boundary has no retained business resources
+2026-11-12 17:34:10.504 [info]: [RESOURCE_PROFILE] tag=end phase=idle2 tick=18001 cycles=12 lua_kib=1008.835 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:34:10.506 [info]: [RESOURCE_PROFILE] tag=begin phase=work2 tick=18001 cycles=12 lua_kib=546.925 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:34:10.507 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:10.507 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:10.508 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:11.805 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:11.805 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:11.807 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:11.807 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:11.807 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:11.808 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:11.808 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:11.808 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:11.808 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:14.254 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:14.255 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:14.255 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:14.255 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:34:14.255 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:34:16.811 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:16.811 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:16.812 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:18.108 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:18.108 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:18.108 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:18.109 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:18.109 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:18.109 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:18.110 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:18.110 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:18.111 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:20.699 [info]: [STATE_MATCH] phase=19 hash=230458289 resource_profile=work2
+2026-11-12 17:34:20.699 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:20.699 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:20.700 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:20.700 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:34:20.700 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:34:23.176 [info]: [RESOURCE_PROFILE] tag=sample phase=work2 tick=19000 cycles=14 lua_kib=1176.981 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:34:23.177 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:23.177 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:23.177 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:24.301 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:24.301 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:24.302 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:24.302 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:24.302 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:24.302 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:24.303 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:24.303 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:24.303 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:26.531 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:26.532 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:26.532 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:26.532 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:34:26.533 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:34:28.904 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:28.905 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:28.906 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:30.200 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:30.200 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:30.201 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:30.201 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:30.201 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:30.202 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:30.202 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:30.202 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:30.203 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:32.749 [info]: [STATE_MATCH] phase=20 hash=645600641 resource_profile=work2
+2026-11-12 17:34:32.780 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:32.780 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:32.780 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:32.781 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:34:32.781 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:34:35.343 [info]: [RESOURCE_PROFILE] tag=sample phase=work2 tick=20000 cycles=16 lua_kib=1328.527 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:34:35.372 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:35.373 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:35.374 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:36.653 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:36.653 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:36.654 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:36.654 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:36.654 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:36.655 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:36.655 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:36.656 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:36.656 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:39.202 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:39.202 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:39.204 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:39.204 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:34:39.204 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:34:41.551 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:41.551 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:41.552 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:42.814 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:42.814 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:42.815 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:42.815 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:42.815 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:42.816 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:42.816 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:42.816 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:42.816 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:45.423 [info]: [STATE_MATCH] phase=21 hash=305960873 resource_profile=work2
+2026-11-12 17:34:45.423 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:45.424 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:45.424 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:45.425 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:34:45.425 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:34:48.004 [info]: [RESOURCE_PROFILE] tag=sample phase=work2 tick=21000 cycles=18 lua_kib=1276.659 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:34:48.005 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:48.005 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:48.006 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:49.324 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:49.324 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:49.325 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:49.325 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:49.326 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:49.326 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:49.327 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:49.327 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:49.328 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:51.928 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:51.928 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:51.929 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:51.929 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:34:51.930 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:34:54.471 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:54.472 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:54.473 [info]: PASS: resource workload starts encounter
+2026-11-12 17:34:55.596 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:55.597 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:55.597 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:55.598 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:55.598 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:55.598 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:55.599 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:55.599 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:55.599 [info]: PASS: resource workload commits skill
+2026-11-12 17:34:57.987 [info]: [STATE_MATCH] phase=22 hash=1506316104 resource_profile=work2
+2026-11-12 17:34:57.987 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:57.987 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:57.988 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:34:57.988 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:34:57.988 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:35:00.527 [info]: [RESOURCE_PROFILE] tag=sample phase=work2 tick=22000 cycles=20 lua_kib=1250.257 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:35:00.528 [info]: PASS: resource workload starts encounter
+2026-11-12 17:35:00.531 [info]: PASS: resource workload starts encounter
+2026-11-12 17:35:00.533 [info]: PASS: resource workload starts encounter
+2026-11-12 17:35:01.823 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:01.824 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:01.824 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:01.824 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:01.824 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:01.825 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:01.825 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:01.825 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:01.825 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:04.336 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:35:04.337 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:35:04.337 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:35:04.338 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:35:04.338 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:35:06.777 [info]: PASS: resource workload starts encounter
+2026-11-12 17:35:06.777 [info]: PASS: resource workload starts encounter
+2026-11-12 17:35:06.778 [info]: PASS: resource workload starts encounter
+2026-11-12 17:35:08.080 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:08.081 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:08.081 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:08.081 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:08.082 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:08.082 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:08.082 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:08.082 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:08.083 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:10.664 [info]: [STATE_MATCH] phase=23 hash=1788987707 resource_profile=work2
+2026-11-12 17:35:10.694 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:35:10.694 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:35:10.694 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:35:10.695 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:35:10.695 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:35:13.114 [info]: [RESOURCE_PROFILE] tag=sample phase=work2 tick=23000 cycles=22 lua_kib=1187.886 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:35:13.144 [info]: PASS: resource workload starts encounter
+2026-11-12 17:35:13.145 [info]: PASS: resource workload starts encounter
+2026-11-12 17:35:13.146 [info]: PASS: resource workload starts encounter
+2026-11-12 17:35:14.412 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:14.413 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:14.413 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:14.414 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:14.414 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:14.414 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:14.415 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:14.415 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:14.415 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:16.990 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:35:16.990 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:35:16.990 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:35:16.990 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:35:16.990 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:35:19.220 [info]: PASS: resource workload starts encounter
+2026-11-12 17:35:19.220 [info]: PASS: resource workload starts encounter
+2026-11-12 17:35:19.221 [info]: PASS: resource workload starts encounter
+2026-11-12 17:35:20.423 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:20.423 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:20.424 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:20.424 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:20.424 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:20.424 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:20.425 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:20.425 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:20.425 [info]: PASS: resource workload commits skill
+2026-11-12 17:35:23.004 [info]: [STATE_MATCH] phase=24 hash=978388741 resource_profile=work2
+2026-11-12 17:35:23.005 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:35:23.005 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:35:23.005 [info]: PASS: resource cycle rewards exactly once
+2026-11-12 17:35:23.006 [info]: PASS: resource cycle releases native effects and owned tasks
+2026-11-12 17:35:23.006 [info]: PASS: resource cycle unit/UI registrations return to baseline
+2026-11-12 17:35:25.612 [info]: [RESOURCE_PROFILE] tag=sample phase=work2 tick=24000 cycles=24 lua_kib=1219.968 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:35:25.612 [info]: PASS: phase boundary has no retained business resources
+2026-11-12 17:35:25.612 [info]: [RESOURCE_PROFILE] tag=end phase=work2 tick=24001 cycles=24 lua_kib=1221.084 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:35:25.614 [info]: [RESOURCE_PROFILE] tag=begin phase=recovery tick=24001 cycles=24 lua_kib=546.772 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:35:35.414 [info]: [STATE_MATCH] phase=25 hash=1386184799 resource_profile=recovery
+2026-11-12 17:35:37.793 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=25000 cycles=24 lua_kib=1296.031 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:35:48.135 [info]: [STATE_MATCH] phase=26 hash=1386184799 resource_profile=recovery
+2026-11-12 17:35:50.714 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=26000 cycles=24 lua_kib=1039.192 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:35:59.848 [info]: [STATE_MATCH] phase=27 hash=1386184799 resource_profile=recovery
+2026-11-12 17:36:02.341 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=27000 cycles=24 lua_kib=732.500 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:36:12.582 [info]: [STATE_MATCH] phase=28 hash=1386184799 resource_profile=recovery
+2026-11-12 17:36:15.166 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=28000 cycles=24 lua_kib=1507.211 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:36:25.542 [info]: [STATE_MATCH] phase=29 hash=1386184799 resource_profile=recovery
+2026-11-12 17:36:28.141 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=29000 cycles=24 lua_kib=1251.630 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:36:38.483 [info]: [STATE_MATCH] phase=30 hash=1386184799 resource_profile=recovery
+2026-11-12 17:36:41.073 [info]: [RESOURCE_PROFILE] tag=sample phase=recovery tick=30000 cycles=24 lua_kib=994.802 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:36:41.073 [info]: PASS: both workload phases completed the exact same fixed cycle count
+2026-11-12 17:36:41.074 [info]: [RESOURCE_PROFILE] tag=end phase=recovery tick=30000 cycles=24 lua_kib=995.666 controls=46 actors=9 effects=0 units=10 probe_tasks=0 probe_events=0 ui_tasks=2 ui_events=0 unit_batches=0 event_batches=0 ui_batches=0
+2026-11-12 17:36:41.074 [info]: PASS: resource profile world closes
+2026-11-12 17:36:41.074 [info]: PASS: resource profile final registrations are zero
+2026-11-12 17:36:41.075 [info]: PASS: resource profile application bridge closes
+2026-11-12 17:36:41.076 [info]: PASS: resource profile final UI count is zero
+2026-11-12 17:36:41.076 [info]: [RESOURCE_BUSINESS_DONE] cycles=24 ticks=30000
+2026-11-12 17:36:41.077 [info]: [UT_DONE] LuaScaffold round2-expanded-resource-01 P1

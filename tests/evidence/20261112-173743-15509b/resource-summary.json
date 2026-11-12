@@ -1,0 +1,140 @@
+{
+  "session": "20261112-173743-15509b",
+  "memory_unit": "MiB",
+  "handles_unit": "Windows process handles, NOT Warcraft handles",
+  "method": "all samples in each phase, OLS per minute; long runs also report a fixed window excluding the first 300 seconds; no causal leak attribution",
+  "phases": [
+    {
+      "phase": "whole_run",
+      "player": "LanP1",
+      "samples": 213,
+      "seconds": 2229.845499,
+      "privateBytes": {
+        "first": 194.47265625,
+        "last": 208.1171875,
+        "minimum": 194.47265625,
+        "maximum": 208.125,
+        "median": 206.66015625,
+        "slope_per_minute": 0.07793654519470396
+      },
+      "handles": {
+        "first": 4789.0,
+        "last": 5523.0,
+        "minimum": 4789.0,
+        "maximum": 5524.0,
+        "median": 5161.0,
+        "slope_per_minute": 19.65076962820257
+      }
+    },
+    {
+      "phase": "whole_run",
+      "player": "LanP2",
+      "samples": 213,
+      "seconds": 2229.809417,
+      "privateBytes": {
+        "first": 197.56640625,
+        "last": 219.81640625,
+        "minimum": 197.56640625,
+        "maximum": 224.38671875,
+        "median": 222.8046875,
+        "slope_per_minute": 0.5950806784183647
+      },
+      "handles": {
+        "first": 4805.0,
+        "last": 5544.0,
+        "minimum": 4805.0,
+        "maximum": 5544.0,
+        "median": 5166.0,
+        "slope_per_minute": 19.452668963493945
+      }
+    },
+    {
+      "phase": "whole_run",
+      "player": "LanP3",
+      "samples": 213,
+      "seconds": 2229.789814,
+      "privateBytes": {
+        "first": 193.78125,
+        "last": 202.140625,
+        "minimum": 193.78125,
+        "maximum": 207.01953125,
+        "median": 205.828125,
+        "slope_per_minute": 0.07026132993210997
+      },
+      "handles": {
+        "first": 4693.0,
+        "last": 5437.0,
+        "minimum": 4693.0,
+        "maximum": 5437.0,
+        "median": 5074.0,
+        "slope_per_minute": 19.741599496527574
+      }
+    },
+    {
+      "phase": "after_first_5_minutes",
+      "player": "LanP1",
+      "samples": 184,
+      "seconds": 1924.364725,
+      "privateBytes": {
+        "first": 205.98828125,
+        "last": 208.1171875,
+        "minimum": 205.33984375,
+        "maximum": 208.125,
+        "median": 206.7890625,
+        "slope_per_minute": 0.05852166691014997
+      },
+      "handles": {
+        "first": 4896.0,
+        "last": 5523.0,
+        "minimum": 4896.0,
+        "maximum": 5524.0,
+        "median": 5212.0,
+        "slope_per_minute": 19.800853755441416
+      }
+    },
+    {
+      "phase": "after_first_5_minutes",
+      "player": "LanP2",
+      "samples": 184,
+      "seconds": 1924.366984,
+      "privateBytes": {
+        "first": 206.0,
+        "last": 219.81640625,
+        "minimum": 205.98046875,
+        "maximum": 224.38671875,
+        "median": 222.85546875,
+        "slope_per_minute": 0.48744427545314223
+      },
+      "handles": {
+        "first": 4908.0,
+        "last": 5544.0,
+        "minimum": 4908.0,
+        "maximum": 5544.0,
+        "median": 5216.0,
+        "slope_per_minute": 19.658009784531824
+      }
+    },
+    {
+      "phase": "after_first_5_minutes",
+      "player": "LanP3",
+      "samples": 184,
+      "seconds": 1924.3562440000003,
+      "privateBytes": {
+        "first": 205.14453125,
+        "last": 202.140625,
+        "minimum": 202.140625,
+        "maximum": 207.01953125,
+        "median": 206.17578125,
+        "slope_per_minute": 0.05043190115966411
+      },
+      "handles": {
+        "first": 4808.0,
+        "last": 5437.0,
+        "minimum": 4808.0,
+        "maximum": 5437.0,
+        "median": 5124.0,
+        "slope_per_minute": 19.756179330056362
+      }
+    }
+  ]
+}

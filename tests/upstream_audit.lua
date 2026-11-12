@@ -1,6 +1,6 @@
 -- Execute original Lua modules in an isolated mock environment, never in Warcraft.
 -- A PASS means a reported upstream issue was reproduced, not that it is safe.
-local root = 'vendor/war3ui-1.49-9/package/plugin/script/'
+local root = (os.getenv('LUASCAFFOLD_FRAMEWORK_ROOT') or '.') .. '/vendor/war3ui-1.49-9/package/plugin/script/'
 local function env()
     local e = setmetatable({}, {__index = _G})
     e._G = e

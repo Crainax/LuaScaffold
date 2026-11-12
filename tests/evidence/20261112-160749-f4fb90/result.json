@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "message": "Completion markers found in one fresh log per client; no observed failure/OOS.",
+  "clients": 6,
+  "logs": [
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\gameplay-six-04-P1.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\gameplay-six-04-P2.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\gameplay-six-04-P3.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\gameplay-six-04-P4.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\gameplay-six-04-P5.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\gameplay-six-04-P6.log"
+  ]
+}

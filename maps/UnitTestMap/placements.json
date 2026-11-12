@@ -1,0 +1,25 @@
+{
+  "units": [
+    {
+      "key": "training_target",
+      "global": "gg_unit_n001_0000",
+      "rawcode": "n001",
+      "owner": 15,
+      "x": -1024,
+      "y": 768,
+      "facing": 90
+    }
+  ],
+  "regions": [
+    {
+      "key": "training_arena",
+      "global": "gg_rct_training_arena",
+      "bounds": [
+        -1536,
+        256,
+        1536,
+        1536
+      ]
+    }
+  ]
+}

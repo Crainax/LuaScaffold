@@ -1,0 +1,734 @@
+{
+  "session": "20261112-172236-5a2d41",
+  "memory_unit": "MiB",
+  "handles_unit": "Windows process handles, NOT Warcraft handles",
+  "method": "all samples in each phase, OLS per minute; long runs also report a fixed window excluding the first 300 seconds; no causal leak attribution",
+  "phases": [
+    {
+      "phase": "idle",
+      "player": "LanP1",
+      "samples": 4,
+      "seconds": 31.453836,
+      "privateBytes": {
+        "first": 190.515625,
+        "last": 191.36328125,
+        "minimum": 190.515625,
+        "maximum": 191.36328125,
+        "median": 190.94921875,
+        "slope_per_minute": 1.5676362706461036
+      },
+      "handles": {
+        "first": 4693.0,
+        "last": 4698.0,
+        "minimum": 4693.0,
+        "maximum": 4699.0,
+        "median": 4696.5,
+        "slope_per_minute": 6.308215851980022
+      }
+    },
+    {
+      "phase": "idle",
+      "player": "LanP2",
+      "samples": 4,
+      "seconds": 31.42761,
+      "privateBytes": {
+        "first": 193.34375,
+        "last": 193.63671875,
+        "minimum": 193.34375,
+        "maximum": 193.640625,
+        "median": 193.63671875,
+        "slope_per_minute": 0.5012501740480888
+      },
+      "handles": {
+        "first": 4789.0,
+        "last": 4793.0,
+        "minimum": 4789.0,
+        "maximum": 4795.0,
+        "median": 4791.5,
+        "slope_per_minute": 4.0133567022380925
+      }
+    },
+    {
+      "phase": "idle",
+      "player": "LanP3",
+      "samples": 4,
+      "seconds": 31.413466,
+      "privateBytes": {
+        "first": 191.26171875,
+        "last": 192.1796875,
+        "minimum": 191.26171875,
+        "maximum": 192.1796875,
+        "median": 191.93359375,
+        "slope_per_minute": 1.8106039092471755
+      },
+      "handles": {
+        "first": 4705.0,
+        "last": 4709.0,
+        "minimum": 4705.0,
+        "maximum": 4709.0,
+        "median": 4707.5,
+        "slope_per_minute": 5.157169887964774
+      }
+    },
+    {
+      "phase": "units",
+      "player": "LanP1",
+      "samples": 3,
+      "seconds": 21.179724,
+      "privateBytes": {
+        "first": 191.17578125,
+        "last": 191.9375,
+        "minimum": 191.17578125,
+        "maximum": 191.9375,
+        "median": 191.7265625,
+        "slope_per_minute": 2.1577876129468456
+      },
+      "handles": {
+        "first": 4702.0,
+        "last": 4708.0,
+        "minimum": 4702.0,
+        "maximum": 4708.0,
+        "median": 4704.0,
+        "slope_per_minute": 16.99788224938359
+      }
+    },
+    {
+      "phase": "units",
+      "player": "LanP2",
+      "samples": 3,
+      "seconds": 21.174736,
+      "privateBytes": {
+        "first": 194.25,
+        "last": 194.578125,
+        "minimum": 194.25,
+        "maximum": 194.578125,
+        "median": 194.36328125,
+        "slope_per_minute": 0.9291563926992399
+      },
+      "handles": {
+        "first": 4797.0,
+        "last": 4802.0,
+        "minimum": 4797.0,
+        "maximum": 4802.0,
+        "median": 4798.0,
+        "slope_per_minute": 14.150060184574393
+      }
+    },
+    {
+      "phase": "units",
+      "player": "LanP3",
+      "samples": 3,
+      "seconds": 21.180388,
+      "privateBytes": {
+        "first": 192.234375,
+        "last": 192.85546875,
+        "minimum": 192.234375,
+        "maximum": 192.85546875,
+        "median": 192.71484375,
+        "slope_per_minute": 1.7618291459071769
+      },
+      "handles": {
+        "first": 4713.0,
+        "last": 4718.0,
+        "minimum": 4713.0,
+        "maximum": 4718.0,
+        "median": 4714.0,
+        "slope_per_minute": 14.142393328907662
+      }
+    },
+    {
+      "phase": "rest_units",
+      "player": "LanP1",
+      "samples": 4,
+      "seconds": 31.704088,
+      "privateBytes": {
+        "first": 191.609375,
+        "last": 191.94921875,
+        "minimum": 191.609375,
+        "maximum": 191.94921875,
+        "median": 191.912109375,
+        "slope_per_minute": 0.6209379078227681
+      },
+      "handles": {
+        "first": 4711.0,
+        "last": 4722.0,
+        "minimum": 4711.0,
+        "maximum": 4722.0,
+        "median": 4716.5,
+        "slope_per_minute": 20.438764849144537
+      }
+    },
+    {
+      "phase": "rest_units",
+      "player": "LanP2",
+      "samples": 4,
+      "seconds": 31.709409999999995,
+      "privateBytes": {
+        "first": 194.5546875,
+        "last": 194.6328125,
+        "minimum": 194.5546875,
+        "maximum": 194.6328125,
+        "median": 194.630859375,
+        "slope_per_minute": 0.13070785147144376
+      },
+      "handles": {
+        "first": 4805.0,
+        "last": 4816.0,
+        "minimum": 4805.0,
+        "maximum": 4816.0,
+        "median": 4810.5,
+        "slope_per_minute": 20.43507108971318
+      }
+    },
+    {
+      "phase": "rest_units",
+      "player": "LanP3",
+      "samples": 4,
+      "seconds": 31.658119,
+      "privateBytes": {
+        "first": 192.83203125,
+        "last": 192.71875,
+        "minimum": 192.21484375,
+        "maximum": 192.9453125,
+        "median": 192.775390625,
+        "slope_per_minute": -0.6074478734590982
+      },
+      "handles": {
+        "first": 4721.0,
+        "last": 4732.0,
+        "minimum": 4721.0,
+        "maximum": 4732.0,
+        "median": 4726.5,
+        "slope_per_minute": 20.47346749567199
+      }
+    },
+    {
+      "phase": "events_tasks",
+      "player": "LanP1",
+      "samples": 4,
+      "seconds": 31.388528,
+      "privateBytes": {
+        "first": 191.4453125,
+        "last": 193.23046875,
+        "minimum": 191.4453125,
+        "maximum": 193.33203125,
+        "median": 193.0859375,
+        "slope_per_minute": 3.294923618549096
+      },
+      "handles": {
+        "first": 4723.0,
+        "last": 4730.0,
+        "minimum": 4723.0,
+        "maximum": 4730.0,
+        "median": 4724.5,
+        "slope_per_minute": 13.762871546754194
+      }
+    },
+    {
+      "phase": "events_tasks",
+      "player": "LanP2",
+      "samples": 4,
+      "seconds": 31.393049000000005,
+      "privateBytes": {
+        "first": 194.63671875,
+        "last": 196.52734375,
+        "minimum": 194.63671875,
+        "maximum": 196.52734375,
+        "median": 195.85546875,
+        "slope_per_minute": 3.2881268440319196
+      },
+      "handles": {
+        "first": 4819.0,
+        "last": 4826.0,
+        "minimum": 4819.0,
+        "maximum": 4826.0,
+        "median": 4820.5,
+        "slope_per_minute": 13.760736096264186
+      }
+    },
+    {
+      "phase": "events_tasks",
+      "player": "LanP3",
+      "samples": 4,
+      "seconds": 31.426024000000005,
+      "privateBytes": {
+        "first": 192.9140625,
+        "last": 194.453125,
+        "minimum": 192.9140625,
+        "maximum": 194.52734375,
+        "median": 194.201171875,
+        "slope_per_minute": 2.9758288052861133
+      },
+      "handles": {
+        "first": 4733.0,
+        "last": 4740.0,
+        "minimum": 4733.0,
+        "maximum": 4740.0,
+        "median": 4734.5,
+        "slope_per_minute": 13.750933173766862
+      }
+    },
+    {
+      "phase": "rest_events",
+      "player": "LanP1",
+      "samples": 3,
+      "seconds": 21.062365,
+      "privateBytes": {
+        "first": 191.69921875,
+        "last": 192.62890625,
+        "minimum": 191.69921875,
+        "maximum": 192.62890625,
+        "median": 192.62890625,
+        "slope_per_minute": 2.6458103165452567
+      },
+      "handles": {
+        "first": 4733.0,
+        "last": 4742.0,
+        "minimum": 4733.0,
+        "maximum": 4742.0,
+        "median": 4739.0,
+        "slope_per_minute": 25.62979035680608
+      }
+    },
+    {
+      "phase": "rest_events",
+      "player": "LanP2",
+      "samples": 3,
+      "seconds": 21.072183,
+      "privateBytes": {
+        "first": 195.4765625,
+        "last": 195.25,
+        "minimum": 194.9140625,
+        "maximum": 195.4765625,
+        "median": 195.25,
+        "slope_per_minute": -0.6456475247304276
+      },
+      "handles": {
+        "first": 4829.0,
+        "last": 4836.0,
+        "minimum": 4829.0,
+        "maximum": 4836.0,
+        "median": 4833.0,
+        "slope_per_minute": 19.932092114775593
+      }
+    },
+    {
+      "phase": "rest_events",
+      "player": "LanP3",
+      "samples": 3,
+      "seconds": 21.079547,
+      "privateBytes": {
+        "first": 193.83984375,
+        "last": 193.71484375,
+        "minimum": 193.28125,
+        "maximum": 193.83984375,
+        "median": 193.71484375,
+        "slope_per_minute": -0.35713011814470086
+      },
+      "handles": {
+        "first": 4743.0,
+        "last": 4752.0,
+        "minimum": 4743.0,
+        "maximum": 4752.0,
+        "median": 4749.0,
+        "slope_per_minute": 25.621268861282918
+      }
+    },
+    {
+      "phase": "ui_updates",
+      "player": "LanP1",
+      "samples": 4,
+      "seconds": 31.525117,
+      "privateBytes": {
+        "first": 192.99609375,
+        "last": 193.1796875,
+        "minimum": 192.5546875,
+        "maximum": 193.1796875,
+        "median": 193.087890625,
+        "slope_per_minute": 0.6713289422646446
+      },
+      "handles": {
+        "first": 4746.0,
+        "last": 4756.0,
+        "minimum": 4746.0,
+        "maximum": 4756.0,
+        "median": 4751.0,
+        "slope_per_minute": 19.406333220843695
+      }
+    },
+    {
+      "phase": "ui_updates",
+      "player": "LanP2",
+      "samples": 4,
+      "seconds": 31.506558999999996,
+      "privateBytes": {
+        "first": 195.578125,
+        "last": 196.5,
+        "minimum": 195.578125,
+        "maximum": 196.5,
+        "median": 196.5,
+        "slope_per_minute": 1.58166326220192
+      },
+      "handles": {
+        "first": 4840.0,
+        "last": 4850.0,
+        "minimum": 4840.0,
+        "maximum": 4850.0,
+        "median": 4845.0,
+        "slope_per_minute": 19.42218585243639
+      }
+    },
+    {
+      "phase": "ui_updates",
+      "player": "LanP3",
+      "samples": 4,
+      "seconds": 31.506506,
+      "privateBytes": {
+        "first": 193.91796875,
+        "last": 194.25390625,
+        "minimum": 193.74609375,
+        "maximum": 195.03515625,
+        "median": 194.0859375,
+        "slope_per_minute": 1.3139213325615828
+      },
+      "handles": {
+        "first": 4756.0,
+        "last": 4766.0,
+        "minimum": 4756.0,
+        "maximum": 4766.0,
+        "median": 4761.0,
+        "slope_per_minute": 19.423209333546932
+      }
+    },
+    {
+      "phase": "rest_ui",
+      "player": "LanP1",
+      "samples": 3,
+      "seconds": 21.007933,
+      "privateBytes": {
+        "first": 192.32421875,
+        "last": 192.58203125,
+        "minimum": 192.32421875,
+        "maximum": 192.76953125,
+        "median": 192.58203125,
+        "slope_per_minute": 0.7352986685127028
+      },
+      "handles": {
+        "first": 4760.0,
+        "last": 4763.0,
+        "minimum": 4760.0,
+        "maximum": 4763.0,
+        "median": 4763.0,
+        "slope_per_minute": 8.563302424422549
+      }
+    },
+    {
+      "phase": "rest_ui",
+      "player": "LanP2",
+      "samples": 3,
+      "seconds": 21.023262,
+      "privateBytes": {
+        "first": 195.890625,
+        "last": 196.33984375,
+        "minimum": 195.890625,
+        "maximum": 196.44140625,
+        "median": 196.33984375,
+        "slope_per_minute": 1.2808557515387837
+      },
+      "handles": {
+        "first": 4854.0,
+        "last": 4851.0,
+        "minimum": 4851.0,
+        "maximum": 4854.0,
+        "median": 4853.0,
+        "slope_per_minute": -8.563780237371093
+      }
+    },
+    {
+      "phase": "rest_ui",
+      "player": "LanP3",
+      "samples": 3,
+      "seconds": 21.039851,
+      "privateBytes": {
+        "first": 193.92578125,
+        "last": 193.515625,
+        "minimum": 193.25,
+        "maximum": 193.92578125,
+        "median": 193.515625,
+        "slope_per_minute": -1.1701540423871404
+      },
+      "handles": {
+        "first": 4770.0,
+        "last": 4773.0,
+        "minimum": 4770.0,
+        "maximum": 4773.0,
+        "median": 4773.0,
+        "slope_per_minute": 8.55678225139715
+      }
+    },
+    {
+      "phase": "skills",
+      "player": "LanP1",
+      "samples": 4,
+      "seconds": 31.511171,
+      "privateBytes": {
+        "first": 193.78125,
+        "last": 195.71875,
+        "minimum": 193.78125,
+        "maximum": 195.71875,
+        "median": 194.970703125,
+        "slope_per_minute": 3.653073323333171
+      },
+      "handles": {
+        "first": 4766.0,
+        "last": 4777.0,
+        "minimum": 4766.0,
+        "maximum": 4777.0,
+        "median": 4771.5,
+        "slope_per_minute": 20.56484586010869
+      }
+    },
+    {
+      "phase": "skills",
+      "player": "LanP2",
+      "samples": 4,
+      "seconds": 31.503973,
+      "privateBytes": {
+        "first": 196.54296875,
+        "last": 199.1484375,
+        "minimum": 196.54296875,
+        "maximum": 199.1484375,
+        "median": 198.22265625,
+        "slope_per_minute": 4.994425947497559
+      },
+      "handles": {
+        "first": 4854.0,
+        "last": 4865.0,
+        "minimum": 4854.0,
+        "maximum": 4865.0,
+        "median": 4859.5,
+        "slope_per_minute": 20.57474715642
+      }
+    },
+    {
+      "phase": "skills",
+      "player": "LanP3",
+      "samples": 4,
+      "seconds": 31.487745,
+      "privateBytes": {
+        "first": 194.85546875,
+        "last": 198.21484375,
+        "minimum": 194.85546875,
+        "maximum": 198.21484375,
+        "median": 196.615234375,
+        "slope_per_minute": 6.416984829007241
+      },
+      "handles": {
+        "first": 4776.0,
+        "last": 4787.0,
+        "minimum": 4776.0,
+        "maximum": 4787.0,
+        "median": 4781.5,
+        "slope_per_minute": 20.58477808108584
+      }
+    },
+    {
+      "phase": "rest_skills",
+      "player": "LanP1",
+      "samples": 3,
+      "seconds": 21.030935,
+      "privateBytes": {
+        "first": 195.3203125,
+        "last": 195.8046875,
+        "minimum": 195.3203125,
+        "maximum": 195.8046875,
+        "median": 195.73828125,
+        "slope_per_minute": 1.3830642592657119
+      },
+      "handles": {
+        "first": 4780.0,
+        "last": 4787.0,
+        "minimum": 4780.0,
+        "maximum": 4787.0,
+        "median": 4784.0,
+        "slope_per_minute": 19.97384699330624
+      }
+    },
+    {
+      "phase": "rest_skills",
+      "player": "LanP2",
+      "samples": 3,
+      "seconds": 20.999085,
+      "privateBytes": {
+        "first": 198.39453125,
+        "last": 198.625,
+        "minimum": 198.39453125,
+        "maximum": 198.625,
+        "median": 198.625,
+        "slope_per_minute": 0.6587664367659921
+      },
+      "handles": {
+        "first": 4868.0,
+        "last": 4875.0,
+        "minimum": 4868.0,
+        "maximum": 4875.0,
+        "median": 4872.0,
+        "slope_per_minute": 20.00197275104345
+      }
+    },
+    {
+      "phase": "rest_skills",
+      "player": "LanP3",
+      "samples": 3,
+      "seconds": 21.008772,
+      "privateBytes": {
+        "first": 197.35546875,
+        "last": 197.3046875,
+        "minimum": 197.3046875,
+        "maximum": 197.8515625,
+        "median": 197.35546875,
+        "slope_per_minute": -0.14368329473683003
+      },
+      "handles": {
+        "first": 4790.0,
+        "last": 4797.0,
+        "minimum": 4790.0,
+        "maximum": 4797.0,
+        "median": 4794.0,
+        "slope_per_minute": 19.992926864671592
+      }
+    },
+    {
+      "phase": "combined",
+      "player": "LanP1",
+      "samples": 4,
+      "seconds": 31.507626,
+      "privateBytes": {
+        "first": 195.73046875,
+        "last": 198.65625,
+        "minimum": 195.73046875,
+        "maximum": 198.65625,
+        "median": 197.8359375,
+        "slope_per_minute": 5.36675576635865
+      },
+      "handles": {
+        "first": 4791.0,
+        "last": 4803.0,
+        "minimum": 4791.0,
+        "maximum": 4803.0,
+        "median": 4798.0,
+        "slope_per_minute": 22.851184304031506
+      }
+    },
+    {
+      "phase": "combined",
+      "player": "LanP2",
+      "samples": 4,
+      "seconds": 31.528029,
+      "privateBytes": {
+        "first": 198.23828125,
+        "last": 201.84765625,
+        "minimum": 198.23828125,
+        "maximum": 201.84765625,
+        "median": 200.638671875,
+        "slope_per_minute": 6.812088037566643
+      },
+      "handles": {
+        "first": 4879.0,
+        "last": 4893.0,
+        "minimum": 4879.0,
+        "maximum": 4893.0,
+        "median": 4888.0,
+        "slope_per_minute": 26.258984300658234
+      }
+    },
+    {
+      "phase": "combined",
+      "player": "LanP3",
+      "samples": 4,
+      "seconds": 31.552291,
+      "privateBytes": {
+        "first": 197.8203125,
+        "last": 199.6796875,
+        "minimum": 197.8203125,
+        "maximum": 199.6796875,
+        "median": 199.423828125,
+        "slope_per_minute": 3.1806307194791343
+      },
+      "handles": {
+        "first": 4801.0,
+        "last": 4813.0,
+        "minimum": 4801.0,
+        "maximum": 4813.0,
+        "median": 4808.0,
+        "slope_per_minute": 22.822025721093468
+      }
+    },
+    {
+      "phase": "recovery",
+      "player": "LanP1",
+      "samples": 4,
+      "seconds": 31.719205,
+      "privateBytes": {
+        "first": 197.11328125,
+        "last": 193.31640625,
+        "minimum": 193.31640625,
+        "maximum": 197.76953125,
+        "median": 197.44140625,
+        "slope_per_minute": -6.454030737279447
+      },
+      "handles": {
+        "first": 4807.0,
+        "last": 4817.0,
+        "minimum": 4807.0,
+        "maximum": 4817.0,
+        "median": 4812.0,
+        "slope_per_minute": 19.297089352746973
+      }
+    },
+    {
+      "phase": "recovery",
+      "player": "LanP2",
+      "samples": 4,
+      "seconds": 31.727959999999996,
+      "privateBytes": {
+        "first": 200.93359375,
+        "last": 197.02734375,
+        "minimum": 197.02734375,
+        "maximum": 201.48046875,
+        "median": 201.068359375,
+        "slope_per_minute": -6.479119623997636
+      },
+      "handles": {
+        "first": 4897.0,
+        "last": 4907.0,
+        "minimum": 4897.0,
+        "maximum": 4907.0,
+        "median": 4902.0,
+        "slope_per_minute": 19.29483340522518
+      }
+    },
+    {
+      "phase": "recovery",
+      "player": "LanP3",
+      "samples": 4,
+      "seconds": 31.710484000000005,
+      "privateBytes": {
+        "first": 197.59765625,
+        "last": 193.19921875,
+        "minimum": 193.19921875,
+        "maximum": 198.3046875,
+        "median": 197.951171875,
+        "slope_per_minute": -7.490090529425767
+      },
+      "handles": {
+        "first": 4817.0,
+        "last": 4827.0,
+        "minimum": 4817.0,
+        "maximum": 4827.0,
+        "median": 4822.0,
+        "slope_per_minute": 19.30986721423362
+      }
+    }
+  ]
+}

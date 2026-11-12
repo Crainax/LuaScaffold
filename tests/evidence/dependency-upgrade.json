@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "versions": [
+    "a69d07ae58d71bffbccc25286ab18583163ac779b7be9f920a0c0756bc6c8915",
+    "6cb3e395918008d13748354af87d26b1b2a1458379efc3057fc2dd5e31f1e34e",
+    "a69d07ae58d71bffbccc25286ab18583163ac779b7be9f920a0c0756bc6c8915"
+  ],
+  "builds": 3,
+  "checks": [
+    "A-B-A behavior and MPQ payload verification",
+    "modified active dependency rejected",
+    "extra file rejected",
+    "corrupt incoming package rejected before selection",
+    "lock unchanged after failure"
+  ],
+  "scope": "synthetic revision probe in real public-runtime snapshots; no game run"
+}

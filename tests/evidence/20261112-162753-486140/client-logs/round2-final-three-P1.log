@@ -1,0 +1,288 @@
+2026-11-12 16:28:18.817 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 16:28:18.818 [info]: PASS: map preplaced unit type/owner readback
+2026-11-12 16:28:18.818 [info]: PASS: source map placement survives LNI pack and initialization
+2026-11-12 16:28:18.818 [info]: PASS: source map region initialized before Lua
+2026-11-12 16:28:18.820 [info]: PASS: custom hero object name readback Reimu
+2026-11-12 16:28:18.821 [info]: PASS: custom hero object name readback Marisa
+2026-11-12 16:28:18.821 [info]: PASS: custom hero object name readback Sakuya
+2026-11-12 16:28:18.823 [info]: PASS: same-tick reschedule skips old dispatch batch
+2026-11-12 16:28:18.823 [info]: PASS: rescheduled task runs once on next tick
+2026-11-12 16:28:19.466 [info]: PASS: native death event invalidates life tasks but retains unit ID
+2026-11-12 16:28:20.344 [info]: PASS: native hero revive succeeds
+2026-11-12 16:28:20.345 [info]: PASS: revival retains stable ID and observed native handle
+2026-11-12 16:28:20.345 [info]: PASS: convenience timer repeats on shared logical ticks
+2026-11-12 16:28:20.346 [info]: PASS: expected active humans=3
+2026-11-12 16:28:20.346 [info]: PASS: official UI controls initialized
+2026-11-12 16:28:20.347 [info]: PASS: UI globals and standard math isolated
+2026-11-12 16:28:20.347 [info]: PASS: legacy sync and gameplay entry absent
+2026-11-12 16:28:20.347 [info]: PASS: native button has positive width
+2026-11-12 16:28:20.347 [info]: PASS: native text round trip
+2026-11-12 16:28:20.348 [info]: PASS: local UI cannot register gameplay entities
+2026-11-12 16:28:20.348 [info]: PASS: unsafe and oversized input rejected
+2026-11-12 16:28:20.359 [info]: PASS: native model created
+2026-11-12 16:28:20.384 [info]: PASS: native model2 created
+2026-11-12 16:28:20.384 [info]: PASS: native scroll panel created
+2026-11-12 16:28:20.393 [info]: PASS: progress handles zero denominator
+2026-11-12 16:28:20.393 [info]: PASS: models and scroll disposal return to baseline
+2026-11-12 16:28:20.591 [info]: [LuaScaffold] COMMAND ping	0	1
+2026-11-12 16:28:20.595 [info]: [LuaScaffold] COMMAND ping	2	1
+2026-11-12 16:28:20.595 [info]: [LuaScaffold] COMMAND ping	1	1
+2026-11-12 16:28:20.722 [info]: [COMMAND_REJECT]	duplicate or stale
+2026-11-12 16:28:20.722 [info]: [COMMAND_REJECT]	duplicate or stale
+2026-11-12 16:28:20.723 [info]: [COMMAND_REJECT]	duplicate or stale
+2026-11-12 16:28:20.951 [info]: PASS: native owner change refreshes ownership
+2026-11-12 16:28:20.951 [info]: [REMOVE_OBSERVE] phase=immediate type=1211117617 life=650.000 hidden=true dead=false
+2026-11-12 16:28:20.972 [info]: PASS: destroyed UI releases cancelled closure captures
+2026-11-12 16:28:20.972 [info]: [NATIVE_CALLBACK_GC] retained=0/8
+2026-11-12 16:28:20.972 [info]: PASS: nested UI destroy is idempotent
+2026-11-12 16:28:20.976 [info]: [REMOVE_OBSERVE] phase=next_tick type=0 life=0.000 hidden=false dead=false
+2026-11-12 16:28:20.976 [info]: PASS: external removal is detected after native state catches up
+2026-11-12 16:28:21.611 [info]: [REMOVE_OBSERVE] phase=half_second type=0 life=0.000 hidden=false dead=false
+2026-11-12 16:28:21.612 [info]: PASS: repeated external-remove notification is idempotent
+2026-11-12 16:28:22.300 [info]: PASS: old life callbacks do not execute after death or owner change
+2026-11-12 16:28:22.339 [info]: PASS: native metamorphosis order accepted
+2026-11-12 16:28:22.380 [info]: PASS: native summon order accepted
+2026-11-12 16:28:22.405 [info]: PASS: native bear-form order accepted
+2026-11-12 16:28:22.422 [info]: PASS: permanent custom morph order accepted
+2026-11-12 16:28:22.438 [info]: PASS: permanent custom bear order accepted
+2026-11-12 16:28:25.233 [info]: [UNIT_FORM] before=1164207469 after=1164209517 id=6 epoch=2 ability=1 buff=1 order=0 summons=1
+2026-11-12 16:28:25.233 [info]: PASS: native morph preserves tracked object when native handle remains
+2026-11-12 16:28:25.234 [info]: PASS: metamorphosis changes type, invalidates life generation and applies native buff
+2026-11-12 16:28:25.234 [info]: [BEAR_FORM] type=1701077869 epoch=2 ability=1
+2026-11-12 16:28:25.234 [info]: PASS: bear form changes native type and invalidates life generation
+2026-11-12 16:28:25.235 [info]: [CUSTOM_FORM] morph_type=1164209517 bear_type=1701077869 morph_ability=1 bear_ability=1
+2026-11-12 16:28:25.235 [info]: PASS: permanent custom morph abilities survive form replacement
+2026-11-12 16:28:25.235 [info]: PASS: native summon event registers summoned unit
+2026-11-12 16:28:25.235 [info]: PASS: real UI talent command applied to correct owner
+2026-11-12 16:28:25.236 [info]: PASS: real UI talent command applied to correct owner
+2026-11-12 16:28:25.236 [info]: PASS: real UI talent command applied to correct owner
+2026-11-12 16:28:25.236 [info]: PASS: real UI talent command applied to correct owner
+2026-11-12 16:28:25.236 [info]: PASS: real UI talent command applied to correct owner
+2026-11-12 16:28:25.237 [info]: PASS: real UI talent command applied to correct owner
+2026-11-12 16:28:25.237 [info]: PASS: real UI talent command applied to correct owner
+2026-11-12 16:28:25.237 [info]: PASS: real UI talent command applied to correct owner
+2026-11-12 16:28:25.238 [info]: PASS: real UI talent command applied to correct owner
+2026-11-12 16:28:25.238 [info]: [CLOCK_PROBE] logical_seconds=5 os_clock=6.414000 os_time=7
+2026-11-12 16:28:29.046 [info]: PASS: native boss pulse executed before player skills
+2026-11-12 16:28:29.047 [info]: PASS: native boss pulse executed before player skills
+2026-11-12 16:28:29.047 [info]: PASS: native boss pulse executed before player skills
+2026-11-12 16:28:29.625 [info]: [STATE_MATCH] phase=1 hash=20072452 rng=14
+2026-11-12 16:28:33.373 [info]: PASS: three Lua hero skills complete native challenge once
+2026-11-12 16:28:33.373 [info]: PASS: three Lua hero skills complete native challenge once
+2026-11-12 16:28:33.373 [info]: PASS: three Lua hero skills complete native challenge once
+2026-11-12 16:28:33.373 [info]: PASS: victory releases all native cast effects and work
+2026-11-12 16:28:35.799 [info]: [STATE_MATCH] phase=2 hash=976931294 rng=24
+2026-11-12 16:28:37.120 [info]: [COMMAND_REJECT]	noncanonical command
+2026-11-12 16:28:37.120 [info]: [COMMAND_REJECT]	invalid fields
+2026-11-12 16:28:37.120 [info]: [COMMAND_REJECT]	invalid size
+2026-11-12 16:28:37.121 [info]: [COMMAND_REJECT]	unknown command
+2026-11-12 16:28:37.121 [info]: [COMMAND_REJECT]	noncanonical command
+2026-11-12 16:28:37.121 [info]: [COMMAND_REJECT]	invalid fields
+2026-11-12 16:28:37.122 [info]: [COMMAND_REJECT]	invalid size
+2026-11-12 16:28:37.122 [info]: [COMMAND_REJECT]	unknown command
+2026-11-12 16:28:37.122 [info]: [COMMAND_REJECT]	noncanonical command
+2026-11-12 16:28:37.122 [info]: [COMMAND_REJECT]	invalid fields
+2026-11-12 16:28:37.122 [info]: [COMMAND_REJECT]	invalid size
+2026-11-12 16:28:37.123 [info]: [COMMAND_REJECT]	unknown command
+2026-11-12 16:28:38.794 [info]: PASS: 2000 removed stable unit IDs remain invalid across 100 bounded batches
+2026-11-12 16:28:38.794 [info]: [HANDLE_REUSE] creates=2000 repeated_native_ids=1966 mode=100_batches_20_units_10_tick_spacing
+2026-11-12 16:28:38.795 [info]: PASS: native unit-owned cancelled callbacks release payloads
+2026-11-12 16:28:41.422 [info]: PASS: native transport rejected duplicate or stale
+2026-11-12 16:28:41.423 [info]: PASS: native transport rejected noncanonical command
+2026-11-12 16:28:41.423 [info]: PASS: native transport rejected invalid fields
+2026-11-12 16:28:41.424 [info]: PASS: native transport rejected invalid size
+2026-11-12 16:28:41.424 [info]: PASS: native transport rejected unknown command
+2026-11-12 16:28:41.425 [info]: PASS: stale target commands rejected after native handle retirement
+2026-11-12 16:28:41.425 [info]: PASS: real transport sender cannot control another actor
+2026-11-12 16:28:41.426 [info]: PASS: native windup starts for death interruption
+2026-11-12 16:28:41.426 [info]: PASS: repeated start rejected
+2026-11-12 16:28:41.426 [info]: PASS: rejected repeated start cannot replenish or heal
+2026-11-12 16:28:41.427 [info]: PASS: native actor death cancels active cast immediately
+2026-11-12 16:28:41.428 [info]: PASS: native windup starts for death interruption
+2026-11-12 16:28:41.428 [info]: PASS: repeated start rejected
+2026-11-12 16:28:41.428 [info]: PASS: rejected repeated start cannot replenish or heal
+2026-11-12 16:28:41.429 [info]: PASS: native actor death cancels active cast immediately
+2026-11-12 16:28:41.429 [info]: PASS: native windup starts for death interruption
+2026-11-12 16:28:41.430 [info]: PASS: repeated start rejected
+2026-11-12 16:28:41.430 [info]: PASS: rejected repeated start cannot replenish or heal
+2026-11-12 16:28:41.430 [info]: PASS: native actor death cancels active cast immediately
+2026-11-12 16:28:41.430 [info]: PASS: death interruption destroys native effects
+2026-11-12 16:28:41.990 [info]: [STATE_MATCH] phase=3 hash=2064517571 rng=34
+2026-11-12 16:28:42.527 [info]: PASS: cancelled windup produces no late damage
+2026-11-12 16:28:42.528 [info]: PASS: explicit abandonment finishes correct generation
+2026-11-12 16:28:42.528 [info]: PASS: challenge exit restores dead hero with same stable ID
+2026-11-12 16:28:42.528 [info]: PASS: cancelled windup produces no late damage
+2026-11-12 16:28:42.529 [info]: PASS: explicit abandonment finishes correct generation
+2026-11-12 16:28:42.529 [info]: PASS: challenge exit restores dead hero with same stable ID
+2026-11-12 16:28:42.530 [info]: PASS: cancelled windup produces no late damage
+2026-11-12 16:28:42.530 [info]: PASS: explicit abandonment finishes correct generation
+2026-11-12 16:28:42.531 [info]: PASS: challenge exit restores dead hero with same stable ID
+2026-11-12 16:28:43.665 [info]: PASS: native unit manager cleanup completes
+2026-11-12 16:28:43.666 [info]: PASS: native unit manager returns registrations to zero
+2026-11-12 16:28:43.666 [info]: [UNIT_LIFECYCLE_DONE] native lifecycle and bounded reuse experiment complete
+2026-11-12 16:28:43.667 [info]: PASS: target-removal encounter starts
+2026-11-12 16:28:43.667 [info]: PASS: channel prepared before target removal
+2026-11-12 16:28:43.668 [info]: PASS: target removal ends encounter and pending channel
+2026-11-12 16:28:43.668 [info]: PASS: removal is not a duplicate victory
+2026-11-12 16:28:43.668 [info]: PASS: target-removal encounter starts
+2026-11-12 16:28:43.668 [info]: PASS: channel prepared before target removal
+2026-11-12 16:28:43.669 [info]: PASS: target removal ends encounter and pending channel
+2026-11-12 16:28:43.669 [info]: PASS: removal is not a duplicate victory
+2026-11-12 16:28:43.669 [info]: PASS: target-removal encounter starts
+2026-11-12 16:28:43.670 [info]: PASS: channel prepared before target removal
+2026-11-12 16:28:43.670 [info]: PASS: target removal ends encounter and pending channel
+2026-11-12 16:28:43.670 [info]: PASS: removal is not a duplicate victory
+2026-11-12 16:28:43.671 [info]: PASS: target removal releases native effects
+2026-11-12 16:28:45.571 [info]: PASS: owner-change encounter starts
+2026-11-12 16:28:45.572 [info]: PASS: cast prepared before owner change
+2026-11-12 16:28:45.573 [info]: PASS: native ownership event cancels cast
+2026-11-12 16:28:45.573 [info]: PASS: old owner rejected after control transfer
+2026-11-12 16:28:45.574 [info]: PASS: owner-change encounter starts
+2026-11-12 16:28:45.574 [info]: PASS: cast prepared before owner change
+2026-11-12 16:28:45.575 [info]: PASS: native ownership event cancels cast
+2026-11-12 16:28:45.575 [info]: PASS: old owner rejected after control transfer
+2026-11-12 16:28:45.575 [info]: PASS: owner-change encounter starts
+2026-11-12 16:28:45.576 [info]: PASS: cast prepared before owner change
+2026-11-12 16:28:45.576 [info]: PASS: native ownership event cancels cast
+2026-11-12 16:28:45.576 [info]: PASS: old owner rejected after control transfer
+2026-11-12 16:28:47.478 [info]: PASS: skill active during native form transition
+2026-11-12 16:28:47.478 [info]: PASS: native form transition order accepted during Lua windup
+2026-11-12 16:28:48.030 [info]: [STATE_MATCH] phase=4 hash=1119637048 rng=44
+2026-11-12 16:28:49.754 [info]: PASS: native type change cancels Lua skill and owned effect
+2026-11-12 16:28:49.755 [info]: PASS: form-transition effects return to baseline
+2026-11-12 16:28:51.684 [info]: PASS: controlled failure after native effect allocation is reported
+2026-11-12 16:28:51.684 [info]: PASS: preparation rollback destroys real allocated effect
+2026-11-12 16:28:51.685 [info]: PASS: failed preparation commits neither energy nor cooldown
+2026-11-12 16:28:54.259 [info]: [STATE_MATCH] phase=5 hash=433626847 rng=54
+2026-11-12 16:28:55.931 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:28:55.932 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:28:55.933 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:28:57.048 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:28:57.049 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:28:57.049 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:28:57.049 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:28:57.050 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:28:57.050 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:28:57.050 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:28:57.050 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:28:57.051 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:28:59.496 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:28:59.496 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:28:59.497 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:28:59.497 [info]: PASS: repeat cycle releases encounter and cast resources
+2026-11-12 16:28:59.497 [info]: PASS: repeat cycle registration counts remain bounded
+2026-11-12 16:28:59.497 [info]: [BUSINESS_RESOURCE] tick=3300 cycles=1 units=10 actors=9 effects=0 tasks=0 lua_kib=588.186
+2026-11-12 16:29:00.141 [info]: [STATE_MATCH] phase=6 hash=1158968517 rng=64
+2026-11-12 16:29:02.091 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:29:02.092 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:29:02.092 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:29:03.386 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:03.387 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:03.387 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:03.387 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:03.387 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:03.387 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:03.387 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:03.387 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:03.389 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:05.968 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:29:05.968 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:29:05.969 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:29:05.969 [info]: PASS: repeat cycle releases encounter and cast resources
+2026-11-12 16:29:05.969 [info]: PASS: repeat cycle registration counts remain bounded
+2026-11-12 16:29:05.970 [info]: [BUSINESS_RESOURCE] tick=3800 cycles=2 units=10 actors=9 effects=0 tasks=0 lua_kib=588.186
+2026-11-12 16:29:06.615 [info]: [STATE_MATCH] phase=7 hash=514376646 rng=74
+2026-11-12 16:29:08.406 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:29:08.407 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:29:08.407 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:29:09.702 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:09.702 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:09.702 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:09.703 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:09.703 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:09.704 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:09.705 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:09.705 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:09.705 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:12.068 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:29:12.069 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:29:12.069 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:29:12.069 [info]: PASS: repeat cycle releases encounter and cast resources
+2026-11-12 16:29:12.069 [info]: PASS: repeat cycle registration counts remain bounded
+2026-11-12 16:29:12.070 [info]: [BUSINESS_RESOURCE] tick=4300 cycles=3 units=10 actors=9 effects=0 tasks=0 lua_kib=588.186
+2026-11-12 16:29:12.629 [info]: [STATE_MATCH] phase=8 hash=224296454 rng=84
+2026-11-12 16:29:14.296 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:29:14.297 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:29:14.298 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:29:15.426 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:15.426 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:15.426 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:15.426 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:15.427 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:15.427 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:15.427 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:15.427 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:15.428 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:17.736 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:29:17.737 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:29:17.737 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:29:17.737 [info]: PASS: repeat cycle releases encounter and cast resources
+2026-11-12 16:29:17.737 [info]: PASS: repeat cycle registration counts remain bounded
+2026-11-12 16:29:17.738 [info]: [BUSINESS_RESOURCE] tick=4800 cycles=4 units=10 actors=9 effects=0 tasks=0 lua_kib=588.186
+2026-11-12 16:29:18.361 [info]: [STATE_MATCH] phase=9 hash=1606882354 rng=94
+2026-11-12 16:29:20.214 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:29:20.214 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:29:20.215 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:29:21.515 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:21.516 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:21.516 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:21.516 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:21.516 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:21.516 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:21.516 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:21.517 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:21.517 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:24.047 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:29:24.047 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:29:24.047 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:29:24.047 [info]: PASS: repeat cycle releases encounter and cast resources
+2026-11-12 16:29:24.048 [info]: PASS: repeat cycle registration counts remain bounded
+2026-11-12 16:29:24.048 [info]: [BUSINESS_RESOURCE] tick=5300 cycles=5 units=10 actors=9 effects=0 tasks=0 lua_kib=588.686
+2026-11-12 16:29:24.626 [info]: [STATE_MATCH] phase=10 hash=1220748058 rng=104
+2026-11-12 16:29:26.563 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:29:26.563 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:29:26.564 [info]: PASS: repeated encounter starts with fresh stable IDs
+2026-11-12 16:29:27.738 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:27.739 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:27.739 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:27.739 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:27.740 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:27.740 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:27.740 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:27.741 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:27.741 [info]: PASS: repeat cycle skill committed
+2026-11-12 16:29:30.132 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:29:30.132 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:29:30.132 [info]: PASS: repeat cycle produces one victory
+2026-11-12 16:29:30.133 [info]: PASS: repeat cycle releases encounter and cast resources
+2026-11-12 16:29:30.136 [info]: PASS: repeat cycle registration counts remain bounded
+2026-11-12 16:29:30.136 [info]: [BUSINESS_RESOURCE] tick=5800 cycles=6 units=10 actors=9 effects=0 tasks=0 lua_kib=588.686
+2026-11-12 16:29:30.690 [info]: [STATE_MATCH] phase=11 hash=111312971 rng=114
+2026-11-12 16:29:32.358 [info]: [RESOURCE] tick=6000 lua_kib=602.954 controls=47 ui_tasks=2 events=0
+2026-11-12 16:29:32.359 [info]: PASS: UI lifecycle stress cycles=253
+2026-11-12 16:29:32.360 [info]: PASS: gameplay RNG and peer snapshots exercised
+2026-11-12 16:29:32.360 [info]: PASS: UI command exactly once player=0
+2026-11-12 16:29:32.360 [info]: PASS: UI command exactly once player=1
+2026-11-12 16:29:32.360 [info]: PASS: UI command exactly once player=2
+2026-11-12 16:29:32.361 [info]: PASS: bridge has no fault
+2026-11-12 16:29:32.361 [info]: PASS: unit lifecycle suite reached verified cleanup
+2026-11-12 16:29:32.361 [info]: PASS: business lifecycle repetition completed all scheduled cycles
+2026-11-12 16:29:32.362 [info]: [BUSINESS_DONE] cycles=6 commands=129 rejected=12 effects_created=74 damage_calls=340
+2026-11-12 16:29:32.363 [info]: PASS: business services shut down
+2026-11-12 16:29:32.364 [info]: PASS: business registrations, tasks, effects and sessions return to zero
+2026-11-12 16:29:32.365 [info]: PASS: UI shutdown clears all controls
+2026-11-12 16:29:32.365 [info]: PASS: stopped UI rejects tasks without retaining registrations
+2026-11-12 16:29:32.365 [info]: PASS: stopped UI rejects listeners without retaining registrations
+2026-11-12 16:29:36.079 [info]: PASS: application root closes shared native bridge
+2026-11-12 16:29:36.080 [info]: [METRICS] ui_cycles=253 rng_calls=117 phases=11 assertions=238
+2026-11-12 16:29:36.080 [info]: [UT_DONE] LuaScaffold round2-final-three P1

@@ -1,0 +1,828 @@
+{
+  "status": "PASS",
+  "path": "D:\\War3\\LuaScaffoldExample",
+  "framework_lock": {
+    "path": "deps/lua-scaffold",
+    "version": "f08d7599b7b512f5ce694987a0564977e8bcf5a3b2e248a1eaaf059256f7c221"
+  },
+  "scope": "Independent persistent project, offline checks and MainMap SLK/UnitTestMap OBJ builds; not a separate native game run",
+  "runtime_source_sha256": {
+    "jass2binary.lua": "488f1a6e5bb419159b7668b14a6c44e3395ee193b752d07b5d29689a849d958e",
+    "plugin_main.lua": "c2d4212088e5309daff8486cd938de51ba3f4b5f5b4169099bc1ae3a7cabee1d",
+    "app/config.lua": "4a1b44828ba1e5d7956e435958c7df6af810f3013dfc3d691a47a248295ea46a",
+    "app/main.lua": "64e2e854ecdd49611d03155bce95ae4424c89194c30000b5a6fc1d59b31a072b",
+    "app/runtime_test.lua": "241bdc9937995d73b4694885e18488de15933417b799ae9242b163c553bbee22",
+    "app/view.lua": "c0e65a37a5ce9b9ce18958999960daa3c5dae85a831604c48d36361c1f3c0d7f",
+    "dev/view_loader.lua": "ceaa4880f57e80e7db676c44df7d482549570616666c45e0d408188bcb9f6784",
+    "presentation/challenge_view.lua": "d51458682fb49f789ba0f5370ee4445147101c4243be20c71a96b4f98b238192",
+    "probes/business_resource.lua": "1c4826c31157d60f3e3563e3f27bc6f3d4c142853f8eebb64eeb90fa91807e18",
+    "probes/gameplay.lua": "22b090651a4289cd825edddc3662284949ef083144658d113cede9fbd42a7103",
+    "probes/hotreload.lua": "0b551d269ee92b8bb00aa921285da9c46a59c89fb7dce31a6a8854677476cea3",
+    "probes/performance.lua": "28dab7260174809f13837b5aed35da856579c425fbda5de44f758fdfdffccf35",
+    "probes/ui.lua": "0f553b1156512d0150e332bc78584fe5b39b9dbfa987818cac499c125a668928",
+    "probes/unit_lifecycle.lua": "254f15cf627e2f47ca4941c858891ad50508c29f7923b067a3b262af6e530c77",
+    "rules/combat.lua": "bccc2b7607e2f4df53c8757dde0d1361349c4218f231130e8096a1284e77c74b",
+    "scaffold/ac.lua": "a52d0250dac882490b3e5396ccb0aca03ea64bb78a9be1a4fe241bcd94a88ac6",
+    "scaffold/command.lua": "8c57dea098808af972edaf854c0d465ac4831c1708464edf243fcb85c55db976",
+    "scaffold/context.lua": "29c2e64099252bf78d9d288182151d64b452cc0bc5c61ac217e99eab3f1685c5",
+    "scaffold/entity_registry.lua": "e204b8eca76077f1925dad3b75647461b7a78173e1918f84831c559346071acf",
+    "scaffold/events.lua": "7d46d446a14940f1c7644fef35071b34fd2e8ed31513f51d775062eb8691006f",
+    "scaffold/innerjapi.lua": "0060752480305230b2fc5696677bb001980560a5f6d33bb197f0f74c647cd782",
+    "scaffold/scheduler.lua": "11f75bebb74cffc69999e9f1d6ae9670002815b926e3bc783ed18d44ec7451ce",
+    "scaffold/scope.lua": "6c592f83d00b52fde66b6e8e2db5c79d9cf8572a3efa659dc515f9f87c488798",
+    "scaffold/ui.lua": "a2291d62a2df57edb0e570155789b798960e53fb080beb0a4593e4359dd83e47",
+    "scaffold/ui_env.lua": "b23a94d4b3fd3970c8b4e8823bb1876a53317c9e2cd295e7947d541fc6da4455",
+    "scaffold/ui_reload.lua": "a93591a7a803e8f2d0fe3478177296246f44ab7a80f85c37c21a0869426dd8d3",
+    "ui/init.lua": "484d052f50eccb38122ce44bbf7e5232df11e2c5dd5b4b60d4771a5ed15352bf",
+    "world/arenas.lua": "5319f3ced7f8714c5ec98ccdeff27c31a8a98fafe938e64cfdfc49885e35bad2",
+    "world/session.lua": "96e62e046951ed410c1a7f3770b67bdc3893cdcd98bfe03680a9d1e31a0c38f7",
+    "content/effects/cast_aura.lua": "7300a984bf90b7a3d1789c5960aeed892e118007c25de4c215c02e8474554663",
+    "content/heroes/catalog.lua": "34a55864fe298363f7c9c752c17a9db2b601e644c6ff27a4d52d1fdb868045d5",
+    "content/challenges/training/boss.lua": "c34248f0d562e82341d6dbe9148f3afa31e5c6b8154d7278184f5e9210ecf914",
+    "content/challenges/training/definition.lua": "378d177666fc7383b71c147303ef0134306fa38071431265fa06f480942d3573",
+    "content/heroes/marisa/definition.lua": "cb8c1cb365cc5650d7aa9391533982ad7949516c4d33d9909355a83ada098527",
+    "content/heroes/marisa/talents.lua": "46ba0a37b9115d5358217d09f4c4478d3a1f045125e6a6c10306d99b192232ff",
+    "content/heroes/reimu/definition.lua": "2e141ab15f7d8e767c5dc1c084bb9575576154e8586e929cc88820348cbc0734",
+    "content/heroes/reimu/talents.lua": "15df3ed687857dbf4fafd5703a77421a32e8cbd96df8e94a39579a894c10745c",
+    "content/heroes/sakuya/definition.lua": "cab4dd7b8de90682ad2ada7cfd6e655d886883d6c6c1836d25c4161f8bc8841b",
+    "content/heroes/sakuya/talents.lua": "479d8b3d8bfdfd5f676c31f1bab1ed627e179217fc710749aa1843d980df9b47",
+    "content/heroes/marisa/skills/stellar_beam.lua": "033ac097b8bf8b51632f16eab0593841f905b2c6efaa643909ba3d78cb56bc69",
+    "content/heroes/reimu/skills/spirit_bolt.lua": "f1af26d16d4e94581053b9a6c477fb89182ccbfa9cb67eb013bf1b62fd5d756d",
+    "content/heroes/sakuya/skills/returning_blades.lua": "4a2e7c4318b713afed3e3d36d4b4ca6821b599e3b1f7a5e04c4992a3a454c2e0",
+    "game/combat/native.lua": "b95c3049105faa2fa62cab6d657cab2898b7c4661766ac7f8c34f0c0bd8e2525",
+    "game/skill/service.lua": "e99230fcff3d6e37ca893a30befc0dd1ea23546b8e980f8cd9c849c6a2635cae",
+    "game/unit/manager.lua": "b36c9592499e017eb10c4a07bb30c3ff275b9835ce4e7dea91925ce609084877",
+    "game/unit/native.lua": "d5cf51a9151a8ae1e301a576f71f9b25f18c03ad76843cf16e536604ea03ae5d",
+    "game/unit/service.lua": "4a0e17bc322436de8e5dc30cb956e1725b3c8f0159e91238141485384dce39eb",
+    "systems/challenges/service.lua": "a9d6d679bc29bb775681fcede177dd0f87265aa56ac3691c16a5c1312627fd8d",
+    "systems/heroes/service.lua": "cfb68e1f6921b0d838b891ffb4b0927de0e61a61820cd84aa40df79238f82f8a",
+    "systems/talents/service.lua": "31fb78d98c92930b621120aff632cc5e87456fa1f104ab3f2b418159b93710d8",
+    "ui/base/init.lua": "e15528f9000f94d3a04d0ae4826db8b52309530c8119390f9c2e3a68c8eca3ad",
+    "ui/base/controls/button.lua": "b0a854aef72ef7d20b10798eda6b29491084ffa486025da44889c2393650fee9",
+    "ui/base/controls/class.lua": "0db34eeb329d1bc9524cf88c343b1dc887aa988a8056bb2d27bfa9ea0ab96a50",
+    "ui/base/controls/edit.lua": "f2706c990454ac72d15847de3097af8907ee15a90df1c69759351bb284023299",
+    "ui/base/controls/init.lua": "7e22bf031182e648752298285c7609cdf5116420335c8e59f8198d34337f85d5",
+    "ui/base/controls/model.lua": "546a333fcb5fd073b5ea974e3cf90f3cf57c7dd67cf9fc07cb9ca46e1731dad1",
+    "ui/base/controls/model2.lua": "9ddb62dc9638070b5c397675d942eb739069be58e5b19a4e7b5f492ea43d3556",
+    "ui/base/controls/panel.lua": "eb1406a65c44a53daba1e9aef134c0e089f023ccc5548bc0962c38a80b75e281",
+    "ui/base/controls/progress.lua": "fc12d8d1a3ae9d96f0da51c05f8bd1febbbb88321c452d15b85543a47bd79f8b",
+    "ui/base/controls/text.lua": "83dafdfbecbb45d7964e3c88cb78c1f81d7a53019c4708f3bfdb051a2aa5cb76",
+    "ui/base/controls/texture.lua": "cecef34d8440cfc6d5474b9907c6996ea5bbe3a488f57d3297d3179e42663041",
+    "ui/base/detail/game.lua": "065cf4ae7191258d632ddd86b61a1592cce51eb5ac38db93e8d4d44cc6c3ed4c",
+    "ui/base/detail/init.lua": "815a5d5b1b0cadc62d33cd086c0e4092d79e46863785c52c965fed53c2a90114",
+    "ui/base/detail/keyboard.lua": "7dd7cabfc61732c71572108bcec6d7bf69311fd0de51c5d23e75f3614472b7bd",
+    "ui/base/detail/template.lua": "51a70dc589a937e3259eae5978314912f2eb914458fdb93bb8e1aae707e71dc7",
+    "ui/base/detail/timer.lua": "7e9f627fef6bf9faddc460b4f7dd59ed61fdf0c283bd6ff5d9c8486b83bcee0e"
+  },
+  "builds": [
+    {
+      "map": "example-main.w3x",
+      "sha256": "9f66017aacee8a00165067fd58877b4f4343f2a5fb7e897ddc4eaed2ca5c0e0f",
+      "config": {
+        "name": "example-main",
+        "test": false,
+        "clients": 1,
+        "ticks": 12000,
+        "oos_control": false,
+        "suite": "integration",
+        "diagnostic": null,
+        "dev": false,
+        "map": "MainMap",
+        "format": "slk",
+        "runtime": "D:/WE/YDWE1.32.13正式版",
+        "we": "D:/WE/KKWE_Plugin"
+      },
+      "map_source": "MainMap",
+      "w2l_lock_sha256": "a9b3da5438520293da366dcf7b3999f85a8cf44731029266c10f10ae0d0a99ff",
+      "w2l_policy_sha256": "3ddb0a26ac33fe996e57f8660558ccec033f4b043e1b490f1a0e44b6c99eb5c4",
+      "w2l_core_policy_sha256": "ac6b099cc3fa17a355a05871199256f1ae2a04bcf5b9a423cec4a86198d75c28",
+      "map_sources": {
+        ".w3x": "d3c23e0c410e5bc9db9b6291dd14802f44ce0fc6ee74b9100ccc3d8f726b5d19",
+        "map/war3map.doo": "1c4b553adc0b39df3de28d6ea7aab2733e7f2d4b0a22ffe6d0b904416051fe82",
+        "map/war3map.j": "c193cc9baec65b48d7777fd3fbbed27580142248d1d77d437cdc6c637619aab2",
+        "map/war3map.shd": "125c62526cce3e4b947fa527adf081ae0394d1ef0fbeb74db5ce742574533cf3",
+        "map/war3map.w3e": "0d3f5729d6d529ea2f8b6ca3dc3424c052939083147fea50d914095fcc00fd5d",
+        "map/war3map.w3r": "7b323e4040b00984d64a7264845b53434f49bff655eb51947789499f65f07e14",
+        "map/war3map.wpm": "f7853a91b77ce35facaaff5fa2b829fb632aeddac49d09ff50f3746edb5afc39",
+        "map/war3mapUnits.doo": "fe08e5bec7f03d69acfd9bc4a45228c4fcbed05d6e925da670a85d6e760e0e0b",
+        "placements.json": "632a6b2da1fb4a43f1ad86da7b2d2f4203d3627b2b301f35e63c109c003402fa",
+        "table/ability.ini": "ebb2d6db74d430087a03aaf77a82b49554e35d3aa3cca9a17669b9c1e15ffcb3",
+        "table/unit.ini": "24341572cbdc15e8f0a35778f3cdf907b21dac8cdd8ab7e50f3fcbb6eca1fa91",
+        "table/w3i.ini": "78655f28c3a205117de03d534681fdf8a0e2d9f710ccde0ffc0cbb4496d744fc",
+        "w3x2lni/config.ini": "d663e7c7b4c5a5f31ceb82f8eda3f288250d4eb2cf18569f56fceac831dbf99b"
+      },
+      "files": [
+        {
+          "path": "(key)",
+          "sha256": "a2751180ad76f8257984311b06d9cd41c20cab508fa2584a7aa09f85356eee9c"
+        },
+        {
+          "path": "callback",
+          "sha256": "7249284a0f0b0f73104fa152e2a63294c631435ac7a1bca3b9676e2d34804a13"
+        },
+        {
+          "path": "core/background.blp",
+          "sha256": "c298d25875a8885488538c76394268725b175f5afe025aaf47923dd3637e4be3"
+        },
+        {
+          "path": "core/black_icon.tga",
+          "sha256": "6a75bb8729be183db3084fa7e859b7eaab1fb20d7e028b11c12e47668a910d97"
+        },
+        {
+          "path": "core/button.blp",
+          "sha256": "3b1d32dcb3c2bf597973a5575b9d4b43ba192ea525533f5375823f43b06059aa"
+        },
+        {
+          "path": "core/edit.blp",
+          "sha256": "65c4c05368e91c8e1faa2909952774e0755c7909a06c7e9a79166ed02600ce31"
+        },
+        {
+          "path": "core/model.blp",
+          "sha256": "286aecafff46a25127f9809e27594d40e58d96b80154fe6312357a0ebe48e79f"
+        },
+        {
+          "path": "core/move_background.blp",
+          "sha256": "22c7085b2aaf49a8129e1e9ad120158c2c9082dcd14acc978756a45abf12b035"
+        },
+        {
+          "path": "core/panel.blp",
+          "sha256": "792c67d7d1495e021d3c5d03f4ae2bdd259c8a0256f429b46700b15f6e1b27e8"
+        },
+        {
+          "path": "core/text.blp",
+          "sha256": "4de3a2be26407bb9cdec3b5771010373241f98ff7870d38e5514bcefad25de0c"
+        },
+        {
+          "path": "core/texture.blp",
+          "sha256": "4a4bd534f4e12be2543390c324f06c64567df33de167883ca99c3911e2996e99"
+        },
+        {
+          "path": "core/Transparent.tga",
+          "sha256": "4f35a6031ff81327f096b0cc339988a70eaa290530b6ab90bcca437eeca75dfc"
+        },
+        {
+          "path": "fonts.TTF",
+          "sha256": "bd99fe368b31c62e29ee8456c8fdeb86277786a17e8e40be00ecbe5e4fc7c275"
+        },
+        {
+          "path": "jass2binary.lua",
+          "sha256": "488f1a6e5bb419159b7668b14a6c44e3395ee193b752d07b5d29689a849d958e"
+        },
+        {
+          "path": "plugin_main.lua",
+          "sha256": "c2d4212088e5309daff8486cd938de51ba3f4b5f5b4169099bc1ae3a7cabee1d"
+        },
+        {
+          "path": "script/app/config.lua",
+          "sha256": "73fd5bbc3d516b1e35dc14ce3929e4b4a6ff9a1b016a7c47701f11b9f6aaad21"
+        },
+        {
+          "path": "script/app/main.lua",
+          "sha256": "64e2e854ecdd49611d03155bce95ae4424c89194c30000b5a6fc1d59b31a072b"
+        },
+        {
+          "path": "script/content/challenges/training/boss.lua",
+          "sha256": "c34248f0d562e82341d6dbe9148f3afa31e5c6b8154d7278184f5e9210ecf914"
+        },
+        {
+          "path": "script/content/challenges/training/definition.lua",
+          "sha256": "378d177666fc7383b71c147303ef0134306fa38071431265fa06f480942d3573"
+        },
+        {
+          "path": "script/content/effects/cast_aura.lua",
+          "sha256": "7300a984bf90b7a3d1789c5960aeed892e118007c25de4c215c02e8474554663"
+        },
+        {
+          "path": "script/content/heroes/catalog.lua",
+          "sha256": "34a55864fe298363f7c9c752c17a9db2b601e644c6ff27a4d52d1fdb868045d5"
+        },
+        {
+          "path": "script/content/heroes/marisa/definition.lua",
+          "sha256": "cb8c1cb365cc5650d7aa9391533982ad7949516c4d33d9909355a83ada098527"
+        },
+        {
+          "path": "script/content/heroes/marisa/skills/stellar_beam.lua",
+          "sha256": "033ac097b8bf8b51632f16eab0593841f905b2c6efaa643909ba3d78cb56bc69"
+        },
+        {
+          "path": "script/content/heroes/marisa/talents.lua",
+          "sha256": "46ba0a37b9115d5358217d09f4c4478d3a1f045125e6a6c10306d99b192232ff"
+        },
+        {
+          "path": "script/content/heroes/reimu/definition.lua",
+          "sha256": "2e141ab15f7d8e767c5dc1c084bb9575576154e8586e929cc88820348cbc0734"
+        },
+        {
+          "path": "script/content/heroes/reimu/skills/spirit_bolt.lua",
+          "sha256": "f1af26d16d4e94581053b9a6c477fb89182ccbfa9cb67eb013bf1b62fd5d756d"
+        },
+        {
+          "path": "script/content/heroes/reimu/talents.lua",
+          "sha256": "15df3ed687857dbf4fafd5703a77421a32e8cbd96df8e94a39579a894c10745c"
+        },
+        {
+          "path": "script/content/heroes/sakuya/definition.lua",
+          "sha256": "cab4dd7b8de90682ad2ada7cfd6e655d886883d6c6c1836d25c4161f8bc8841b"
+        },
+        {
+          "path": "script/content/heroes/sakuya/skills/returning_blades.lua",
+          "sha256": "4a2e7c4318b713afed3e3d36d4b4ca6821b599e3b1f7a5e04c4992a3a454c2e0"
+        },
+        {
+          "path": "script/content/heroes/sakuya/talents.lua",
+          "sha256": "479d8b3d8bfdfd5f676c31f1bab1ed627e179217fc710749aa1843d980df9b47"
+        },
+        {
+          "path": "script/game/combat/native.lua",
+          "sha256": "b95c3049105faa2fa62cab6d657cab2898b7c4661766ac7f8c34f0c0bd8e2525"
+        },
+        {
+          "path": "script/game/skill/service.lua",
+          "sha256": "e99230fcff3d6e37ca893a30befc0dd1ea23546b8e980f8cd9c849c6a2635cae"
+        },
+        {
+          "path": "script/game/unit/manager.lua",
+          "sha256": "b36c9592499e017eb10c4a07bb30c3ff275b9835ce4e7dea91925ce609084877"
+        },
+        {
+          "path": "script/game/unit/native.lua",
+          "sha256": "d5cf51a9151a8ae1e301a576f71f9b25f18c03ad76843cf16e536604ea03ae5d"
+        },
+        {
+          "path": "script/game/unit/service.lua",
+          "sha256": "4a0e17bc322436de8e5dc30cb956e1725b3c8f0159e91238141485384dce39eb"
+        },
+        {
+          "path": "script/presentation/challenge_view.lua",
+          "sha256": "d51458682fb49f789ba0f5370ee4445147101c4243be20c71a96b4f98b238192"
+        },
+        {
+          "path": "script/rules/combat.lua",
+          "sha256": "bccc2b7607e2f4df53c8757dde0d1361349c4218f231130e8096a1284e77c74b"
+        },
+        {
+          "path": "script/scaffold/ac.lua",
+          "sha256": "a52d0250dac882490b3e5396ccb0aca03ea64bb78a9be1a4fe241bcd94a88ac6"
+        },
+        {
+          "path": "script/scaffold/command.lua",
+          "sha256": "8c57dea098808af972edaf854c0d465ac4831c1708464edf243fcb85c55db976"
+        },
+        {
+          "path": "script/scaffold/context.lua",
+          "sha256": "29c2e64099252bf78d9d288182151d64b452cc0bc5c61ac217e99eab3f1685c5"
+        },
+        {
+          "path": "script/scaffold/entity_registry.lua",
+          "sha256": "e204b8eca76077f1925dad3b75647461b7a78173e1918f84831c559346071acf"
+        },
+        {
+          "path": "script/scaffold/events.lua",
+          "sha256": "7d46d446a14940f1c7644fef35071b34fd2e8ed31513f51d775062eb8691006f"
+        },
+        {
+          "path": "script/scaffold/innerjapi.lua",
+          "sha256": "0060752480305230b2fc5696677bb001980560a5f6d33bb197f0f74c647cd782"
+        },
+        {
+          "path": "script/scaffold/scheduler.lua",
+          "sha256": "11f75bebb74cffc69999e9f1d6ae9670002815b926e3bc783ed18d44ec7451ce"
+        },
+        {
+          "path": "script/scaffold/scope.lua",
+          "sha256": "6c592f83d00b52fde66b6e8e2db5c79d9cf8572a3efa659dc515f9f87c488798"
+        },
+        {
+          "path": "script/scaffold/ui.lua",
+          "sha256": "a2291d62a2df57edb0e570155789b798960e53fb080beb0a4593e4359dd83e47"
+        },
+        {
+          "path": "script/scaffold/ui_env.lua",
+          "sha256": "b23a94d4b3fd3970c8b4e8823bb1876a53317c9e2cd295e7947d541fc6da4455"
+        },
+        {
+          "path": "script/scaffold/ui_reload.lua",
+          "sha256": "a93591a7a803e8f2d0fe3478177296246f44ab7a80f85c37c21a0869426dd8d3"
+        },
+        {
+          "path": "script/systems/challenges/service.lua",
+          "sha256": "a9d6d679bc29bb775681fcede177dd0f87265aa56ac3691c16a5c1312627fd8d"
+        },
+        {
+          "path": "script/systems/heroes/service.lua",
+          "sha256": "cfb68e1f6921b0d838b891ffb4b0927de0e61a61820cd84aa40df79238f82f8a"
+        },
+        {
+          "path": "script/systems/talents/service.lua",
+          "sha256": "31fb78d98c92930b621120aff632cc5e87456fa1f104ab3f2b418159b93710d8"
+        },
+        {
+          "path": "script/ui/base/controls/button.lua",
+          "sha256": "b0a854aef72ef7d20b10798eda6b29491084ffa486025da44889c2393650fee9"
+        },
+        {
+          "path": "script/ui/base/controls/class.lua",
+          "sha256": "0db34eeb329d1bc9524cf88c343b1dc887aa988a8056bb2d27bfa9ea0ab96a50"
+        },
+        {
+          "path": "script/ui/base/controls/edit.lua",
+          "sha256": "f2706c990454ac72d15847de3097af8907ee15a90df1c69759351bb284023299"
+        },
+        {
+          "path": "script/ui/base/controls/init.lua",
+          "sha256": "7e22bf031182e648752298285c7609cdf5116420335c8e59f8198d34337f85d5"
+        },
+        {
+          "path": "script/ui/base/controls/model.lua",
+          "sha256": "546a333fcb5fd073b5ea974e3cf90f3cf57c7dd67cf9fc07cb9ca46e1731dad1"
+        },
+        {
+          "path": "script/ui/base/controls/model2.lua",
+          "sha256": "9ddb62dc9638070b5c397675d942eb739069be58e5b19a4e7b5f492ea43d3556"
+        },
+        {
+          "path": "script/ui/base/controls/panel.lua",
+          "sha256": "eb1406a65c44a53daba1e9aef134c0e089f023ccc5548bc0962c38a80b75e281"
+        },
+        {
+          "path": "script/ui/base/controls/progress.lua",
+          "sha256": "fc12d8d1a3ae9d96f0da51c05f8bd1febbbb88321c452d15b85543a47bd79f8b"
+        },
+        {
+          "path": "script/ui/base/controls/text.lua",
+          "sha256": "83dafdfbecbb45d7964e3c88cb78c1f81d7a53019c4708f3bfdb051a2aa5cb76"
+        },
+        {
+          "path": "script/ui/base/controls/texture.lua",
+          "sha256": "cecef34d8440cfc6d5474b9907c6996ea5bbe3a488f57d3297d3179e42663041"
+        },
+        {
+          "path": "script/ui/base/detail/game.lua",
+          "sha256": "065cf4ae7191258d632ddd86b61a1592cce51eb5ac38db93e8d4d44cc6c3ed4c"
+        },
+        {
+          "path": "script/ui/base/detail/init.lua",
+          "sha256": "815a5d5b1b0cadc62d33cd086c0e4092d79e46863785c52c965fed53c2a90114"
+        },
+        {
+          "path": "script/ui/base/detail/keyboard.lua",
+          "sha256": "7dd7cabfc61732c71572108bcec6d7bf69311fd0de51c5d23e75f3614472b7bd"
+        },
+        {
+          "path": "script/ui/base/detail/template.lua",
+          "sha256": "51a70dc589a937e3259eae5978314912f2eb914458fdb93bb8e1aae707e71dc7"
+        },
+        {
+          "path": "script/ui/base/detail/timer.lua",
+          "sha256": "7e9f627fef6bf9faddc460b4f7dd59ed61fdf0c283bd6ff5d9c8486b83bcee0e"
+        },
+        {
+          "path": "script/ui/base/init.lua",
+          "sha256": "e15528f9000f94d3a04d0ae4826db8b52309530c8119390f9c2e3a68c8eca3ad"
+        },
+        {
+          "path": "script/ui/init.lua",
+          "sha256": "484d052f50eccb38122ce44bbf7e5232df11e2c5dd5b4b60d4771a5ed15352bf"
+        },
+        {
+          "path": "script/world/arenas.lua",
+          "sha256": "5319f3ced7f8714c5ec98ccdeff27c31a8a98fafe938e64cfdfc49885e35bad2"
+        },
+        {
+          "path": "script/world/generated_placements.lua",
+          "sha256": "1b3e5cc8e3862b6366f24c5fd26320edfe0543ac1049890c2a9310531d675aa3"
+        },
+        {
+          "path": "script/world/session.lua",
+          "sha256": "96e62e046951ed410c1a7f3770b67bdc3893cdcd98bfe03680a9d1e31a0c38f7"
+        },
+        {
+          "path": "wenhao_plugin.tga",
+          "sha256": "617662229027c27b1482d800d5047b6ff21f1afabca2f7dc203b1f3f8c8fa96e"
+        }
+      ]
+    },
+    {
+      "map": "example-unit.w3x",
+      "sha256": "19bd98ff6e3fae6f989c16d150e9a97b642896ca70ef0b792f929070f61a31fe",
+      "config": {
+        "name": "example-unit",
+        "test": true,
+        "clients": 1,
+        "ticks": 6000,
+        "oos_control": false,
+        "suite": "gameplay",
+        "diagnostic": null,
+        "dev": false,
+        "map": "UnitTestMap",
+        "format": "obj",
+        "runtime": "D:/WE/YDWE1.32.13正式版",
+        "we": "D:/WE/KKWE_Plugin"
+      },
+      "map_source": "UnitTestMap",
+      "w2l_lock_sha256": "a9b3da5438520293da366dcf7b3999f85a8cf44731029266c10f10ae0d0a99ff",
+      "w2l_policy_sha256": "3ddb0a26ac33fe996e57f8660558ccec033f4b043e1b490f1a0e44b6c99eb5c4",
+      "w2l_core_policy_sha256": "ac6b099cc3fa17a355a05871199256f1ae2a04bcf5b9a423cec4a86198d75c28",
+      "map_sources": {
+        ".w3x": "d3c23e0c410e5bc9db9b6291dd14802f44ce0fc6ee74b9100ccc3d8f726b5d19",
+        "map/war3map.doo": "1c4b553adc0b39df3de28d6ea7aab2733e7f2d4b0a22ffe6d0b904416051fe82",
+        "map/war3map.j": "50a78b10f44ab65790a0f01989c4f460d765a20e8fd38580dd90d527d4c6aa39",
+        "map/war3map.shd": "125c62526cce3e4b947fa527adf081ae0394d1ef0fbeb74db5ce742574533cf3",
+        "map/war3map.w3e": "0d3f5729d6d529ea2f8b6ca3dc3424c052939083147fea50d914095fcc00fd5d",
+        "map/war3map.w3r": "7b323e4040b00984d64a7264845b53434f49bff655eb51947789499f65f07e14",
+        "map/war3map.wpm": "f7853a91b77ce35facaaff5fa2b829fb632aeddac49d09ff50f3746edb5afc39",
+        "map/war3mapUnits.doo": "6393c1732adaf6d3b87813a37f6ad036d279e62732cc479fb4258b9b91845db4",
+        "placements.json": "7e4823495d6c7a9d15d708af67d2fcadf97089e4df1545906af8bceff3224a0e",
+        "table/ability.ini": "ebb2d6db74d430087a03aaf77a82b49554e35d3aa3cca9a17669b9c1e15ffcb3",
+        "table/unit.ini": "24341572cbdc15e8f0a35778f3cdf907b21dac8cdd8ab7e50f3fcbb6eca1fa91",
+        "table/w3i.ini": "78655f28c3a205117de03d534681fdf8a0e2d9f710ccde0ffc0cbb4496d744fc",
+        "w3x2lni/config.ini": "d663e7c7b4c5a5f31ceb82f8eda3f288250d4eb2cf18569f56fceac831dbf99b"
+      },
+      "files": [
+        {
+          "path": "(key)",
+          "sha256": "a2751180ad76f8257984311b06d9cd41c20cab508fa2584a7aa09f85356eee9c"
+        },
+        {
+          "path": "callback",
+          "sha256": "7249284a0f0b0f73104fa152e2a63294c631435ac7a1bca3b9676e2d34804a13"
+        },
+        {
+          "path": "core/background.blp",
+          "sha256": "c298d25875a8885488538c76394268725b175f5afe025aaf47923dd3637e4be3"
+        },
+        {
+          "path": "core/black_icon.tga",
+          "sha256": "6a75bb8729be183db3084fa7e859b7eaab1fb20d7e028b11c12e47668a910d97"
+        },
+        {
+          "path": "core/button.blp",
+          "sha256": "3b1d32dcb3c2bf597973a5575b9d4b43ba192ea525533f5375823f43b06059aa"
+        },
+        {
+          "path": "core/edit.blp",
+          "sha256": "65c4c05368e91c8e1faa2909952774e0755c7909a06c7e9a79166ed02600ce31"
+        },
+        {
+          "path": "core/model.blp",
+          "sha256": "286aecafff46a25127f9809e27594d40e58d96b80154fe6312357a0ebe48e79f"
+        },
+        {
+          "path": "core/move_background.blp",
+          "sha256": "22c7085b2aaf49a8129e1e9ad120158c2c9082dcd14acc978756a45abf12b035"
+        },
+        {
+          "path": "core/panel.blp",
+          "sha256": "792c67d7d1495e021d3c5d03f4ae2bdd259c8a0256f429b46700b15f6e1b27e8"
+        },
+        {
+          "path": "core/text.blp",
+          "sha256": "4de3a2be26407bb9cdec3b5771010373241f98ff7870d38e5514bcefad25de0c"
+        },
+        {
+          "path": "core/texture.blp",
+          "sha256": "4a4bd534f4e12be2543390c324f06c64567df33de167883ca99c3911e2996e99"
+        },
+        {
+          "path": "core/Transparent.tga",
+          "sha256": "4f35a6031ff81327f096b0cc339988a70eaa290530b6ab90bcca437eeca75dfc"
+        },
+        {
+          "path": "fonts.TTF",
+          "sha256": "bd99fe368b31c62e29ee8456c8fdeb86277786a17e8e40be00ecbe5e4fc7c275"
+        },
+        {
+          "path": "jass2binary.lua",
+          "sha256": "488f1a6e5bb419159b7668b14a6c44e3395ee193b752d07b5d29689a849d958e"
+        },
+        {
+          "path": "plugin_main.lua",
+          "sha256": "c2d4212088e5309daff8486cd938de51ba3f4b5f5b4169099bc1ae3a7cabee1d"
+        },
+        {
+          "path": "script/app/config.lua",
+          "sha256": "5cb1882d69b444b134c29350c08904908ec21ceddd93587f4f0b1cfc68ef0435"
+        },
+        {
+          "path": "script/app/main.lua",
+          "sha256": "64e2e854ecdd49611d03155bce95ae4424c89194c30000b5a6fc1d59b31a072b"
+        },
+        {
+          "path": "script/app/runtime_test.lua",
+          "sha256": "241bdc9937995d73b4694885e18488de15933417b799ae9242b163c553bbee22"
+        },
+        {
+          "path": "script/app/view.lua",
+          "sha256": "c0e65a37a5ce9b9ce18958999960daa3c5dae85a831604c48d36361c1f3c0d7f"
+        },
+        {
+          "path": "script/content/challenges/training/boss.lua",
+          "sha256": "c34248f0d562e82341d6dbe9148f3afa31e5c6b8154d7278184f5e9210ecf914"
+        },
+        {
+          "path": "script/content/challenges/training/definition.lua",
+          "sha256": "378d177666fc7383b71c147303ef0134306fa38071431265fa06f480942d3573"
+        },
+        {
+          "path": "script/content/effects/cast_aura.lua",
+          "sha256": "7300a984bf90b7a3d1789c5960aeed892e118007c25de4c215c02e8474554663"
+        },
+        {
+          "path": "script/content/heroes/catalog.lua",
+          "sha256": "34a55864fe298363f7c9c752c17a9db2b601e644c6ff27a4d52d1fdb868045d5"
+        },
+        {
+          "path": "script/content/heroes/marisa/definition.lua",
+          "sha256": "cb8c1cb365cc5650d7aa9391533982ad7949516c4d33d9909355a83ada098527"
+        },
+        {
+          "path": "script/content/heroes/marisa/skills/stellar_beam.lua",
+          "sha256": "033ac097b8bf8b51632f16eab0593841f905b2c6efaa643909ba3d78cb56bc69"
+        },
+        {
+          "path": "script/content/heroes/marisa/talents.lua",
+          "sha256": "46ba0a37b9115d5358217d09f4c4478d3a1f045125e6a6c10306d99b192232ff"
+        },
+        {
+          "path": "script/content/heroes/reimu/definition.lua",
+          "sha256": "2e141ab15f7d8e767c5dc1c084bb9575576154e8586e929cc88820348cbc0734"
+        },
+        {
+          "path": "script/content/heroes/reimu/skills/spirit_bolt.lua",
+          "sha256": "f1af26d16d4e94581053b9a6c477fb89182ccbfa9cb67eb013bf1b62fd5d756d"
+        },
+        {
+          "path": "script/content/heroes/reimu/talents.lua",
+          "sha256": "15df3ed687857dbf4fafd5703a77421a32e8cbd96df8e94a39579a894c10745c"
+        },
+        {
+          "path": "script/content/heroes/sakuya/definition.lua",
+          "sha256": "cab4dd7b8de90682ad2ada7cfd6e655d886883d6c6c1836d25c4161f8bc8841b"
+        },
+        {
+          "path": "script/content/heroes/sakuya/skills/returning_blades.lua",
+          "sha256": "4a2e7c4318b713afed3e3d36d4b4ca6821b599e3b1f7a5e04c4992a3a454c2e0"
+        },
+        {
+          "path": "script/content/heroes/sakuya/talents.lua",
+          "sha256": "479d8b3d8bfdfd5f676c31f1bab1ed627e179217fc710749aa1843d980df9b47"
+        },
+        {
+          "path": "script/game/combat/native.lua",
+          "sha256": "b95c3049105faa2fa62cab6d657cab2898b7c4661766ac7f8c34f0c0bd8e2525"
+        },
+        {
+          "path": "script/game/skill/service.lua",
+          "sha256": "e99230fcff3d6e37ca893a30befc0dd1ea23546b8e980f8cd9c849c6a2635cae"
+        },
+        {
+          "path": "script/game/unit/manager.lua",
+          "sha256": "b36c9592499e017eb10c4a07bb30c3ff275b9835ce4e7dea91925ce609084877"
+        },
+        {
+          "path": "script/game/unit/native.lua",
+          "sha256": "d5cf51a9151a8ae1e301a576f71f9b25f18c03ad76843cf16e536604ea03ae5d"
+        },
+        {
+          "path": "script/game/unit/service.lua",
+          "sha256": "4a0e17bc322436de8e5dc30cb956e1725b3c8f0159e91238141485384dce39eb"
+        },
+        {
+          "path": "script/presentation/challenge_view.lua",
+          "sha256": "d51458682fb49f789ba0f5370ee4445147101c4243be20c71a96b4f98b238192"
+        },
+        {
+          "path": "script/probes/business_resource.lua",
+          "sha256": "1c4826c31157d60f3e3563e3f27bc6f3d4c142853f8eebb64eeb90fa91807e18"
+        },
+        {
+          "path": "script/probes/gameplay.lua",
+          "sha256": "22b090651a4289cd825edddc3662284949ef083144658d113cede9fbd42a7103"
+        },
+        {
+          "path": "script/probes/hotreload.lua",
+          "sha256": "0b551d269ee92b8bb00aa921285da9c46a59c89fb7dce31a6a8854677476cea3"
+        },
+        {
+          "path": "script/probes/performance.lua",
+          "sha256": "28dab7260174809f13837b5aed35da856579c425fbda5de44f758fdfdffccf35"
+        },
+        {
+          "path": "script/probes/ui.lua",
+          "sha256": "0f553b1156512d0150e332bc78584fe5b39b9dbfa987818cac499c125a668928"
+        },
+        {
+          "path": "script/probes/unit_lifecycle.lua",
+          "sha256": "254f15cf627e2f47ca4941c858891ad50508c29f7923b067a3b262af6e530c77"
+        },
+        {
+          "path": "script/rules/combat.lua",
+          "sha256": "bccc2b7607e2f4df53c8757dde0d1361349c4218f231130e8096a1284e77c74b"
+        },
+        {
+          "path": "script/scaffold/ac.lua",
+          "sha256": "a52d0250dac882490b3e5396ccb0aca03ea64bb78a9be1a4fe241bcd94a88ac6"
+        },
+        {
+          "path": "script/scaffold/command.lua",
+          "sha256": "8c57dea098808af972edaf854c0d465ac4831c1708464edf243fcb85c55db976"
+        },
+        {
+          "path": "script/scaffold/context.lua",
+          "sha256": "29c2e64099252bf78d9d288182151d64b452cc0bc5c61ac217e99eab3f1685c5"
+        },
+        {
+          "path": "script/scaffold/entity_registry.lua",
+          "sha256": "e204b8eca76077f1925dad3b75647461b7a78173e1918f84831c559346071acf"
+        },
+        {
+          "path": "script/scaffold/events.lua",
+          "sha256": "7d46d446a14940f1c7644fef35071b34fd2e8ed31513f51d775062eb8691006f"
+        },
+        {
+          "path": "script/scaffold/innerjapi.lua",
+          "sha256": "0060752480305230b2fc5696677bb001980560a5f6d33bb197f0f74c647cd782"
+        },
+        {
+          "path": "script/scaffold/scheduler.lua",
+          "sha256": "11f75bebb74cffc69999e9f1d6ae9670002815b926e3bc783ed18d44ec7451ce"
+        },
+        {
+          "path": "script/scaffold/scope.lua",
+          "sha256": "6c592f83d00b52fde66b6e8e2db5c79d9cf8572a3efa659dc515f9f87c488798"
+        },
+        {
+          "path": "script/scaffold/ui.lua",
+          "sha256": "a2291d62a2df57edb0e570155789b798960e53fb080beb0a4593e4359dd83e47"
+        },
+        {
+          "path": "script/scaffold/ui_env.lua",
+          "sha256": "b23a94d4b3fd3970c8b4e8823bb1876a53317c9e2cd295e7947d541fc6da4455"
+        },
+        {
+          "path": "script/scaffold/ui_reload.lua",
+          "sha256": "a93591a7a803e8f2d0fe3478177296246f44ab7a80f85c37c21a0869426dd8d3"
+        },
+        {
+          "path": "script/systems/challenges/service.lua",
+          "sha256": "a9d6d679bc29bb775681fcede177dd0f87265aa56ac3691c16a5c1312627fd8d"
+        },
+        {
+          "path": "script/systems/heroes/service.lua",
+          "sha256": "cfb68e1f6921b0d838b891ffb4b0927de0e61a61820cd84aa40df79238f82f8a"
+        },
+        {
+          "path": "script/systems/talents/service.lua",
+          "sha256": "31fb78d98c92930b621120aff632cc5e87456fa1f104ab3f2b418159b93710d8"
+        },
+        {
+          "path": "script/ui/base/controls/button.lua",
+          "sha256": "b0a854aef72ef7d20b10798eda6b29491084ffa486025da44889c2393650fee9"
+        },
+        {
+          "path": "script/ui/base/controls/class.lua",
+          "sha256": "0db34eeb329d1bc9524cf88c343b1dc887aa988a8056bb2d27bfa9ea0ab96a50"
+        },
+        {
+          "path": "script/ui/base/controls/edit.lua",
+          "sha256": "f2706c990454ac72d15847de3097af8907ee15a90df1c69759351bb284023299"
+        },
+        {
+          "path": "script/ui/base/controls/init.lua",
+          "sha256": "7e22bf031182e648752298285c7609cdf5116420335c8e59f8198d34337f85d5"
+        },
+        {
+          "path": "script/ui/base/controls/model.lua",
+          "sha256": "546a333fcb5fd073b5ea974e3cf90f3cf57c7dd67cf9fc07cb9ca46e1731dad1"
+        },
+        {
+          "path": "script/ui/base/controls/model2.lua",
+          "sha256": "9ddb62dc9638070b5c397675d942eb739069be58e5b19a4e7b5f492ea43d3556"
+        },
+        {
+          "path": "script/ui/base/controls/panel.lua",
+          "sha256": "eb1406a65c44a53daba1e9aef134c0e089f023ccc5548bc0962c38a80b75e281"
+        },
+        {
+          "path": "script/ui/base/controls/progress.lua",
+          "sha256": "fc12d8d1a3ae9d96f0da51c05f8bd1febbbb88321c452d15b85543a47bd79f8b"
+        },
+        {
+          "path": "script/ui/base/controls/text.lua",
+          "sha256": "83dafdfbecbb45d7964e3c88cb78c1f81d7a53019c4708f3bfdb051a2aa5cb76"
+        },
+        {
+          "path": "script/ui/base/controls/texture.lua",
+          "sha256": "cecef34d8440cfc6d5474b9907c6996ea5bbe3a488f57d3297d3179e42663041"
+        },
+        {
+          "path": "script/ui/base/detail/game.lua",
+          "sha256": "065cf4ae7191258d632ddd86b61a1592cce51eb5ac38db93e8d4d44cc6c3ed4c"
+        },
+        {
+          "path": "script/ui/base/detail/init.lua",
+          "sha256": "815a5d5b1b0cadc62d33cd086c0e4092d79e46863785c52c965fed53c2a90114"
+        },
+        {
+          "path": "script/ui/base/detail/keyboard.lua",
+          "sha256": "7dd7cabfc61732c71572108bcec6d7bf69311fd0de51c5d23e75f3614472b7bd"
+        },
+        {
+          "path": "script/ui/base/detail/template.lua",
+          "sha256": "51a70dc589a937e3259eae5978314912f2eb914458fdb93bb8e1aae707e71dc7"
+        },
+        {
+          "path": "script/ui/base/detail/timer.lua",
+          "sha256": "7e9f627fef6bf9faddc460b4f7dd59ed61fdf0c283bd6ff5d9c8486b83bcee0e"
+        },
+        {
+          "path": "script/ui/base/init.lua",
+          "sha256": "e15528f9000f94d3a04d0ae4826db8b52309530c8119390f9c2e3a68c8eca3ad"
+        },
+        {
+          "path": "script/ui/init.lua",
+          "sha256": "484d052f50eccb38122ce44bbf7e5232df11e2c5dd5b4b60d4771a5ed15352bf"
+        },
+        {
+          "path": "script/world/arenas.lua",
+          "sha256": "5319f3ced7f8714c5ec98ccdeff27c31a8a98fafe938e64cfdfc49885e35bad2"
+        },
+        {
+          "path": "script/world/generated_placements.lua",
+          "sha256": "2a393763422f06a5d81ea0d1d4746b764ad41f1b7b72b69bf8a98b5942074d72"
+        },
+        {
+          "path": "script/world/session.lua",
+          "sha256": "96e62e046951ed410c1a7f3770b67bdc3893cdcd98bfe03680a9d1e31a0c38f7"
+        },
+        {
+          "path": "wenhao_plugin.tga",
+          "sha256": "617662229027c27b1482d800d5047b6ff21f1afabca2f7dc203b1f3f8c8fa96e"
+        }
+      ]
+    }
+  ],
+  "delivery_support_files_sha256": {
+    ".agents/skills/innerjapi-lua/SKILL.md": "3e962d6399ca5727d41d87ec5aa10f0c00f9bbe4d60f1e0b2c75f166048e1afe",
+    ".gitattributes": "70765bb0b2350a9a2629379b43a967ff5dbad095ed32b355546d46987d0ede14",
+    ".vscode/tasks.json": "5bc9c8587da43dd00862c90f0769bfc1761471fbd0878793e68c8d4b50944478",
+    "AGENTS.md": "1ab58cfc9a3c7585ef6cb7620beae533e949bb2d62f891192925c40092ba3fba",
+    "README.md": "3b5e43be982a11f14c312489ab07922eb0c0cebee53248e15ff65ed8203d18fc",
+    "docs/InnerJAPI研究报告.md": "5f0229eed7cfa6514838819f53f9636a70bf0dbfc89c2e731191bfa3ab938d85",
+    "docs/Lua开发规则.md": "89f9700ae5c23b3bd5924af3acfa8d36a0ae5004aebb081ab1ab314d3e765c3b",
+    "docs/UI原生链路与边界.md": "44868c03b018905a5b0af72ae77e27bca2745b1ff05a8164bde0833005acd30f",
+    "docs/UI适配记录.md": "907e43a3a2d97d0c59ec84ff9ae494bd66b98dc445c949eb7a72af633583dfb1",
+    "docs/j2b加载与隔离.md": "74b4a9eaa77a9da3a2e5f3800cd4b69b41a6a00f2eb55863b9f953cbf9988674",
+    "docs/人工验收步骤.md": "e412c059fc59baedbdd58edbec64c80f4dbe017a587736ec6da8ffa0bdfac057",
+    "docs/单位生命周期与handle复用.md": "461ff9ef16c459a9e8d3c36847bd23a20063e294fe444820a7eaacb69d968e89",
+    "docs/固定依赖与LNI构建.md": "21fa74e9072567989acb2739194b01f4849c90a752c3a5ebf104540861658145",
+    "docs/实机验证报告.md": "278e17506272ba81bdfbc08d43cdcf056360b11a3ebcc35d1ecfb5360dcf3416",
+    "docs/性能GC与时钟实验.md": "af5dd9a8a3397d4dd754b94ef567431970fec111b61240f578eb88fa87229624",
+    "docs/扩展实机验证报告.md": "b5cb9092021f2160f8df9d391f9c43cd5023256c039f6f4d0d66b685c3602cc0",
+    "docs/框架选型与目录研究.md": "06e48c769f54c43e2594ed74bcb234a3a9c8996a151d64c894fa9c81843414df",
+    "docs/正式业务目录与技能样板.md": "13ea654dd7a367ba54e4e77007ef250844df9196eb89170a3ebb2757e8761a76",
+    "docs/研究任务进度.md": "7b9da0d6ec8b854b5e0bac160e56d42f99acb29a093e7a10c8959cc07945a8b4",
+    "docs/第二轮任务进度.md": "729cf3bccaf0efc67486aae5477710b949dedc0f425cc1224f401070c870672e",
+    "docs/第二轮实机验证报告.md": "085ff8bc8f9083884429debee33f644577b0166883e2769ce288ec940e25e9e5",
+    "docs/第二轮已确认目标.md": "cd5bafdb858e2345809e2a4d65e2f174963e8ae7b4f746a776ca9f3ea4b9357c",
+    "docs/第二轮验收核对.md": "5a0e8a6ea7b69c4c2e7d818af2477d834ba50e6d286a0532710b5658ae03b4db",
+    "docs/计时事件与开发热更新.md": "fd055761948a926329d6b8f41a6d02601bb0abd450a7634ef470ace2654d0396",
+    "docs/验证计划.md": "9dc51626007a7ef40d587d302b76a4e4d942327369b3eb20d030a0de016e2a25",
+    "tools/analyze_runtime.py": "c4ca599a26187b9f24cec238e2bfb58b26ea7870725a688bd92d6f81d5c865c0",
+    "tools/build.py": "9d2949af3a0eeff066de7a58f1c75ba8d89541b7c41f9466069d3773e658914b",
+    "tools/build_resource_probe.py": "749bd44fc4de163bc0ca112a3a401f18f0aa6a7fc9c3a8327048737d9e2b64d4",
+    "tools/check.py": "6d0fe84bd48d1f5429f3d098116cbe09294fa363fa76b677be73e04c6eae2379",
+    "tools/collect_evidence.py": "f7b161857472d30abfb1b9e419e8edd14c59c132e80b05f0945c1b60e692a586",
+    "tools/engine_trace.py": "5e0961cd9f345e583fc097b6dacb030143899fa8e5d73adc92ff26a1d81ce0ed",
+    "tools/framework_dependency.py": "735335c5c9ac169348f21091ae23de1ce41be4d6bf14d3b63b36af1ff0c78a94",
+    "tools/framework_package.py": "a5d0e4045404247a3cb055a7b36a262d8bee9de2155cf7d91bf2ee08c17567cd",
+    "tools/import_lan_runner.py": "34064890cf9c03c0613a618f3942e2fe738b20f91ae5a2e259e8413a3201392b",
+    "tools/inspect_engine.py": "3ebe6e48e31f6096693788590d5ce56242efda286d99629af06773cf8b05a83e",
+    "tools/lan/Start-LuaTest.ps1": "7fae43fe297ea31bfa2b1e530e746b7c02bd6a4a0c6e98d0a0bdd29f7fadb690",
+    "tools/lan/provenance.json": "2dc5672c5dd9c21239fde571f50d9f29cdd977786c732969403b30b60884d3cc",
+    "tools/lni_map.py": "68ff94eb0f7782886791431a3c0f97847a6ad54c88c96d0f9d7f8f077341e9de",
+    "tools/local_source_manifest.py": "aab2c7fc1082882ff404bdb26510c570ab2fd77dba32d595bb2cce2ef6bd8aeb",
+    "tools/map_archive.lua": "9f055e3e94e9846e3f6c86c5e19e5c1d1a1f7773aff7ee545105b73cef80ca11",
+    "tools/map_fixtures.py": "ab8d94d47bb8083f337bd3689ddf700ba90b705b68de86f6ba1851567b089c60",
+    "tools/map_info.py": "42ae4e5936e271dc088c156b7a9393f7780f7fc9da2a335c395b22ef5001b94d",
+    "tools/new_project.py": "c4aa2e014929218f973141bb9f4e1ce17bef32f4764e5e331b73ed04208c93c9",
+    "tools/plot_resources.py": "11db8231f29a7a3f0184e0dc00c59b1d550b89e2171952c066526d78faf0ef86",
+    "tools/resource_sampling.ps1": "10bcea2cd874ee2954ec54618835bb024100b1c6bafb929806618a5f9101e084",
+    "tools/restore-runtime.ps1": "3a1f72e0256853179bd67f0bd6ee42dc815a7b01e20a8a1c4478b6b14c77ca19",
+    "tools/reuse_check.py": "f12db8e68edb3c0d62bb0966e69e351ef3da9e8a60edef36fa364f7272ca7e74",
+    "tools/run.ps1": "bfa78bb6acbf73618f5bbcf2e038e485341bea181f058514b7b8157ce3de72ef",
+    "tools/runtime_guard.ps1": "28beb87c74a7ece9bec52b8619c235f238ecee3405e6a5c1ecf02ff509a8eb4f",
+    "tools/stage.py": "ff6f84887dc6589d9a3114f8011a10d156c31542bcf9ee6b50a98aab53265fff",
+    "tools/summarize_resources.py": "a2673cb8ae3341025bd996448e8be3c068687585f6c6b95787e73bbad7abdd1b",
+    "tools/test.ps1": "bd1fb1968ec2c085a96e9ed9cfb662ecec8c28867330005dfaea1f5883eb18b2",
+    "tools/trace_game_font.py": "8f81465e75306756612fcd14dabfb5e4eb6c52e8f86938f5ce8fce3f1ed13eee",
+    "tools/trace_game_viewport.py": "75f8c9b9e473e4615aff7e2b0cd278fcb19d9715e275777f74a47c69df1eb807",
+    "tools/verify_evidence.py": "0560aee0c355d93f344b9e2c156c9a74661276e7093e501bb558a66c054a7601",
+    "tools/verify_git_bytes.py": "acf505a500df8840f4ed125513f39001de0e24f8a537c458f9c8001fd8763c8b",
+    "tools/verify_objects.lua": "d23d7463944f6534eb257e95475f10834c4eb1329eed28f76f794dc46d421799",
+    "tools/verify_payload.lua": "72c13aa1853ae543fe28e2b815e32db955aed1703a19a046bced05b4d0762ea2",
+    "tools/verify_round2.py": "79f4a1b2b4d46464ba8609b968f35d4dfeb59dbf6704d4331b952849a96b0402",
+    "tools/w2l_cli.lua": "fccfe88dd290a0bbe83f72aab7e1dc12ef98cab9aca70457f0749a15f90d179b",
+    "tools/w2l_runtime.py": "5b988fd8e9f97f698164151cc13c9cf7de8309daafa71c1c18b5ba1af6fb91ff"
+  }
+}

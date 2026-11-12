@@ -1,0 +1,7 @@
+D:\War3\LuaScaffold‌\build\tool-cache\w2l-e053f76ff47cbb7c\bin\w3x2lni-lua.exe: D:\War3\LuaScaffold‌\tools\verify_objects.lua:42: ability.A001.cool[1] mismatch expected=0.0 actual=0.
+stack traceback:
+	[C]: in function 'assert'
+	D:\War3\LuaScaffold‌\tools\verify_objects.lua:42: in upvalue 'equal'
+	D:\War3\LuaScaffold‌\tools\verify_objects.lua:40: in local 'equal'
+	D:\War3\LuaScaffold‌\tools\verify_objects.lua:54: in main chunk
+	[C]: in ?

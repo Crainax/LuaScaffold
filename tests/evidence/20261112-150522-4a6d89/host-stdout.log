@@ -1,0 +1,38 @@
+[CONFIG] loading file [ydhost.cfg]
+[AURA] starting up
+[AURA] using Windows timer with resolution 1 milliseconds
+[AURA] starting winsock
+[AURA] setting process priority to "high"
+[AURA] Aura++ version 1.24
+[UDPSOCKET] using default broadcast target
+[CONFIG] loading file [map.cfg]
+[MAP] map_size = 6575026
+[MAP] map_info = 199336315
+[MAP] map_crc = 3948006288
+[MAP] map_sha1 = 229 238 103 48 134 61 198 166 155 169 91 17 72 102 182 195 202 251 33 93
+[MAP] map_options = 96
+[MAP] map_width = 212
+[MAP] map_height = 212
+[MAP] map_slot1 = 0 255 0 0 0 0 1 1 100
+[MAP] map_slot2 = 0 255 1 0 0 1 1 1 100
+[MAP] map_slot3 = 0 255 1 0 0 2 1 1 100
+[MAP] map_slot4 = 0 255 1 0 0 3 1 1 100
+[MAP] map_slot5 = 0 255 1 0 0 4 1 1 100
+[MAP] map_slot6 = 0 255 1 0 0 5 1 1 100
+[MAP] map_slot7 = 
+[AURA] creating game [LanTest-20261112-150522-4a6d89]
+[GAME: LanTest-20261112-150522-4a6d89] listening on port 8677
+[GAME: LanTest-20261112-150522-4a6d89] player [LanP1|198.18.0.1] joined the game
+[GAME: LanTest-20261112-150522-4a6d89] [Local] 5. . .
+[GAME: LanTest-20261112-150522-4a6d89] [Local] 4. . .
+[GAME: LanTest-20261112-150522-4a6d89] [Local] 3. . .
+[GAME: LanTest-20261112-150522-4a6d89] [Local] 2. . .
+[GAME: LanTest-20261112-150522-4a6d89] [Local] 1. . .
+[GAME: LanTest-20261112-150522-4a6d89] started loading with 1 players
+[TCPSOCKET] error (recv) - Connection reset by peer
+[GAME: LanTest-20261112-150522-4a6d89] deleting player [LanP1]: has lost the connection (connection error - Connection reset by peer)
+[GAME: LanTest-20261112-150522-4a6d89] [Local] LanP1 has lost the connection (connection error - Connection reset by peer).
+[GAME: LanTest-20261112-150522-4a6d89] is over (no players left)
+[AURA] deleting game [LanTest-20261112-150522-4a6d89]
+[AURA] shutting down
+[AURA] shutting down winsock

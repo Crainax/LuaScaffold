@@ -1,0 +1,10 @@
+{
+  "clients": 3,
+  "message": "OOS detected by ydhost",
+  "logs": [
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\round2-final-oos-P1.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\round2-final-oos-P2.log",
+    "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Lua框架研究\\logs\\round2-final-oos-P3.log"
+  ],
+  "status": "FAIL"
+}

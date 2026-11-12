@@ -1,110 +1,55 @@
 # InnerJAPI Lua 项目脚手架
 
-基于 InnerJAPI **1.49-9** 的经典 Warcraft III Lua 模板。玩法、UI 和测试使用 Lua 5.3；构建工具生成必要的 JASS 引导外壳，日常业务开发不需要写 JASS。官方 UI 渲染层已接入，原包快照保持原样。
+经典 Warcraft III / InnerJAPI **1.49-9** / 内嵌 Lua **5.3** 开发基线。业务、官方 UI 适配和测试用 Lua；地图保留必要 JASS 初始化和单次加载入口。原包 78 文件保持不可变。
 
-实测支持范围及证据见 [扩展实机验证报告](docs/扩展实机验证报告.md)。这是可复用的基础模板，不包含完整 RPG、伤害、技能、平台存档或登录框架。新玩法仍须做自己的同步验证。
+当前包含 **3 个英雄类型**、专属技能与二选一天赋、原生伤害/特效、挑战/Boss、命令 UI、稳定单位 ID 和生命周期管理。它是可运行的样板，未包含完整 RPG、平台存档或装备系统。先读 [正式业务目录与技能样板](docs/正式业务目录与技能样板.md)、[Lua 开发规则](docs/Lua开发规则.md) 和 `.agents/skills/innerjapi-lua/SKILL.md`。
 
-长期综合压力曾观察到进程私有内存增长，独立空闲和 UI 分阶段对照尚未定位其原生来源。Lua 清理回归通过不等于原生零泄漏；正式项目应限制资源规模并复测自己的负载。UI 实际裁剪像素、鼠标/输入法及多分辨率外观仍需人工验收。
+## 新项目
 
-当前扩展研究入口：[开发规则](docs/Lua开发规则.md)、[框架选型](docs/框架选型与目录研究.md)、[UI/DLL 边界](docs/UI原生链路与边界.md)、[性能与 GC](docs/性能GC与时钟实验.md)、[计时及热更新](docs/计时事件与开发热更新.md)、[j2b 与日志](docs/j2b加载与隔离.md)。项目 skill 在 `.agents/skills/innerjapi-lua`，随模板复制。
-
-## 从模板创建项目
-
-在本目录执行，目标目录必须不存在：
+目标目录必须不存在：
 
 ```powershell
 python tools/new_project.py D:/War3/MyLuaGame --id MyLuaGame --title 我的Lua地图
 cd D:/War3/MyLuaGame
 python tools/check.py
-python tools/build.py --name first-build
+python tools/build.py --name first-build --map MainMap --format obj
 ```
 
-地图输出为 `build/first-build.w3x`。每次使用新的构建名，避免覆盖旧地图和混用测试日志。项目 ID 和构建名使用 ASCII 字母、数字、下划线或连字符（版本式构建名可写 `baseline-0-2-0`，不含点号）。`project.json` 设置项目 ID、标题及版本。复制工具不复制 `.git` 和 `build`，新项目可自行初始化 Git。
+输出 `build/first-build.w3x`，每次使用新构建名。业务在 `src`；公共 `scaffold/ui/game` 和原包在 `deps/lua-scaffold`，由 `framework.lock.json` 固定内容哈希，新项目不依赖原脚手架目录。复制不带 `.git`、`build`、历史 `tests/evidence`；继承的研究报告不证明新项目已经通过实测。升级/回退见 [固定依赖与 LNI 构建](docs/固定依赖与LNI构建.md)。
 
-随模板复制的研究报告与 `tests/evidence` 是模板历史，不是新项目已经完成的实机验收。新项目运行自己的 tests 后，应按自己的构建更新验收集合；不要把继承的通过记录当成新玩法、平台或配置的同步保证。
+## 开发与测试
 
-开发入口为 `src/app/main.lua`；默认 UI 在 `src/app/view.lua`。`src/app/runtime_test.lua` 和 `src/probes` 只进入 `--test` 包；`src/dev` 只进入 `--dev` 包，正式构建默认全部排除。
-
-VS Code tasks 已提供正式编译、开发启动、Lua 套件选择、1/3/6 客户端验证、故意 OOS 和 30 分钟压力测试，没有 YDLua/InnerJAPI 选择项。手动启动保留游戏，自动测试结束后清理本次游戏。
+入口 `src/app/main.lua` 组装 `world/session.lua` 和 `presentation/challenge_view.lua`。每位玩家拥有三个英雄，选择天赋、开始挑战、选择英雄施法。技能使用独立逻辑能量，不等于原生 mana；挑战结束恢复队伍，冷却不重置。
 
 ```powershell
-pwsh -NoProfile -File tools/run.ps1 -Mode Build
+pwsh -NoProfile -File tools/run.ps1 -Mode Build -Map MainMap -Format slk
 pwsh -NoProfile -File tools/run.ps1 -Mode Play -Dev
-pwsh -NoProfile -File tools/run.ps1 -Suite hotreload -Clients 3
+pwsh -NoProfile -File tools/run.ps1 -Suite gameplay -Clients 3
+pwsh -NoProfile -File tools/run.ps1 -Mode Resource -Clients 3
+pwsh -NoProfile -File tools/run.ps1 -Mode Resource -Suite resource_matrix -Clients 3
 pwsh -NoProfile -File tools/run.ps1 -Mode Soak -Clients 3
 ```
 
-同一环境须先结束上一场游戏再运行下一条启动命令。Logger 接入目录为 `D:/Program Files (x86)/Warcraft III Frozen Throne/Lua框架研究/logs`；派生项目默认改用自己的 ID 目录。
+VS Code tasks 提供两图编译、套件选择、1/3/6 客户端、OOS 对照、资源对照及长测。没有 YDLua 切换。同环境串行启动；手动 Play 保留游戏，自动测试按本次 PID/创建时间清理。入口验证成功构建清单、地图哈希和人数，失败构建的残留文件不能启动。
 
-## 本机工具与构建
+`gameplay` 是业务/生命周期测试；`ui/performance/hotreload` 是独立回归；`campaign_soak` 是长期业务压力；`business_resource` 重复两轮相同业务负载；`resource_matrix` 分离单位、事件/任务、UI、技能、组合及恢复。OOS 模式故意分叉，预期被房主检测并返回失败，不可发布。编译、原生断言、多人状态和像素/真实输入验收是不同证据。
 
-需要 Python 3、Lua 5.3 的 `lua`/`luac`，以及提供 StormLib 和经典 JASS 校验器的编辑器运行库。本机默认路径：
+Logger 路径：`D:/Program Files (x86)/Warcraft III Frozen Throne/Lua框架研究/logs`，派生项目默认使用自己的 ID 文件夹。启动适配器在共享锁内临时隔离全局 jass2binary，加载完成恢复，见 [j2b 与日志](docs/j2b加载与隔离.md)。构建不加密，不弹额外游戏 console。
 
-- `D:/WE/YDWE1.32.13正式版`：MPQ 打包/回读运行库。
-- `D:/WE/KKWE_Plugin`：`pjass-classic`、common.j、blizzard.j。
-- `D:/War3/tools/LanTest`：可选的自动局域网测试工具；不随模板复制。
+## 地图构建
 
-构建时可以用 `--runtime`、`--we` 覆盖前两项。构建会验证 78 个原包文件的 SHA256，检查生成的 JASS，并逐文件回读最终 MPQ。`build/*-build.json` 保存地图哈希及实际打包文件哈希。
+`maps/MainMap` 和 `maps/UnitTestMap` 是独立 LNI 源，含物编、地形、初始化、预放置和区域。构建使用固定 **w3x2lni 2.7.2** 私有缓存，支持 OBJ/SLK，保留地图初始化并插入一次 Lua 引导；不修改共享配置。最终验证包括载荷字节、初始化二进制、物编有效字段及最终 JASS，成功清单最后写出。
 
-只生成待导入文件树：
+本机工具：Python 3、宿主 Lua 5.3、`D:/War3/tools/w3x2lni`、`D:/WE/YDWE1.32.13正式版` 的 MPQ 运行库、`D:/WE/KKWE_Plugin` 经典 JASS 检查器。自动游戏测试另需 `D:/War3/tools/LanTest` 及已安装的精确清理计划任务。路径选项以 `python tools/build.py --help` 为准，内容锁仍生效。
 
-```powershell
-python tools/stage.py --name payload-001
-```
+`tools/stage.py` 仅生成待导入载荷。正式包排除 runtime_test、旧测试 UI app/view、probes 和 dev，`--dev` 才包含受控 UI 热更。已有地图集成须保证唯一引导，不能同时执行 War3Lib 的 InnerJAPI 加载流程。
 
-`build/payload-001` 对应 MPQ 根目录，已包含官方 UI、字体和运行载体。整合已有地图时，把 `integration/loader.j` 纳入正常地图初始化，并全端调用一次。与已有 War3Lib InnerJAPI 入口二选一，不能重复启动。构建器使用裁剪后的 War3Lib 单测地形，生成六个玩家槽与空 JASS 引导；没有携带 War3Lib 测试业务、预放置单位或对象修改表。实际地图需自行接入对象数据和初始化顺序。
+## 证据与边界
 
-## 自动验证
+[单位生命周期与 handle 复用](docs/单位生命周期与handle复用.md)、[第二轮实测报告](docs/第二轮实机验证报告.md)、[第一轮扩展实测](docs/扩展实机验证报告.md) 保留通过及失败。原始日志在 `tests/evidence`，第二轮完整检查使用 `python tools/verify_round2.py`，须先收集该轮全部会话。所有结论受固定运行时、平台和场景限制；新项目必须建立自己的验收集合，不能继承历史通过记录。
 
-```powershell
-python tools/check.py
-python tools/build.py --name verify-six --test --clients 6 --ticks 12000
-./tools/test.ps1 -Name verify-six -Clients 6 -TimeoutSeconds 360
-python tools/collect_evidence.py
-```
+第二轮最终源码已完成单人、3/6客户端、故意OOS对照、UI/热更回归、11阶段资源矩阵、重复工作对照，以及约37分15秒的三端长测（每端354轮挑战、359轮一致摘要、6200断言）。`verified-round2.json` 核对当前源码与证据；独立项目示例在 `D:/War3/LuaScaffoldExample`，已完成离线及两图构建，未单独运行该副本游戏。
 
-测试客户端数须与构建参数一致；同一游戏环境只运行一场。工具以每端断言、完成标记和房主 OOS 检测验收，结束后按记录的 PID/创建时间清理本次进程。默认测试脚本依赖本机已安装的自动测试启动器和清理计划任务。
+历史长测曾观察到私有内存增长，Lua 清理通过不等于原生零泄漏。Windows 进程句柄数不等于 Warcraft handle ID 数。真实鼠标/输入法、裁剪像素、多分辨率外观仍需[人工验收](docs/人工验收步骤.md)，未使用桌面自动化。玩家退出清理有模拟通知及真实原生资源验证，不等于真实断线/重连已经测试。
 
-项目启动适配器在共享锁内临时隔离本机全局 jass2binary，全部客户端确认加载后立即恢复原文件。异常恢复见 [j2b 说明](docs/j2b加载与隔离.md)，不要绕开 tasks 后仍假定已隔离。构建/打包不执行加密。
-
-OOS 检测对照用例会**故意制造不同步并返回失败**，只能用于测试：
-
-```powershell
-python tools/build.py --name verify-control --test --clients 3 --ticks 4000 --oos-control
-./tools/test.ps1 -Name verify-control -Clients 3 -TimeoutSeconds 180
-```
-
-预期结果是房主记录 `desync detected`，不能把这种构建拿来发布。测试证据在 `tests/evidence`；详细覆盖及未覆盖项见 [验证计划](docs/验证计划.md)。
-
-## 开发规则
-
-- 同步逻辑使用 `entity_registry` 分配的单局稳定 ID。登记必须发生在全端一致的顺序中；不能根据 handle、frame ID、对象地址或未排序枚举选择目标。
-- UI 事件是本地回调，只提交 `bridge:send(...)` 意图；业务在同步接收器中校验身份、对象、权限和状态后执行。默认 `ping` 仅演示，不提供通用奖励接口。
-- `handle_level=0`，原生资源显式销毁。GC 负责 Lua 对象，不替代单位、组、计时器、触发器和 frame 的生命周期管理。
-- 匿名函数可以正常使用；长期回调必须能取消。控件优先用 `control:wait/loop`，销毁父控件会取消所属任务并先销毁子控件。同步任务使用 `bridge.scheduler` 或项目的 `scaffold.ac` 便利 API。
-- UI 定时单位是毫秒，逻辑 scheduler 单位是 tick；统一原生计时器请求间隔 0.01 秒，实际调度精度由引擎决定。
-- 禁用原包的隐式 `sync_key`、`load` 解码、热更新、周期全量 GC 和全局 math 改写。标准三角函数使用弧度。
-- `Context` 是开发期调用边界检查，不能拦截你直接调用原生 API。不要在本地 UI/GC 回调里创建、销毁或修改同步游戏对象。
-
-## 目录与文档
-
-| 路径 | 用途 |
-| --- | --- |
-| `src/scaffold` | 生命周期、稳定 ID、任务队列、命令协议、引擎/UI 适配 |
-| `src/ui/base` | 官方渲染层的独立适配副本 |
-| `src/app` | 新项目业务入口、默认界面及测试 harness |
-| `src/probes` / `src/dev` | 仅测试实验 / 仅开发 view 更新 |
-| `vendor/war3ui-1.49-9` | 原包、来源记录、完整文件哈希 |
-| `assets/map` | 最小地图地形及元数据来源文件 |
-| `integration` | 固定 JASS 加载外壳 |
-| `tests` | 离线测试、原包问题复现和实机证据 |
-| `tools` | 校验、复制模板、打包、测试、采集证据 |
-| `.vscode` / `.agents` | 独立启动任务 / 项目 skill |
-| `research` | 固定来源、二进制证据及只读分析输出 |
-
-- [UI 适配记录及使用方式](docs/UI适配记录.md)
-- [原包研究、handle/OOS 与 GC 说明](docs/InnerJAPI研究报告.md)
-- [扩展实机验证报告](docs/扩展实机验证报告.md) / [原始基线报告](docs/实机验证报告.md)
-- [验证覆盖与后续验收](docs/验证计划.md)
-
-更换 InnerJAPI 二进制、Warcraft 版本或平台后需要重新验证。
+其他研究：[框架选型](docs/框架选型与目录研究.md)、[UI 原生链路](docs/UI原生链路与边界.md)、[性能/GC/时钟](docs/性能GC与时钟实验.md)、[受控 UI 热更](docs/计时事件与开发热更新.md)、[验证计划](docs/验证计划.md)。

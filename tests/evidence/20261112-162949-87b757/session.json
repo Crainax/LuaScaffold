@@ -1,0 +1,89 @@
+{
+  "session": "D:\\War3\\tools\\LanTest\\sessions\\20261112-162949-87b757",
+  "sourceMap": "D:\\War3\\LuaScaffold‌\\build\\round2-final-six-slk.w3x",
+  "sha256": "B066CE9FF76934107D8E3261DF0BC476E9BA338D402AFD1BEF142BD409482DDB",
+  "gameMap": "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Maps\\Test\\LAN-20261112-162949-87b757.w3x",
+  "clients": 6,
+  "autoJoin": true,
+  "legacySizeCap": true,
+  "useScriptSlots": true,
+  "mapConfigOverride": "",
+  "startedUtc": "2026-11-12T08:29:49.3196281Z",
+  "hostPid": 37364,
+  "hostCreationUtcTicks": "639300689939744520",
+  "clientPids": [
+    14384,
+    10848,
+    36200,
+    31836,
+    22080,
+    22544
+  ],
+  "clientProcesses": [
+    {
+      "expectedName": "LanP1",
+      "pid": 14384,
+      "creationUtcTicks": "639300689962138760"
+    },
+    {
+      "expectedName": "LanP2",
+      "pid": 10848,
+      "creationUtcTicks": "639300689962239440"
+    },
+    {
+      "expectedName": "LanP3",
+      "pid": 36200,
+      "creationUtcTicks": "639300689962981680"
+    },
+    {
+      "expectedName": "LanP4",
+      "pid": 31836,
+      "creationUtcTicks": "639300689963044770"
+    },
+    {
+      "expectedName": "LanP5",
+      "pid": 22080,
+      "creationUtcTicks": "639300689963131950"
+    },
+    {
+      "expectedName": "LanP6",
+      "pid": 22544,
+      "creationUtcTicks": "639300689963232810"
+    }
+  ],
+  "gameName": "LanTest-20261112-162949-87b757",
+  "runtimeWE": "D:\\War3\\tools\\LanTest\\runtime\\WE",
+  "launchMode": "parallel",
+  "launchers": [
+    {
+      "player": "LanP1",
+      "pid": 31584,
+      "creationUtcTicks": "639300689961925153"
+    },
+    {
+      "player": "LanP2",
+      "pid": 36888,
+      "creationUtcTicks": "639300689962052688"
+    },
+    {
+      "player": "LanP3",
+      "pid": 31892,
+      "creationUtcTicks": "639300689962139955"
+    },
+    {
+      "player": "LanP4",
+      "pid": 29408,
+      "creationUtcTicks": "639300689962863645"
+    },
+    {
+      "player": "LanP5",
+      "pid": 36936,
+      "creationUtcTicks": "639300689962927873"
+    },
+    {
+      "player": "LanP6",
+      "pid": 36844,
+      "creationUtcTicks": "639300689963004624"
+    }
+  ]
+}

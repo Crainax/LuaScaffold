@@ -1,15 +1,181 @@
 {
   "version": "2.0.0",
   "tasks": [
-    {"label":"Lua: 编译正式地图","type":"process","command":"pwsh","args":["-NoProfile","-File","${workspaceFolder}/tools/run.ps1","-Mode","Build"],"group":{"kind":"build","isDefault":true},"problemMatcher":[]},
-    {"label":"Lua: 启动开发地图（保留游戏）","type":"process","command":"pwsh","args":["-NoProfile","-File","${workspaceFolder}/tools/run.ps1","-Mode","Play","-Dev"],"problemMatcher":[]},
-    {"label":"Lua: 选择单测","type":"process","command":"pwsh","args":["-NoProfile","-File","${workspaceFolder}/tools/run.ps1","-Suite","${input:suite}"],"group":{"kind":"test","isDefault":true},"problemMatcher":[]},
-    {"label":"Lua: 多人验证","type":"process","command":"pwsh","args":["-NoProfile","-File","${workspaceFolder}/tools/run.ps1","-Suite","${input:suite}","-Clients","${input:clients}"],"problemMatcher":[]},
-    {"label":"Lua: 故意 OOS 对照（预期失败）","type":"process","command":"pwsh","args":["-NoProfile","-File","${workspaceFolder}/tools/run.ps1","-Mode","OOS","-Clients","3"],"problemMatcher":[]},
-    {"label":"Lua: 30分钟压力测试","type":"process","command":"pwsh","args":["-NoProfile","-File","${workspaceFolder}/tools/run.ps1","-Mode","Soak","-Clients","3"],"problemMatcher":[]}
+    {
+      "label": "Lua: 编译 MainMap（OBJ）",
+      "type": "process",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}/tools/run.ps1",
+        "-Mode",
+        "Build",
+        "-Map",
+        "MainMap",
+        "-Format",
+        "obj"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Lua: 启动开发地图（保留游戏）",
+      "type": "process",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}/tools/run.ps1",
+        "-Mode",
+        "Play",
+        "-Dev"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Lua: 选择单测",
+      "type": "process",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}/tools/run.ps1",
+        "-Suite",
+        "${input:suite}"
+      ],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Lua: 多人验证",
+      "type": "process",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}/tools/run.ps1",
+        "-Suite",
+        "${input:suite}",
+        "-Clients",
+        "${input:clients}"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Lua: 故意 OOS 对照（预期失败）",
+      "type": "process",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}/tools/run.ps1",
+        "-Mode",
+        "OOS",
+        "-Clients",
+        "3"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Lua: 30分钟压力测试",
+      "type": "process",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}/tools/run.ps1",
+        "-Mode",
+        "Soak",
+        "-Clients",
+        "3"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Lua: 编译 MainMap（SLK）",
+      "type": "process",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}/tools/run.ps1",
+        "-Mode",
+        "Build",
+        "-Map",
+        "MainMap",
+        "-Format",
+        "slk"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Lua: 编译 UnitTestMap",
+      "type": "process",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}/tools/run.ps1",
+        "-Mode",
+        "BuildTest",
+        "-Map",
+        "UnitTestMap",
+        "-Suite",
+        "${input:suite}"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Lua: 三端业务资源对照",
+      "type": "process",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}/tools/run.ps1",
+        "-Mode",
+        "Resource",
+        "-Clients",
+        "3"
+      ],
+      "problemMatcher": []
+    }
   ],
   "inputs": [
-    {"id":"suite","type":"pickString","description":"Lua 测试套件","options":["integration","ui","performance","hotreload"],"default":"integration"},
-    {"id":"clients","type":"pickString","description":"客户端数量","options":["3","6","1"],"default":"3"}
+    {
+      "id": "suite",
+      "type": "pickString",
+      "description": "Lua 测试套件",
+      "options": [
+        "integration",
+        "ui",
+        "performance",
+        "hotreload",
+        "lifecycle",
+        "gameplay",
+        "campaign_soak",
+        "business_resource",
+        "resource_matrix"
+      ],
+      "default": "gameplay"
+    },
+    {
+      "id": "clients",
+      "type": "pickString",
+      "description": "客户端数量",
+      "options": [
+        "3",
+        "6",
+        "1"
+      ],
+      "default": "3"
+    }
   ]
 }

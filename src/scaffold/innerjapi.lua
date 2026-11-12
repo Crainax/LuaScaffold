@@ -22,7 +22,7 @@ function M.start(handlers, authorize)
     local receive = Command.receiver(handlers, authorize)
     local sequence, active, faulted = 0, true, false
     local outgoing, send_tick = {}, 0
-    local self = {scheduler = scheduler}
+    local self = {scheduler = scheduler,transport={accepted=0,rejected=0,reasons={}}}
     local function fail(err)
         faulted = true
         scheduler:stop()
@@ -42,13 +42,17 @@ function M.start(handlers, authorize)
         return scope:close()
     end
     function self:is_faulted() return faulted end
+    function self:abort(err)
+        Context.assert_sync()
+        if not faulted then fail(err)end
+    end
     function self:send(verb, entity, value)
         assert(active and not faulted, 'bridge inactive')
         if #outgoing >= 32 then return false, 'outgoing queue full' end
         local message = Command.encode(sequence + 1, verb, entity, value)
         sequence = sequence + 1 -- local-only counter, isolated from gameplay IDs
         outgoing[#outgoing + 1] = message
-        return true
+        return true,sequence
     end
     local ok, err = pcall(function()
         local trigger = jass.CreateTrigger()
@@ -65,7 +69,13 @@ function M.start(handlers, authorize)
                 local raw = japi.GetTriggerMessage()
                 if type(raw) ~= 'string' or raw:sub(1, 4) ~= 'LS1|' then return end
                 local sender = jass.GetPlayerId(japi.GetMessagePlayer())
-                receive(sender, raw)
+                local accepted,reason=receive(sender, raw)
+                if accepted then self.transport.accepted=self.transport.accepted+1
+                else
+                    self.transport.rejected=self.transport.rejected+1
+                    self.transport.reasons[reason]=(self.transport.reasons[reason] or 0)+1
+                    if self.transport.reasons[reason]<=3 then log.info('[COMMAND_REJECT]',reason)end
+                end
             end)
         end)
         scope:defer(function() jass.TriggerRemoveAction(trigger, action) end)

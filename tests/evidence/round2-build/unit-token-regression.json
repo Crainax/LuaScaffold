@@ -1,0 +1,9 @@
+{
+  "before_source_sha256": "b36c9592499e017eb10c4a07bb30c3ff275b9835ce4e7dea91925ce609084877",
+  "before_source": "unit-manager-before-token-fix.lua.txt",
+  "test": "tests/unit_lifecycle.lua",
+  "test_sha256": "f25e964c74ad5f519fba6befa35b740300a6d0d6b846dcc1d4c526b2e1a8e6b8",
+  "expected_before": "retained cancelled token must release removed unit record",
+  "after": "same test passes after cancel releases owner reference",
+  "scope": "host Lua regression, supplemented by native retained-token assertion"
+}

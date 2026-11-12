@@ -14,10 +14,12 @@ for folder in sorted(sessions.iterdir()):
     if source.parent != root/'build': continue
     out=dest/folder.name
     out.mkdir(exist_ok=True)
-    for name in ('session.json','result.json','cleanup.json','host-stdout.log','host-stderr.log','resources.jsonl'):
+    for name in ('session.json','result.json','cleanup.json','cleanup-first-failure.json','host-stdout.log','host-stderr.log','resources.jsonl'):
         if (folder/name).exists(): shutil.copy2(folder/name,out/name)
     if (folder/'client-logs').exists(): shutil.copytree(folder/'client-logs',out/'client-logs',dirs_exist_ok=True)
     build=root/'build'/(source.stem+'-build.json')
+    payload_manifest=root/'build'/(source.stem+'-manifest.json')
+    if payload_manifest.exists():shutil.copy2(payload_manifest,out/'payload-manifest.json')
     if build.exists():
         shutil.copy2(build,out/'build.json')
         metadata=json.loads(build.read_text(encoding='utf-8'))

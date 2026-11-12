@@ -1,0 +1,63 @@
+2026-11-12 15:10:49.553 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 15:10:49.575 [info]: PASS: same-tick reschedule skips old dispatch batch
+2026-11-12 15:10:49.575 [info]: PASS: rescheduled task runs once on next tick
+2026-11-12 15:10:50.163 [info]: PASS: native death event invalidates life tasks but retains unit ID
+2026-11-12 15:10:51.015 [info]: PASS: native hero revive succeeds
+2026-11-12 15:10:51.015 [info]: PASS: revival retains stable ID and observed native handle
+2026-11-12 15:10:51.016 [info]: PASS: convenience timer repeats on shared logical ticks
+2026-11-12 15:10:51.017 [info]: PASS: expected active humans=1
+2026-11-12 15:10:51.017 [info]: PASS: official UI controls initialized
+2026-11-12 15:10:51.017 [info]: PASS: UI globals and standard math isolated
+2026-11-12 15:10:51.018 [info]: PASS: legacy sync and gameplay entry absent
+2026-11-12 15:10:51.018 [info]: PASS: native button has positive width
+2026-11-12 15:10:51.018 [info]: PASS: native text round trip
+2026-11-12 15:10:51.018 [info]: PASS: local UI cannot register gameplay entities
+2026-11-12 15:10:51.019 [info]: PASS: unsafe and oversized input rejected
+2026-11-12 15:10:51.025 [info]: PASS: native model created
+2026-11-12 15:10:51.040 [info]: PASS: native model2 created
+2026-11-12 15:10:51.040 [info]: PASS: native scroll panel created
+2026-11-12 15:10:51.046 [info]: PASS: progress handles zero denominator
+2026-11-12 15:10:51.046 [info]: PASS: models and scroll disposal return to baseline
+2026-11-12 15:10:51.260 [info]: [LuaScaffold] COMMAND ping	0	1
+2026-11-12 15:10:51.632 [info]: PASS: native owner change refreshes ownership
+2026-11-12 15:10:51.633 [info]: [REMOVE_OBSERVE] phase=immediate type=1211117617 life=650.000 hidden=true dead=false
+2026-11-12 15:10:51.658 [info]: PASS: destroyed UI releases cancelled closure captures
+2026-11-12 15:10:51.658 [info]: [NATIVE_CALLBACK_GC] retained=0/8
+2026-11-12 15:10:51.659 [info]: PASS: nested UI destroy is idempotent
+2026-11-12 15:10:51.663 [info]: [REMOVE_OBSERVE] phase=next_tick type=0 life=0.000 hidden=false dead=false
+2026-11-12 15:10:51.663 [info]: PASS: external removal is detected after native state catches up
+2026-11-12 15:10:52.248 [info]: [REMOVE_OBSERVE] phase=half_second type=0 life=0.000 hidden=false dead=false
+2026-11-12 15:10:52.248 [info]: PASS: explicit external-remove notification invalidates stable ID
+2026-11-12 15:10:52.925 [info]: PASS: old life callbacks do not execute after death or owner change
+2026-11-12 15:10:52.951 [info]: PASS: native metamorphosis order accepted
+2026-11-12 15:10:53.004 [info]: PASS: native summon order accepted
+2026-11-12 15:10:53.025 [info]: PASS: native bear-form order accepted
+2026-11-12 15:10:55.825 [info]: [UNIT_FORM] before=1164207469 after=1164209517 id=2 epoch=2 ability=1 buff=1 order=0 summons=1
+2026-11-12 15:10:55.825 [info]: PASS: native morph preserves tracked object when native handle remains
+2026-11-12 15:10:55.825 [info]: PASS: metamorphosis applies its native buff; type observation recorded separately
+2026-11-12 15:10:55.826 [info]: [BEAR_FORM] type=1701077869 epoch=2 ability=1
+2026-11-12 15:10:55.826 [info]: PASS: bear form changes native type and invalidates life generation
+2026-11-12 15:10:55.826 [info]: PASS: native summon event registers summoned unit
+2026-11-12 15:10:55.826 [info]: [CLOCK_PROBE] logical_seconds=5 os_clock=6.251000 os_time=6
+2026-11-12 15:11:00.335 [info]: [STATE_MATCH] phase=1 hash=666595455 rng=14
+2026-11-12 15:11:06.747 [info]: [STATE_MATCH] phase=2 hash=1090450397 rng=24
+2026-11-12 15:11:09.850 [info]: PASS: 2000 removed stable unit IDs remain invalid across 100 bounded batches
+2026-11-12 15:11:09.850 [info]: [HANDLE_REUSE] creates=2000 repeated_native_ids=1977 mode=100_batches_20_units_10_tick_spacing
+2026-11-12 15:11:09.851 [info]: PASS: native unit-owned cancelled callbacks release payloads
+2026-11-12 15:11:13.170 [info]: [STATE_MATCH] phase=3 hash=379517944 rng=34
+2026-11-12 15:11:15.115 [info]: PASS: native unit manager cleanup completes
+2026-11-12 15:11:15.115 [info]: PASS: native unit manager returns registrations to zero
+2026-11-12 15:11:15.115 [info]: [UNIT_LIFECYCLE_DONE] native lifecycle and bounded reuse experiment complete
+2026-11-12 15:11:19.578 [info]: [STATE_MATCH] phase=4 hash=1694461056 rng=44
+2026-11-12 15:11:25.671 [info]: [STATE_MATCH] phase=5 hash=2136735813 rng=54
+2026-11-12 15:11:31.799 [info]: [STATE_MATCH] phase=6 hash=837970390 rng=64
+2026-11-12 15:11:38.187 [info]: [STATE_MATCH] phase=7 hash=313239862 rng=74
+2026-11-12 15:11:40.111 [info]: PASS: UI lifecycle stress cycles=173
+2026-11-12 15:11:40.111 [info]: PASS: gameplay RNG and peer snapshots exercised
+2026-11-12 15:11:40.111 [info]: PASS: UI command exactly once player=0
+2026-11-12 15:11:40.112 [info]: PASS: bridge has no fault
+2026-11-12 15:11:40.112 [info]: PASS: UI shutdown clears all controls
+2026-11-12 15:11:40.113 [info]: PASS: stopped UI rejects tasks without retaining registrations
+2026-11-12 15:11:40.113 [info]: PASS: stopped UI rejects listeners without retaining registrations
+2026-11-12 15:11:43.973 [info]: [METRICS] ui_cycles=173 rng_calls=77 phases=7 assertions=43
+2026-11-12 15:11:43.973 [info]: [UT_DONE] LuaScaffold lifecycle-native-06 P1

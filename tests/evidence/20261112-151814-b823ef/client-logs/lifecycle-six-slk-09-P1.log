@@ -1,0 +1,84 @@
+2026-11-12 15:18:45.896 [info]: [LuaScaffold] BOOT	Lua 5.3	3
+2026-11-12 15:18:45.899 [info]: PASS: map preplaced unit type/owner readback
+2026-11-12 15:18:45.899 [info]: PASS: source map placement survives LNI pack and initialization
+2026-11-12 15:18:45.899 [info]: PASS: source map region initialized before Lua
+2026-11-12 15:18:45.916 [info]: PASS: custom hero object name readback Reimu
+2026-11-12 15:18:45.943 [info]: PASS: custom hero object name readback Marisa
+2026-11-12 15:18:45.965 [info]: PASS: custom hero object name readback Sakuya
+2026-11-12 15:18:45.966 [info]: PASS: same-tick reschedule skips old dispatch batch
+2026-11-12 15:18:45.966 [info]: PASS: rescheduled task runs once on next tick
+2026-11-12 15:18:46.557 [info]: PASS: native death event invalidates life tasks but retains unit ID
+2026-11-12 15:18:47.416 [info]: PASS: native hero revive succeeds
+2026-11-12 15:18:47.417 [info]: PASS: revival retains stable ID and observed native handle
+2026-11-12 15:18:47.417 [info]: PASS: convenience timer repeats on shared logical ticks
+2026-11-12 15:18:47.418 [info]: PASS: expected active humans=6
+2026-11-12 15:18:47.418 [info]: PASS: official UI controls initialized
+2026-11-12 15:18:47.419 [info]: PASS: UI globals and standard math isolated
+2026-11-12 15:18:47.419 [info]: PASS: legacy sync and gameplay entry absent
+2026-11-12 15:18:47.419 [info]: PASS: native button has positive width
+2026-11-12 15:18:47.420 [info]: PASS: native text round trip
+2026-11-12 15:18:47.420 [info]: PASS: local UI cannot register gameplay entities
+2026-11-12 15:18:47.420 [info]: PASS: unsafe and oversized input rejected
+2026-11-12 15:18:47.430 [info]: PASS: native model created
+2026-11-12 15:18:47.450 [info]: PASS: native model2 created
+2026-11-12 15:18:47.451 [info]: PASS: native scroll panel created
+2026-11-12 15:18:47.459 [info]: PASS: progress handles zero denominator
+2026-11-12 15:18:47.459 [info]: PASS: models and scroll disposal return to baseline
+2026-11-12 15:18:47.666 [info]: [LuaScaffold] COMMAND ping	0	1
+2026-11-12 15:18:47.668 [info]: [LuaScaffold] COMMAND ping	2	1
+2026-11-12 15:18:47.669 [info]: [LuaScaffold] COMMAND ping	1	1
+2026-11-12 15:18:47.669 [info]: [LuaScaffold] COMMAND ping	4	1
+2026-11-12 15:18:47.669 [info]: [LuaScaffold] COMMAND ping	5	1
+2026-11-12 15:18:47.670 [info]: [LuaScaffold] COMMAND ping	3	1
+2026-11-12 15:18:48.031 [info]: PASS: native owner change refreshes ownership
+2026-11-12 15:18:48.031 [info]: [REMOVE_OBSERVE] phase=immediate type=1211117617 life=650.000 hidden=true dead=false
+2026-11-12 15:18:48.070 [info]: PASS: destroyed UI releases cancelled closure captures
+2026-11-12 15:18:48.070 [info]: [NATIVE_CALLBACK_GC] retained=0/8
+2026-11-12 15:18:48.070 [info]: PASS: nested UI destroy is idempotent
+2026-11-12 15:18:48.074 [info]: [REMOVE_OBSERVE] phase=next_tick type=0 life=0.000 hidden=false dead=false
+2026-11-12 15:18:48.074 [info]: PASS: external removal is detected after native state catches up
+2026-11-12 15:18:48.698 [info]: [REMOVE_OBSERVE] phase=half_second type=0 life=0.000 hidden=false dead=false
+2026-11-12 15:18:48.699 [info]: PASS: repeated external-remove notification is idempotent
+2026-11-12 15:18:49.372 [info]: PASS: old life callbacks do not execute after death or owner change
+2026-11-12 15:18:49.404 [info]: PASS: native metamorphosis order accepted
+2026-11-12 15:18:49.406 [info]: PASS: native summon order accepted
+2026-11-12 15:18:49.432 [info]: PASS: native bear-form order accepted
+2026-11-12 15:18:49.433 [info]: PASS: permanent custom morph order accepted
+2026-11-12 15:18:49.433 [info]: PASS: permanent custom bear order accepted
+2026-11-12 15:18:52.608 [info]: [UNIT_FORM] before=1164207469 after=1164209517 id=6 epoch=2 ability=1 buff=1 order=0 summons=1
+2026-11-12 15:18:52.608 [info]: PASS: native morph preserves tracked object when native handle remains
+2026-11-12 15:18:52.609 [info]: PASS: metamorphosis changes type, invalidates life generation and applies native buff
+2026-11-12 15:18:52.610 [info]: [BEAR_FORM] type=1701077869 epoch=2 ability=1
+2026-11-12 15:18:52.610 [info]: PASS: bear form changes native type and invalidates life generation
+2026-11-12 15:18:52.610 [info]: [CUSTOM_FORM] morph_type=1164209517 bear_type=1701077869 morph_ability=1 bear_ability=1
+2026-11-12 15:18:52.611 [info]: PASS: permanent custom morph abilities survive form replacement
+2026-11-12 15:18:52.612 [info]: PASS: native summon event registers summoned unit
+2026-11-12 15:18:52.612 [info]: [CLOCK_PROBE] logical_seconds=5 os_clock=6.645000 os_time=7
+2026-11-12 15:18:57.194 [info]: [STATE_MATCH] phase=1 hash=246601876 rng=14
+2026-11-12 15:19:03.088 [info]: [STATE_MATCH] phase=2 hash=882137597 rng=24
+2026-11-12 15:19:05.966 [info]: PASS: 2000 removed stable unit IDs remain invalid across 100 bounded batches
+2026-11-12 15:19:05.967 [info]: [HANDLE_REUSE] creates=2000 repeated_native_ids=1977 mode=100_batches_20_units_10_tick_spacing
+2026-11-12 15:19:05.967 [info]: PASS: native unit-owned cancelled callbacks release payloads
+2026-11-12 15:19:09.295 [info]: [STATE_MATCH] phase=3 hash=723026798 rng=34
+2026-11-12 15:19:11.254 [info]: PASS: native unit manager cleanup completes
+2026-11-12 15:19:11.255 [info]: PASS: native unit manager returns registrations to zero
+2026-11-12 15:19:11.256 [info]: [UNIT_LIFECYCLE_DONE] native lifecycle and bounded reuse experiment complete
+2026-11-12 15:19:15.767 [info]: [STATE_MATCH] phase=4 hash=1432683815 rng=44
+2026-11-12 15:19:21.868 [info]: [STATE_MATCH] phase=5 hash=1501070142 rng=54
+2026-11-12 15:19:28.327 [info]: [STATE_MATCH] phase=6 hash=1781397941 rng=64
+2026-11-12 15:19:34.072 [info]: [STATE_MATCH] phase=7 hash=981577510 rng=74
+2026-11-12 15:19:35.840 [info]: PASS: UI lifecycle stress cycles=173
+2026-11-12 15:19:35.840 [info]: PASS: gameplay RNG and peer snapshots exercised
+2026-11-12 15:19:35.841 [info]: PASS: UI command exactly once player=0
+2026-11-12 15:19:35.841 [info]: PASS: UI command exactly once player=1
+2026-11-12 15:19:35.841 [info]: PASS: UI command exactly once player=2
+2026-11-12 15:19:35.842 [info]: PASS: UI command exactly once player=3
+2026-11-12 15:19:35.842 [info]: PASS: UI command exactly once player=4
+2026-11-12 15:19:35.843 [info]: PASS: UI command exactly once player=5
+2026-11-12 15:19:35.844 [info]: PASS: bridge has no fault
+2026-11-12 15:19:35.844 [info]: PASS: unit lifecycle suite reached verified cleanup
+2026-11-12 15:19:35.845 [info]: PASS: UI shutdown clears all controls
+2026-11-12 15:19:35.847 [info]: PASS: stopped UI rejects tasks without retaining registrations
+2026-11-12 15:19:35.848 [info]: PASS: stopped UI rejects listeners without retaining registrations
+2026-11-12 15:19:39.728 [info]: [METRICS] ui_cycles=173 rng_calls=77 phases=7 assertions=58
+2026-11-12 15:19:39.729 [info]: [UT_DONE] LuaScaffold lifecycle-six-slk-09 P1

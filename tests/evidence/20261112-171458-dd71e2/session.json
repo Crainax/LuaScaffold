@@ -1,0 +1,56 @@
+{
+  "session": "D:\\War3\\tools\\LanTest\\sessions\\20261112-171458-dd71e2",
+  "sourceMap": "D:\\War3\\LuaScaffold‌\\build\\round2-expanded-three-01.w3x",
+  "sha256": "84F87A2753819FFBABD3EB451D50315B869C4CEC2BB9638CE0C42D772A6C6F8D",
+  "gameMap": "D:\\Program Files (x86)\\Warcraft III Frozen Throne\\Maps\\Test\\LAN-20261112-171458-dd71e2.w3x",
+  "clients": 3,
+  "autoJoin": true,
+  "legacySizeCap": true,
+  "useScriptSlots": true,
+  "mapConfigOverride": "",
+  "startedUtc": "2026-11-12T09:14:58.5680117Z",
+  "hostPid": 34244,
+  "hostCreationUtcTicks": "639300717032505280",
+  "clientPids": [
+    36880,
+    37180,
+    14344
+  ],
+  "clientProcesses": [
+    {
+      "pid": 36880,
+      "creationUtcTicks": "639300717054868150",
+      "expectedName": "LanP1"
+    },
+    {
+      "pid": 37180,
+      "creationUtcTicks": "639300717055024840",
+      "expectedName": "LanP2"
+    },
+    {
+      "pid": 14344,
+      "creationUtcTicks": "639300717055079060",
+      "expectedName": "LanP3"
+    }
+  ],
+  "gameName": "LanTest-20261112-171458-dd71e2",
+  "runtimeWE": "D:\\War3\\tools\\LanTest\\runtime\\WE",
+  "launchMode": "parallel",
+  "launchers": [
+    {
+      "pid": 27528,
+      "player": "LanP1",
+      "creationUtcTicks": "639300717054681075"
+    },
+    {
+      "pid": 35964,
+      "player": "LanP2",
+      "creationUtcTicks": "639300717054803688"
+    },
+    {
+      "pid": 30644,
+      "player": "LanP3",
+      "creationUtcTicks": "639300717054883123"
+    }
+  ]
+}

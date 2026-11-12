@@ -1,0 +1,6 @@
+{"privateBytes":201134080,"utc":"2026-11-12T09:20:30.7458069Z","cpuSeconds":5.078125,"pid":36100,"handles":4789,"player":"LanP1","workingSet":184172544}
+{"privateBytes":200355840,"utc":"2026-11-12T09:20:30.9306298Z","cpuSeconds":5.28125,"pid":9952,"handles":4693,"player":"LanP2","workingSet":174886912}
+{"privateBytes":205344768,"utc":"2026-11-12T09:20:31.1428417Z","cpuSeconds":5.8125,"pid":28208,"handles":4705,"player":"LanP3","workingSet":180174848}
+{"privateBytes":207355904,"utc":"2026-11-12T09:20:41.3624868Z","cpuSeconds":7.421875,"pid":36100,"handles":4819,"player":"LanP1","workingSet":190296064}
+{"privateBytes":207413248,"utc":"2026-11-12T09:20:41.5179986Z","cpuSeconds":7.640625,"pid":9952,"handles":4723,"player":"LanP2","workingSet":181739520}
+{"privateBytes":210313216,"utc":"2026-11-12T09:20:41.6745171Z","cpuSeconds":7.765625,"pid":28208,"handles":4731,"player":"LanP3","workingSet":185184256}
