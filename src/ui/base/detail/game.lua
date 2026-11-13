@@ -400,8 +400,6 @@ base = {
         end 
 
         for id,button in pairs(class.button.button_map) do
-            local ox,oy = button:get_real_position()
-        
             if button:point_in_rect(x, y) then
                 local is_show = button:get_is_show() ~= false
                 if button.is_enter == nil and is_show then 

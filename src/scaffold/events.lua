@@ -33,7 +33,7 @@ function M.new(domain)
             end
         end
         local ok,err
-        if domain=='local' then ok,err=pcall(Context.local_call,dispatch,...)
+        if domain=='local' then ok,err=Context.local_try(dispatch,...)
         else ok,err=pcall(dispatch,...) end
         depth=depth-1;compact()
         if not ok then error(err,0) end

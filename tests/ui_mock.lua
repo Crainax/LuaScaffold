@@ -83,6 +83,21 @@ assert(nested_scroll.scroll_y==10 and scroll.scroll_y==0)
 scroll:hide();WindowEventCallBack(6)
 assert(nested_scroll.scroll_y==10 and scroll.scroll_y==0)
 scroll:destroy()
+-- Mouse movement computes default geometry once and retains custom hit-test visibility.
+local hover=c.button:builder{x=100,y=100,w=80,h=80}
+local entered=0
+hover.on_button_mouse_enter=function() entered=entered+1 end
+local position=hover.get_real_position
+local reads=0
+hover.get_real_position=function(self) reads=reads+1;return position(self) end
+WindowEventCallBack(5)
+assert(entered==1 and reads==1,'mouse movement repeated unused coordinate traversal')
+hover:destroy()
+local hidden=c.button:builder{x=100,y=100,w=80,h=80,is_show=false}
+hidden.point_in_rect=function() return true end
+WindowEventCallBack(5)
+assert(not hidden.is_enter,'custom hit-test bypassed hidden state')
+hidden:destroy()
 local off=ui.game.register_event({on_init=function() calls=calls+1 end})
 off();off();ui.step()
 assert(calls==0)

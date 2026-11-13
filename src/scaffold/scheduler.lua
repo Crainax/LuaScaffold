@@ -67,7 +67,7 @@ function M.new(domain)
                 if task.period then task.due = tick + task.period
                 else tasks[id], task.fn = nil, nil end
                 local ok, err
-                if domain=='local' then ok,err=pcall(Context.local_call,fn)
+                if domain=='local' then ok,err=Context.local_try(fn)
                 else ok,err=pcall(fn) end
                 if not ok then
                     self:stop()
